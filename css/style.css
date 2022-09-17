@@ -1,6 +1,6 @@
 .pb-2{
-    border: 2px solid black;
-    height: 100%;
+    border: 2px solid rgb(239, 56, 56);
+    height: auto;
     display: flex;
-    justify-content: center;
+    max-width: 50px;
 }
