@@ -1,0 +1,6 @@
+.blue-ima{
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
