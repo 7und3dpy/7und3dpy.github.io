@@ -1,6 +1,6 @@
-.pb-2{
+img.blue-img{
     border: 2px solid rgb(239, 56, 56);
     height: auto;
     display: flex;
-    max-width: 50px;
+    width: auto;
 }
