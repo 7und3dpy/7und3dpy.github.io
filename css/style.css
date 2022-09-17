@@ -1,6 +1,6 @@
 img.blue-img{
     border: 2px solid rgb(239, 56, 56);
-    height: auto;
+    height: 50%;
     display: flex;
-    width: auto;
+    width: 40%;
 }
