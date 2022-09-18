@@ -179,107 +179,55 @@
     
 </div><div class="text-center pt-2">
 </div><div class="container py-4">
-    <div class="container main-container flex on-phone--column compact"><aside class="top-left sidebar left-sidebar sticky ">
-        <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    
-        <header>
-            
-                
-                <figure class="site-avatar">
-                    <a href="/">
-                    
-                        
-                        
-                        
-                            
-                            <img src="pictures/portrait.jpg" width="120"
-                                height="200" class="site-logo" loading="lazy" alt="Avatar">
-                        
-                    
-                    </a>
-                    
-                        <span class="emoji">👾</span>
-                    
-                </figure>
-                
-            
-            
-            <div class="site-meta">
-                <h1 class="site-name"><a href="/">7und3dpy</a></h1>
+    <script type="text/javascript">
+        class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */
+    </script>
+    <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+        <div id="sidebar" class="d-flex flex-column align-items-end">
+            <div class="profile-wrapper text-center">
+                <div id="avatar">
+                    <a href="/" class="mx-auto"> <img src="https://raw.githubusercontent.com/cotes2020/chirpy-images/5726bfed63717bf42ad65de11ede3683d7b6e561/commons/avatar.jpg" alt="avatar" onerror="this.style.display='none'" /> </a>
+                </div>
+                <div class="site-title mt-3"><a href="/">Chirpy</a></div>
+                <div class="site-subtitle font-italic">A text-focused Jekyll theme</div>
             </div>
-        </header><ol class="social-menu">
-                
-                    <li>
-                        <a 
-                            href='https://github.com/7und3dpy'
-                            target="_blank"
-                            title="GitHub"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-    </svg>
-    
-    
-    
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a 
-                            href='https://www.linkedin.com/in/minhtuan88/'
-                            target="_blank"
-                            title="LinkedIn"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <rect x="4" y="4" width="16" height="16" rx="2" />
-      <line x1="8" y1="11" x2="8" y2="16" />
-      <line x1="8" y1="8" x2="8" y2="8.01" />
-      <line x1="12" y1="16" x2="12" y2="11" />
-      <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-    </svg>
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a 
-                            href='https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=trantuan23082003@gmail.com'
-                            target="_blank"
-                            title="Mail"
-                        >
-                            
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-gmail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />
-      <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />
-      <path d="M16 4l-4 4l-4 -4" />
-      <path d="M4 6.5l8 7.5l8 -7.5" />
-    </svg>
-    </a>
-    </li>
-    </ol>
-    </aside>
-    
-
-    
-
-    
-
-    
-
-</div>
+            <ul class="w-100">
+                <li class="nav-item active">
+                    <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+                </li>
+            </ul>
+            <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+                <button class="mode-toggle btn" aria-label="Switch Mode"><i class="fas fa-adjust"></i></button> <span class="icon-border"></span>
+                <a href="https://github.com/cotes2020" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a>
+                <a href="https://twitter.com/cotes2020" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a>
+                <a href=" javascript:location.href = 'mailto:' + ['cotes.chung','gmail.com'].join('@')" aria-label="email"> <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+            </div>
+        </div>
+        <div id="topbar-wrapper">
+            <div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4">
+                <span id="breadcrumb"> <span>Home</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i>
+                <div id="topbar-title">Chirpy</div>
+                <i id="search-trigger" class="fas fa-search fa-fw"></i>
+                <span id="search-wrapper" class="align-items-center">
+                    <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..." />
+                </span>
+                <span id="search-cancel">Cancel</span>
+            </div>
+        </div>
+    </body>
+    </div>
 <div class = "text-center text-secondary">&copy; 2022  All Rights Reserved</div>
 </footer>
 
