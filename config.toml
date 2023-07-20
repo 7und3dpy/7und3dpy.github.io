@@ -1,4 +1,4 @@
-baseURL = "http://7und3dpy.github.io/"
+baseURL = "/"
 title = "7und3dpy"
 theme = "hugo-coder"
 languageCode = "en"
