@@ -129,13 +129,13 @@ author = "authors"
 name = "Github"
 icon = "fa fa-2x fa-github"
 weight = 1
-url = "https://github.com/7und3dpy/"
+url = "https://github.com/7und3dpy"
 
 [[params.social]]
 name = "Gitlab"
 icon = "fa fa-2x fa-gitlab"
 weight = 2
-url = "https://gitlab.com/7und3dpy/"
+url = "https://gitlab.com/7und3dpy"
 
 #[[params.social]]
 #name = "Twitter"
@@ -143,11 +143,11 @@ url = "https://gitlab.com/7und3dpy/"
 #weight = 3
 #url = "https://twitter.com/johndoe/"
 
-#[[params.social]]
-#name = "LinkedIn"
-#icon = "fa fa-2x fa-linkedin"
-#weight = 4
-#url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 4
+url = "https://www.linkedin.com/in/minhtuan88/"
 
 #[[params.social]]
 #name = "Medium"
@@ -159,7 +159,7 @@ url = "https://gitlab.com/7und3dpy/"
 name = "RSS"
 icon = "fa fa-2x fa-rss"
 weight = 6
-url = "https://7und3dpy.github.io/index.xml"
+url = "https://7und3dpy.github.io/website/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 
