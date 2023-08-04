@@ -1,6 +1,6 @@
 +++
 authors = ["Trần Minh Tuấn"]
-title = "Một ngày Chủ Nhật ác mộng nhất trong cuộc đời tôi\n(Tính tới thời điểm hiện tại)"
+title = "Một ngày Chủ Nhật ác mộng nhất trong cuộc đời tôi"
 date = "2023-08-04"
 
 tags = [
