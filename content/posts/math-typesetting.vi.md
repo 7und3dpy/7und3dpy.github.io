@@ -38,24 +38,14 @@ Trong ví dụ này, chúng ta sẽ sử dụng [KaTeX](https://katex.org/).
 
 **Nota:** Sử dụng tài liệu tham khảo trực tuyến [Supported TeX Functions](https://katex.org/docs/supported.html) làm cơ sở để tạo ra các kí hiệu toán học.
 
-{{< math.inline >}}
-{{ if or .Page.Params.math .Site.Params.math }}
-
-<!-- KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-{{ end }}
-{{</ math.inline >}}
 
 ### Examples
 
-{{< math.inline >}}
 
-<p>
-Ký hiệu nội tuyến: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-{{</ math.inline >}}
+Ký hiệu nội tuyến: 
+$$
+\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…
+$$ 
 
 Ký hiệu khối:
 
