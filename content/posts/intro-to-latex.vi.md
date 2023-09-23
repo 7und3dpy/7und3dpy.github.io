@@ -2,7 +2,7 @@
 authors = ["Trần Minh Tuấn"]
 title = "Giới thiệu về LATEX"
 date = "2023-07-24"
-description = "Bài viết mẫu hiển thị cú pháp Markdown cơ bản và định dạng phần tử HTML."
+description = "Bài viết mẫu hiển thị cú pháp Latex cơ bản."
 tags = [
     "latex"
 ]

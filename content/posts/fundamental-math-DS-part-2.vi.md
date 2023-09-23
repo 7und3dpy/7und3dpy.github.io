@@ -2,7 +2,7 @@
 authors = ["Trần Minh Tuấn"]
 title = "Kiến thức toán cơ bản cho Data Science (phần 2)"
 date = "2023-07-24"
-description = "Bài viết mẫu hiển thị cú pháp Markdown cơ bản và định dạng phần tử HTML."
+description = "Bài viết mẫu hiển thị các kiến thức cơ bản về toán."
 tags = [
     "math",
     "data science",

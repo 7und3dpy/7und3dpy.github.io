@@ -1,6 +1,7 @@
 baseURL = "https://7und3dpy.github.io/website"
 title = "7und3dpy"
-theme = "hugo-coder"
+theme = ["hugo-coder","hugo-embed-pdf-shortcode"]
+enableInlineShortcodes = true
 languageCode = "en"
 defaultContentLanguage = "en"
 paginate = 20
@@ -185,6 +186,8 @@ url = "projects/"
 name = "Contact me"
 weight = 5
 url = "contact/"
+
+#-------------------------------------------------------------------#
 
 [languages.vi]
 languageName = "VI"
