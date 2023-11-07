@@ -26,6 +26,10 @@ Tôi là Trần Minh Tuấn, một sinh viên năm thứ ba tại Đại học B
 * Tôi rất vui mừng được học hỏi thêm về an toàn thông tin và tôi mong muốn có thể sử dụng kiến ​​thức và kỹ năng của mình để tạo ra sự khác biệt trên thế giới.
 * Tôi tin rằng an toàn thông tin là một lĩnh vực quan trọng và tôi muốn là một phần của giải pháp.
 
+**Notes: This is my CV**
+
+{{< googlePDFReader "1Pku5tZcb4cUjYJQ3srOQtpN9CCt_qjks" "My CV" >}}
+
 **Hãy liên hệ với tôi:**
 
 * Nếu bạn muốn biết thêm về tôi hoặc an toàn thông tin, vui lòng liên hệ với tôi qua [email](https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=trantuan23082003@gmail.com).

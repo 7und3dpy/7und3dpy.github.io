@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Turio on 7und3dpy</title>
+    <link>https://7und3dpy.github.io/website/authors/turio/</link>
+    <description>Recent content in Turio on 7und3dpy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/authors/turio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Nightmare Sunday in My Life</title>
+      <link>https://7und3dpy.github.io/website/posts/professor-tam-huyet/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/professor-tam-huyet/</guid>
+      <description>IntroductionLink to headingOverviewLink to headingAs you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
+DevelopmentsLink to headingWhen I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-1/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-1/</guid>
+      <description>Basic Mathematics for Data Science (Part 1)Link to headingTo start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-2/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-2/</guid>
+      <description>Basic Mathematics for Data Science (Part 2)Link to heading3) Linear AlgebraLink to headingHave you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
+    </item>
+    
+    <item>
+      <title>Data Science in Football and Success from Liverpool F.C</title>
+      <link>https://7und3dpy.github.io/website/posts/football-analysis/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/football-analysis/</guid>
+      <description>Can Data Science can be applied in Football Analysis?Link to headingFootball is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
+Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task to record every event that occurs in a match. But in reality, this is changing as every action on the field is being recorded and represented in the most visual way.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LATEX</title>
+      <link>https://7und3dpy.github.io/website/posts/intro-to-latex/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/intro-to-latex/</guid>
+      <description>1. What is LATEX?Link to headingLaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
+LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</description>
+    </item>
+    
+    <item>
+      <title>A look at your Shopping Cart - Customer Behavior Modelling</title>
+      <link>https://7und3dpy.github.io/website/projects/cusbehamodel/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/cusbehamodel/</guid>
+      <description>Adjust zoom level and pageLink to heading  A look at your Shopping Cart - Customer Behavior Modelling       </description>
+    </item>
+    
+    <item>
+      <title>Comparison between Window and Linux</title>
+      <link>https://7und3dpy.github.io/website/projects/winvslinux/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/winvslinux/</guid>
+      <description>Adjust zoom level and pageLink to heading  Comparison Between Window and Linux       </description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://7und3dpy.github.io/website/posts/emoji-support/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Evaluating IELTS writing: A Machine Learning application</title>
+      <link>https://7und3dpy.github.io/website/projects/evalielts/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/evalielts/</guid>
+      <description>Adjust zoom level and pageLink to heading  Evaluating IELTS writing: A Machine Learning application       </description>
+    </item>
+    
+  </channel>
+</rss>

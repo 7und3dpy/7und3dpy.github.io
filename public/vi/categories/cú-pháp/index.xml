@@ -1,35 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cú pháp on Trần Minh Tuấn</title><link>https://7und3dpy.github.io/website/vi/categories/c%C3%BA-ph%C3%A1p/</link><description>Recent content in Cú pháp on Trần Minh Tuấn</description><generator>Hugo -- gohugo.io</generator><language>vi</language><lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/categories/c%C3%BA-ph%C3%A1p/index.xml" rel="self" type="application/rss+xml"/><item><title>Hướng dẫn cú pháp Markdown</title><link>https://7und3dpy.github.io/website/vi/posts/markdown-syntax/</link><pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/markdown-syntax/</guid><description>&lt;p>Bài viết này là một ví dụ cơ bản để hiển thị cú pháp Markdown được sử dụng trong các tệp nội dung của Hugo. Nó cũng cho thấy cách mỗi phần tử HTML cơ bản được tạo kiểu bằng CSS với chủ đề Hugo.&lt;/p></description></item><item><title>Nội dung phong phú</title><link>https://7und3dpy.github.io/website/vi/posts/rich-content/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/rich-content/</guid><description>&lt;p>Hugo đi kèm với một số &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" class="external-link" target="_blank" rel="noopener">Mã ngắn nội bộ&lt;/a> cho nội dung phong phú, cũng như &lt;a href="https://gohugo.io/about/hugo-and-gdpr/" class="external-link" target="_blank" rel="noopener">Cài đặt quyền riêng tư&lt;/a> và một loạt Mã ngắn đơn giản cho phép nhúng các phiên bản tĩnh và không có JS của các mạng xã hội khác nhau.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>Nội dung phong phú hơn</title><link>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</guid><description>&lt;p>Hugo Coder cung cấp một số Mã ngắn tùy chỉnh.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>Cấu hình của các phương trình toán học</title><link>https://7und3dpy.github.io/website/vi/posts/math-typesetting/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/math-typesetting/</guid><description>&lt;p>Trong một dự án Hugo, các ký hiệu toán học có thể được sử dụng với sự trợ giúp của các thư viện JavaScript của bên thứ ba.&lt;/p></description></item><item><title>HTML and CSS only tabs</title><link>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</link><pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</guid><description>Shortcodes
-Link to heading
-Nội dung sau:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cú pháp on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/categories/c%C3%BA-ph%C3%A1p/</link>
+    <description>Recent content in Cú pháp on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/categories/c%C3%BA-ph%C3%A1p/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hướng dẫn cú pháp Markdown</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/markdown-syntax/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;Bài viết này là một ví dụ cơ bản để hiển thị cú pháp Markdown được sử dụng trong các tệp nội dung của Hugo. Nó cũng cho thấy cách mỗi phần tử HTML cơ bản được tạo kiểu bằng CSS với chủ đề Hugo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nội dung phong phú</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/rich-content/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo đi kèm với một số &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mã ngắn nội bộ&lt;/a&gt; cho nội dung phong phú, cũng như &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cài đặt quyền riêng tư&lt;/a&gt; và một loạt Mã ngắn đơn giản cho phép nhúng các phiên bản tĩnh và không có JS của các mạng xã hội khác nhau.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nội dung phong phú hơn</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Hugo Coder cung cấp một số Mã ngắn tùy chỉnh.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cấu hình của các phương trình toán học</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/math-typesetting/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Trong một dự án Hugo, các ký hiệu toán học có thể được sử dụng với sự trợ giúp của các thư viện JavaScript của bên thứ ba.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML and CSS only tabs</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</guid>
+      <description>ShortcodesLink to headingNội dung sau:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Sẽ tạo ra:
-Hello
-Hello World!
-Goodbye
-Goodbye Everybody!
-căn lề phải
-Link to heading
-Bạn cũng có thể căn chỉnh các tab sang bên phải:
-{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description></item><item><title>Mermaid JS support</title><link>https://7und3dpy.github.io/website/vi/posts/mermaid-support/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/mermaid-support/</guid><description>Se quiser usar o Mermaid-JS em sua página. Use o shortcode mermaid em seus conteúdos Markdown.
-flowchart LR
-A --> B
-B --> C
-C --> D
-D --> B
-sequenceDiagram
-participant Alice
-participant Bob
-Alice->>Bob: Hi Bob
-Bob->>Alice: Hi Alice
-Tôi đặt thêm ví dụ trên trang của Mermaid-JS.</description></item><item><title>Hỗ trợ biểu tượng cảm xúc</title><link>https://7und3dpy.github.io/website/vi/posts/emoji-support/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/emoji-support/</guid><description>&lt;p>Biểu tượng cảm xúc có thể được kích hoạt trong dự án Hugo theo nhiều cách.&lt;/p></description></item></channel></rss>
+.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!căn lề phảiLink to headingBạn cũng có thể căn chỉnh các tab sang bên phải:</description>
+    </item>
+    
+    <item>
+      <title>Mermaid JS support</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/mermaid-support/</link>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/mermaid-support/</guid>
+      <description>Se quiser usar o Mermaid-JS em sua página. Use o shortcode mermaid em seus conteúdos Markdown.
+flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceTôi đặt thêm ví dụ trên trang của Mermaid-JS.</description>
+    </item>
+    
+    <item>
+      <title>Hỗ trợ biểu tượng cảm xúc</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/emoji-support/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Biểu tượng cảm xúc có thể được kích hoạt trong dự án Hugo theo nhiều cách.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -28,8 +28,11 @@ My name is Tuan, a junior student at Ha Noi University of Science and Technology
 
 **Notes: This is my CV**
 
-{{ < embed-pdf url="./resources/pdf/my_CV.pdf"  > }}
+{{< googlePDFReader "1Pku5tZcb4cUjYJQ3srOQtpN9CCt_qjks" "My CV" >}}
 
+Hope someone can give me some suggestions so that I can improve my knowledge and social skills.
 **Contact Me:**
 
 * If you would like to know more about me or Cyber Security, please contact me via [email](https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=trantuan23082003@gmail.com)
+
+

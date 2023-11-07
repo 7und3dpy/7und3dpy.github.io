@@ -14,4 +14,4 @@ series = ["Projects"]
 
 
 # Adjust zoom level and page
-{{< embed-pdf url="Project_1.pdf" width="100%" height="500px" >}}
+{{< googlePDFReader "18CPUBN2b500ohmlyrzZz-XkdroLa8Ay3" "Comparison Between Window and Linux" >}}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Giới thiệu về Weka · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Bài viết mẫu hiển thị cú pháp Markdown cơ bản và định dạng phần tử HTML.">
+<meta name="keywords" content="Blog, Phát triển phần mềm, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Giới thiệu về Weka"/>
+<meta name="twitter:description" content="Bài viết mẫu hiển thị cú pháp Markdown cơ bản và định dạng phần tử HTML."/>
+
+<meta property="og:title" content="Giới thiệu về Weka" />
+<meta property="og:description" content="Bài viết mẫu hiển thị cú pháp Markdown cơ bản và định dạng phần tử HTML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/weka/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/weka/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/website/site.webmanifest">
+<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/weka/">EN</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/weka/">
+              Giới thiệu về Weka
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                tháng 7 24, 242412
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/study/">study</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/weka/">weka</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="xây-dựng-mô-hình-classification---machine-learning-cơ-bản-với-weka">
+  Xây dựng mô hình Classification - Machine Learning cơ bản với Weka
+  <a class="heading-link" href="#x%c3%a2y-d%e1%bb%b1ng-m%c3%b4-h%c3%acnh-classification---machine-learning-c%c6%a1-b%e1%ba%a3n-v%e1%bb%9bi-weka">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><img src="https://miro.medium.com/max/500/1*N8Uwuj4le6YDIOrlrDhCtg.png" alt=""></p>
+<p>Đừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.</p>
+<p>Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ khai thác dữ liệu. Nó chứa các công cụ để chuẩn bị dữ liệu, phân loại, hồi quy, phân cụm, khai thác quy tắc kết hợp và trực quan hóa.</p>
+<p>Weka là phần mềm nguồn mở được cấp theo GNU General Public License. Sản phẩm được xây dựng bởi nhóm nghiên cứu Machine Learning thuộc Khoa Khoa học Máy tính của Đại học Wakaito, New Zealand.</p>
+<p>Đặc biệt, Weka còn hỗ trợ việc học tập Deep Learning.</p>
+<p>Bạn có thể khám phá thêm về Weka tại đây: <a href="https://www.cs.waikato.ac.nz/ml/weka/index.html"  class="external-link" target="_blank" rel="noopener">https://www.cs.waikato.ac.nz/ml/weka/index.html</a></p>
+<h2 id="vì-sao-nên-chọn-weka">
+  Vì sao nên chọn Weka?
+  <a class="heading-link" href="#v%c3%ac-sao-n%c3%aan-ch%e1%bb%8dn-weka">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Một lợi ích lớn của việc sử dụng Weka là nó chứa số lượng lớn các thuật toán Machine Learning được hỗ trợ. Càng nhiều thuật toán càng giúp mình tìm hiểu tường tận về vấn đề của bản thân và dễ dàng so sánh các thuật toán với nhau.</p>
+<p>Điển hình hơn hết là Weka đã có sẵn các thuật toán chúng ta tiếp cận Case Study Titanic một cách trực quan hơn. Ở đây ta sẽ tiếp cận với 3 thuật toán Classification cơ bản: K-Neighrest Neighbor, Naive Bayes &amp; Decision Tree.</p>
+<h2 id="tìm-hiểu-về-case-study-titanic">
+  Tìm hiểu về Case Study Titanic
+  <a class="heading-link" href="#t%c3%acm-hi%e1%bb%83u-v%e1%bb%81-case-study-titanic">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://media.nationalgeographic.org/assets/photos/000/273/27302.jpg" alt=""></p>
+<p>Vào ngày 15 tháng 4 năm 1912, trong chuyến hành trình đầu tiên của mình, tàu Titanic đã chìm sau khi va chạm với một tảng băng trôi và lấy đi 1502 trong số 2224 hành khách lẫn phi hành đoàn. Thảm kịch giật gân này đã gây sốc cho cộng đồng quốc tế và dẫn đến các quy định an toàn tốt hơn cho tàu.</p>
+<p>Mặc dù có một số yếu tố may mắn liên quan đến việc sống sót sau vụ chìm tàu, một số nhóm người có khả năng sống sót cao hơn những người khác, chẳng hạn như phụ nữ, trẻ em và giới thượng lưu.</p>
+<p>Ở Case Study này, ta sẽ tiến thành phân tích về những loại người có khả năng sống sót. Cụ thể, ta sẽ sử dụng công cụ học máy để dự đoán hành khách nào sống sót sau thảm kịch.</p>
+<p>Bạn có thể tham khảo thêm về Case Study này và lấy dữ liệu tại đây: <a href="https://www.kaggle.com/c/titanic/overview"  class="external-link" target="_blank" rel="noopener">https://www.kaggle.com/c/titanic/overview</a></p>
+<h4 id="input">
+  <strong>Input</strong>
+  <a class="heading-link" href="#input">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Từ dữ liệu gốc, mình sẽ tối giản chúng. Mình đã lọc ra vài thuộc tính quan trọng lẫn chỉnh sửa tên thuộc tính ảnh hưởng đến khả năng sống sót (<strong>survived</strong>) của hành khách trên tàu Titanic.<br>
+Thuộc tính đầu vào của mình sẽ bao gồm:</p>
+<table>
+<thead>
+<tr>
+<th>Thuộc tính</th>
+<th style="text-align:center">Định nghĩa</th>
+<th style="text-align:right">Giải thích</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td style="text-align:center">Loại vé - Ticket class. Có thể là vé hạng nhất, hạng hai,&hellip;</td>
+<td style="text-align:right">1 = 1st, 2 = 2nd, 3 = 3rd</td>
+</tr>
+<tr>
+<td>gender</td>
+<td style="text-align:center">Giới tính</td>
+<td style="text-align:right">Đã chuẩn hoá 0 - Nữ và 1 - Nam</td>
+</tr>
+<tr>
+<td>age</td>
+<td style="text-align:center">Tuổi tác</td>
+<td style="text-align:right">1 - adult và 0 - children</td>
+</tr>
+<tr>
+<td>survived</td>
+<td style="text-align:center">Khả năng sống sót</td>
+<td style="text-align:right">0 - không và 1 - Có</td>
+</tr>
+</tbody>
+</table>
+<p>Nếu muốn test thử bộ dữ liệu đã được chuẩn hoá từ mình, bạn có thể download tại đây: <a href="https://drive.google.com/file/d/13ycO_k8erbZrS-cxa-F8RlWlfitF57Kv/view?usp=sharing"  class="external-link" target="_blank" rel="noopener">https://drive.google.com/file/d/13ycO_k8erbZrS-cxa-F8RlWlfitF57Kv/view?usp=sharing</a></p>
+<h4 id="output">
+  <strong>Output</strong>:
+  <a class="heading-link" href="#output">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Dữ liệu đầu ra rất đơn giản đưa ra dự đoán về khả năng tử nạn của các hành khách còn lại dựa trên những yếu tố biết trước như tên, tuổi, giới tính, số người đi cùng, vị trí phòng v…v.</p>
+<h4 id="ý-nghĩa">
+  <strong>Ý nghĩa</strong>:
+  <a class="heading-link" href="#%c3%bd-ngh%c4%a9a">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Bài toán cho phép chúng ta có thể dựa vào đó để dự đoán khả năng sống sót của một người dựa trên một thảm họa từ đó có thể rút ra những kinh nghiệm trong các chuyến hành trình trong tương lai, Có thể là thiết kế lại tàu một cách an toàn hơn, dịch vụ chăm sóc, cảnh báo,&hellip;</p>
+<h4 id="phân-tích">
+  <strong>Phân tích</strong>:
+  <a class="heading-link" href="#ph%c3%a2n-t%c3%adch">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Có thể dễ nhận thấy đây là một bài Two-Class Classification với kết quả đầu ra là <strong>survived</strong> hay không.</p>
+<h2 id="how-to-use-weka">
+  How to use Weka?
+  <a class="heading-link" href="#how-to-use-weka">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Cá nhân mình nghĩ việc sử dụng Weka rất đơn giản, bạn chỉ việc cài đặt và chọn CSV file.
+<img src="https://i.imgur.com/uYRi4yL.png" alt="">
+Okay và tiếp đến các bạn chọn mục Classify:
+<img src="https://i.imgur.com/koui4zN.png" alt="">
+Ở Classifier, các bạn chọn thuật toán phù hợp mình muốn test. Mình sẽ test thử thuật toán K- Neighrest Neighbor đầu tiên.</p>
+<p>Tiếp đến ở test option bạn có thể chọn:</p>
+<ul>
+<li>Use training set: Sử dụng toàn bộ dữ liệu để huấn luyện mô hình.</li>
+<li>Supplied test set: Bạn cung cấp thêm test set để kiểm tra mô hình.</li>
+<li>Cross-validation: Hay còn gọi là k-fold Cross validation. Phương pháp này phân chia dữ liệu thành k tập con có cùng kích thước. Tại mỗi vòng lặp sử dụng một tập con là tập thử nghiệm và các tập con còn lại là tập huấn luyện. Giá trị k thường là = 10. Ta có thể dùng một trong hai cách:
+<!-- raw HTML omitted -->      + Leave-one-out : k=số mẫu trong dữ liệu (dành cho tập dữ liệu nhỏ)
+<!-- raw HTML omitted -->      + Stratified cross-validation : dùng phương pháp lấy mẫu để các lớp trong từng tập con phân bố như trên toàn bộ dữ liệu.</li>
+<li>Percentage split: Chia dữ liệu thành training set, test set tuỳ vào % bạn muốn.</li>
+</ul>
+<p>Tương tự ta tiếp tục với thuật toán Decision Tree ID3 và Naive Bayes.
+<img src="https://i.imgur.com/Ixx08sl.png" alt="">
+<img src="https://i.imgur.com/e87Sxzd.png" alt=""></p>
+<p>Qua đó chúc mọi người có những trải nghiệm thú vị cùng Weka. Trước khi sử dụng cũng đừng quên cảm ơn khoa Khoa học Máy tính - Đại học Wakaito, New Zealand đã mang đến một sản phẩm tuyệt vời như thế này mọi người nhé!</p>
+<h2 id="more-information-about-weka">
+  More information about Weka
+  <a class="heading-link" href="#more-information-about-weka">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Chi tiết về tool (bao gồm link tải, tài liệu hướng dẫn và cả khoá học): <a href="https://www.cs.waikato.ac.nz/ml/weka/index.html"  class="external-link" target="_blank" rel="noopener">https://www.cs.waikato.ac.nz/ml/weka/index.html</a></li>
+<li>Để add ID3 Decision Tree vào Weka: <a href="https://stackoverflow.com/questions/48888463/weka-3-8-package-installation-what-are-the-steps-to-add-id3"  class="external-link" target="_blank" rel="noopener">https://stackoverflow.com/questions/48888463/weka-3-8-package-installation-what-are-the-steps-to-add-id3</a></li>
+<li>Nếu các bạn không thấy KNN trong Lazy, hãy chọn IBk classifier</li>
+<li>Một bài viết mình thấy cũng thú vị cho bạn nào chưa rõ về đánh giá mô hình: <a href="https://ongxuanhong.wordpress.com/2015/08/25/danh-gia-mo-hinh-model-evaluation/"  class="external-link" target="_blank" rel="noopener">https://ongxuanhong.wordpress.com/2015/08/25/danh-gia-mo-hinh-model-evaluation/</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

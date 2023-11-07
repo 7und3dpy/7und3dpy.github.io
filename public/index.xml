@@ -1,39 +1,215 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>7und3dpy</title><link>https://7und3dpy.github.io/website/</link><description>Recent content on 7und3dpy</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown Syntax Guide</title><link>https://7und3dpy.github.io/website/posts/markdown-syntax/</link><pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Rich Content</title><link>https://7und3dpy.github.io/website/posts/rich-content/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" class="external-link" target="_blank" rel="noopener">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/" class="external-link" target="_blank" rel="noopener">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>More Rich Content</title><link>https://7und3dpy.github.io/website/posts/more-rich-content/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/more-rich-content/</guid><description>&lt;p>Hugo Coder provides some Custom Shortcodes.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>Math Typesetting</title><link>https://7und3dpy.github.io/website/posts/math-typesetting/</link><pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description></item><item><title>HTML and CSS only tabs</title><link>https://7und3dpy.github.io/website/posts/html-and-css-only-tabs/</link><pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/html-and-css-only-tabs/</guid><description>Shortcodes
-Link to heading
-The following content:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7und3dpy</title>
+    <link>https://7und3dpy.github.io/website/</link>
+    <description>Recent content on 7und3dpy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Nightmare Sunday in My Life</title>
+      <link>https://7und3dpy.github.io/website/posts/professor-tam-huyet/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/professor-tam-huyet/</guid>
+      <description>IntroductionLink to headingOverviewLink to headingAs you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
+DevelopmentsLink to headingWhen I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-1/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-1/</guid>
+      <description>Basic Mathematics for Data Science (Part 1)Link to headingTo start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-2/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamental-math-ds-part-2/</guid>
+      <description>Basic Mathematics for Data Science (Part 2)Link to heading3) Linear AlgebraLink to headingHave you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
+    </item>
+    
+    <item>
+      <title>Data Science in Football and Success from Liverpool F.C</title>
+      <link>https://7und3dpy.github.io/website/posts/football-analysis/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/football-analysis/</guid>
+      <description>Can Data Science can be applied in Football Analysis?Link to headingFootball is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
+Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task to record every event that occurs in a match. But in reality, this is changing as every action on the field is being recorded and represented in the most visual way.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LATEX</title>
+      <link>https://7und3dpy.github.io/website/posts/intro-to-latex/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/intro-to-latex/</guid>
+      <description>1. What is LATEX?Link to headingLaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
+LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://7und3dpy.github.io/website/posts/markdown-syntax/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://7und3dpy.github.io/website/posts/rich-content/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>More Rich Content</title>
+      <link>https://7und3dpy.github.io/website/posts/more-rich-content/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://7und3dpy.github.io/website/posts/math-typesetting/</link>
+      <pubDate>Mon, 10 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML and CSS only tabs</title>
+      <link>https://7und3dpy.github.io/website/posts/html-and-css-only-tabs/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/html-and-css-only-tabs/</guid>
+      <description>ShortcodesLink to headingThe following content:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Will generate:
-Hello
-Hello World!
-Goodbye
-Goodbye Everybody!
-Right alighment
-Link to heading
-You can also align the tabs to the right:
-{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description></item><item><title>Mermaid JS support</title><link>https://7und3dpy.github.io/website/posts/mermaid-support/</link><pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/mermaid-support/</guid><description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
-flowchart LR
-A --> B
-B --> C
-C --> D
-D --> B
-sequenceDiagram
-participant Alice
-participant Bob
-Alice->>Bob: Hi Bob
-Bob->>Alice: Hi Alice
-Find more example on Mermaid-JS website.</description></item><item><title>Emoji Support</title><link>https://7und3dpy.github.io/website/posts/emoji-support/</link><pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://7und3dpy.github.io/website/posts/placeholder-text/</link><pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/posts/placeholder-text/</guid><description>&lt;p>The focus is all the closer to the breasts from the top of the breasts.&lt;/p></description></item><item><title>About</title><link>https://7und3dpy.github.io/website/about/</link><pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/about/</guid><description>About me
-Link to heading
-My name is Tuan, a junior student at Ha Noi University of Science and Technology. I am studying Cyber Security and I am passionate about protecting people and organizations from cyber threats.
+.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!Right alighmentLink to headingYou can also align the tabs to the right:</description>
+    </item>
+    
+    <item>
+      <title>Mermaid JS support</title>
+      <link>https://7und3dpy.github.io/website/posts/mermaid-support/</link>
+      <pubDate>Sat, 08 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/mermaid-support/</guid>
+      <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
+flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceFind more example on Mermaid-JS website.</description>
+    </item>
+    
+    <item>
+      <title>A look at your Shopping Cart - Customer Behavior Modelling</title>
+      <link>https://7und3dpy.github.io/website/projects/cusbehamodel/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/cusbehamodel/</guid>
+      <description>Adjust zoom level and pageLink to heading  A look at your Shopping Cart - Customer Behavior Modelling       </description>
+    </item>
+    
+    <item>
+      <title>Comparison between Window and Linux</title>
+      <link>https://7und3dpy.github.io/website/projects/winvslinux/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/winvslinux/</guid>
+      <description>Adjust zoom level and pageLink to heading  Comparison Between Window and Linux       </description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://7und3dpy.github.io/website/posts/emoji-support/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Evaluating IELTS writing: A Machine Learning application</title>
+      <link>https://7und3dpy.github.io/website/projects/evalielts/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/evalielts/</guid>
+      <description>Adjust zoom level and pageLink to heading  Evaluating IELTS writing: A Machine Learning application       </description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://7und3dpy.github.io/website/posts/placeholder-text/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;The focus is all the closer to the breasts from the top of the breasts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://7und3dpy.github.io/website/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/about/</guid>
+      <description>About meLink to headingMy name is Tuan, a junior student at Ha Noi University of Science and Technology. I am studying Cyber Security and I am passionate about protecting people and organizations from cyber threats.
 Why I chose Cyber Security:
-I have been interested in Cyber Security since I was a child, when I first learned about cyberattacks and their consequences. I was fascinated by how cyberattacks work and how they can be prevented.</description></item><item><title>Contact</title><link>https://7und3dpy.github.io/website/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/contact/</guid><description>Follow me, @7und3dpy.</description></item><item><title>Projects</title><link>https://7und3dpy.github.io/website/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/projects/</guid><description>Nothing to see here&amp;hellip; Move along!</description></item></channel></rss>
+ I have been interested in Cyber Security since I was a child, when I first learned about cyberattacks and their consequences. I was fascinated by how cyberattacks work and how they can be prevented.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://7und3dpy.github.io/website/posts/weka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/weka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://7und3dpy.github.io/website/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/contact/</guid>
+      <description>Follow me, @7und3dpy.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://7und3dpy.github.io/website/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/projects/</guid>
+      <description>Nothing to see here&amp;hellip; Move along!</description>
+    </item>
+    
+  </channel>
+</rss>

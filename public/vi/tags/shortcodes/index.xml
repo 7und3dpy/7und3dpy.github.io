@@ -1,24 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Códigos curtos on Trần Minh Tuấn</title><link>https://7und3dpy.github.io/website/vi/tags/shortcodes/</link><description>Recent content in Códigos curtos on Trần Minh Tuấn</description><generator>Hugo -- gohugo.io</generator><language>vi</language><lastBuildDate>Wed, 04 Jan 2023 11:51:36 +0100</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/tags/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Nội dung phong phú</title><link>https://7und3dpy.github.io/website/vi/posts/rich-content/</link><pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/rich-content/</guid><description>&lt;p>Hugo đi kèm với một số &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes" class="external-link" target="_blank" rel="noopener">Mã ngắn nội bộ&lt;/a> cho nội dung phong phú, cũng như &lt;a href="https://gohugo.io/about/hugo-and-gdpr/" class="external-link" target="_blank" rel="noopener">Cài đặt quyền riêng tư&lt;/a> và một loạt Mã ngắn đơn giản cho phép nhúng các phiên bản tĩnh và không có JS của các mạng xã hội khác nhau.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>Nội dung phong phú hơn</title><link>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</link><pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</guid><description>&lt;p>Hugo Coder cung cấp một số Mã ngắn tùy chỉnh.&lt;/p>
-&lt;h2 id="heading">
-&lt;a class="heading-link" href="#heading">
-&lt;i class="fa fa-link" aria-hidden="true" title="Link to heading">&lt;/i>
-&lt;span class="sr-only">Link to heading&lt;/span>
-&lt;/a>
-&lt;/h2></description></item><item><title>HTML and CSS only tabs</title><link>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</link><pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</guid><description>Shortcodes
-Link to heading
-Nội dung sau:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Códigos curtos on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/tags/shortcodes/</link>
+    <description>Recent content in Códigos curtos on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Jan 2023 11:51:36 +0100</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nội dung phong phú</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/rich-content/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo đi kèm với một số &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mã ngắn nội bộ&lt;/a&gt; cho nội dung phong phú, cũng như &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cài đặt quyền riêng tư&lt;/a&gt; và một loạt Mã ngắn đơn giản cho phép nhúng các phiên bản tĩnh và không có JS của các mạng xã hội khác nhau.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Nội dung phong phú hơn</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Hugo Coder cung cấp một số Mã ngắn tùy chỉnh.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;
+  
+  &lt;a class=&#34;heading-link&#34; href=&#34;#heading&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML and CSS only tabs</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</link>
+      <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/html-and-css-only-tabs/</guid>
+      <description>ShortcodesLink to headingNội dung sau:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Sẽ tạo ra:
-Hello
-Hello World!
-Goodbye
-Goodbye Everybody!
-căn lề phải
-Link to heading
-Bạn cũng có thể căn chỉnh các tab sang bên phải:
-{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description></item></channel></rss>
+.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!căn lề phảiLink to headingBạn cũng có thể căn chỉnh các tab sang bên phải:</description>
+    </item>
+    
+  </channel>
+</rss>

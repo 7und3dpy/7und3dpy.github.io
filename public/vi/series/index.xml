@@ -1,1 +1,65 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Series on Trần Minh Tuấn</title><link>https://7und3dpy.github.io/website/vi/series/</link><description>Recent content in Series on Trần Minh Tuấn</description><generator>Hugo -- gohugo.io</generator><language>vi</language><lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/series/index.xml" rel="self" type="application/rss+xml"/><item><title>Bản trình diễn chủ đề</title><link>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</link><pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate><guid>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/series/</link>
+    <description>Recent content in Series on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tâm sự</title>
+      <link>https://7und3dpy.github.io/website/vi/series/t%C3%A2m-s%E1%BB%B1/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/t%C3%A2m-s%E1%BB%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bóng đá</title>
+      <link>https://7und3dpy.github.io/website/vi/series/b%C3%B3ng-%C4%91%C3%A1/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/b%C3%B3ng-%C4%91%C3%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kiến thức cơ bản DSAI</title>
+      <link>https://7und3dpy.github.io/website/vi/series/ki%E1%BA%BFn-th%E1%BB%A9c-c%C6%A1-b%E1%BA%A3n-dsai/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/ki%E1%BA%BFn-th%E1%BB%A9c-c%C6%A1-b%E1%BA%A3n-dsai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>https://7und3dpy.github.io/website/vi/series/latex/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Weka</title>
+      <link>https://7und3dpy.github.io/website/vi/series/weka/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/weka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bản trình diễn chủ đề</title>
+      <link>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</link>
+      <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

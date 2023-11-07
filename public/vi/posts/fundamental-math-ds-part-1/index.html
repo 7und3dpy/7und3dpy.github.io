@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Kiến thức toán cơ bản cho Data Science (phần 1) · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán.">
+<meta name="keywords" content="Blog, Phát triển phần mềm, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kiến thức toán cơ bản cho Data Science (phần 1)"/>
+<meta name="twitter:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán."/>
+
+<meta property="og:title" content="Kiến thức toán cơ bản cho Data Science (phần 1)" />
+<meta property="og:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/fundamental-math-ds-part-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/fundamental-math-ds-part-1/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/website/site.webmanifest">
+<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/fundamental-math-ds-part-1/">EN</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/fundamental-math-ds-part-1/">
+              Kiến thức toán cơ bản cho Data Science (phần 1)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                tháng 7 24, 242412
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/study/">study</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/math/">math</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/data-science/">data science</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/probability-and-statistic/">probability and statistic</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="kiến-thức-toán-cho-lĩnh-vực-data-science-phần-1">
+  Kiến thức toán cho lĩnh vực Data Science (Phần 1)
+  <a class="heading-link" href="#ki%e1%ba%bfn-th%e1%bb%a9c-to%c3%a1n-cho-l%c4%a9nh-v%e1%bb%b1c-data-science-ph%e1%ba%a7n-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Để bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.</p>
+<p><img src="https://cdn-images-1.medium.com/max/1200/1*LzmSYF2pn5ZaBdUZxSM-JA.jpeg" alt=""></p>
+<p>Sự vững chắc về nền tảng toán học hình thành đằng sau các thuật toán sẽ tạo cho bạn một lợi thế không hề nhỏ so khi nghiên cứu và làm việc ở lĩnh vực Data Science. <strong>Bởi hơn hết, doanh nghiệp luôn chỉ trả rất nhiều tiền cho công nghệ bên trong máy móc thay vì người vận hành vốn không có bất kỳ kiến thức chuyên sâu nào về chúng.</strong> Bạn hiểu ý này chứ  ?</p>
+<p>Để tìm hiểu chuyên sâu hơn ta có thể hình dung một quy trình khoa học phổ biến trong xử lý Âm thanh như sau:</p>
+<ul>
+<li>Khai thác thông tin, tính chất vật lý của âm thanh và Mô hình hóa quá trình hình thành chúna</li>
+<li>Xây dựng giả thuyết hình thành về chúng</li>
+<li>Ước tính độ chất lượng của nguồn dữ liệu thu thập được</li>
+<li>Định lượng sự không chắc chắn xung quanh dữ liệu và dự đoán</li>
+<li>Xác định mẫu ẩn từ luồng thông tin</li>
+<li>Khai thác và tìm hiểu giới hạn của một mô hình</li>
+<li>Nghiên cứu bằng chứng toán học và logic trừu tượng đằng sau nó</li>
+</ul>
+<p>Qua đó, ta có thể thấy bản chất của Data Science không gắn liền với một lĩnh vực hay một chủ đề cụ thể mà còn có thể xử lý rất nhiều vấn đề, hiện tượng đa dạng như Chuẩn đoán bệnh ung thư hay dự báo thời tiết.</p>
+<h1 id="1-tìm-hiểu-về-biến-hàm-số-phương-trình-và-đồ-thị">
+  1) Tìm hiểu về Biến, Hàm số, Phương trình và Đồ thị
+  <a class="heading-link" href="#1-t%c3%acm-hi%e1%bb%83u-v%e1%bb%81-bi%e1%ba%bfn-h%c3%a0m-s%e1%bb%91-ph%c6%b0%c6%a1ng-tr%c3%acnh-v%c3%a0-%c4%91%e1%bb%93-th%e1%bb%8b">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Các lĩnh vực Toán học những điều cơ bản chúng ta vốn đọc học từ Trung học trở đi. Hãy cùng Ad tổng hợp một số nền tảng cơ bản này nhé:</p>
+<ul>
+<li>Hàm số logarit, hàm mũ, hàm số đa thức, số hữu tỉ</li>
+<li>Hình học và định lý cơ bản, kiến thức về lượng giác</li>
+<li>Số thực và số phức cùng những tính chất cơ bản</li>
+<li>Kiến thức về Chuỗi, tổng, bất đẳng thức</li>
+<li>Vẽ và biểu diễn đồ thị, kiến thức về tọa độ Descartes và toạ độ cực, đường conic</li>
+</ul>
+<h3 id="những-kiến-thức-này-vận-dụng-ra-sao-">
+  Những kiến thức này vận dụng ra sao ?
+  <a class="heading-link" href="#nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-n%c3%a0y-v%e1%ba%adn-d%e1%bb%a5ng-ra-sao-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Với những lập trình viên thì chúng ta đều đã tìm hiểu qua các thuật toán tìm kiếm và sắp xếp. Và nếu như bạn chưa biết đến thì Ad có thể giải thích như sau:</p>
+<ul>
+<li>Thuật toán tìm kiếm như việc bạn tìm kiếm số thứ tự của mình trong phòng thi trong danh sách.</li>
+<li>Thuật toán sắp xếp đơn thuần là việc sắp xếp các phần tử trong danh sách theo thứ tự tăng và giảm dần. Và với lập trình cài đặt trên máy tính thì từng thuật toán sắp xếp khác nhau sẽ thực hiện trong các mốc thời gian khác nhau. Thuật toán thực hiện nhanh hay chậm còn phụ thuộc vào các yếu tố khác như kích thước bộ dữ liệu, độ phức tạp của thuật toán, &hellip;</li>
+</ul>
+<p>Qua đó, nếu Ad ứng dụng chúng để tối ưu việc tìm kiếm trên Cơ sở dữ liệu với hàng chục triệu phần tử thì sẽ không khó khăn khi chúng ta bắt gặp khái niệm &ldquo;Binary Search&rdquo;. Tuy nhiên nếu muốn tối ưu chương trình thì ta không chỉ ngồi đó và áp source code có sẵn vào để test đúng không nào? ^^</p>
+<p>Để một chương trình tìm kiếm được tối ưu, ta phải cần hiểu về khái niệm logarit lẫn sự lặp lại của phương trình. Qua việc tính toán trong thời gian chạy logarit, bạn có thể hình dung ra những không gian tìm kiếm phù hợp cho thuật toán nhằm xây dựng cấu trúc dữ liệu phù hợp.</p>
+<p>Chính vì thế &ldquo;Binary Search&rdquo; luôn xuất hiện nhiều biến thể với hiệu suất ngày càng tăng.</p>
+<p>Tham khảo Binary search Algorithm: <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm"  class="external-link" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Binary_search_algorithm</a></p>
+<h3 id="bạn-có-thể-bổ-sung-kiến-thức-về-toán-ở-đâu-">
+  Bạn có thể bổ sung kiến thức về Toán ở đâu ?
+  <a class="heading-link" href="#b%e1%ba%a1n-c%c3%b3-th%e1%bb%83-b%e1%bb%95-sung-ki%e1%ba%bfn-th%e1%bb%a9c-v%e1%bb%81-to%c3%a1n-%e1%bb%9f-%c4%91%c3%a2u-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Website Machine Learning cơ bản: <a href="https://machinelearningcoban.com/math/#luu-y-ve-ky-hieu"  class="external-link" target="_blank" rel="noopener">https://machinelearningcoban.com/math/#luu-y-ve-ky-hieu</a></li>
+<li>Data Science Math Skills - Coursera: <a href="https://www.coursera.org/learn/datasciencemathskills"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/learn/datasciencemathskills</a></li>
+<li>Introduction to Algebra - edX: <a href="https://www.edx.org/course/introduction-algebra-schoolyourself-algebrax-1"  class="external-link" target="_blank" rel="noopener">https://www.edx.org/course/introduction-algebra-schoolyourself-algebrax-1</a></li>
+<li>Algebra I - Khan Academy: <a href="https://www.khanacademy.org/math/algebra"  class="external-link" target="_blank" rel="noopener">https://www.khanacademy.org/math/algebra</a></li>
+</ul>
+<p><strong>Lưu ý: Bạn có thể xin Financial Aid để được học free + cấp giấy chứng nhận của các khoá trên Coursera. Bật mí một tý là Ad từng xin Financial Aid thành công 2 khoá rồi đó nha ^^</strong></p>
+<h3 id="2-kiến-thức-về-thống-kê-statistics">
+  2) Kiến thức về Thống kê (Statistics)
+  <a class="heading-link" href="#2-ki%e1%ba%bfn-th%e1%bb%a9c-v%e1%bb%81-th%e1%bb%91ng-k%c3%aa-statistics">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><img src="https://www.joshuanhook.com/wp-content/uploads/2017/06/statistics-denial-statistics-debacles-Malfeasance.jpg" alt=""></p>
+<p>Cho tới nay, nhiều bạn thường cho rằng Thống kê chủ yếu thuộc về phạm trù Kinh tế. Nhưng có lẽ bạn sẽ bất ngờ thực sự vì chúng liên quan đến Data Science rất nhiều là đằng khác.</p>
+<p>Có thể nói nếu bạn đã theo lĩnh vực Data Science việc hiểu biết Lập trìn hay ngôn ngữ cũng chỉ là công cụ. Cái cốt lõi mà người học Data Science lẫn Machine Learning (Máy học) <strong>phải nắm thật vững là Toán và Xác suất thống kê</strong>.</p>
+<p>Nếu nói theo một cách tán gẫu, ta còn có một công thức: 
+<strong>Data Science = Big Data + Statistics + Computer Science</strong></p>
+<p>Và hiện nay thì Việt Nam chúng ta luôn đầy rẫy những vấn đề thực tế. Với chủ đề rộng lớn như vậy thì việc lập ra kế hoạch là vô cùng quan trọng để đảm bảo chúng ta luôn bao quát mọi thứ:</p>
+<ul>
+<li>Tóm tắt dữ liệu và thống kê mô tả, xu hướng trung tâm, phương sai, hiệp phương sai, tương quan</li>
+<li>Xác suất cơ bản: cơ bản, kỳ vọng, tính toán xác suất, định lý Bayes, xác suất có điều kiện</li>
+<li>Các hàm phân phối xác suất: thống nhất, bình thường, nhị thức, bình phương, định lý giới hạn trung tâm</li>
+<li>Lấy mẫu, đo lường, tạo số ngẫu nhiên</li>
+<li>Kiểm tra giả thuyết lẫn độ tin cậy, độ lỗi,&hellip;</li>
+<li>Hồi quy tuyến tính, kỹ thuật chính quy hoá</li>
+</ul>
+<h3 id="những-kiến-thức-này-vận-dụng-ra-sao--1">
+  Những kiến thức này vận dụng ra sao ?
+  <a class="heading-link" href="#nh%e1%bb%afng-ki%e1%ba%bfn-th%e1%bb%a9c-n%c3%a0y-v%e1%ba%adn-d%e1%bb%a5ng-ra-sao--1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Những kiến thức về Toán, Thống kê,&hellip; chính là điểm khác biệt trong Mindset của một Data Science. Nhiệm vụ của bạn chính là đặt câu hỏi và tìm hiểu thật kỹ vấn đề thực tế mình cần giải quyết. Một khi vấn đề được xác định thì đó là lúc bạn sẽ tiến hành thu thập dữ liệu và phân tích thật kỹ lưỡng không khác gì Sherlock Holmes.</p>
+<p>Với kiến thức về Toán lẫn Thống kê, bạn có thể tự đặt ra những giả thuyết về dữ liệu mình đang xét hay phán đoán kết quả từ giải thuyết và không ngừng hình thành những câu hỏi mới nhằm phân tích dữ liệu thật chuẩn xác.</p>
+<h3 id="bạn-có-thể-bổ-sung-kiến-thức-về-thống-kê-ở-đâu-">
+  Bạn có thể bổ sung kiến thức về Thống kê ở đâu ?
+  <a class="heading-link" href="#b%e1%ba%a1n-c%c3%b3-th%e1%bb%83-b%e1%bb%95-sung-ki%e1%ba%bfn-th%e1%bb%a9c-v%e1%bb%81-th%e1%bb%91ng-k%c3%aa-%e1%bb%9f-%c4%91%c3%a2u-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Statistics and Probability in Data Science using Python - edX: <a href="https://courses.edx.org/courses/course-v1:UCSanDiegoX&#43;DSE210x&#43;3T2017/course/"  class="external-link" target="_blank" rel="noopener">https://courses.edx.org/courses/course-v1:UCSanDiegoX+DSE210x+3T2017/course/</a></li>
+<li>Data Science - D2Academics: <a href="https://d2academics.thinkific.com/courses/take/data-science/"  class="external-link" target="_blank" rel="noopener">https://d2academics.thinkific.com/courses/take/data-science/</a></li>
+<li>Statistics with R Specialization - Coursera: <a href="https://www.coursera.org/specializations/statistics"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/specializations/statistics</a></li>
+<li>Business Statistics and Analysis Specialization - Coursera: <a href="https://www.coursera.org/specializations/business-statistics-analysis"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/specializations/business-statistics-analysis</a></li>
+<li>(Sách tiếng Việt) Phân Tích Dữ Liệu Với R – Hỏi Và Đáp (Tái Bản 2018) - Nguyễn Văn Tuấn</li>
+</ul>
+<p>Qua phần đầu của chủ đề <strong>Kiến thức toán cho lĩnh vực Data Science</strong>, mình mong rằng có thể cung cấp đến các bạn một chút hành trang trên con đường trở thành những Data Scientist thực thụ. Những kiến thức về Toán còn lại sẽ được Ad đề cập tại phần sau, hãy theo dõi mình để luôn cập nhật những bài post mới nhất các bạn nhé!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-kiến-thức-cơ-bản-dsai">
+        See also in Kiến thức cơ bản DSAI
+        <a class="heading-link" href="#see-also-in-ki%e1%ba%bfn-th%e1%bb%a9c-c%c6%a1-b%e1%ba%a3n-dsai">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/fundamental-math-ds-part-2/">Kiến thức toán cơ bản cho Data Science (phần 2)</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

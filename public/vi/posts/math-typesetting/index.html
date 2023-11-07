@@ -1,33 +1,388 @@
-<!doctype html><html lang=vi><head><title>Cấu hình của các phương trình toán học · Trần Minh Tuấn</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Trần Minh Tuấn"><meta name=description content="Hướng dẫn nhanh về sử dụng KaTeX"><meta name=keywords content="Blog,Phát triển phần mềm,Sở thích cá nhân"><meta name=twitter:card content="summary"><meta name=twitter:title content="Cấu hình của các phương trình toán học"><meta name=twitter:description content="Hướng dẫn nhanh về sử dụng KaTeX"><meta property="og:title" content="Cấu hình của các phương trình toán học"><meta property="og:description" content="Hướng dẫn nhanh về sử dụng KaTeX"><meta property="og:type" content="article"><meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/math-typesetting/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-07-10T00:00:00+00:00"><meta property="article:modified_time" content="2023-07-10T00:00:00+00:00"><link rel=canonical href=https://7und3dpy.github.io/website/vi/posts/math-typesetting/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin=anonymous media=screen><link rel=stylesheet href=/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/website/vi>Trần Minh Tuấn</a>
-<input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/website/vi/about/>Về tôi</a></li><li class=navigation-item><a class=navigation-link href=/website/vi/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/website/vi/projects/>Các dự án</a></li><li class=navigation-item><a class=navigation-link href=/website/vi/contact/>Liên lạc</a></li><li class="navigation-item menu-separator"><span>|</span></li><li class=navigation-item><a href=/website/posts/math-typesetting/>EN</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://7und3dpy.github.io/website/vi/posts/math-typesetting/>Cấu hình của các phương trình toán học</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
-<time datetime=2023-07-10T00:00:00Z>tháng 7 10, 101012</time></span>
-<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
-One-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
-<a href=/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/>Trần Minh Tuấn</a></div><div class=categories><i class="fa fa-folder" aria-hidden=true></i>
-<a href=/website/vi/categories/c%C3%BA-ph%C3%A1p/>Cú pháp</a>
-<span class=separator>•</span>
-<a href=/website/vi/categories/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/>Bản trình diễn chủ đề</a></div><div class=tags><i class="fa fa-tag" aria-hidden=true></i>
-<span class=tag><a href=/website/vi/tags/hugo/>hugo</a></span>
-<span class=separator>•</span>
-<span class=tag><a href=/website/vi/tags/markdown/>markdown</a></span>
-<span class=separator>•</span>
-<span class=tag><a href=/website/vi/tags/css/>css</a></span>
-<span class=separator>•</span>
-<span class=tag><a href=/website/vi/tags/html/>html</a></span></div></div></header><div class=post-content><p>Trong một dự án Hugo, các ký hiệu toán học có thể được sử dụng với sự trợ giúp của các thư viện JavaScript của bên thứ ba.</p><p>Trong ví dụ này, chúng ta sẽ sử dụng <a href=https://katex.org/ class=external-link target=_blank rel=noopener>KaTeX</a>.</p><ul><li>Tạo một phần mẫu trong <code>/layouts/partials/math.html</code></li><li>Bên trong, sử dụng <a href=https://katex.org/docs/autorender.html class=external-link target=_blank rel=noopener>Auto-render Extension</a> hoặc phục vụ các tập lệnh cục bộ.</li><li>Bao gồm một phần trong các mẫu của bạn như sau:</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=o>{{</span> <span class=k>if</span> or .Params.math .Site.Params.math <span class=o>}}</span>
-</span></span><span class=line><span class=cl><span class=o>{{</span> partial <span class=s2>&#34;math.html&#34;</span> . <span class=o>}}</span>
-</span></span><span class=line><span class=cl><span class=o>{{</span> end <span class=o>}}</span>
-</span></span></code></pre></div><ul><li>Để bật KaTex trên toàn cầu, hãy đặt tham số <code>math</code> thành <code>true</code> trong cấu hình dự án</li><li>Để bật KaTex trên các trang cụ thể, hãy bao gồm tham số <code>math: true</code> trong tệp nội dung</li></ul><p><strong>Nota:</strong> Sử dụng tài liệu tham khảo trực tuyến <a href=https://katex.org/docs/supported.html class=external-link target=_blank rel=noopener>Supported TeX Functions</a> làm cơ sở để tạo ra các kí hiệu toán học.</p><h3 id=examples>Examples
-<a class=heading-link href=#examples><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><p>Ký hiệu khối:</p><p>$$
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Cấu hình của các phương trình toán học · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Hướng dẫn nhanh về sử dụng KaTeX">
+<meta name="keywords" content="Blog, Phát triển phần mềm, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cấu hình của các phương trình toán học"/>
+<meta name="twitter:description" content="Hướng dẫn nhanh về sử dụng KaTeX"/>
+
+<meta property="og:title" content="Cấu hình của các phương trình toán học" />
+<meta property="og:description" content="Hướng dẫn nhanh về sử dụng KaTeX" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/math-typesetting/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-10T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/math-typesetting/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/website/site.webmanifest">
+<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/math-typesetting/">EN</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/math-typesetting/">
+              Cấu hình của các phương trình toán học
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-10T00:00:00Z">
+                tháng 7 10, 101012
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/c%C3%BA-ph%C3%A1p/">Cú pháp</a>
+      <span class="separator">•</span>
+    <a href="/website/vi/categories/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/">Bản trình diễn chủ đề</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/hugo/">hugo</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/markdown/">markdown</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/css/">css</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/html/">html</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Trong một dự án Hugo, các ký hiệu toán học có thể được sử dụng với sự trợ giúp của các thư viện JavaScript của bên thứ ba.</p>
+<p>Trong ví dụ này, chúng ta sẽ sử dụng <a href="https://katex.org/"  class="external-link" target="_blank" rel="noopener">KaTeX</a>.</p>
+<ul>
+<li>Tạo một phần mẫu trong <code>/layouts/partials/math.html</code></li>
+<li>Bên trong, sử dụng <a href="https://katex.org/docs/autorender.html"  class="external-link" target="_blank" rel="noopener">Auto-render Extension</a> hoặc phục vụ các tập lệnh cục bộ.</li>
+<li>Bao gồm một phần trong các mẫu của bạn như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
+<span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
+<span class="o">{{</span> end <span class="o">}}</span>
+</code></pre></div><ul>
+<li>Để bật KaTex trên toàn cầu, hãy đặt tham số <code>math</code> thành <code>true</code> trong cấu hình dự án</li>
+<li>Để bật KaTex trên các trang cụ thể, hãy bao gồm tham số <code>math: true</code> trong tệp nội dung</li>
+</ul>
+<p><strong>Nota:</strong> Sử dụng tài liệu tham khảo trực tuyến <a href="https://katex.org/docs/supported.html"  class="external-link" target="_blank" rel="noopener">Supported TeX Functions</a> làm cơ sở để tạo ra các kí hiệu toán học.</p>
+<h3 id="examples">
+  Examples
+  <a class="heading-link" href="#examples">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Ký hiệu nội tuyến: 
+$$
+\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…
+$$</p>
+<p>Ký hiệu khối:</p>
+<p>$$
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p></div><footer><section class=see-also><h3 id=see-also-in-bản-trình-diễn-chủ-đề>See also in Bản trình diễn chủ đề
-<a class=heading-link href=#see-also-in-b%e1%ba%a3n-tr%c3%acnh-di%e1%bb%85n-ch%e1%bb%a7-%c4%91%e1%bb%81><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
-<span class=sr-only>Link to heading</span></a></h3><nav><ul><li><a href=/website/vi/posts/markdown-syntax/>Hướng dẫn cú pháp Markdown</a></li><li><a href=/website/vi/posts/rich-content/>Nội dung phong phú</a></li><li><a href=/website/vi/posts/more-rich-content/>Nội dung phong phú hơn</a></li><li><a href=/website/vi/posts/html-and-css-only-tabs/>HTML and CSS only tabs</a></li><li><a href=/website/vi/posts/mermaid-support/>Mermaid JS support</a></li></ul></nav></section></footer></article><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css integrity=sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0 crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js integrity=sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4 crossorigin=anonymous></script>
-<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})'></script></section></div><footer class=footer><section class=container>©
-2023
-Trần Minh Tuấn
-·
-Licensed under <a rel=license href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA-4.0</a>
-·
-Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>
+$$</p>
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-bản-trình-diễn-chủ-đề">
+        See also in Bản trình diễn chủ đề
+        <a class="heading-link" href="#see-also-in-b%e1%ba%a3n-tr%c3%acnh-di%e1%bb%85n-ch%e1%bb%a7-%c4%91%e1%bb%81">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/vi/posts/markdown-syntax/">Hướng dẫn cú pháp Markdown</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/rich-content/">Nội dung phong phú</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/more-rich-content/">Nội dung phong phú hơn</a>
+            </li>
+          
+        
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/html-and-css-only-tabs/">HTML and CSS only tabs</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/mermaid-support/">Mermaid JS support</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
