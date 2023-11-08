@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://7und3dpy.github.io/website/vi/authors/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,70 @@
                 hreflang="vi"
                 href="https://7und3dpy.github.io/website/vi/authors/"
                 />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/posts/20milestone/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/posts/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/posts/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/series/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/series/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/tags/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/%C4%91%E1%BB%9Di/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://7und3dpy.github.io/website/vi/categories/</loc>
     <lastmod>2023-08-04T00:00:00+00:00</lastmod>
@@ -65,61 +129,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://7und3dpy.github.io/website/vi/posts/professor-tam-huyet/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/posts/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/posts/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/series/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/series/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/tags/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/tags/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/</loc>
-    <lastmod>2023-08-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/"
                 />
   </url><url>
     <loc>https://7und3dpy.github.io/website/vi/series/t%C3%A2m-s%E1%BB%B1/</loc>
@@ -309,9 +318,6 @@
     <loc>https://7und3dpy.github.io/website/vi/tags/weka/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/series/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</loc>
-    <lastmod>2023-07-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://7und3dpy.github.io/website/vi/categories/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</loc>
     <lastmod>2023-07-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -396,6 +402,19 @@
                 href="https://7und3dpy.github.io/website/vi/posts/rich-content/"
                 />
   </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/shortcodes/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/tags/shortcodes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/tags/shortcodes/"
+                />
+  </url><url>
     <loc>https://7und3dpy.github.io/website/vi/posts/more-rich-content/</loc>
     <lastmod>2023-07-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -451,6 +470,45 @@
                 href="https://7und3dpy.github.io/website/vi/posts/mermaid-support/"
                 />
   </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/projects/cusbehamodel/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/projects/cusbehamodel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/projects/cusbehamodel/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/applied-statistic-and-experimental-design/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/tags/applied-statistic-and-experimental-design/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/tags/applied-statistic-and-experimental-design/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/projects/winvslinux/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/projects/winvslinux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/projects/winvslinux/"
+                />
+  </url><url>
     <loc>https://7und3dpy.github.io/website/vi/tags/emoji/</loc>
     <lastmod>2023-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -464,6 +522,19 @@
                 href="https://7und3dpy.github.io/website/vi/tags/emoji/"
                 />
   </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/projects/evalielts/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/projects/evalielts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/projects/evalielts/"
+                />
+  </url><url>
     <loc>https://7und3dpy.github.io/website/vi/posts/emoji-support/</loc>
     <lastmod>2023-07-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -475,6 +546,84 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://7und3dpy.github.io/website/vi/posts/emoji-support/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/machine-learning/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/tags/machine-learning/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/tags/machine-learning/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/tags/project1/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/tags/project1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/tags/project1/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/series/projects/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/series/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/series/projects/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/categories/projects/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/categories/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/categories/projects/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/projects/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/projects/"
+                />
+  </url><url>
+    <loc>https://7und3dpy.github.io/website/vi/authors/turio/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://7und3dpy.github.io/website/authors/turio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://7und3dpy.github.io/website/vi/authors/turio/"
                 />
   </url><url>
     <loc>https://7und3dpy.github.io/website/vi/tags/text/</loc>
@@ -501,48 +650,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://7und3dpy.github.io/website/vi/posts/placeholder-text/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/authors/list/</loc>
-    <lastmod>2023-01-05T01:15:52+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/authors/hugo-authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/authors/list/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/categoria/temas/</loc>
-    <lastmod>2023-01-04T23:21:18+01:00</lastmod>
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/categoria/sintaxe/</loc>
-    <lastmod>2023-01-04T23:21:06+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/categories/syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/categoria/sintaxe/"
-                />
-  </url><url>
-    <loc>https://7und3dpy.github.io/website/vi/tags/shortcodes/</loc>
-    <lastmod>2023-01-04T11:51:36+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://7und3dpy.github.io/website/tags/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://7und3dpy.github.io/website/vi/tags/shortcodes/"
                 />
   </url><url>
     <loc>https://7und3dpy.github.io/website/vi/projects/</loc>
