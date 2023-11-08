@@ -33,20 +33,19 @@ Nhưng mà lập trình bằng ngôn ngữ gì bây giờ? Đây là câu hỏi 
 
 Thôi đi thẳng vào vấn đề, học những gì: Theo tôi đã và đang học và tiếp tục tự học bên ngoài thì sẽ tự học các vấn đề sau đây: 
 - Các kiến thức chung mà ngành IT nào cũng học qua: 
-+ Những môn tôi đã học: 
+    * Những môn tôi đã học: 
 
-Nhập môn Lập trình, Cấu trúc Dữ Liệu và Giải Thuật, Toán rời rạc (kì này đang cải thiện),  Cơ sở dữ liêu, Lập trình hướng đối tượng, Kiến Trúc Máy Tính (kì này đang cải thiện)
+    Nhập môn Lập trình, Cấu trúc Dữ Liệu và Giải Thuật, Toán rời rạc (kì này đang cải thiện),  Cơ sở dữ liêu, Lập trình hướng đối tượng, Kiến Trúc Máy Tính (kì này đang cải thiện)
 
-+ Những môn tôi kì này đang học (thề khó nhai lắm)
+    * Những môn tôi kì này đang học (thề khó nhai lắm)
 
-Nhập Môn An Toàn Thông Tin, Hệ Điều Hành, Mạng Máy Tính
+    Nhập Môn An Toàn Thông Tin, Hệ Điều Hành, Mạng Máy Tính
 
-Ngoài ra, kì này tôi còn học một số môn mà tôi thấy khá quan trọng trong ATTT mà chương trinh đào tạo đã gợi ý là: Phát triển ứng dụng trên thiết bị di động, Hệ thống xác thực Sinh Trắc học. Những môn này OK về bề ngoài nhưng tôi sẽ bóc phốt ở phần sau. 
+    Ngoài ra, kì này tôi còn học một số môn mà tôi thấy khá quan trọng trong ATTT mà chương trinh đào tạo đã gợi ý là: Phát triển ứng dụng trên thiết bị di động, Hệ thống xác thực Sinh Trắc học. Những môn này OK về bề ngoài nhưng tôi sẽ bóc phốt ở phần sau. 
 
-+ Ngoài ra còn một số môn mà tôi sẽ phải học và những môn đó tôi nghĩ là cần thiết với ATTT
+    * Ngoài ra còn một số môn mà tôi sẽ phải học và những môn đó tôi nghĩ là cần thiết với ATTT
 
-Lập trình hệ thống, Mật mã ứng dụng, An ninh Mạng (Nên nhớ An ninh mạng khác Nhập môn ATTT, đại khái An ninh mạng là liên quan về mạng máy tính nhiều, còn cái kia sẽ giới thiệu ATTT và liên quan tới các thuật toán mật mã hóa nhiều, thế là tôi có tận 2 môn ch- Khó khăn thứ ba là các mối quan hệ, bình thường tôi đã là một người ít nói, gần như không có ai mà để có thể gọi là bạn thân đúng nghĩa đen cả từ hồi cấp 3 tới giờ, thật ra tôi cũng kỳ vọng ở đại học sẽ tìm được ai đó hợp cạ với mình, có thể gọi là bạn thân nhất nhưng đến tận bây giờ sắp hết thời sinh viên rồi, có vẻ sẽ chẳng có ai có thể nói là thân nhất đối với tôi cả. Nói chung cũng khá là buồn vì tôi còn mắc một số bệnh khác (tôi không tiện nói ra vì nó liên quan tới sự riêng tư của bản thân) nhưng nhiều lúc tôi cũng cảm thấy chán nản với thất vọng về bản thân. 
-uyên hẳn về mật mã hóa, khá là đau đầu vì tương đối nhiều toán và tư duy nhiều), Phát triển ứng dụng Web an toàn, Điều tra số, An toàn phần mềm, Phân tích mã độc, Phòng chống tấn công mạng, Kiểm thử xâm nhập.
+    Lập trình hệ thống, Mật mã ứng dụng, An ninh Mạng (Nên nhớ An ninh mạng khác Nhập môn ATTT, đại khái An ninh mạng là liên quan về mạng máy tính nhiều, còn cái kia sẽ giới thiệu ATTT và liên quan tới các thuật toán mật mã hóa nhiều, thế là tôi có tận 2 môn chuyên hẳn về mật mã hóa, khá là đau đầu vì tương đối nhiều toán và tư duy nhiều), Phát triển ứng dụng Web an toàn, Điều tra số, An toàn phần mềm, Phân tích mã độc, Phòng chống tấn công mạng, Kiểm thử xâm nhập.
 
 Còn nhiều môn khác cơ sở ngành cũng như chuyên ngành mà tôi cũng chưa được học nhưng tôi nghĩ những cái kia trường dạy là quan trọng nhất.
 
@@ -88,7 +87,8 @@ Dưới đây là một số ảnh mà bạn có thể tham khảo, tôi hy vọ
 ![image](images/salary1.jpg)
 ![Bảo sao tôi luôn thấy bận rộn :)](images/baosaothayban.jpg)
 # Tài liệu tham khảo
-- https://whitehat.vn/threads/lam-an-toan-thong-tin-thi-hoc-gi.5281/ - Bài này viết từ tận 2015 rồi mà giờ 2023 tức họ cũng đã phát triển lên trình nhanh hơn mình ít nhất là 10 năm rồi
+- https://whitehat.vn/threads/lam-an-toan-thong-tin-thi-hoc-gi.5281/ -
+  Bài này viết từ tận 2015 rồi mà giờ 2023 tức họ cũng đã phát triển lên trình nhanh hơn mình ít nhất là 10 năm rồi
 - https://blog.cyberjutsu.io/2021/08/09/hoc-an-toan-thong-tin/ 
 - https://vnhacker.blogspot.com/2012/05/lam-toan-thong-tin-thi-hoc-gi.html
 - https://l4w.io/2017/07/bat-dau-hoc-an-toan-thong-tin-nhu-the-nao/
