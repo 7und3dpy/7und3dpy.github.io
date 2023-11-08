@@ -1,5 +1,5 @@
-baseURL = "https://7und3dpy.github.io/website"
-title = "7und3dpy"
+baseURL = "https://7und3dpy.github.io/website/"
+# title = "7und3dpy"
 theme = ["hugo-coder","hugo-embed-pdf-shortcode"]
 enableInlineShortcodes = true
 languageCode = "en"
@@ -166,6 +166,9 @@ type = "application/rss+xml"
 
 [languages.en]
 languageName = "EN"
+title = "Turio"
+contentDir = "content/en"
+
 
 [[languages.en.menu.main]]
 name = "About"
@@ -191,13 +194,14 @@ url = "contact/"
 
 [languages.vi]
 languageName = "VI"
+contentDir = "content/vn"
 title = "Trần Minh Tuấn"
 
 [languages.vi.params]
 author = "Trần Minh Tuấn"
 avatarURL = "images/chandung.jpg"
 info = "Sinh viên ngành An Toàn Thông Tin"
-#description = "Sítio pessoal de João Ninguém"
+
 keywords = "Blog, Phát triển phần mềm, Sở thích cá nhân"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 dateFormat = "January 2, 2023"
