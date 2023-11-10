@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Introduction to LATEX · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="7und3dpy">
+<meta name="description" content="Sample article demonstrating basic LaTeX syntax.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to LATEX"/>
+<meta name="twitter:description" content="Sample article demonstrating basic LaTeX syntax."/>
+
+<meta property="og:title" content="Introduction to LATEX" />
+<meta property="og:description" content="Sample article demonstrating basic LaTeX syntax." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/introtolatex/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Turio" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/introtolatex/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/website/site.webmanifest">
+<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/posts/introtolatex/">VI</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/introtolatex/">
+              Introduction to LATEX
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                July 24, 242412
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/turio/">Turio</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/study/">study</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/latex/">latex</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="1-what-is-latex">
+  1. What is LATEX?
+  <a class="heading-link" href="#1-what-is-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><img src="https://i.stack.imgur.com/t5VF4.png" alt=""></p>
+<p>LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.</p>
+<p>LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</p>
+<p>The hallmark of LaTeX is its focus on encouraging users to concentrate on content creation while leaving the formatting to the computer[1].</p>
+<h1 id="2-exploring-latex">
+  2. Exploring LaTeX
+  <a class="heading-link" href="#2-exploring-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="21-benefits-of-latex">
+  2.1. Benefits of LaTeX
+  <a class="heading-link" href="#21-benefits-of-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>LaTeX offers consistency: line spacing, font size, colors, formatting, and more, allowing you flexibility when switching to different documents.</li>
+<li>It automates many tasks: chapter numbering, header creation, table and image generation, references, and more.</li>
+<li>Automatic and consistent citation of reference documents with a neat presentation format.</li>
+<li>LaTeX enables easy rendering of mathematical equations, for example:
+$$E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$$</li>
+<li>LaTeX is efficient for working on large projects, allowing you to format hundreds or thousands of pages within a single low-sized .tex file for easy document management.</li>
+<li>LaTeX now has a vast library of packages that aid users in various tasks such as adding footnotes, creating diagrams, generating tables, and more.</li>
+<li>LaTeX also has specialized packages for scientific paper writing, presentations, and spreadsheet functionality.</li>
+</ul>
+<p><img src="https://i.stack.imgur.com/ecqMl.jpg" alt="">
+<em><strong>Image 01:</strong></em> <em>One of the benefits LaTeX provides is ease of text formatting.</em></p>
+<h2 id="22-disadvantages-of-latex">
+  2.2. Disadvantages of LaTeX.
+  <a class="heading-link" href="#22-disadvantages-of-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>It takes time to build a consistent structure for documents, such as formatting for scientific papers.</li>
+<li>Writing in LaTeX can be somewhat akin to programming, making it time-consuming when dealing with minor errors.</li>
+<li>Learning and becoming proficient in LaTeX requires a significant time investment.</li>
+</ul>
+<h2 id="23-some-latex-editors-to-consider">
+  2.3. Some LaTeX Editors to Consider.
+  <a class="heading-link" href="#23-some-latex-editors-to-consider">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>MiKTeX (Bundle) (Windows)</li>
+<li><strong>Overleaf (Collaborative Online Editor)</strong></li>
+<li>Mactex (Bundle) (Mac)</li>
+<li>Texlive (Bundle) (Linux)</li>
+<li>Lyx (Bundle &amp; Editor) (Windows, Mac, Linux)</li>
+<li>Texmaker (Windows, Mac, Linux)</li>
+</ul>
+<p>In this article, we will delve into the detailed usage of LaTeX through the Overleaf editor. To get started, you can access Overleaf right <a href="https://www.overleaf.com/"  class="external-link" target="_blank" rel="noopener">here</a>.</p>
+<p><img src="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL" alt="">
+<em><strong>Image 02:</strong></em> <em>The LaTeX Editing Environment on Overleaf.</em></p>
+<h1 id="3-learn-about-overleaf">
+  3. Learn about Overleaf.
+  <a class="heading-link" href="#3-learn-about-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="31-key-features-of-overleaf">
+  3.1. Key Features of Overleaf.
+  <a class="heading-link" href="#31-key-features-of-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png" alt=""></p>
+<p>Overleaf is a free, web-based collaborative LaTeX editor. Overleaf has several distinctive and truly useful features for anyone needing to write and collaborate with various stakeholders.</p>
+<p>In this blog, <strong>If you are not already familiar with LaTeX</strong> please refer to some basic LaTeX syntax at <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29"  class="external-link" target="_blank" rel="noopener">here</a>. After that, I will provide you with a basic standard for text composition with LaTeX. Don&rsquo;t hesitate to copy the LaTeX code snippets and make gradual adjustments to familiarize yourself!</p>
+<h2 id="32-creating-a-latex-project-on-overleaf">
+  3.2. Creating a LaTeX Project on Overleaf.
+  <a class="heading-link" href="#32-creating-a-latex-project-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Above all, I still encourage you to learn how to use LaTeX</strong>. LaTeX is not at all difficult to learn, and there is virtually endless information and guidance available on the internet about using LaTeX. You don&rsquo;t need to be an expert in LaTeX (although some commands and usage will be necessary), and you will have an excellent system to automate the organization of your writing.
+Let&rsquo;s explore the following steps together.</p>
+<h2 id="step-1---register-an-account-on-overleaf">
+  Step 1 - Register an Account on Overleaf
+  <a class="heading-link" href="#step-1---register-an-account-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>To use Overleaf, you&rsquo;ll need to create an account. You can access and register <a href="https://www.overleaf.com/register?source=post_page-----6599268c095f----------------------"  class="external-link" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="bước-2---create-a-new-project-after-registering-on-overleaf">
+  Bước 2 - Create a New Project After Registering on Overleaf
+  <a class="heading-link" href="#b%c6%b0%e1%bb%9bc-2---create-a-new-project-after-registering-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW" alt=""></p>
+<ol>
+<li>When you log in, you will see a box labeled <strong>New Project</strong>. Click on this box to start creating a project. A project in Overleaf is a folder containing various files.</li>
+<li>If you&rsquo;ve received a URL in your email from someone with a document, and you&rsquo;re asked to click on the URL to access the document, you already have a document to work on. So, just logging in will take you to that document.</li>
+<li>When you click on <strong>New Project</strong>, you will see a number of standard templates that Overleaf has prepared for you, such as the <strong>Sample Project</strong>. However, we should begin with a <strong>Blank Project</strong> to get a better understanding of LaTeX operations on Overleaf.</li>
+</ol>
+<p><img src="https://i.imgur.com/8Nccg2x.png?1" alt="">
+<em><strong>Ảnh 03</strong></em>: <em>Basic Text Editing Environment on Overleaf.</em></p>
+<p>Let&rsquo;s go through it from left to right:</p>
+<ol>
+<li>At the top, you&rsquo;ll see the <strong>Menu</strong> - this contains functions like Download project, copy project, word count, headings, Git/Dropbox integration, and advanced settings.
+<img src="https://i.imgur.com/81fvwmk.png?1" alt=""></li>
+<li>Also on the left, you&rsquo;ll find a sidebar that resembles a file manager. By default, you select and compile the <strong>main.tex</strong> file. You can upload additional text documents or images. Next to it, occupying about half of the screen is the LaTeX document display with two options: <strong>Source</strong> or <strong>Rich Text</strong>.</li>
+<li>The right half of the screen displays the output when you export to PDF format. The document will be compiled and displayed automatically. You can choose <strong>Recompile</strong> to manually update if needed. Under <strong>Recompile</strong>, you can also choose between turning on/off automatic compilation, fast compile (draft mode with quick saving), normal compile, or syntax check before compilation.
+<img src="https://i.imgur.com/igRmUCh.png?1" alt=""></li>
+<li>The next button to focus on is the <strong>Download PDF</strong> button - the second white icon from  <strong>Recompile</strong>. This button quickly saves the document as a PDF.</li>
+<li>At the top-right corner, you&rsquo;ll find the <strong>Share</strong> button - you can select <strong>Turn on link sharing</strong> to allow anyone with the link to access and edit the document. If it&rsquo;s a private document, you can invite collaborators manually via email.</li>
+<li>Next to the <strong>Share</strong> button, you&rsquo;ll find the <strong>Submit</strong> button - this allows you to submit your document directly to reputable scientific conferences and journals. It&rsquo;s one of the unique features of <strong>Overleaf</strong>.</li>
+<li>With the <strong>History</strong>  button next to the <strong>Share</strong> button, you can view the editing history of the document - suitable for backup needs.
+<img src="https://i.imgur.com/gkxJClb.png?1" alt=""></li>
+<li>The last button, <strong>Chat</strong> - this is where you can communicate with collaborators. This keeps you focused on Overleaf instead of having to choose a third-party tool for group communication.</li>
+</ol>
+<h3 id="321-about-the-file-manager-panel-in-overleaf">
+  3.2.1. About the File Manager Panel in Overleaf.
+  <a class="heading-link" href="#321-about-the-file-manager-panel-in-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Overleaf</strong> provides you with a file manager to store the files you will use in your writing process. These files can be text documents or images (remember to upload PDF documents, images, or text). You can also create new folders where you can store your files.</p>
+<p><strong>Note</strong>: If your project contains many images, you can create separate folders to keep your images organized.</p>
+<p>In this guide, we will work with the <strong>main.tex</strong> file that has been pre-created.</p>
+<h3 id="322-understanding-the-centre-panel">
+  3.2.2. Understanding the Centre Panel
+  <a class="heading-link" href="#322-understanding-the-centre-panel">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Think of this area as the primary editing workspace. The Centre Panel will provide you with all the tools and some constraints for editing.</p>
+<p>The menu items here do not include buttons to insert images, tables, or citations. Instead, you must use LaTeX code. To have a clearer picture, let&rsquo;s design a workflow for the <strong>main.tex</strong> file.</p>
+<h3 id="323-some-notes-when-writing-in-latex">
+  3.2.3. Some Notes When Writing in LaTeX
+  <a class="heading-link" href="#323-some-notes-when-writing-in-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In general, academic documents such as research papers, scholarly articles, etc., often have common structures, including:</p>
+<ul>
+<li>
+<p><strong>Metadata</strong>: This is where you provide the title, author information, date, and other basic details. In LaTeX, you can think of this as the <strong>Front Matter</strong>. In Overleaf, we place the front matter at the beginning of the <strong>main.tex</strong> file. We&rsquo;ll explore this in more detail when we switch to the <strong>Source</strong> view to see the document.</p>
+</li>
+<li>
+<p><strong>Table and figures</strong>: Most academic documents will contain information in the form of tables and figures. If you have many tables and figures, it&rsquo;s a good practice to place them in separate files with names like <strong>fig.tex</strong> and <strong>frames.tex</strong>. This way, you can reference them from within the document, or you can copy and paste the code for tables and figures from those files into the specific part of the document you&rsquo;re writing.</p>
+</li>
+<li>
+<p><strong>Citiation</strong>: As the saying goes, &ldquo;Quoting a book is like carrying a testimony.&rdquo; Using references and citing them demonstrates respect for the authors who have written and cleverly used recognized knowledge to support your argument.</p>
+</li>
+</ul>
+<h2 id="4-building-the-first-document-on-overleaf">
+  4. Building the First Document on Overleaf
+  <a class="heading-link" href="#4-building-the-first-document-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You can access My Overleaf project, copy this piece of code, and paste it into your Overleaf link: <a href="https://www.overleaf.com/read/yhkrqpqdhcbj"  class="external-link" target="_blank" rel="noopener">https://www.overleaf.com/read/yhkrqpqdhcbj</a>
+<strong>Important Note</strong>: Choose the XeLaTeX compiler if you want to test the code snippets.
+<img src="https://i.imgur.com/HbvTcYq.png?1" alt=""></p>
+<h3 id="41-regarding-the-introduction-section-which-includes-the-title-of-the-article-and-the-necessary-latex-packages">
+  4.1. Regarding the introduction section, which includes the title of the article and the necessary LaTeX packages
+  <a class="heading-link" href="#41-regarding-the-introduction-section-which-includes-the-title-of-the-article-and-the-necessary-latex-packages">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>First, you will choose the appropriate document type. For example, here, you choose the document type suitable for writing a scientific research paper on A4-sized paper.</p>
+<pre tabindex="0"><code>\documentclass[a4paper]{article}
+</code></pre><p>List of packages used when editing. In the code block below, there are many <strong>%</strong> signs - When you list them at the beginning of a line, that line becomes a comment. With comments, they will only appear in the editing window and will not be included in the final PDF file.</p>
+<pre tabindex="0"><code>% These packages help us type in Vietnamese on LaTeX.
+\usepackage[utf8]{inputenc}
+% These packages help us insert images on LaTeX
+\usepackage{graphicx}
+% This is the path to image folder where I created 
+\graphicspath{ {./images/} }
+</code></pre><p>Next, we will list the title of the article, author&rsquo;s name, and the current date here. You can proceed to change the values below.</p>
+<pre tabindex="0"><code>\title{A Sample Document}
+\author{Turio}
+\date{\today}
+</code></pre><h3 id="42-building-the-main-content">
+  4.2. Building the main content
+  <a class="heading-link" href="#42-building-the-main-content">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>So we have completed the introduction section. We will now move on to the crucial part of LaTeX file creation. First, always remember the following syntax:</p>
+<pre tabindex="0"><code>% This line of code acts as a gateway to start building your document.
+\begin{document}
+
+% After listing the introductory information, you'll declare it here. 
+\maketitle
+% \his command makes it easy to switch to a new page. - It's listed here because a standard report often dedicates a full page to the cover page.
+\newpage
+
+% ... You can refer to other lines of code on the provided Overleaf link for additional details.
+
+% This line of code is used to end the document; if it's missing, the document will result in an error.
+\end{document}
+</code></pre><h3 id="43-now-lets-build-chapters-and-an-automatic-table-of-contents">
+  4.3. Now, let&rsquo;s build chapters and an automatic table of contents.
+  <a class="heading-link" href="#43-now-lets-build-chapters-and-an-automatic-table-of-contents">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To create a table of contents, use the following syntax:</p>
+<pre tabindex="0"><code>\tableofcontents
+\newpage
+</code></pre><p>To declare chapters, use \section, \subsection, and the special thing about LaTeX is that they will automatically update the table of contents.</p>
+<pre tabindex="0"><code>\section{Chapter 1}
+\subsection{Subchapter of chapter 1}
+% Subchapters of Chapter 1 can be declared the same way.
+</code></pre><p>With chapters added, the table of contents will be automatically updated like this:
+<img src="https://i.imgur.com/q2yW1dP.png?1" alt=""></p>
+<h3 id="44-adding-images-on-overleaf">
+  4.4. Adding images on Overleaf
+  <a class="heading-link" href="#44-adding-images-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>To add images, follow these steps:</p>
+<ul>
+<li>Add the image to your Overleaf project. You can create a folder for better organization, as demonstrated below, where I created a folder called <strong>images</strong> to store all the images.
+<img src="https://i.imgur.com/R3e14Tm.png?1" alt=""></li>
+<li>Use the following code to add the image to LaTeX:</li>
+</ul>
+<pre tabindex="0"><code>% This is the simplest approach to adding images to LaTeX.
+% For more detailed adjustments, consult LaTeX documentation.
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{name_of_the_file}
+\end{figure}
+</code></pre><h3 id="45-insert-table-on-overleaf">
+  4.5. Insert table on Overleaf
+  <a class="heading-link" href="#45-insert-table-on-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Building a sample table can be done using the code below. <a href="http://www.tablesgenerator.com/"  class="external-link" target="_blank" rel="noopener">http://www.tablesgenerator.com/</a> to create a table and then copy the LaTeX code from the website into your document.</p>
+<h3 id="46-creating-a-bibliography-and-citations-in-overleaf">
+  4.6. Creating a bibliography and citations in Overleaf
+  <a class="heading-link" href="#46-creating-a-bibliography-and-citations-in-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>We will build the bibliography and citation in Overleaf can be accomplished with the following code:</p>
+<pre tabindex="0"><code>\begin{thebibliography}{2}
+\bibitem{doc1}
+Author name, \emph{Tài liệu 1}. Publication.
+\bibitem{doc2}
+Author name, \emph{Tài liệu 2}. Publication.
+\end{thebibliography}
+</code></pre><p>With a bibliography in place, you can use the <strong>\cite{The document name is listed in \bibitem}</strong> command to cite sources in your document.</p>
+<h2 id="5-conclusion">
+  5. Conclusion
+  <a class="heading-link" href="#5-conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Every text editor has its own pros and cons. However, if you are heading into research or planning to write academic papers in the future, LaTeX is a suitable choice. Alongside LaTeX, Overleaf is a powerful companion with its online collaborative editing features, helping you connect and work with other project members.</p>
+<p><strong>Team</strong></p>
+<h2 id="references">
+  <strong>References</strong>:
+  <a class="heading-link" href="#references">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>[1] <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29"  class="external-link" target="_blank" rel="noopener">LateX online course</a> compiled by <a href="https://www.overleaf.com/ourteam"  class="external-link" target="_blank" rel="noopener"> Dr John Lees-Miller</a> and present in Bristol University.
+<!-- raw HTML omitted -->
+[2] <a href="https://medium.com/thoughts-philosophy-writing/how-to-use-overleaf-to-write-your-papers-part-i-basic-minimalist-setup-6599268c095f"  class="external-link" target="_blank" rel="noopener">How to use Overleaf to Write your papers</a> - Arindam Basu.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     7und3dpy 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

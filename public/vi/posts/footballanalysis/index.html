@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Data Science trong bóng đá và thành công đến từ Liverpool F.C · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá?Link to headingBóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu.">
+<meta name="keywords" content="Blog, Phát triển phần mềm, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Science trong bóng đá và thành công đến từ Liverpool F.C"/>
+<meta name="twitter:description" content="Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá?Link to headingBóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu."/>
+
+<meta property="og:title" content="Data Science trong bóng đá và thành công đến từ Liverpool F.C" />
+<meta property="og:description" content="Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá?Link to headingBóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/footballanalysis/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/footballanalysis/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/website/site.webmanifest">
+<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/footballanalysis/">EN</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/footballanalysis/">
+              Data Science trong bóng đá và thành công đến từ Liverpool F.C
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                tháng 7 24, 242412
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/b%C3%B3ng-%C4%91%C3%A1/">Bóng đá</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/football/">football</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/analysis/">analysis</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="liệu-data-science-có-thể-ứng-dụng-trong-phân-tích-bóng-đá">
+  Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá?
+  <a class="heading-link" href="#li%e1%bb%87u-data-science-c%c3%b3-th%e1%bb%83-%e1%bb%a9ng-d%e1%bb%a5ng-trong-ph%c3%a2n-t%c3%adch-b%c3%b3ng-%c4%91%c3%a1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*WZ5Oln_Hoct_1cal5H1QnA.png" alt=""></p>
+<p>Bóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!</p>
+<p>Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu. Sẽ không dễ dàng gì để ta có thể ghi lại từng sự kiện diễn ra trong trận đấu. Nhưng thực chất điều đó đang thay đổi bởi mọi hành động trên sân hiện đang được ghi lại và biểu diễn một cách trực quan nhất.</p>
+<p>Ngày nay bạn có thể tìm hiểu thống kê chi tiết các trận đấu qua từng sự kiện, thông số được ghi lại. Những điều này chắc hẳn còn được các Bình luận viên đề cập từ những chuỗi trận thắng bại hay số những đường chuyền thành bàn của từng đội.</p>
+<p><img src="https://cdn.dribbble.com/users/705129/screenshots/2565984/footballdashboard.png" alt="">
+Và điều có thể kinh ngạc hơn nữa khi công nghệ còn can thiệp vào quá trình phân tích chỉ sổ, phong độ, hiệu suất cầu thủ để giúp Ban huấn luyện chuẩn bị nhân sự phù hợp cho từng giải đấu.</p>
+<p><img src="https://d2zywfiolv4f83.cloudfront.net/img/blog/2018%2F4%2FGoalQuadWS.jpg" alt="">
+Ví dụ đơn giản nhất là những thống kê rất đơn giản của Optasports.com từ năm 2006 về chạm bóng, chuyền bóng, sút bóng,&hellip; mà đến bây giờ họ đã có tới hàng chục nghìn dữ liệu trực quan về từng giải đấu, đội bóng, trận đấu lẫn cầu thủ.</p>
+<p><img src="http://img.f8.bdpcdn.net/Assets/Media/2019/03/15/70/chien-thuat-gif-anh-chu.gif" alt="">
+Từ một bài toán Phân lớp (Classification) ở Máy học (Machine Learning), ta đã có thể ứng dụng chúng theo dõi chuyển động của cầu thủ trong quá trình tạo nên bàn thắng.</p>
+<p>Từ đó, những thuật toán từ quá trình thống kê, phân tích bóng đá đã ra đời như &ldquo;bàn thắng kỳ vọng&rdquo;, &ldquo;hiệu suất ghi bàn&rdquo;, &ldquo;tỷ lệ thắng&rdquo;,&hellip;</p>
+<h2 id="trở-lại-cùng-chức-vô-địch-lịch-sử-của-liverpool-fc">
+  Trở lại cùng chức vô địch lịch sử của Liverpool F.C
+  <a class="heading-link" href="#tr%e1%bb%9f-l%e1%ba%a1i-c%c3%b9ng-ch%e1%bb%a9c-v%c3%b4-%c4%91%e1%bb%8bch-l%e1%bb%8bch-s%e1%bb%ad-c%e1%bb%a7a-liverpool-fc">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/fdcx/doc75ly8o0d4av7z216lq8.jpg/r0_225_4048_2501_w1200_h678_fmax.jpg" alt=""></p>
+<p>Để khởi đầu cho giấc mơ với tan cơn khát danh hiệu sau nhiều năm chờ đợi, Livepool F.C đã sẵn sàng với vị Giám đốc thể thao Michael Edwards và đầu tư xây dựng đội ngũ nghiên cứu dữ liệu từ năm 2012. Và đứng đầu đội ngũ này chính là Ian Graham - Tiến sĩ Vật lý của ĐH Cambridge cùng hàng loạt những thành viên khác với học vị Tiến sĩ. Nhưng quan trọng nhất, tất đều am hiểu về bóng đá.</p>
+<p>Và với những phân tích chi tiết về tiềm năng cầu thủ đã giúp Liverpool mang về những tên tuổi như Mane, Firmino, Van Dijk, Alisson,&hellip; Đặc biệt hơn hết là chàng cầu thủ tài năng Mohamed Salah người Ai Cập cũng từng bị hoài nghi khi CLB phải chi đến 45 triệu bảng bất chấp anh từng thất bại khi thử việc ở Chelsea (một trong những ông lớn của Giải vô địch nước Anh &amp; cũng là đối thủ của Liverpool).</p>
+<p><img src="https://cdn.vox-cdn.com/thumbor/yR5h6vn35FcTiWEcbXOzk2svDIg=/0x0:3000x2184/1200x800/filters:focal(1260x852:1740x1332)/cdn.vox-cdn.com/uploads/chorus_image/image/59989893/GettyImages_944396220.0.jpg" alt="">
+Ian Graham đã đề nghị Liverpool mua về Salah vì dữ liệu của ông cho thấy anh sẽ kết hợp đặc biệt tốt với Firmino - một tiền đạo khác của Liverpool. Trong mùa giải tiếp theo (17-18), Salah đã biến những mục tiêu được mong đợi đó thành những mục tiêu thực sự. Anh phá vỡ kỷ lục Premier League bằng cách ghi 32 lần. Anh cũng trở thành biểu tượng cho sự hồi sinh của Liverpool.</p>
+<p><img src="https://i2-prod.liverpoolecho.co.uk/incoming/article16230694.ece/ALTERNATES/s615/0_GettyImages-1141136603.jpg" alt="">
+Bạn có bất ngờ khi cú phạt góc của Trent-Alexander Arnold giúp Divock Origi ấn định tỷ số 4-0 trước Barca tại bán kết lượt về Champions League. Để một chàng trai vừa mới vào sân ghi bàn nhanh đến vậy hẳn phải bắt đầu từ những phân tích chuẩn xác của đội ngũ nghiên cứu dữ liệu của Liverpool?</p>
+<p>Phải chăng việc xây dựng nền móng phát triển bóng đá kết hợp cùng Khoa học - Công nghệ sẽ là điều tất yếu trong xu thế phát triển bóng đá hiện đại?</p>
+<p>Đó hẳn là lý do theo báo cáo của Financial Times, <strong>Liverpool F.C là lá cờ đầu trong ứng dụng phân tích dữ liệu trong bóng đá</strong>.</p>
+<p>Nếu muốn tìm hiểu thêm về đội ngũ phân tích dữ liệu tại Liverpool, bạn có thể tham khảo tại: <a href="https://trainingground.guru/staff-profiles/liverpool-staff-profiles"  class="external-link" target="_blank" rel="noopener">https://trainingground.guru/staff-profiles/liverpool-staff-profiles</a></p>
+<h2 id="tạm-kết-luận">
+  Tạm Kết luận
+  <a class="heading-link" href="#t%e1%ba%a1m-k%e1%ba%bft-lu%e1%ba%adn">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Data Science hoàn toàn có thể ứng dụng trong bóng đá bởi vì thể thao chính là lĩnh vực mà tác động của dữ liệu được hiển thị ngay lập tức cho tất cả mọi người. Và nếu bạn muốn tham gia phân tích dữ liệu trong thể thao, Tôi tin rằng lĩnh vực này sẽ rất cần nhiều nguồn nhân lực trong tương lai.</p>
+<p>Biết đâu bạn có thể trở thành một Chuyên viên phân tích Dữ liệu cho Đội tuyển Quốc gia Việt Nam và gián tiếp đóng góp cho kỳ tích tham gia World Cup lần đầu tiên trong lịch sử nước nhà?</p>
+<p>Nhưng bạn hãy nên nhớ rằng, nếu bóng đá là một viên đậu thì ta có thể dễ dàng cắm dữ liệu vào một thuật toán và biết mình sẽ làm gì. Tuy nhiên, môn thể thao này vẫn luôn chứa đầy những ẩn số hấp dẫn khiến những điều không thể trở thành có thể.</p>
+<p>Đôi khi một kế hoạch hoàn hảo có thể bị khắc chế bởi một kế hoạch không hoàn hảo. Nhưng có lẽ đó cũng chính là cách mà xác suất hoạt động bởi bất luận tỷ lệ dự đoán kỹ lưỡng và được cân nhắc thận trọng thì sai số vẫn có thể xuất hiện. Những kết quả không đạt được đôi khi sẽ khiến các nhà phân tích đau đầu nhưng có lẽ điều này càng khiến cuộc chơi trở nên hấp dẫn bao giờ hết.</p>
+<p><img src="https://daily.jstor.org/wp-content/uploads/2018/06/soccer_europe_1050x700.jpg" alt="">
+Và cứ thế khi bóng lăn, sẽ có đến hàng triệu điểm dữ liệu được thu thập &hellip;</p>
+<h3 id="một-số-link-tham-khảo-về-thống-kê-phân-tích-dữ-liệu-bóng-đá-mà-tôi-tổng-hợp-được">
+  Một số link tham khảo về thống kê/ phân tích dữ liệu bóng đá mà Tôi tổng hợp được
+  <a class="heading-link" href="#m%e1%bb%99t-s%e1%bb%91-link-tham-kh%e1%ba%a3o-v%e1%bb%81-th%e1%bb%91ng-k%c3%aa-ph%c3%a2n-t%c3%adch-d%e1%bb%af-li%e1%bb%87u-b%c3%b3ng-%c4%91%c3%a1-m%c3%a0-t%c3%b4i-t%e1%bb%95ng-h%e1%bb%a3p-%c4%91%c6%b0%e1%bb%a3c">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Advance Football Analytic: <a href="http://www.advancedfootballanalytics.com/"  class="external-link" target="_blank" rel="noopener">http://www.advancedfootballanalytics.com/</a></li>
+<li>Opta: <a href="https://www.optasports.com/"  class="external-link" target="_blank" rel="noopener">https://www.optasports.com/</a></li>
+<li>Football Outsiders: <a href="https://www.footballoutsiders.com/"  class="external-link" target="_blank" rel="noopener">https://www.footballoutsiders.com/</a></li>
+<li>Anfield Index: <a href="https://anfieldindex.com"  class="external-link" target="_blank" rel="noopener">https://anfieldindex.com</a></li>
+<li>Total Football Analysis: <a href="https://totalfootballanalysis.com/"  class="external-link" target="_blank" rel="noopener">https://totalfootballanalysis.com/</a></li>
+</ul>
+<p><strong>Lưu ý: Bài viết có tổng hợp hình ảnh một số link từ các trang báo lẫn điểm tin phân tích bóng đá trong &amp; ngoài nước. Mục đích chính chỉ phục vụ việc chia sẻ kiến thức.</strong></p>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
