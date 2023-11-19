@@ -1,6 +1,6 @@
 baseURL = "https://7und3dpy.github.io/website/"
 # title = "7und3dpy"
-theme = ["hugo-coder","coder-portfolio"]
+theme = ["hugo-coder"]
 enableInlineShortcodes = true
 languageCode = "en"
 defaultContentLanguage = "en"
