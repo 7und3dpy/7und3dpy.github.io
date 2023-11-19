@@ -25,7 +25,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/mathtypesetting/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-07-10T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+<meta property="article:modified_time" content="2023-07-10T00:00:00+00:00" />
 
 
 
@@ -40,18 +40,12 @@
 
   
   
-  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
 
 
 
 
 
-
-  
-    
-    
-    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
 
 
 
@@ -60,15 +54,15 @@
 
 
 
-<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="manifest" href="/website/site.webmanifest">
-<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
@@ -83,9 +77,7 @@
 
 
 
-
-
-<body class="preload-transitions colorscheme-auto">
+<body class="preload-transitions colorscheme-light">
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
@@ -165,7 +157,7 @@
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-07-10T00:00:00Z">
-                tháng 7 10, 101012
+                tháng 7 10, 10079
               </time>
             </span>
             <span class="reading-time">
@@ -213,12 +205,12 @@
 <li>Bên trong, sử dụng <a href="https://katex.org/docs/autorender.html"  class="external-link" target="_blank" rel="noopener">Auto-render Extension</a> hoặc phục vụ các tập lệnh cục bộ.</li>
 <li>Bao gồm một phần trong các mẫu của bạn như sau:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
-<span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
-<span class="o">{{</span> end <span class="o">}}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
+</span></span><span class="line"><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
+</span></span></code></pre></div><ul>
 <li>Để bật KaTex trên toàn cầu, hãy đặt tham số <code>math</code> thành <code>true</code> trong cấu hình dự án</li>
-<li>Để bật KaTex trên các trang cụ thể, hãy bao gồm tham số <code>math: true</code> trong tệp nội dung</li>
+<li>Để bật KaTex trên các trang cụ thể, hãy bao gồm tham số <code>math = true</code> trong tệp nội dung</li>
 </ul>
 <p><strong>Nota:</strong> Sử dụng tài liệu tham khảo trực tuyến <a href="https://katex.org/docs/supported.html"  class="external-link" target="_blank" rel="noopener">Supported TeX Functions</a> làm cơ sở để tạo ra các kí hiệu toán học.</p>
 <h3 id="examples">
@@ -228,14 +220,14 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Ký hiệu nội tuyến: 
-$$
+<p>Ký hiệu nội tuyến:
+\(
 \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…
-$$</p>
+\)</p>
 <p>Ký hiệu khối:</p>
-<p>$$
+<p>\(
 \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$</p>
+\)</p>
       </div>
 
 
@@ -260,12 +252,6 @@ $$</p>
         
           
             <li>
-              <a href="/website/vi/posts/20milestone/">Chênh vênh giữa tuổi 20</a>
-            </li>
-          
-        
-          
-            <li>
               <a href="/website/vi/posts/markdownsyntax/">Hướng dẫn cú pháp Markdown</a>
             </li>
           
@@ -287,6 +273,12 @@ $$</p>
           
             <li>
               <a href="/website/vi/posts/htmlandcss/">HTML and CSS only tabs</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/vi/posts/mermaidsupport/">Mermaid JS support</a>
             </li>
           
         
@@ -330,6 +322,8 @@ $$</p>
   <section class="container">
     ©
     
+      2019 -
+    
     2023
      Trần Minh Tuấn 
     ·
@@ -348,7 +342,7 @@ $$</p>
 
   
   
-  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   

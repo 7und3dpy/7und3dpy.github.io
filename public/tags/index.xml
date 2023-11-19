@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Turio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C</title>
+      <link>https://7und3dpy.github.io/website/tags/c/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pointer</title>
+      <link>https://7und3dpy.github.io/website/tags/pointer/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/pointer/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>confess</title>
       <link>https://7und3dpy.github.io/website/tags/confess/</link>
@@ -71,6 +89,15 @@
     </item>
     
     <item>
+      <title>weka</title>
+      <link>https://7und3dpy.github.io/website/tags/weka/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/weka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>css</title>
       <link>https://7und3dpy.github.io/website/tags/css/</link>
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
@@ -116,11 +143,47 @@
     </item>
     
     <item>
+      <title>python</title>
+      <link>https://7und3dpy.github.io/website/tags/python/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Applied Statistic and Experimental Design</title>
       <link>https://7und3dpy.github.io/website/tags/applied-statistic-and-experimental-design/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/tags/applied-statistic-and-experimental-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arrays and Strings</title>
+      <link>https://7und3dpy.github.io/website/tags/arrays-and-strings/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/arrays-and-strings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conditionals and Loops</title>
+      <link>https://7und3dpy.github.io/website/tags/conditionals-and-loops/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/conditionals-and-loops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Easy</title>
+      <link>https://7und3dpy.github.io/website/tags/easy/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/easy/</guid>
       <description></description>
     </item>
     
@@ -134,11 +197,20 @@
     </item>
     
     <item>
-      <title>Machine Learning</title>
-      <link>https://7und3dpy.github.io/website/tags/machine-learning/</link>
+      <title>Hackerrank</title>
+      <link>https://7und3dpy.github.io/website/tags/hackerrank/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://7und3dpy.github.io/website/tags/machine-learning/</guid>
+      <guid>https://7und3dpy.github.io/website/tags/hackerrank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Medium</title>
+      <link>https://7und3dpy.github.io/website/tags/medium/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/medium/</guid>
       <description></description>
     </item>
     
@@ -157,6 +229,15 @@
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://7und3dpy.github.io/website/tags/machine-learning/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/tags/machine-learning/</guid>
       <description></description>
     </item>
     

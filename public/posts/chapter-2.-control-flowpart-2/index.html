@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Chapter 2. Control Flow (Part 2) · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="7und3dpy">
+<meta name="description" content="Question 1: Link to heading Write a program that takes a positive integer n as input and returns the sum of all that number&rsquo;s digits.
+Input:
+A single line contains a positive integer n
+Output:
+Print out the sum of all digits of n
+For example:
+Input Result 54129 21 num = int(input()) sum = 0 for num_ in str(num): sum &#43;= int(num_) print(sum) 54129 21 Question 2: Link to heading Write a program to display the pattern like a diamond.">
+<meta name="keywords" content="blog,researcher, developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chapter 2. Control Flow (Part 2)"/>
+<meta name="twitter:description" content="Question 1: Link to heading Write a program that takes a positive integer n as input and returns the sum of all that number&rsquo;s digits.
+Input:
+A single line contains a positive integer n
+Output:
+Print out the sum of all digits of n
+For example:
+Input Result 54129 21 num = int(input()) sum = 0 for num_ in str(num): sum &#43;= int(num_) print(sum) 54129 21 Question 2: Link to heading Write a program to display the pattern like a diamond."/>
+
+<meta property="og:title" content="Chapter 2. Control Flow (Part 2)" />
+<meta property="og:description" content="Question 1: Link to heading Write a program that takes a positive integer n as input and returns the sum of all that number&rsquo;s digits.
+Input:
+A single line contains a positive integer n
+Output:
+Print out the sum of all digits of n
+For example:
+Input Result 54129 21 num = int(input()) sum = 0 for num_ in str(num): sum &#43;= int(num_) print(sum) 54129 21 Question 2: Link to heading Write a program to display the pattern like a diamond." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/">VI</a>
+              </li>
+            
+          
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/">
+              Chapter 2. Control Flow (Part 2)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-11T00:00:00Z">
+                July 11, 111112
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/7und3dpy/">7und3dpy</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/python/">python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h3 id="question-1">
+  Question 1:
+  <a class="heading-link" href="#question-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program that takes a positive integer n as input and returns the sum of all that number&rsquo;s digits.</p>
+<p><strong>Input:</strong></p>
+<p>A single line contains a positive integer n</p>
+<p><strong>Output:</strong></p>
+<p>Print out the sum of all digits of n</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>54129</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num_</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">sum</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>54129
+21
+</code></pre>
+<h3 id="question-2">
+  Question 2:
+  <a class="heading-link" href="#question-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program to display the pattern like a diamond.</p>
+<p><strong>Input:</strong></p>
+<p>A single line that contains a positive number n</p>
+<p><strong>Output:</strong></p>
+<p>There are 2n-1 lines in total. The i-th line contains n-i spaces and 2*i-1 asterisks if 1 ≤ i ≤ n, and contains i-n spaces and 2(2n-i)-1 asterisks if n &lt; i ≤ 2n-1.</p>
+<p><strong>For example</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>*</td>
+</tr>
+<tr>
+<td></td>
+<td>***</td>
+</tr>
+<tr>
+<td></td>
+<td>*****</td>
+</tr>
+<tr>
+<td></td>
+<td>*******</td>
+</tr>
+<tr>
+<td></td>
+<td>*****</td>
+</tr>
+<tr>
+<td></td>
+<td>***</td>
+</tr>
+<tr>
+<td></td>
+<td>*</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">((</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34; &#34;</span><span class="o">+</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34;*&#34;</span><span class="o">+</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">((</span><span class="n">i</span><span class="o">-</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34; &#34;</span><span class="o">+</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34;*&#34;</span><span class="o">+</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>4
+   *   
+  ***  
+ ***** 
+*******
+ ***** 
+  ***  
+   *   
+</code></pre>
+<h3 id="question-3">
+  Question 3:
+  <a class="heading-link" href="#question-3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Fibonacci sequence Fn is the sequence such that each number is the sum of the two preceding ones, starting from 0 and 1.</p>
+<p>F0 = 0, F1 = 1,</p>
+<p>Fn = Fn-1 + Fn-2, n ≥ 2</p>
+<p>Your task is to write a program that takes an integer n as input and output the n-th Fibonacci number</p>
+<p><strong>Input:</strong></p>
+<p>A single line that contains a non-negative integer n</p>
+<p><strong>Output:</strong></p>
+<p>Print out the value of Fn</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td>55</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl">        <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+</span></span><span class="line"><span class="cl">        <span class="n">b</span> <span class="o">=</span> <span class="n">c</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>10
+55
+</code></pre>
+<h3 id="question-3-1">
+  Question 3:
+  <a class="heading-link" href="#question-3-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program to display such a pattern for n number of rows using a number that will start with the number 1 and the first and the last number of each row will be 1.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>121</td>
+</tr>
+<tr>
+<td></td>
+<td>12321</td>
+</tr>
+<tr>
+<td></td>
+<td>1234321</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">row</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34; &#34;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">row</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">row</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">a</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">row</span><span class="p">)</span><span class="o">+</span><span class="n">a</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">)</span><span class="o">+</span> <span class="n">a</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s2">&#34; &#34;</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">row</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>4
+   1   
+  121  
+ 12321 
+1234321
+</code></pre>
+<h3 id="question-5">
+  Question 5:
+  <a class="heading-link" href="#question-5">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program to check whether a number can be expressed as the sum of two prime numbers.</p>
+<p><strong>Input:</strong></p>
+<p>The first line contains an integer n which is the number of values to be checked.</p>
+<p>Each line in the next n lines contains a positive integer number to be checked.</p>
+<p><strong>Output:</strong></p>
+<p>There are n lines. Print out in each line a word &lsquo;YES&rsquo; if the corresponding input number can be expressed as the sum of two primes. Otherwise, print &lsquo;NO&rsquo;.</p>
+<p><strong>Explanation:</strong></p>
+<p>In the example below, 20 can be expressed as 17 + 3, while 11 can not be expressed as the sum of two primes.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>20</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">prime</span><span class="p">(</span><span class="n">numb</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">numb</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">numb</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">check</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">prime</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">prime</span><span class="p">(</span><span class="n">num</span><span class="o">-</span><span class="n">j</span><span class="p">)</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;YES&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">check</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">                <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">check</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;NO&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>2
+20
+YES
+11
+NO
+</code></pre>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-python">
+        See also in Python
+        <a class="heading-link" href="#see-also-in-python">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flow-part-1/">Chapter 2. Control Flow (Part 1)</a>
+            </li>
+          
+        
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-5.-dictionaries/">Chapter 5. Dictionaries</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+    
+    
+    
+      <h3 id="see-also-in-it1110e">
+        See also in IT1110E
+        <a class="heading-link" href="#see-also-in-it1110e">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flow-part-1/">Chapter 2. Control Flow (Part 1)</a>
+            </li>
+          
+        
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-5.-dictionaries/">Chapter 5. Dictionaries</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2023
+     7und3dpy 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

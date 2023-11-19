@@ -6,15 +6,46 @@
     <description>Recent content in Posts on Turio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CHAPTER 1: What is a pointer?</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp1/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp1/</guid>
+      <description>One of those things beginners in C find difficult is the concept of pointers. The purpose of this tutorial is to provide an introduction to pointers and their use to these beginners.
+I have found that often the main reason beginners have a problem with pointers is that they have a weak or minimal feeling for variables, (as they are used in C). Thus we start with a discussion of C variables in general.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 2: Pointer types and Arrays</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp2/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp2/</guid>
+      <description>Okay, let&amp;rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &amp;ldquo;points to&amp;rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 3: Pointers and Strings</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp3/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp3/</guid>
+      <description>The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type.</description>
+    </item>
+    
     <item>
       <title>A Nightmare Sunday in My Life</title>
       <link>https://7und3dpy.github.io/website/posts/professortamhuyet/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/professortamhuyet/</guid>
-      <description>IntroductionLink to headingOverviewLink to headingAs you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
-DevelopmentsLink to headingWhen I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
+      <description>Introduction Link to heading Overview Link to heading As you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
+Developments Link to heading When I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
     </item>
     
     <item>
@@ -23,8 +54,8 @@ DevelopmentsLink to headingWhen I had to present the OOPs miniproject on Ju
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/fundamentalmath1/</guid>
-      <description>Basic Mathematics for Data Science (Part 1)Link to headingTo start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
-A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science.</description>
+      <description>To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.</description>
     </item>
     
     <item>
@@ -33,7 +64,7 @@ A solid foundation in mathematics behind the algorithms will give you a signific
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/fundamentalmath2/</guid>
-      <description>Basic Mathematics for Data Science (Part 2)Link to heading3) Linear AlgebraLink to headingHave you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+      <description>Basic Mathematics for Data Science (Part 2) Link to heading 3) Linear Algebra Link to heading Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
 Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
     </item>
     
@@ -43,7 +74,7 @@ Here, we will apply linear algebra to dive deeper into understanding how machine
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/footballanalysis/</guid>
-      <description>Can Data Science can be applied in Football Analysis?Link to headingFootball is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
+      <description>Can Data Science can be applied in Football Analysis? Link to heading Football is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
 Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task to record every event that occurs in a match. But in reality, this is changing as every action on the field is being recorded and represented in the most visual way.</description>
     </item>
     
@@ -53,8 +84,19 @@ Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task 
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/introtolatex/</guid>
-      <description>1. What is LATEX?Link to headingLaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
+      <description>1. What is LATEX? Link to heading LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
 LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Weka</title>
+      <link>https://7und3dpy.github.io/website/posts/weka/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/weka/</guid>
+      <description>Building a Basic Classification Machine Learning Model with Weka Link to heading Don&amp;rsquo;t think that Machine Learning is only for experts. If you&amp;rsquo;re a learner or a non-expert looking to dive into Machine Learning, Weka is a great choice.
+Weka is a collection of machine learning algorithms for data mining tasks. It includes tools for data preparation, classification, regression, clustering, association rules, and visualization.
+Weka is open-source software distributed under the GNU General Public License.</description>
     </item>
     
     <item>
@@ -80,6 +122,159 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
     &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
   &lt;/a&gt;
 &lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2. Control Flow (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/</guid>
+      <description>Chapter 2 : Control flow(Part 1) Link to heading Question 1: Link to heading Write a program to count the number of even values from a to b, inclusively.
+Input:
+The first line contains an integer a.
+The second line contains an integer b.
+Guarantee that a &amp;lt; b.
+Output:
+Write out the number of even values from a to b.
+For example:
+Input Output 2 4 9 a,b,cnt = int(input()), int(input()),0 for num in range(a,b+1): if num % 2 == 0:cnt+=1 print(cnt) 2 9 4 Question 2: Link to heading Write a Python program to find the largest of three numbers.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2. Control Flow (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/</guid>
+      <description>Question 1: Link to heading Write a program that takes a positive integer n as input and returns the sum of all that number&amp;rsquo;s digits.
+Input:
+A single line contains a positive integer n
+Output:
+Print out the sum of all digits of n
+For example:
+Input Result 54129 21 num = int(input()) sum = 0 for num_ in str(num): sum += int(num_) print(sum) 54129 21 Question 2: Link to heading Write a program to display the pattern like a diamond.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 3. Function (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/</guid>
+      <description>Question 1: Link to heading Write a function friendly(a, b) that takes two positive integers as input and returns &amp;lsquo;YES&amp;rsquo; if a and b are friendly numbers. Otherwise, the function returns &amp;lsquo;NO&amp;rsquo;.
+Note that a and b are called friendly numbers if a equals the sum of all b&amp;rsquo;s true divisors and vice versus.
+For example, 220 and 284 are friendly numbers. 1+2+4+5+10+11+20+22+44+55+110=284
+1+2+4+71+142=220
+For example:
+Test Result print(friendly(4,5)) NO print(friendly(220,284)) YES print(friendly(40,50)) NO def friendly(a,b): sum_a,sum_b = [],[] for i in range(1,a//2+1): if a % i == 0: sum_a.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 3. Function (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/</guid>
+      <description>Question 1: Link to heading Write a recursive function square_sum(n) to calculate the sum of first n positive square numbers: $1^2 + 2^2 +&amp;hellip; + n^2$
+Loops and iterations are NOT allowed!
+For example:
+Test Result print(square_sum(3)) 14 print(square_sum(5)) 55 def square_sum(n): if n == 1: return 1 else: return n**2 + square_sum(n-1) Question 2: Link to heading Write a recursive function display_pascal_triangle(n) to display a Pascal triangle with n rows, where n is a given positive integer.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 4. String</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-4.-string/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-4.-string/</guid>
+      <description>Question 1: Link to heading Write a function to_uppercase(str) to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
+For example:
+Test Result print(to_uppercase(&amp;lsquo;aBZ2 da@s hi&amp;rsquo;)) ABZ2 DA@S HI print(to_uppercase(&amp;lsquo;aBz da@s hi&amp;rsquo;)) aBz da@s hi def to_uppercase(str): num_upper = 0 for letter in str[0:4]: if letter.upper() == letter: num_upper +=1 if letter.upper() == &amp;#39; &amp;#39;: num_upper -=1 if num_upper &amp;gt;=2: return str.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Dictionaries</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/</guid>
+      <description>Question 1: Link to heading In US, the president is not elected by direct vote, but by a two-level vote. First, elections are held in each state and the winner of the elections in that state is determined. Then state elections are held: in these elections, each state has a certain number of votes - the number of electors from that state. In practice, all state electors vote according to the results of intra-state voting, that is, states with a different number of votes vote in the final stage of elections.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Lists</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-lists/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-lists/</guid>
+      <description>Question 1: Link to heading Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &amp;lsquo;NONE&amp;rsquo; if such an element does not exist.
+Input:
+One line contains a sequence of integers separated by spaces.
+Output:
+Print out the answer in one line.
+Hints:
+To read a line and convert it into a list of numbers, you can use the one of following commands:</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Tuples</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-tuples/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-tuples/</guid>
+      <description>Question 1: Link to heading Write a function sort_tuple(tup) to sort a given tuple in decreasing order with respect to its float element.
+For example:
+def sort_tuple(tup): return sorted(tup,key = lambda x:x[1],reverse = True ) Question 2: Link to heading Write a function sum_and_count(inp) that receives a given tuple of tuples as input and returns a list of the sums of elements in each tuple and a list of the numbers of elements in each tuple, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6-7. Modules and Files</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-6-7.-modules-and-files/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-6-7.-modules-and-files/</guid>
+      <description>Question 1: Link to heading Write a function add_days(cur_date, n) that takes a cur_date as input and returns a date after n days.
+To this end, you need to use the module datetime described here: https://www.programiz.com/python-programming/datetime
+For example:
+import datetime def add_days(cur_date,n): time_change = datetime.timedelta(days = n) return cur_date + time_change cur_date = datetime.date(2016,2,10) print(add_days(cur_date, 30)) Question 2: Link to heading You are given a module list_utilities. Your task is to use that module to flatten a nested list (list of lists of integers) and find the largest element.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 8. OOP (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-1/</guid>
+      <description>Question 1: Link to heading Which of the following statements can be used to check, whether an object “obj” is an instance of class A or not? Select one:
+a.
+isinstance(A, obj)
+b.
+isinstance(obj, A)
+c.
+A.isinstance(obj)
+d.
+obj.isinstance(A)
+Clear my choice
+Answer: B
+Question 2: Link to heading Which of the following keywords mark the beginning of the class definition?
+Select one:
+a.
+return
+b.
+All of the others</description>
+    </item>
+    
+    <item>
+      <title>Chapter 8. OOP (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-2/</guid>
+      <description>Question 1: Link to heading You are given a file called Address.py that defines the following class:
+Your task is to make a subclass of the class Address called CampusAddress that has a new attribute, office_number, that can vary. This subclass will always have the street attribute set to &amp;ldquo;Dai Co Viet&amp;rdquo; and the num attribute set to &amp;ldquo;01&amp;rdquo;.
+For example:
+from Address import * class CampusAddress(Address): def __init__(self,office_number): Address.</description>
     </item>
     
     <item>
@@ -113,9 +308,10 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/htmlandcss/</guid>
-      <description>ShortcodesLink to headingThe following content:
+      <description>Shortcodes Link to heading The following content:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Will generate:
-.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!Right alighmentLink to headingYou can also align the tabs to the right:</description>
+Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading You can also align the tabs to the right:
+{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description>
     </item>
     
     <item>
@@ -125,7 +321,16 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
       
       <guid>https://7und3dpy.github.io/website/posts/mermaidsupport/</guid>
       <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
-flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceFind more example on Mermaid-JS website.</description>
+flowchart LRA --&gt; BB --&gt; CC --&gt; DD --&gt; BsequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;Bob: Hi BobBob-&gt;&gt;Alice: Hi AliceFind more example on Mermaid-JS website.</description>
+    </item>
+    
+    <item>
+      <title>1D Arrays in C</title>
+      <link>https://7und3dpy.github.io/website/posts/1darraysinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/1darraysinc/</guid>
+      <description>An array is a container object that holds a fixed number of values of a single type. To create an array in C, we can do int arr[n];. Here, arr, is a variable array which holds up to 10 integers. The above array is a static array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime.</description>
     </item>
     
     <item>
@@ -135,6 +340,28 @@ flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Alicepart
       
       <guid>https://7und3dpy.github.io/website/posts/emojisupport/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>For Loop in C</title>
+      <link>https://7und3dpy.github.io/website/posts/forloopinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/forloopinc/</guid>
+      <description>Objective
+In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
+The syntax for the for loop is:
+for ( &amp;lt;expression_1&amp;gt; ; &amp;lt;expression_2&amp;gt; ; &amp;lt;expression_3&amp;gt; ) &amp;lt;statement&amp;gt; expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.</description>
+    </item>
+    
+    <item>
+      <title>Printing Pattern Using Loops</title>
+      <link>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</guid>
+      <description>Print a pattern of numbers from 1 to n as shown below. Each of the numbers is separated by a single space.
+4 4 4 4 4 4 4 4 3 3 3 3 3 4 4 3 2 2 2 3 4 4 3 2 1 2 3 4 4 3 2 2 2 3 4 4 3 3 3 3 3 4 4 4 4 4 4 4 4 Input Format The input will contain a single integer n.</description>
     </item>
     
     <item>
@@ -148,10 +375,10 @@ flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Alicepart
     
     <item>
       <title></title>
-      <link>https://7und3dpy.github.io/website/posts/weka/</link>
+      <link>https://7und3dpy.github.io/website/posts/reversearrayc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://7und3dpy.github.io/website/posts/weka/</guid>
+      <guid>https://7und3dpy.github.io/website/posts/reversearrayc/</guid>
       <description></description>
     </item>
     

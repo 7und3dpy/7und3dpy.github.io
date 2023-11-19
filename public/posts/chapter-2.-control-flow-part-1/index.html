@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Chapter 2. Control Flow (Part 1) · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="7und3dpy">
+<meta name="description" content="Chapter 2 : Control flow(Part 1) Link to heading Question 1: Link to heading Write a program to count the number of even values from a to b, inclusively.
+Input:
+The first line contains an integer a.
+The second line contains an integer b.
+Guarantee that a &lt; b.
+Output:
+Write out the number of even values from a to b.
+For example:
+Input Output 2 4 9 a,b,cnt = int(input()), int(input()),0 for num in range(a,b&#43;1): if num % 2 == 0:cnt&#43;=1 print(cnt) 2 9 4 Question 2: Link to heading Write a Python program to find the largest of three numbers.">
+<meta name="keywords" content="blog,researcher, developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chapter 2. Control Flow (Part 1)"/>
+<meta name="twitter:description" content="Chapter 2 : Control flow(Part 1) Link to heading Question 1: Link to heading Write a program to count the number of even values from a to b, inclusively.
+Input:
+The first line contains an integer a.
+The second line contains an integer b.
+Guarantee that a &lt; b.
+Output:
+Write out the number of even values from a to b.
+For example:
+Input Output 2 4 9 a,b,cnt = int(input()), int(input()),0 for num in range(a,b&#43;1): if num % 2 == 0:cnt&#43;=1 print(cnt) 2 9 4 Question 2: Link to heading Write a Python program to find the largest of three numbers."/>
+
+<meta property="og:title" content="Chapter 2. Control Flow (Part 1)" />
+<meta property="og:description" content="Chapter 2 : Control flow(Part 1) Link to heading Question 1: Link to heading Write a program to count the number of even values from a to b, inclusively.
+Input:
+The first line contains an integer a.
+The second line contains an integer b.
+Guarantee that a &lt; b.
+Output:
+Write out the number of even values from a to b.
+For example:
+Input Output 2 4 9 a,b,cnt = int(input()), int(input()),0 for num in range(a,b&#43;1): if num % 2 == 0:cnt&#43;=1 print(cnt) 2 9 4 Question 2: Link to heading Write a Python program to find the largest of three numbers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/">VI</a>
+              </li>
+            
+          
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/">
+              Chapter 2. Control Flow (Part 1)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-11T00:00:00Z">
+                July 11, 111112
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/7und3dpy/">7und3dpy</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/python/">python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="chapter-2--control-flowpart-1">
+  Chapter 2 : Control flow(Part 1)
+  <a class="heading-link" href="#chapter-2--control-flowpart-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h3 id="question-1">
+  Question 1:
+  <a class="heading-link" href="#question-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program to count the number of even values from a to b, inclusively.</p>
+<p><strong>Input:</strong></p>
+<p>The first line contains an integer a.</p>
+<p>The second line contains an integer b.</p>
+<p>Guarantee that a &lt; b.</p>
+<p><strong>Output:</strong></p>
+<p>Write out the number of even values from a to b.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">cnt</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">()),</span><span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span><span class="n">cnt</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>2 
+9
+4
+</code></pre>
+<h3 id="question-2">
+  Question 2:
+  <a class="heading-link" href="#question-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a Python program to find the largest of three numbers.</p>
+<p><strong>Input:</strong></p>
+<p>Each of three lines contains an integer.</p>
+<p><strong>Output:</strong></p>
+<p>Print out the largest number.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23</td>
+<td>47</td>
+</tr>
+<tr>
+<td>47</td>
+<td></td>
+</tr>
+<tr>
+<td>-5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">):</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="p">(</span><span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">):</span> <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>23
+47
+-5
+47
+</code></pre>
+<h3 id="question-3">
+  Question 3:
+  <a class="heading-link" href="#question-3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a Python program to check whether a triangle is Equilateral, Isosceles or Scalene.</p>
+<ul>
+<li>
+<p>Equilateral triangle: An equilateral triangle is a triangle in which all three sides are equal. In the familiar Euclidean geometry, equilateral triangles are also equiangular; that is, all three internal angles are also congruent to each other and are each 60°.</p>
+</li>
+<li>
+<p>Isosceles triangle: An isosceles triangle is a triangle that has two sides of equal length.</p>
+</li>
+<li>
+<p>Scalene triangle: A scalene triangle is a triangle that has three unequal sides.</p>
+</li>
+</ul>
+<p><strong>Input:</strong></p>
+<p>Each of three lines contains an integer which is a side of the triangle. It guarantees that three sides can form a triangle.</p>
+<p><strong>Output:</strong></p>
+<p>Print out one of these strings: &ldquo;Equilateral&rdquo; or &ldquo;Isosceles&rdquo; or &ldquo;Scalene&rdquo; depending on the corresponding input sides.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Scalene</td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Equilateral&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="ow">or</span> <span class="n">a</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Isosceles&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Scalene&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>3
+4
+5
+Scalene
+</code></pre>
+<h3 id="question-4">
+  Question 4:
+  <a class="heading-link" href="#question-4">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a program to input basic salary of an employee and calculate gross salary according to given conditions.</p>
+<ul>
+<li>
+<p>Basic Salary &lt;= 10000 : HRA = 20%, DA = 80%</p>
+</li>
+<li>
+<p>Basic Salary is between 10001 to 20000 : HRA = 25%, DA = 90%</p>
+</li>
+<li>
+<p>Basic Salary &gt;= 20001 : HRA = 30%, DA = 95%</p>
+</li>
+</ul>
+<p>Gross salary is the final salary computed after the additions of DA, HRA and other allowances. The formula for DA and HRA is</p>
+<p>da = basic_salary * (DA/100).</p>
+<p>hra = basic_salary * (HRA/100).</p>
+<p>The final gross salary is calculated as gross_salary = basic_salary + da + hra</p>
+<p><strong>Input:</strong></p>
+<p>A single line contains an positive integer which is the basic salary.</p>
+<p><strong>Output:</strong></p>
+<p>Print out the gross salary. The result should be rounded to two digits after the comma.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td>1000.00</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">basic_sal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">basic_sal</span> <span class="o">&lt;=</span><span class="mi">10000</span><span class="p">):</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">basic_sal</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="p">(</span><span class="mi">10001</span> <span class="o">&lt;=</span> <span class="n">basic_sal</span> <span class="o">&lt;=</span> <span class="mi">20000</span><span class="p">):</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">basic_sal</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">basic_sal</span> <span class="o">+</span> <span class="mf">0.9</span><span class="o">*</span><span class="n">basic_sal</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">basic_sal</span> <span class="o">+</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">basic_sal</span> <span class="o">+</span> <span class="mf">0.95</span><span class="o">*</span><span class="n">basic_sal</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>500
+1000.00
+</code></pre>
+<h3 id="question-5">
+  Question 5:
+  <a class="heading-link" href="#question-5">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Write a Python program that reads the type of a vehicle exiting a car park (1 for car, 2 for bus and 3 for truck) and the number of hours spent in the car park; and calculates the parking fee given the following rates (GST included):</p>
+<p>Car: \$0.70/hr for the first 3 hours; $2.50/hr after 3 hours</p>
+<p>Bus: \$1.50/hr for the first 3 hours; $2.00/hr after 3 hours</p>
+<p>Truck: \$2.50/hr for the first 2 hour; $3.25/hr after 2 hour</p>
+<p><strong>Input:</strong></p>
+<p>The first line contains an positive integer indicating the type of a vehicle.</p>
+<p>The second line contains an positive integer which is the number of hours spent in the car park.</p>
+<p><strong>Output:</strong></p>
+<p>Print out the total parking fee. The result should be rounded to two digits after the comma.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Input</th>
+<th style="text-align:center">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">6.50</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">types</span><span class="p">,</span><span class="n">hours</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">types</span> <span class="o">==</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hours</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hours</span><span class="o">*</span><span class="mf">0.7</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mf">0.7</span><span class="o">+</span><span class="p">(</span><span class="n">hours</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mf">2.5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="p">(</span><span class="n">types</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hours</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hours</span><span class="o">*</span><span class="mf">1.5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mf">1.5</span><span class="o">+</span><span class="p">(</span><span class="n">hours</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">hours</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hours</span><span class="o">*</span><span class="mf">2.5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="si">{0:.2f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="mf">2.5</span><span class="o">+</span><span class="p">(</span><span class="n">hours</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mf">3.25</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>2
+4
+6.50
+</code></pre>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-python">
+        See also in Python
+        <a class="heading-link" href="#see-also-in-python">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flowpart-2/">Chapter 2. Control Flow (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-5.-dictionaries/">Chapter 5. Dictionaries</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+    
+    
+    
+      <h3 id="see-also-in-it1110e">
+        See also in IT1110E
+        <a class="heading-link" href="#see-also-in-it1110e">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flowpart-2/">Chapter 2. Control Flow (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-5.-dictionaries/">Chapter 5. Dictionaries</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2023
+     7und3dpy 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Turio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>code</title>
+      <link>https://7und3dpy.github.io/website/categories/code/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/categories/code/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>confess</title>
       <link>https://7und3dpy.github.io/website/categories/confess/</link>
@@ -49,6 +58,15 @@
       <pubDate>Thu, 13 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/categories/theme-demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://7und3dpy.github.io/website/categories/c/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/categories/c/</guid>
       <description></description>
     </item>
     

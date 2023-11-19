@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  CHAPTER 2: Pointer types and Arrays · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="7und3dpy">
+<meta name="description" content="Okay, let&rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied.">
+<meta name="keywords" content="blog,researcher, developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CHAPTER 2: Pointer types and Arrays"/>
+<meta name="twitter:description" content="Okay, let&rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied."/>
+
+<meta property="og:title" content="CHAPTER 2: Pointer types and Arrays" />
+<meta property="og:description" content="Okay, let&rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/pointerp2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/pointerp1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/pointerp3/" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/pointerp2/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/posts/pointerp2/">VI</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/pointerp2/">
+              CHAPTER 2: Pointer types and Arrays
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-11T00:00:00Z">
+                November 11, 111112
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              8-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/turio/">Turio</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/pointer/">Pointer</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/tags/c/">C</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Okay, let&rsquo;s move on. Let us consider why we need to identify the <em><strong>type</strong></em> of variable that a pointer points to, as in:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">         <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>One reason for doing this is so that later, once ptr &ldquo;points to&rdquo; something, if we write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span></code></pre></div><p>the compiler will know how many bytes to copy into that memory location pointed to by <strong>ptr</strong>. If <strong>ptr</strong> was declared as pointing to an integer, 4 bytes would be copied. Similarly for floats and doubles the appropriate number will be copied. But, defining the type that the pointer points to permits a number of other interesting ways a compiler can interpret code. For example, consider a block in memory consisting if ten integers in a row. That is, 40 bytes of memory are set aside to hold 10 integers.</p>
+<p>Now, let&rsquo;s say we point our integer pointer <strong>ptr</strong> at the first of these integers. Furthermore lets say that integer is located at memory location 100 (decimal). What happens when we write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</span></span></code></pre></div><p>Because the compiler &ldquo;knows&rdquo; this is a pointer (i.e. its value is an address) and that it points to an integer (its current address, 100, is the address of an integer), it adds 4 to <strong>ptr</strong> instead of 1, so the pointer &ldquo;points to&rdquo; the <strong>next</strong> <strong>integer</strong>, at memory location 104. Similarly, were the <strong>ptr</strong> declared as a pointer to a short, it would add 2 to it instead of 1. The same goes for other data types such as floats, doubles, or even user defined data types such as structures. This is obviously not the same kind of &ldquo;addition&rdquo; that we normally think of. In C it is referred to as addition using &ldquo;pointer arithmetic&rdquo;, a term which we will come back to later.</p>
+<p>Similarly, since <strong>++ptr</strong> and <strong>ptr++</strong> are both equivalent to <strong>ptr + 1</strong> (though the point in the program when <strong>ptr</strong> is incremented may be different), incrementing a pointer using the unary ++ operator, either pre- or post-, increments the address it stores by the amount sizeof(type) where &ldquo;type&rdquo; is the type of the object pointed to. (i.e. 4 for an integer).</p>
+<p>Since a block of 10 integers located contiguously in memory is, by definition, an array of integers, this brings up an interesting relationship between arrays and pointers.</p>
+<p>Consider the following:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">my_array</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span> 
+</span></span></code></pre></div><p>Here we have an array containing 6 integers. We refer to each of these integers by means of a subscript to <strong>my_array</strong>, i.e. using <strong>my_array[0]</strong> through <strong>my_array[5]</strong>. But, we could alternatively access them via a pointer as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>       <span class="cm">/* point our pointer at the first
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     integer in our array */</span> 
+</span></span></code></pre></div><p>And then we could print out our array either using the array notation or by dereferencing our pointer. The following code illustrates this:</p>
+<pre><code>-----------  Program 2.1  -----------------------------------
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="cm">/* Program 2.1 from PTRTUT10.HTM   6/13/97 */</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">my_array</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="cm">/* point our pointer to the first
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                          element of the array */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;my_array[%d] = %d   &#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">my_array</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>   <span class="cm">/*&lt;-- A */</span>
+</span></span><span class="line"><span class="cl">          <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">ptr</span> <span class="o">+</span> <span class="n">i</span><span class="p">));</span>        <span class="cm">/*&lt;-- B */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Compile and run the above program and carefully note lines A and B and that the program prints out the same values in either case. Also observe how we dereferenced our pointer in line B, i.e. we first added i to it and then dereferenced the new pointer. Change line B to read:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="n">ptr</span><span class="o">++</span><span class="p">);</span>
+</span></span></code></pre></div><p>and run it again&hellip; then change it to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="o">++</span><span class="n">ptr</span><span class="p">));</span>
+</span></span></code></pre></div><p>and try once more. Each time try and predict the outcome and carefully look at the actual outcome.</p>
+<p>In C, the standard states that wherever we might use <strong>&amp;var_name[0]</strong> we can replace that with <strong>var_name</strong>, thus in our code where we wrote:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span></code></pre></div><p>we can write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>to achieve the same result.</p>
+<p>This leads many texts to state that the name of an array is a pointer. I prefer to mentally think &ldquo;the name of the array is the address of first element in the array&rdquo;. Many beginners (including myself when I was learning) have a tendency to become confused by thinking of it as a pointer. For example, while we can write</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>we cannot write</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">my_array</span> <span class="o">=</span> <span class="n">ptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>The reason is that while <strong>ptr</strong> is a variable, <strong>my_array</strong> is a constant. That is, the location at which the first element of <strong>my_array</strong> will be stored cannot be changed once <strong>my_array[]</strong> has been declared.</p>
+<p>Earlier when discussing the term &ldquo;lvalue&rdquo; I cited K&amp;R-2 where it stated:</p>
+<blockquote>
+<p>&ldquo;An <strong>object</strong> is a named region of storage; an <strong>lvalue</strong> is an expression referring to an object&rdquo;.</p>
+</blockquote>
+<p>This raises an interesting problem. Since <strong>my_array</strong> is a named region of storage, why is <strong>my_array</strong> in the above assignment statement not an lvalue? To resolve this problem, some refer to <strong>my_array</strong> as an &ldquo;unmodifiable lvalue&rdquo;.</p>
+<p>Modify the example program above by changing</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span></code></pre></div><p>to</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">        ptr = my_array;
+</span></span></code></pre></div><p>and run it again to verify the results are identical.</p>
+<p>Now, let&rsquo;s delve a little further into the difference between the names <strong>ptr</strong> and <strong>my_array</strong> as used above. Some writers will refer to an array&rsquo;s name as a <em><strong>constant</strong></em> pointer. What do we mean by that? Well, to understand the term &ldquo;constant&rdquo; in this sense, let&rsquo;s go back to our definition of the term &ldquo;variable&rdquo;. When we declare a variable we set aside a spot in memory to hold the value of the appropriate type. Once that is done the name of the variable can be interpreted in one of two ways. When used on the left side of the assignment operator, the compiler interprets it as the memory location to which to move that value resulting from evaluation of the right side of the assignment operator. But, when used on the right side of the assignment operator, the name of a variable is interpreted to mean the contents stored at that memory address set aside to hold the value of that variable.</p>
+<p>With that in mind, let&rsquo;s now consider the simplest of constants, as in:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span></code></pre></div><p>Here, while <strong>i</strong> is a variable and then occupies space in the data portion of memory, <strong>2</strong> is a constant and, as such, instead of setting aside memory in the data segment, it is imbedded directly in the code segment of memory. That is, while writing something like <strong>k = i;</strong> tells the compiler to create code which at run time will look at memory location <strong>&amp;i</strong> to determine the value to be moved to <strong>k</strong>, code created by <strong>i = 2;</strong> simply puts the <strong>2</strong> in the code and there is no referencing of the data segment. That is, both <strong>k</strong> and <strong>i</strong> are objects, but <strong>2</strong> is not an object.</p>
+<p>Similarly, in the above, since <strong>my_array</strong> is a constant, once the compiler establishes where the array itself is to be stored, it &ldquo;knows&rdquo; the address of <strong>my_array[0]</strong> and on seeing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>it simply uses this address as a constant in the code segment and there is no referencing of the data segment beyond that.</p>
+<p>This might be a good place explain further the use of the <strong>(void *)</strong> expression used in Program 1.1 of Chapter 1. As we have seen we can have pointers of various types. So far we have discussed pointers to integers and pointers to characters. In coming chapters we will be learning about pointers to structures and even pointer to pointers.</p>
+<p>Also we have learned that on different systems the size of a pointer can vary. As it turns out it is also possible that the size of a pointer can vary depending on the data type of the object to which it points. Thus, as with integers where you can run into trouble attempting to assign a long integer to a variable of type short integer, you can run into trouble attempting to assign the values of pointers of various types to pointer variables of other types.</p>
+<p>To minimize this problem, C provides for a pointer of type void. We can declare such a pointer by writing:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="kt">void</span> <span class="o">*</span><span class="n">vptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>A void pointer is sort of a generic pointer. For example, while C will not permit the comparison of a pointer to type integer with a pointer to type character, for example, either of these can be compared to a void pointer. Of course, as with other variables, casts can be used to convert from one type of pointer to another under the proper circumstances. In Program 1.1. of Chapter 1 I cast the pointers to integers into void pointers to make them compatible with the %p conversion specification. In later chapters other casts will be made for reasons defined therein.</p>
+<p>Well, that&rsquo;s a lot of technical stuff to digest and I don&rsquo;t expect a beginner to understand all of it on first reading. With time and experimentation you will want to come back and re-read the first 2 chapters. But for now, let&rsquo;s move on to the relationship between pointers, character arrays, and strings.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-pointer">
+        See also in Pointer
+        <a class="heading-link" href="#see-also-in-pointer">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/pointerp1/">CHAPTER 1: What is a pointer?</a>
+            </li>
+          
+        
+          
+        
+          
+            <li>
+              <a href="/website/posts/pointerp3/">CHAPTER 3: Pointers and Strings</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2023
+     7und3dpy 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

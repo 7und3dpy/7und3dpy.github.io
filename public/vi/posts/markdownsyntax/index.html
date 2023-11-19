@@ -25,7 +25,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/markdownsyntax/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-07-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-07-13T00:00:00+00:00" /><meta property="og:site_name" content="Trần Minh Tuấn" />
+<meta property="article:modified_time" content="2023-07-13T00:00:00+00:00" />
 
 
 
@@ -40,18 +40,12 @@
 
   
   
-  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
 
 
 
 
 
-
-  
-    
-    
-    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
 
 
 
@@ -60,15 +54,15 @@
 
 
 
-<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="manifest" href="/website/site.webmanifest">
-<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
@@ -83,9 +77,7 @@
 
 
 
-
-
-<body class="preload-transitions colorscheme-auto">
+<body class="preload-transitions colorscheme-light">
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
@@ -165,7 +157,7 @@
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-07-13T00:00:00Z">
-                tháng 7 13, 131312
+                tháng 7 13, 13079
               </time>
             </span>
             <span class="reading-time">
@@ -294,7 +286,7 @@
 </h4>
 <blockquote>
 <p>Không giao tiếp bằng cách chia sẻ bộ nhớ, hãy chia sẻ bộ nhớ bằng cách giao tiếp.<!-- raw HTML omitted -->
-— <!-- raw HTML omitted -->Rob Pike[^1]<!-- raw HTML omitted --></p>
+— <!-- raw HTML omitted -->Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
 </blockquote>
 <h2 id="bảng">
   Bảng
@@ -359,88 +351,140 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;vi&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ví dụ về HTML5<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Kiểm tra<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-
-#### Khối mã với bốn khoảng trắng
-
-    <span class="cp">&lt;!doctype html&gt;</span>
-    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ví dụ về HTML5<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Kiểm tra<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-
-#### Khối mã với shortcode highlight nội bộ của Hugo
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ví dụ về HTML5<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Kiểm tra<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
-
-## Loại danh sách
-
-#### Danh sách được sắp xếp
-
-1. Mục đầu tiên
-2. Mục thứ hai
-3. Mục thứ ba
-
-#### Danh sách không được sắp xếp
-
--   Một mục
--   Một mục khác
--   Một số mặt hàng khác
-
-#### Danh sách lồng nhau
-
--   Trái cây
-    -   Rác
-    -   Quả cam
-    -   Chuối
--   Các sản phẩm từ sữa
-    -   sữa
-    -   Phô mai
-
-#### Chú thích
-
-Đánh dấu[^2] ở cuối[^3] của văn bản này[^4].
-
-## Các yếu tố khác — abbr, sub, sup, kbd, mark
-
-<span class="p">&lt;</span><span class="nt">abbr</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Định dạng trao đổi đồ hoạ&#34;</span><span class="p">&gt;</span>GIF<span class="p">&lt;/</span><span class="nt">abbr</span><span class="p">&gt;</span> là định dạng ảnh bitmap.
-
-H<span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>O
-
-X<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>n<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span> + Y<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>n<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span> = Z<span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>n<span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span>
-
-Nhấn <span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>CTRL<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>+<span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>ALT<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span>+<span class="p">&lt;</span><span class="nt">kbd</span><span class="p">&gt;</span>Xoá<span class="p">&lt;/</span><span class="nt">kbd</span><span class="p">&gt;&lt;/</span><span class="nt">kbd</span><span class="p">&gt;</span> để đóng.
-
-Hầu hết <span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>kỳ nhông<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span> là loài sống về đêm và săn côn trùng, sâu và các sinh vật nhỏ khác.
-
-[^1]: Đoạn trích trên được lấy từ [màn trình diễn](https://www.youtube.com/watch?v=PAAkCSZUG1c) của Rob Pike trong Gopherfest, ngày 18 tháng 11 năm 2015.
-[^2]: Chú thích cuối trang.
-[^3]: Một cái khác ở đây.
-[^4]: Hay nhỉ?
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;vi&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ví dụ về HTML5<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Kiểm tra<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="khối-mã-với-bốn-khoảng-trắng">
+  Khối mã với bốn khoảng trắng
+  <a class="heading-link" href="#kh%e1%bb%91i-m%c3%a3-v%e1%bb%9bi-b%e1%bb%91n-kho%e1%ba%a3ng-tr%e1%ba%afng">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="khối-mã-với-shortcode-highlight-nội-bộ-của-hugo">
+  Khối mã với shortcode highlight nội bộ của Hugo
+  <a class="heading-link" href="#kh%e1%bb%91i-m%c3%a3-v%e1%bb%9bi-shortcode-highlight-n%e1%bb%99i-b%e1%bb%99-c%e1%bb%a7a-hugo">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;pt-br&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Ví dụ về HTML5<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Kiểm tra<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div>
+<h2 id="loại-danh-sách">
+  Loại danh sách
+  <a class="heading-link" href="#lo%e1%ba%a1i-danh-s%c3%a1ch">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h4 id="danh-sách-được-sắp-xếp">
+  Danh sách được sắp xếp
+  <a class="heading-link" href="#danh-s%c3%a1ch-%c4%91%c6%b0%e1%bb%a3c-s%e1%ba%afp-x%e1%ba%bfp">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ol>
+<li>Mục đầu tiên</li>
+<li>Mục thứ hai</li>
+<li>Mục thứ ba</li>
+</ol>
+<h4 id="danh-sách-không-được-sắp-xếp">
+  Danh sách không được sắp xếp
+  <a class="heading-link" href="#danh-s%c3%a1ch-kh%c3%b4ng-%c4%91%c6%b0%e1%bb%a3c-s%e1%ba%afp-x%e1%ba%bfp">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Một mục</li>
+<li>Một mục khác</li>
+<li>Một số mặt hàng khác</li>
+</ul>
+<h4 id="danh-sách-lồng-nhau">
+  Danh sách lồng nhau
+  <a class="heading-link" href="#danh-s%c3%a1ch-l%e1%bb%93ng-nhau">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Trái cây
+<ul>
+<li>Rác</li>
+<li>Quả cam</li>
+<li>Chuối</li>
+</ul>
+</li>
+<li>Các sản phẩm từ sữa
+<ul>
+<li>sữa</li>
+<li>Phô mai</li>
+</ul>
+</li>
+</ul>
+<h4 id="chú-thích">
+  Chú thích
+  <a class="heading-link" href="#ch%c3%ba-th%c3%adch">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Đánh dấu<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> ở cuối<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> của văn bản này<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<h2 id="các-yếu-tố-khác--abbr-sub-sup-kbd-mark">
+  Các yếu tố khác — abbr, sub, sup, kbd, mark
+  <a class="heading-link" href="#c%c3%a1c-y%e1%ba%bfu-t%e1%bb%91-kh%c3%a1c--abbr-sub-sup-kbd-mark">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><!-- raw HTML omitted -->GIF<!-- raw HTML omitted --> là định dạng ảnh bitmap.</p>
+<p>H<!-- raw HTML omitted -->2<!-- raw HTML omitted -->O</p>
+<p>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --> + Y<!-- raw HTML omitted -->n<!-- raw HTML omitted --> = Z<!-- raw HTML omitted -->n<!-- raw HTML omitted --></p>
+<p>Nhấn <!-- raw HTML omitted --><!-- raw HTML omitted -->CTRL<!-- raw HTML omitted -->+<!-- raw HTML omitted -->ALT<!-- raw HTML omitted -->+<!-- raw HTML omitted -->Xoá<!-- raw HTML omitted --><!-- raw HTML omitted --> để đóng.</p>
+<p>Hầu hết <!-- raw HTML omitted -->kỳ nhông<!-- raw HTML omitted --> là loài sống về đêm và săn côn trùng, sâu và các sinh vật nhỏ khác.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Đoạn trích trên được lấy từ <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c"  class="external-link" target="_blank" rel="noopener">màn trình diễn</a> của Rob Pike trong Gopherfest, ngày 18 tháng 11 năm 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Chú thích cuối trang.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Một cái khác ở đây.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Hay nhỉ?&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
 
@@ -462,12 +506,6 @@ Hầu hết <span class="p">&lt;</span><span class="nt">mark</span><span class="
       <nav>
         <ul>
         
-        
-          
-            <li>
-              <a href="/website/vi/posts/20milestone/">Chênh vênh giữa tuổi 20</a>
-            </li>
-          
         
           
         
@@ -495,6 +533,12 @@ Hầu hết <span class="p">&lt;</span><span class="nt">mark</span><span class="
             </li>
           
         
+          
+            <li>
+              <a href="/website/vi/posts/mermaidsupport/">Mermaid JS support</a>
+            </li>
+          
+        
         </ul>
       </nav>
     
@@ -519,6 +563,8 @@ Hầu hết <span class="p">&lt;</span><span class="nt">mark</span><span class="
   <section class="container">
     ©
     
+      2019 -
+    
     2023
      Trần Minh Tuấn 
     ·
@@ -537,7 +583,7 @@ Hầu hết <span class="p">&lt;</span><span class="nt">mark</span><span class="
 
   
   
-  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   

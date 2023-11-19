@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arrays and Strings on Turio</title>
+    <link>https://7und3dpy.github.io/website/tags/arrays-and-strings/</link>
+    <description>Recent content in Arrays and Strings on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/arrays-and-strings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1D Arrays in C</title>
+      <link>https://7und3dpy.github.io/website/posts/1darraysinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/1darraysinc/</guid>
+      <description>An array is a container object that holds a fixed number of values of a single type. To create an array in C, we can do int arr[n];. Here, arr, is a variable array which holds up to 10 integers. The above array is a static array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime.</description>
+    </item>
+    
+  </channel>
+</rss>

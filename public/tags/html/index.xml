@@ -63,9 +63,10 @@
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/htmlandcss/</guid>
-      <description>ShortcodesLink to headingThe following content:
+      <description>Shortcodes Link to heading The following content:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Will generate:
-.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!Right alighmentLink to headingYou can also align the tabs to the right:</description>
+Hello Hello World! Goodbye Goodbye Everybody! Right alighment Link to heading You can also align the tabs to the right:
+{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description>
     </item>
     
     <item>
@@ -75,7 +76,7 @@
       
       <guid>https://7und3dpy.github.io/website/posts/mermaidsupport/</guid>
       <description>If you want to use Mermaid-JS on your website. Provide mermaid as Shortcode in your markdown file.
-flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceFind more example on Mermaid-JS website.</description>
+flowchart LRA --&gt; BB --&gt; CC --&gt; DD --&gt; BsequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;Bob: Hi BobBob-&gt;&gt;Alice: Hi AliceFind more example on Mermaid-JS website.</description>
     </item>
     
   </channel>

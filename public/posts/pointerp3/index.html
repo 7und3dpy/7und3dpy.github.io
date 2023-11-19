@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  CHAPTER 3: Pointers and Strings · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="7und3dpy">
+<meta name="description" content="The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type.">
+<meta name="keywords" content="blog,researcher, developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="CHAPTER 3: Pointers and Strings"/>
+<meta name="twitter:description" content="The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type."/>
+
+<meta property="og:title" content="CHAPTER 3: Pointers and Strings" />
+<meta property="og:description" content="The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/pointerp3/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/pointerp1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/pointerp2/" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/pointerp3/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/">VI</a>
+              </li>
+            
+          
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/pointerp3/">
+              CHAPTER 3: Pointers and Strings
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-11T00:00:00Z">
+                November 11, 111112
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              8-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/turio/">Turio</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/pointer/">Pointer</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/tags/c/">C</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.</p>
+<p>In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type. But in C it does not. In C a string is an array of characters terminated with a binary zero character (written as <strong>&rsquo;\0&rsquo;</strong>). To start off our discussion we will write some code which, while preferred for illustrative purposes, you would probably never write in an actual program. Consider, for example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">40</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        <span class="n">my_string</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;T&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">my_string</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;e&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">my_string</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;d&#39;</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">my_string</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>While one would never build a string like this, the end result is a string in that it is an array of characters <strong>terminated with a nul character</strong>. By definition, in C, a string is an array of characters terminated with the nul character. Be aware that &ldquo;nul&rdquo; is <strong>not</strong> the same as &ldquo;NULL&rdquo;. The nul refers to a zero as defined by the escape sequence <strong>&rsquo;\0&rsquo;</strong>. That is it occupies one byte of memory. NULL, on the other hand, is the name of the macro used to initialize null pointers. NULL is #defined in a header file in your C compiler, nul may not be #defined at all.</p>
+<p>Since writing the above code would be very time consuming, C permits two alternate ways of achieving the same thing. First, one might write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">40</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">&#39;T&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;d&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span><span class="p">,};</span>    
+</span></span></code></pre></div><p>But this also takes more typing than is convenient. So, C permits:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">char</span> <span class="n">my_string</span><span class="p">[</span><span class="mi">40</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;Ted&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>When the double quotes are used, instead of the single quotes as was done in the previous examples, the nul character ( <strong>&rsquo;\0</strong>&rsquo; ) is automatically appended to the end of the string.</p>
+<p>In all of the above cases, the same thing happens. The compiler sets aside an contiguous block of memory 40 bytes long to hold characters and initialized it such that the first 4 characters are <strong>Ted\0</strong>.</p>
+<p>Now, consider the following program:</p>
+<pre><code>------------------program 3.1-------------------------------------
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="cm">/* Program 3.1 from PTRTUT10.HTM   6/13/97 */</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">strA</span><span class="p">[</span><span class="mi">80</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;A string to be used for demonstration purposes&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">strB</span><span class="p">[</span><span class="mi">80</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="o">*</span><span class="n">pA</span><span class="p">;</span>     <span class="cm">/* a pointer to type character */</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">char</span> <span class="o">*</span><span class="n">pB</span><span class="p">;</span>     <span class="cm">/* another pointer to type character */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">puts</span><span class="p">(</span><span class="n">strA</span><span class="p">);</span>   <span class="cm">/* show string A */</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pA</span> <span class="o">=</span> <span class="n">strA</span><span class="p">;</span>    <span class="cm">/* point pA at string A */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">puts</span><span class="p">(</span><span class="n">pA</span><span class="p">);</span>     <span class="cm">/* show what pA is pointing to */</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pB</span> <span class="o">=</span> <span class="n">strB</span><span class="p">;</span>    <span class="cm">/* point pB at string B */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">putchar</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">);</span>       <span class="cm">/* move down one line on the screen */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span><span class="p">(</span><span class="o">*</span><span class="n">pA</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>   <span class="cm">/* line A (see text) */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="o">*</span><span class="n">pB</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">pA</span><span class="o">++</span><span class="p">;</span>   <span class="cm">/* line B (see text) */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="o">*</span><span class="n">pB</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>          <span class="cm">/* line C (see text) */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">puts</span><span class="p">(</span><span class="n">strB</span><span class="p">);</span>          <span class="cm">/* show strB on screen */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><pre><code>--------- end program 3.1 -------------------------------------
+</code></pre>
+<p>In the above we start out by defining two character arrays of 80 characters each. Since these are globally defined, they are initialized to all <strong>&rsquo;\0</strong>&rsquo;s first. Then, <strong>strA</strong> has the first 42 characters initialized to the string in quotes.</p>
+<p>Now, moving into the code, we declare two character pointers and show the string on the screen. We then &ldquo;point&rdquo; the pointer <strong>pA</strong> at <strong>strA</strong>. That is, by means of the assignment statement we copy the address of <strong>strA[0]</strong> into our variable <strong>pA</strong>. We now use <strong>puts()</strong> to show that which is pointed to by <strong>pA</strong> on the screen. Consider here that the function prototype for <strong>puts()</strong> is:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="nf">puts</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">s</span><span class="p">);</span> 
+</span></span></code></pre></div><p>For the moment, ignore the <strong>const</strong>. The parameter passed to <strong>puts()</strong> is a pointer, that is the <strong>value</strong> of a pointer (since all parameters in C are passed by value), and the value of a pointer is the address to which it points, or, simply, an address. Thus when we write <strong>puts(strA);</strong> as we have seen, we are passing the address of <strong>strA[0]</strong>.</p>
+<p>Similarly, when we write <strong>puts(pA);</strong> we are passing the same address, since we have set <strong>pA = strA;</strong></p>
+<p>Given that, follow the code down to the <strong>while()</strong> statement on line A. Line A states:</p>
+<p>While the character pointed to by <strong>pA</strong> (i.e. <strong>*pA</strong>) is not a nul character (i.e. the terminating <strong>&rsquo;\0</strong>&rsquo;), do the following:</p>
+<p>Line B states: copy the character pointed to by <strong>pA</strong> to the space pointed to by <strong>pB</strong>, then increment <strong>pA</strong> so it points to the next character and <strong>pB</strong> so it points to the next space.</p>
+<p>When we have copied the last character, <strong>pA</strong> now points to the terminating nul character and the loop ends. However, we have not copied the nul character. And, by definition a string in C <strong>must</strong> be nul terminated. So, we add the nul character with line C.</p>
+<p>It is very educational to run this program with your debugger while watching <strong>strA</strong>, <strong>strB</strong>, <strong>pA</strong> and <strong>pB</strong> and single stepping through the program. It is even more educational if instead of simply defining <strong>strB[]</strong> as has been done above, initialize it also with something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">strB</span><span class="p">[</span><span class="mi">80</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#34;12345678901234567890123456789012345678901234567890&#34;</span>
+</span></span></code></pre></div><p>where the number of digits used is greater than the length of <strong>strA</strong> and then repeat the single stepping procedure while watching the above variables. Give these things a try!</p>
+<p>Getting back to the prototype for <strong>puts()</strong> for a moment, the &ldquo;const&rdquo; used as a parameter modifier informs the user that the function will not modify the string pointed to by <strong>s</strong>, i.e. it will treat that string as a constant.</p>
+<p>Of course, what the above program illustrates is a simple way of copying a string. After playing with the above until you have a good understanding of what is happening, we can proceed to creating our own replacement for the standard <strong>strcpy()</strong> that comes with C. It might look like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">       <span class="kt">char</span> <span class="o">*</span><span class="nf">my_strcpy</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">destination</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">       <span class="p">{</span>
+</span></span><span class="line"><span class="cl">           <span class="kt">char</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">destination</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">           <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">source</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">{</span>
+</span></span><span class="line"><span class="cl">               <span class="o">*</span><span class="n">p</span><span class="o">++</span> <span class="o">=</span> <span class="o">*</span><span class="n">source</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">           <span class="p">}</span>
+</span></span><span class="line"><span class="cl">           <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">           <span class="k">return</span> <span class="n">destination</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">       <span class="p">}</span>   
+</span></span></code></pre></div><p>In this case, I have followed the practice used in the standard routine of returning a pointer to the destination.</p>
+<p>Again, the function is designed to accept the values of two character pointers, i.e. addresses, and thus in the previous program we could write:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">my_strcpy</span><span class="p">(</span><span class="n">strB</span><span class="p">,</span> <span class="n">strA</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="nf">puts</span><span class="p">(</span><span class="n">strB</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>    
+</span></span></code></pre></div><p>I have deviated slightly from the form used in standard C which would have the prototype:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">char</span> <span class="o">*</span><span class="nf">my_strcpy</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">destination</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">source</span><span class="p">);</span>  
+</span></span></code></pre></div><p>Here the &ldquo;const&rdquo; modifier is used to assure the user that the function will not modify the contents pointed to by the source pointer. You can prove this by modifying the function above, and its prototype, to include the &ldquo;const&rdquo; modifier as shown. Then, within the function you can add a statement which attempts to change the contents of that which is pointed to by source, such as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="o">*</span><span class="n">source</span> <span class="o">=</span> <span class="sc">&#39;X&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><p>which would normally change the first character of the string to an X. The const modifier should cause your compiler to catch this as an error. Try it and see.</p>
+<p>Now, let&rsquo;s consider some of the things the above examples have shown us. First off, consider the fact that <strong>*ptr++</strong> is to be interpreted as returning the value pointed to by <strong>ptr</strong> and then incrementing the pointer value. This has to do with the precedence of the operators. Were we to write <strong>(*ptr)++</strong> we would increment, not the pointer, but that which the pointer points to! i.e. if used on the first character of the above example string the &lsquo;T&rsquo; would be incremented to a &lsquo;U&rsquo;. You can write some simple example code to illustrate this.</p>
+<p>Recall again that a string is nothing more than an array of characters, with the last character being a <strong>&rsquo;\0&rsquo;</strong>. What we have done above is deal with copying an array. It happens to be an array of characters but the technique could be applied to an array of integers, doubles, etc. In those cases, however, we would not be dealing with strings and hence the end of the array would not be marked with a special value like the nul character. We could implement a version that relied on a special value to identify the end. For example, we could copy an array of positive integers by marking the end with a negative integer. On the other hand, it is more usual that when we write a function to copy an array of items other than strings we pass the function the number of items to be copied as well as the address of the array, e.g. something like the following prototype might indicate:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">void</span> <span class="nf">int_copy</span><span class="p">(</span><span class="kt">int</span> <span class="o">*</span><span class="n">ptrA</span><span class="p">,</span> <span class="kt">int</span> <span class="o">*</span><span class="n">ptrB</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nbr</span><span class="p">);</span>
+</span></span></code></pre></div><p>where <strong>nbr</strong> is the number of integers to be copied. You might want to play with this idea and create an array of integers and see if you can write the function <strong>int_copy()</strong> and make it work.</p>
+<p>This permits using functions to manipulate large arrays. For example, if we have an array of 5000 integers that we want to manipulate with a function, we need only pass to that function the address of the array (and any auxiliary information such as nbr above, depending on what we are doing). The array itself does <strong>not</strong> get passed, i.e. the whole array is not copied and put on the stack before calling the function, only its address is sent.</p>
+<p>This is different from passing, say an integer, to a function. When we pass an integer we make a copy of the integer, i.e. get its value and put it on the stack. Within the function any manipulation of the value passed can in no way effect the original integer. But, with arrays and pointers we can pass the address of the variable and hence manipulate the values of the original variables.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-pointer">
+        See also in Pointer
+        <a class="heading-link" href="#see-also-in-pointer">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/pointerp1/">CHAPTER 1: What is a pointer?</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/pointerp2/">CHAPTER 2: Pointer types and Arrays</a>
+            </li>
+          
+        
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2023
+     7und3dpy 
+    ·
+    
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

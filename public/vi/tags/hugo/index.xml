@@ -5,7 +5,7 @@
     <link>https://7und3dpy.github.io/website/vi/tags/hugo/</link>
     <description>Recent content in hugo on Trần Minh Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>vi</language>
     <lastBuildDate>Thu, 13 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hướng dẫn cú pháp Markdown</title>
@@ -63,9 +63,10 @@
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/htmlandcss/</guid>
-      <description>ShortcodesLink to headingNội dung sau:
+      <description>Shortcodes Link to heading Nội dung sau:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Sẽ tạo ra:
-.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!căn lề phảiLink to headingBạn cũng có thể căn chỉnh các tab sang bên phải:</description>
+Hello Hello World! Goodbye Goodbye Everybody! căn lề phải Link to heading Bạn cũng có thể căn chỉnh các tab sang bên phải:
+{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description>
     </item>
     
     <item>
@@ -75,7 +76,7 @@
       
       <guid>https://7und3dpy.github.io/website/vi/posts/mermaidsupport/</guid>
       <description>Se quiser usar o Mermaid-JS em sua página. Use o shortcode mermaid em seus conteúdos Markdown.
-flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceTôi đặt thêm ví dụ trên trang của Mermaid-JS.</description>
+flowchart LRA --&gt; BB --&gt; CC --&gt; DD --&gt; BsequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;Bob: Hi BobBob-&gt;&gt;Alice: Hi AliceTôi đặt thêm ví dụ trên trang của Mermaid-JS.</description>
     </item>
     
     <item>

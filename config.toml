@@ -1,6 +1,6 @@
 baseURL = "https://7und3dpy.github.io/website/"
 # title = "7und3dpy"
-theme = ["hugo-coder"]
+theme = ["hugo-coder","coder-portfolio"]
 enableInlineShortcodes = true
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -9,6 +9,15 @@ enableEmoji = true
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = true # new add
+
+[markup.goldmark.katex]
+    enabled = true
+    warnings = false
+    
 [markup.highlight]
 noClasses = false
 
@@ -16,12 +25,17 @@ noClasses = false
 author = "7und3dpy"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
 description = "7und3dpy's personal website"
-keywords = "blog,developer,personal"
+keywords = "blog,researcher, developer,personal"
 info = ["Cyber Security Student"]
 avatarURL = "images/chandung.jpg"
 #gravatar = "john.doe@example.com"
+footercontent = "Enter a text here." # Add footer content
+fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
+fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
 dateFormat = "January 2, 2023"
-since = 2023
+since = 2019
+
+
 # Git Commit in Footer, uncomment the line below to enable it
 #commit = "https://github.com/luizdepra/hugo-coder/tree/"
 # Right To Left, shift content direction for languagues such as Arabic
@@ -204,8 +218,8 @@ info = "Sinh viên ngành An Toàn Thông Tin"
 
 keywords = "Blog, Phát triển phần mềm, Sở thích cá nhân"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-dateFormat = "January 2, 2023"
-since = 2023
+dateFormat = "January 2, 2019"
+since = 2019
 
 [[languages.vi.menu.main]]
 name = "Về tôi"

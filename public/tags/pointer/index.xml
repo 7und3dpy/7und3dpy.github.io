@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pointer on Turio</title>
+    <link>https://7und3dpy.github.io/website/tags/pointer/</link>
+    <description>Recent content in Pointer on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/pointer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CHAPTER 1: What is a pointer?</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp1/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp1/</guid>
+      <description>One of those things beginners in C find difficult is the concept of pointers. The purpose of this tutorial is to provide an introduction to pointers and their use to these beginners.
+I have found that often the main reason beginners have a problem with pointers is that they have a weak or minimal feeling for variables, (as they are used in C). Thus we start with a discussion of C variables in general.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 2: Pointer types and Arrays</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp2/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp2/</guid>
+      <description>Okay, let&amp;rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &amp;ldquo;points to&amp;rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 3: Pointers and Strings</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp3/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp3/</guid>
+      <description>The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type.</description>
+    </item>
+    
+  </channel>
+</rss>

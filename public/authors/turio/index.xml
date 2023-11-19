@@ -6,15 +6,46 @@
     <description>Recent content on Turio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/authors/turio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/authors/turio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CHAPTER 1: What is a pointer?</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp1/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp1/</guid>
+      <description>One of those things beginners in C find difficult is the concept of pointers. The purpose of this tutorial is to provide an introduction to pointers and their use to these beginners.
+I have found that often the main reason beginners have a problem with pointers is that they have a weak or minimal feeling for variables, (as they are used in C). Thus we start with a discussion of C variables in general.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 2: Pointer types and Arrays</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp2/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp2/</guid>
+      <description>Okay, let&amp;rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
+int *ptr; One reason for doing this is so that later, once ptr &amp;ldquo;points to&amp;rdquo; something, if we write:
+*ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied.</description>
+    </item>
+    
+    <item>
+      <title>CHAPTER 3: Pointers and Strings</title>
+      <link>https://7und3dpy.github.io/website/posts/pointerp3/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/pointerp3/</guid>
+      <description>The study of strings is useful to further tie in the relationship between pointers and arrays. It also makes it easy to illustrate how some of the standard C string functions can be implemented. Finally it illustrates how and when pointers can and should be passed to functions.
+In C, strings are arrays of characters. This is not necessarily true in other languages. In BASIC, Pascal, Fortran and various other languages, a string has its own data type.</description>
+    </item>
+    
     <item>
       <title>A Nightmare Sunday in My Life</title>
       <link>https://7und3dpy.github.io/website/posts/professortamhuyet/</link>
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/professortamhuyet/</guid>
-      <description>IntroductionLink to headingOverviewLink to headingAs you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
-DevelopmentsLink to headingWhen I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
+      <description>Introduction Link to heading Overview Link to heading As you may or may not know, HUST is a university with many excellent professors. But I have to admit, none of them work at full capacity as terrifyingly as she does.
+Developments Link to heading When I had to present the OOPs miniproject on July 24, 2023, people with their names listed last, like me, always felt very stressed and nervous.</description>
     </item>
     
     <item>
@@ -23,8 +54,8 @@ DevelopmentsLink to headingWhen I had to present the OOPs miniproject on Ju
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/fundamentalmath1/</guid>
-      <description>Basic Mathematics for Data Science (Part 1)Link to headingTo start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
-A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science.</description>
+      <description>To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.</description>
     </item>
     
     <item>
@@ -33,7 +64,7 @@ A solid foundation in mathematics behind the algorithms will give you a signific
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/fundamentalmath2/</guid>
-      <description>Basic Mathematics for Data Science (Part 2)Link to heading3) Linear AlgebraLink to headingHave you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+      <description>Basic Mathematics for Data Science (Part 2) Link to heading 3) Linear Algebra Link to heading Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
 Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
     </item>
     
@@ -43,7 +74,7 @@ Here, we will apply linear algebra to dive deeper into understanding how machine
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/footballanalysis/</guid>
-      <description>Can Data Science can be applied in Football Analysis?Link to headingFootball is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
+      <description>Can Data Science can be applied in Football Analysis? Link to heading Football is increasingly being analyzed and predicted through meaningful statistics. If you&amp;rsquo;re a true sports fan, you&amp;rsquo;ll find that these numbers are far from unfamiliar!
 Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task to record every event that occurs in a match. But in reality, this is changing as every action on the field is being recorded and represented in the most visual way.</description>
     </item>
     
@@ -53,8 +84,17 @@ Undoubtedly, data is a big concern in football. It&amp;rsquo;s not an easy task 
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/posts/introtolatex/</guid>
-      <description>1. What is LATEX?Link to headingLaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
+      <description>1. What is LATEX? Link to heading LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
 LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</description>
+    </item>
+    
+    <item>
+      <title>1D Arrays in C</title>
+      <link>https://7und3dpy.github.io/website/posts/1darraysinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/1darraysinc/</guid>
+      <description>An array is a container object that holds a fixed number of values of a single type. To create an array in C, we can do int arr[n];. Here, arr, is a variable array which holds up to 10 integers. The above array is a static array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime.</description>
     </item>
     
     <item>
@@ -63,7 +103,7 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/projects/cusbehamodel/</guid>
-      <description>Adjust zoom level and pageLink to heading  A look at your Shopping Cart - Customer Behavior Modelling       </description>
+      <description> Adjust zoom level and page Link to heading &lt;!DOCTYPE html&gt; A look at your Shopping Cart - Customer Behavior Modelling </description>
     </item>
     
     <item>
@@ -72,7 +112,7 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/projects/winvslinux/</guid>
-      <description>Adjust zoom level and pageLink to heading  Comparison Between Window and Linux       </description>
+      <description> Adjust zoom level and page Link to heading &lt;!DOCTYPE html&gt; Comparison Between Window and Linux </description>
     </item>
     
     <item>
@@ -85,12 +125,34 @@ LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, w
     </item>
     
     <item>
-      <title>Evaluating IELTS writing: A Machine Learning application</title>
-      <link>https://7und3dpy.github.io/website/projects/evalielts/</link>
+      <title>For Loop in C</title>
+      <link>https://7und3dpy.github.io/website/posts/forloopinc/</link>
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
+      <guid>https://7und3dpy.github.io/website/posts/forloopinc/</guid>
+      <description>Objective
+In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
+The syntax for the for loop is:
+for ( &amp;lt;expression_1&amp;gt; ; &amp;lt;expression_2&amp;gt; ; &amp;lt;expression_3&amp;gt; ) &amp;lt;statement&amp;gt; expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.</description>
+    </item>
+    
+    <item>
+      <title>Printing Pattern Using Loops</title>
+      <link>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</guid>
+      <description>Print a pattern of numbers from 1 to n as shown below. Each of the numbers is separated by a single space.
+4 4 4 4 4 4 4 4 3 3 3 3 3 4 4 3 2 2 2 3 4 4 3 2 1 2 3 4 4 3 2 2 2 3 4 4 3 3 3 3 3 4 4 4 4 4 4 4 4 Input Format The input will contain a single integer n.</description>
+    </item>
+    
+    <item>
+      <title>Evaluating IELTS writing: A Machine Learning application</title>
+      <link>https://7und3dpy.github.io/website/projects/evalielts/</link>
+      <pubDate>Sun, 07 Jul 2019 00:00:00 +0000</pubDate>
+      
       <guid>https://7und3dpy.github.io/website/projects/evalielts/</guid>
-      <description>Adjust zoom level and pageLink to heading  Evaluating IELTS writing: A Machine Learning application       </description>
+      <description> Adjust zoom level and page Link to heading &lt;!DOCTYPE html&gt; Evaluating IELTS writing: A Machine Learning application </description>
     </item>
     
   </channel>

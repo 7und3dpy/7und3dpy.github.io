@@ -3,7 +3,7 @@
 
 <head>
   <title>
-   · Trần Minh Tuấn
+  Giải ngố Pointer (Phần 1) · Trần Minh Tuấn
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +13,23 @@
 
 
 <meta name="author" content="Trần Minh Tuấn">
-<meta name="description" content="CHAPTER 1: What is a pointer?Link to headingMột trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
+<meta name="description" content="Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
 Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C).">
 <meta name="keywords" content="Blog, Phát triển phần mềm, Sở thích cá nhân">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="CHAPTER 1: What is a pointer?Link to headingMột trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
+<meta name="twitter:title" content="Giải ngố Pointer (Phần 1)"/>
+<meta name="twitter:description" content="Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
 Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C)."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="CHAPTER 1: What is a pointer?Link to headingMột trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
+<meta property="og:title" content="Giải ngố Pointer (Phần 1)" />
+<meta property="og:description" content="Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
 Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/pointerp1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-11T00:00:00+00:00" />
 
-<meta property="og:site_name" content="Trần Minh Tuấn" />
 
 
 
@@ -42,18 +43,12 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
 
   
   
-  <link rel="stylesheet" href="/website/css/coder.min.5adbe72fc41dcfb852215b84695288939b6b606db73238bd3ee936469572fc9c.css" integrity="sha256-WtvnL8Qdz7hSIVuEaVKIk5trYG23Mji9Puk2RpVy/Jw=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
 
 
 
 
 
-
-  
-    
-    
-    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
 
 
 
@@ -62,15 +57,15 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
 
 
 
-<link rel="icon" type="image/svg+xml" href="/website/img/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/website/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/website/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-<link rel="apple-touch-icon" href="/website/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/website/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="manifest" href="/website/site.webmanifest">
-<link rel="mask-icon" href="/website/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
@@ -85,9 +80,7 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
 
 
 
-
-
-<body class="preload-transitions colorscheme-auto">
+<body class="preload-transitions colorscheme-light">
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
@@ -132,8 +125,6 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
           
           
             
-          
-            
               
                 <li class="navigation-item menu-separator">
                   <span>|</span>
@@ -141,7 +132,7 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
                 
               
               <li class="navigation-item">
-                <a href="/website/">EN</a>
+                <a href="/website/posts/pointerp1/">EN</a>
               </li>
             
           
@@ -160,7 +151,7 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/pointerp1/">
-              
+              Giải ngố Pointer (Phần 1)
             </a>
           </h1>
         </div>
@@ -168,8 +159,8 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="0001-01-01T00:00:00Z">
-                tháng 1 1, 10112
+              <time datetime="2023-11-11T00:00:00Z">
+                tháng 11 11, 11119
               </time>
             </span>
             <span class="reading-time">
@@ -177,42 +168,47 @@ Tôi nhận thấy rằng lý do chính khiến những người mới bắt đ�
               10-minute read
             </span>
           </div>
-          
-          
-          
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/pointer/">Pointer</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/c/">C</a>
+    </span></div>
+
         </div>
       </header>
 
       <div class="post-content">
         
-        <h2 id="chapter-1-what-is-a-pointer">
-  CHAPTER 1: What is a pointer?
-  <a class="heading-link" href="#chapter-1-what-is-a-pointer">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
-    <span class="sr-only">Link to heading</span>
-  </a>
-</h2>
-<p>Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.</p>
+        <p>Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.</p>
 <p>Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C). Vì vậy, chúng ta bắt đầu bằng việc thảo luận về các biến C nói chung.</p>
 <p>Biến trong chương trình là một cái gì đó có tên và giá trị của nó có thể khác nhau. Cách trình biên dịch và trình liên kết xử lý việc này là nó gán một khối bộ nhớ cụ thể trong máy tính để giữ giá trị của biến đó. Kích thước của khối đó phụ thuộc vào phạm vi mà biến được phép thay đổi. Ví dụ: trên PC 32 bit, kích thước của biến số nguyên là 4 byte. Trên các số nguyên PC 16 bit cũ hơn là 2 byte. Trong C, kích thước của loại biến chẳng hạn như số nguyên không nhất thiết phải giống nhau trên tất cả các loại máy. Hơn nữa, có nhiều loại biến số nguyên trong C. Chúng ta có số nguyên, số nguyên dài và số nguyên ngắn mà bạn có thể đọc trong bất kỳ văn bản cơ bản nào về C. Tài liệu này giả định việc sử dụng hệ thống 32 bit với số nguyên 4 byte .</p>
 <p>Nếu bạn muốn biết kích thước của các loại số nguyên khác nhau trên hệ thống của mình, việc chạy đoạn mã sau sẽ cung cấp cho bạn thông tin đó.</p>
-<pre><code>#include &lt;stdio.h&gt;
-
-int main()  
-{  
-	printf(&quot;size of a short is %d\\n&quot;, sizeof(short));  
-	printf(&quot;size of a int is %d\\n&quot;, sizeof(int));  
-	printf(&quot;size of a long is %d\\n&quot;, sizeof(long));  
-}
-</code></pre>
-<p>Khi khai báo một biến, chúng ta thông báo cho trình biên dịch hai thông tin: tên biến và loại biến. Ví dụ: chúng ta khai báo một biến kiểu số nguyên có tên <strong>k</strong> bằng cách viết:</p>
-<pre><code>    int k; 
-</code></pre>
-<p>Khi nhìn thấy phần &ldquo;int&rdquo; của câu lệnh này, trình biên dịch sẽ dành 4 byte bộ nhớ (trên PC) để giữ giá trị của số nguyên. Nó cũng thiết lập một bảng ký hiệu. Trong bảng đó, nó thêm ký hiệu <strong>k</strong> và địa chỉ tương đối trong bộ nhớ nơi 4 byte đó được đặt sang một bên.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">	<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>	
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>  
+</span></span><span class="line"><span class="cl">		<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;size of a short is %d</span><span class="se">\\</span><span class="s">n&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">short</span><span class="p">));</span>  
+</span></span><span class="line"><span class="cl">		<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;size of a int is %d</span><span class="se">\\</span><span class="s">n&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>  
+</span></span><span class="line"><span class="cl">		<span class="nf">printf</span><span class="p">(</span><span class="s">&#34;size of a long is %d</span><span class="se">\\</span><span class="s">n&#34;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">long</span><span class="p">));</span>  
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span></code></pre></div><p>Khi khai báo một biến, chúng ta thông báo cho trình biên dịch hai thông tin: tên biến và loại biến. Ví dụ: chúng ta khai báo một biến kiểu số nguyên có tên <strong>k</strong> bằng cách viết:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">k</span><span class="p">;</span> 
+</span></span></code></pre></div><p>Khi nhìn thấy phần &ldquo;int&rdquo; của câu lệnh này, trình biên dịch sẽ dành 4 byte bộ nhớ (trên PC) để giữ giá trị của số nguyên. Nó cũng thiết lập một bảng ký hiệu. Trong bảng đó, nó thêm ký hiệu <strong>k</strong> và địa chỉ tương đối trong bộ nhớ nơi 4 byte đó được đặt sang một bên.</p>
 <p>Vì vậy, sau này nếu chúng ta viết:</p>
-<pre><code>    k = 2; 
-</code></pre>
-<p>chúng ta hy vọng rằng, tại thời điểm chạy khi câu lệnh này được thực thi, giá trị 2 sẽ được đặt ở vị trí bộ nhớ dành riêng cho việc lưu trữ giá trị của <strong>k</strong>. Trong C, chúng ta gọi một biến như số nguyên <strong>k</strong> là một &ldquo;đối tượng&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> 
+</span></span></code></pre></div><p>chúng ta hy vọng rằng, tại thời điểm chạy khi câu lệnh này được thực thi, giá trị 2 sẽ được đặt ở vị trí bộ nhớ dành riêng cho việc lưu trữ giá trị của <strong>k</strong>. Trong C, chúng ta gọi một biến như số nguyên <strong>k</strong> là một &ldquo;đối tượng&rdquo;.</p>
 <p>Theo một nghĩa nào đó, có hai &ldquo;giá trị&rdquo; gắn liền với đối tượng k. Một là giá trị của số nguyên được lưu trữ ở đó (2 trong ví dụ trên) và cái còn lại là &ldquo;giá trị&rdquo; của vị trí bộ nhớ, tức là địa chỉ của k. Một số văn bản đề cập đến hai giá trị này bằng danh pháp rvalue (right value, phát âm là &ldquo;are value&rdquo;) và lvalue (left value, phát âm là &ldquo;el value&rdquo;) tương ứng.</p>
 <p>Trong một số ngôn ngữ, lvalue là giá trị được phép ở phía bên trái của toán tử gán &lsquo;=&rsquo; (tức là địa chỉ nơi kết quả đánh giá của phía bên phải kết thúc). Giá trị là giá trị nằm ở bên phải của câu lệnh gán, <strong>2</strong> ở trên. Giá trị không thể được sử dụng ở phía bên trái của câu lệnh gán. Như vậy: <strong>2 = k</strong>; Là bất hợp pháp.</p>
 <p>Trên thực tế, định nghĩa &ldquo;lvalue&rdquo; ở trên đã được sửa đổi phần nào cho C. Theo K&amp;R II (trang 197): [1]</p>
@@ -227,51 +223,46 @@ int main()
     j = 7;    &lt;-- line 1 
     k = j;    &lt;-- line 2 
 </code></pre>
-<p>Ở phần trên, trình biên dịch diễn giải <strong>j</strong> ở dòng 1 là địa chỉ của biến <strong>j</strong> (giá trị lvalue) và tạo mã để sao chép giá trị 7 vào địa chỉ đó. Tuy nhiên, ở dòng 2, <strong>j</strong> được hiểu là giá trị của nó (vì nó nằm ở phía bên phải của toán tử gán &lsquo;='). Nghĩa là, ở đây <strong>j</strong> đề cập đến giá trị <strong>được lưu</strong> tại vị trí bộ nhớ dành riêng cho <strong>j</strong>, trong trường hợp này là 7. Vì vậy, số 7 được sao chép vào địa chỉ được chỉ định bởi lvalue của <strong>k</strong>.</p>
+<p>Ở phần trên, trình biên dịch diễn giải <strong>j</strong> ở dòng 1 là địa chỉ của biến <strong>j</strong> (giá trị lvalue) và tạo mã để sao chép giá trị 7 vào địa chỉ đó. Tuy nhiên, ở dòng 2, <strong>j</strong> được hiểu là giá trị của nó (vì nó nằm ở phía bên phải của toán tử gán &lsquo;=&rsquo;). Nghĩa là, ở đây <strong>j</strong> đề cập đến giá trị <strong>được lưu</strong> tại vị trí bộ nhớ dành riêng cho <strong>j</strong>, trong trường hợp này là 7. Vì vậy, số 7 được sao chép vào địa chỉ được chỉ định bởi lvalue của <strong>k</strong>.</p>
 <p>Trong tất cả các ví dụ này, chúng tôi đang sử dụng số nguyên 4 byte nên tất cả việc sao chép giá trị từ vị trí lưu trữ này sang vị trí lưu trữ khác đều được thực hiện bằng cách sao chép 4 byte. Nếu chúng tôi sử dụng số nguyên hai byte thì chúng tôi sẽ sao chép 2 byte.</p>
 <p>Bây giờ, giả sử rằng chúng ta có lý do muốn có một biến được thiết kế để chứa giá trị lvalue (một địa chỉ). Kích thước cần thiết để giữ giá trị như vậy tùy thuộc vào hệ thống. Trên các máy tính để bàn cũ hơn có tổng bộ nhớ là 64K, địa chỉ của bất kỳ điểm nào trong bộ nhớ có thể được chứa trong 2 byte. Máy tính có nhiều bộ nhớ hơn sẽ cần nhiều byte hơn để chứa địa chỉ. Kích thước thực tế được yêu cầu không quá quan trọng miễn là chúng ta có cách thông báo cho trình biên dịch rằng thứ chúng ta muốn lưu trữ là một địa chỉ.</p>
 <p>Biến như vậy được gọi là <strong><strong>biến con trỏ</strong></strong> (vì những lý do mà hy vọng sau này sẽ rõ ràng hơn). Trong C, khi định nghĩa một biến con trỏ, chúng ta làm như vậy bằng cách đặt trước tên của nó một dấu hoa thị. Trong C, chúng tôi cũng cung cấp cho con trỏ một loại, trong trường hợp này, đề cập đến loại dữ liệu được lưu trữ tại địa chỉ mà chúng tôi sẽ lưu trữ trong con trỏ của mình. Ví dụ, hãy xem xét việc khai báo biến:</p>
-<pre><code>   int *ptr;
-</code></pre>
-<p><strong>ptr</strong> là tên biến của chúng ta (giống như <strong>k</strong> là tên biến số nguyên của chúng tôi). &lsquo;*&rsquo; thông báo cho trình biên dịch rằng chúng ta muốn một biến con trỏ, tức là để dành bao nhiêu byte để lưu trữ một địa chỉ trong bộ nhớ. <strong>int</strong> nói rằng chúng ta dự định sử dụng biến con trỏ để lưu trữ địa chỉ của một số nguyên. Một con trỏ như vậy được gọi là &ldquo;trỏ tới&rdquo; một số nguyên. Tuy nhiên, lưu ý rằng khi chúng ta viết <strong>int k;</strong> chúng ta đã không cung cấp cho <strong>k</strong> một giá trị. Nếu định nghĩa này được thực hiện bên ngoài bất kỳ chức năng nào thì trình biên dịch tuân thủ ANSI sẽ khởi tạo nó về 0. Tương tự, <strong>ptr</strong> không có giá trị, tức là chúng ta chưa lưu địa chỉ vào đó trong khai báo trên. Trong trường hợp này, một lần nữa, nếu khai báo nằm ngoài bất kỳ hàm nào, nó sẽ được khởi tạo thành một giá trị được đảm bảo theo cách được đảm bảo không trỏ đến bất kỳ đối tượng hoặc hàm C nào. Con trỏ được khởi tạo theo cách này được gọi là con trỏ &ldquo;null&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">       <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span></code></pre></div><p><strong>ptr</strong> là tên biến của chúng ta (giống như <strong>k</strong> là tên biến số nguyên của chúng tôi). &lsquo;*&rsquo; thông báo cho trình biên dịch rằng chúng ta muốn một biến con trỏ, tức là để dành bao nhiêu byte để lưu trữ một địa chỉ trong bộ nhớ. <strong>int</strong> nói rằng chúng ta dự định sử dụng biến con trỏ để lưu trữ địa chỉ của một số nguyên. Một con trỏ như vậy được gọi là &ldquo;trỏ tới&rdquo; một số nguyên. Tuy nhiên, lưu ý rằng khi chúng ta viết <strong>int k;</strong> chúng ta đã không cung cấp cho <strong>k</strong> một giá trị. Nếu định nghĩa này được thực hiện bên ngoài bất kỳ chức năng nào thì trình biên dịch tuân thủ ANSI sẽ khởi tạo nó về 0. Tương tự, <strong>ptr</strong> không có giá trị, tức là chúng ta chưa lưu địa chỉ vào đó trong khai báo trên. Trong trường hợp này, một lần nữa, nếu khai báo nằm ngoài bất kỳ hàm nào, nó sẽ được khởi tạo thành một giá trị được đảm bảo theo cách được đảm bảo không trỏ đến bất kỳ đối tượng hoặc hàm C nào. Con trỏ được khởi tạo theo cách này được gọi là con trỏ &ldquo;null&rdquo;.</p>
 <p>Mẫu bit thực tế được sử dụng cho con trỏ null có thể có hoặc không có giá trị bằng 0 vì nó phụ thuộc vào hệ thống cụ thể mà mã được phát triển trên đó. Để làm cho mã nguồn tương thích giữa các trình biên dịch khác nhau trên các hệ thống khác nhau, macro được sử dụng để biểu thị con trỏ null. Macro đó có tên NULL. Do đó, việc đặt giá trị của một con trỏ bằng macro NULL, như với câu lệnh gán chẳng hạn như ptr = NULL, đảm bảo rằng con trỏ đã trở thành con trỏ rỗng. Tương tự, giống như người ta có thể kiểm tra giá trị nguyên bằng 0, như trong <strong>if(k == 0),</strong> chúng ta có thể kiểm tra con trỏ null bằng cách sử dụng <strong>if (ptr == NULL).</strong></p>
 <p>Tuy nhiên, hãy quay lại việc sử dụng biến <strong>ptr</strong> mới của chúng ta. Giả sử bây giờ chúng ta muốn lưu trữ trong <strong>ptr</strong> địa chỉ của biến số nguyên <strong>k</strong>. Để làm điều này, chúng ta sử dụng toán tử <strong>&amp;</strong> đơn nhất và viết:</p>
-<pre><code>    ptr = &amp;k; 
-</code></pre>
-<p>Những gì toán tử <strong>&amp;</strong> thực hiện là truy xuất lvalue (địa chỉ) của <strong>k</strong>, mặc dù <strong>k</strong> nằm ở phía bên phải của toán tử gán &lsquo;=&rsquo; và sao chép giá trị đó vào nội dung của con trỏ ptr của chúng ta. Bây giờ, ptr được cho là &ldquo;trỏ tới&rdquo; <strong>k</strong>. Hãy kiên nhẫn với chúng tôi bây giờ, chỉ còn một nhà điều hành nữa mà chúng tôi cần thảo luận.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">k</span><span class="p">;</span> 
+</span></span></code></pre></div><p>Những gì toán tử <strong>&amp;</strong> thực hiện là truy xuất lvalue (địa chỉ) của <strong>k</strong>, mặc dù <strong>k</strong> nằm ở phía bên phải của toán tử gán &lsquo;=&rsquo; và sao chép giá trị đó vào nội dung của con trỏ ptr của chúng ta. Bây giờ, ptr được cho là &ldquo;trỏ tới&rdquo; <strong>k</strong>. Hãy kiên nhẫn với chúng tôi bây giờ, chỉ còn một nhà điều hành nữa mà chúng tôi cần thảo luận.</p>
 <p>The &ldquo;dereferencing operator&rdquo; là dấu hoa thị và được sử dụng như sau:</p>
-<pre><code>    *ptr = 7; 
-</code></pre>
-<p>sẽ sao chép 7 vào địa chỉ được trỏ bởi <strong>ptr</strong>. Do đó, nếu <strong>ptr</strong> &ldquo;trỏ tới&rdquo; (chứa địa chỉ của) <strong>k</strong>, câu lệnh trên sẽ đặt giá trị của <strong>k</strong> thành 7. Nghĩa là, khi chúng ta sử dụng &lsquo;*&rsquo; theo cách này, chúng ta đang đề cập đến giá trị của cái mà ptr là trỏ tới chứ không phải giá trị của chính con trỏ.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span> 
+</span></span></code></pre></div><p>sẽ sao chép 7 vào địa chỉ được trỏ bởi <strong>ptr</strong>. Do đó, nếu <strong>ptr</strong> &ldquo;trỏ tới&rdquo; (chứa địa chỉ của) <strong>k</strong>, câu lệnh trên sẽ đặt giá trị của <strong>k</strong> thành 7. Nghĩa là, khi chúng ta sử dụng &lsquo;*&rsquo; theo cách này, chúng ta đang đề cập đến giá trị của cái mà ptr là trỏ tới chứ không phải giá trị của chính con trỏ.</p>
 <p>Tương tự, chúng ta có thể viết:</p>
-<pre><code> printf(&quot;%d\n&quot;,*ptr); 
-</code></pre>
-<p>để in ra màn hình giá trị số nguyên được lưu trữ tại địa chỉ được trỏ bởi <strong>ptr;</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">     <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="o">*</span><span class="n">ptr</span><span class="p">);</span> 
+</span></span></code></pre></div><p>để in ra màn hình giá trị số nguyên được lưu trữ tại địa chỉ được trỏ bởi <strong>ptr;</strong>.</p>
 <p>Một cách để xem tất cả những thứ này khớp với nhau như thế nào là chạy chương trình sau rồi xem lại mã và kết quả đầu ra một cách cẩn thận.</p>
 <pre><code>------------ Program 1.1 --------------------------------- 
-
-/* Program 1.1 from PTRTUT10.TXT   6/10/97 */
-
-#include &lt;stdio.h&gt;
-
-int j, k;
-int *ptr;
-
-int main(void)
-{
-    j = 1;
-    k = 2;
-    ptr = &amp;k;
-    printf(&quot;\n&quot;);
-    printf(&quot;j has the value %d and is stored at %p\n&quot;, j, (void *)&amp;j);
-    printf(&quot;k has the value %d and is stored at %p\n&quot;, k, (void *)&amp;k);
-    printf(&quot;ptr has the value %p and is stored at %p\n&quot;, ptr, (void *)&amp;ptr);
-    printf(&quot;The value of the integer pointed to by ptr is %d\n&quot;, *ptr);
-
-    return 0;
-}
 </code></pre>
-<p>Lưu ý: Chúng ta vẫn chưa thảo luận về những khía cạnh của C yêu cầu sử dụng biểu thức <strong>(void *)</strong> được sử dụng ở đây. Hiện tại, hãy đưa nó vào mã thử nghiệm của bạn. Chúng tôi sẽ giải thích lý do đằng sau biểu hiện này ở chương sau.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="cm">/* Program 1.1 from PTRTUT10.TXT   6/10/97 */</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">k</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;j has the value %d and is stored at %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">j</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;k has the value %d and is stored at %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">k</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr has the value %p and is stored at %p</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ptr</span><span class="p">,</span> <span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">)</span><span class="o">&amp;</span><span class="n">ptr</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;The value of the integer pointed to by ptr is %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">*</span><span class="n">ptr</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Lưu ý: Chúng ta vẫn chưa thảo luận về những khía cạnh của C yêu cầu sử dụng biểu thức <strong>(void *)</strong> được sử dụng ở đây. Hiện tại, hãy đưa nó vào mã thử nghiệm của bạn. Chúng tôi sẽ giải thích lý do đằng sau biểu hiện này ở chương sau.</p>
 <hr>
 <p>To review:</p>
 <ul>
@@ -289,10 +280,18 @@ int main(void)
   </a>
 </h3>
 <ol>
-<li>&ldquo;The C Programming Language&rdquo; 2nd Edition<br>
+<li>
+<p>&ldquo;The C Programming Language&rdquo; 2nd Edition<br>
 B. Kernighan and D. Ritchie<br>
 Prentice Hall<br>
-ISBN 0-13-110362-8</li>
+ISBN 0-13-110362-8</p>
+</li>
+<li>
+<p><a href="https://stackoverflow.com/questions/4318881/in-c-what-does-a-variable-declaration-with-two-asterisks-mean"  class="external-link" target="_blank" rel="noopener">https://stackoverflow.com/questions/4318881/in-c-what-does-a-variable-declaration-with-two-asterisks-mean</a></p>
+</li>
+<li>
+<p><a href="https://beginnersbook.com/2014/01/c-pointer-to-pointer/"  class="external-link" target="_blank" rel="noopener">https://beginnersbook.com/2014/01/c-pointer-to-pointer/</a></p>
+</li>
 </ol>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
@@ -303,6 +302,14 @@ ISBN 0-13-110362-8</li>
       <footer>
         
 
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
 
         
         
@@ -312,7 +319,23 @@ ISBN 0-13-110362-8</li>
       </footer>
     </article>
 
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
   </section>
 
     </div>
@@ -320,6 +343,8 @@ ISBN 0-13-110362-8</li>
     <footer class="footer">
   <section class="container">
     ©
+    
+      2019 -
     
     2023
      Trần Minh Tuấn 
@@ -339,7 +364,7 @@ ISBN 0-13-110362-8</li>
 
   
   
-  <script src="/website/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   

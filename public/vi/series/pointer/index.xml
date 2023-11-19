@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pointer on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/series/pointer/</link>
+    <description>Recent content in Pointer on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/series/pointer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giải ngố Pointer (Phần 1)</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/pointerp1/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/pointerp1/</guid>
+      <description>Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
+Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C).</description>
+    </item>
+    
+  </channel>
+</rss>

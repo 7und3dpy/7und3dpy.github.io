@@ -5,7 +5,7 @@
     <link>https://7und3dpy.github.io/website/vi/series/ki%E1%BA%BFn-th%E1%BB%A9c-c%C6%A1-b%E1%BA%A3n-dsai/</link>
     <description>Recent content in Kiến thức cơ bản DSAI on Trần Minh Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>vi</language>
     <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/series/ki%E1%BA%BFn-th%E1%BB%A9c-c%C6%A1-b%E1%BA%A3n-dsai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kiến thức toán cơ bản cho Data Science (phần 1)</title>
@@ -13,7 +13,7 @@
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/fundamentalmath1/</guid>
-      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 1)Link to headingĐể bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
+      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 1) Link to heading Để bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
 Sự vững chắc về nền tảng toán học hình thành đằng sau các thuật toán sẽ tạo cho bạn một lợi thế không hề nhỏ so khi nghiên cứu và làm việc ở lĩnh vực Data Science.</description>
     </item>
     
@@ -23,7 +23,7 @@ Sự vững chắc về nền tảng toán học hình thành đằng sau các t
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/fundamentalmath2/</guid>
-      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 2)Link to heading3) Đại số tuyến tínhLink to headingBạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</description>
+      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 2) Link to heading 3) Đại số tuyến tính Link to heading Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</description>
     </item>
     
   </channel>

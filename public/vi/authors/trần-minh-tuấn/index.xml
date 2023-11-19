@@ -5,15 +5,45 @@
     <link>https://7und3dpy.github.io/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/</link>
     <description>Recent content on Trần Minh Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi</language>
+    <lastBuildDate>Sat, 18 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chênh vênh giữa tuổi 20</title>
+      <title>Các khái niệm chung về an toàn thông tin</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/gioithieuattt/</link>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/gioithieuattt/</guid>
+      <description>Mục tiêu và nguyên tắc chung Link to heading Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?</description>
+    </item>
+    
+    <item>
+      <title>Giải ngố Pointer (Phần 1)</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/pointerp1/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/pointerp1/</guid>
+      <description>Một trong những điều mà người mới bắt đầu học C cảm thấy khó khăn là khái niệm về con trỏ. Mục đích của hướng dẫn này là giới thiệu về con trỏ và cách sử dụng chúng cho những người mới bắt đầu.
+Tôi nhận thấy rằng lý do chính khiến những người mới bắt đầu gặp vấn đề với con trỏ là họ có cảm giác yếu hoặc rất ít về các biến, (vì chúng được sử dụng trong C).</description>
+    </item>
+    
+    <item>
+      <title>Giải ngố Pointer (Phần 2)</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/pointerp2/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/pointerp2/</guid>
+      <description>Mục đích của việc xác định loại biến mà một con trỏ trỏ tới là gì?
+int *ptr; Một trong những lý do đó là, khi ptr &amp;ldquo;trỏ&amp;rdquo; tới một số nguyên, nếu chúng ta viết:
+*ptr = 2; trình biên dịch biết cần sao chép bao nhiêu byte vào vị trí bộ nhớ được trỏ bởi con trỏ ptr. Nếu ptr được khai báo để trỏ tới một số nguyên, 4 byte sẽ được sao chép.</description>
+    </item>
+    
+    <item>
+      <title>Chênh vênh giữa tuổi 20 (phần 1)</title>
       <link>https://7und3dpy.github.io/website/vi/posts/20milestone/</link>
       <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/20milestone/</guid>
-      <description>1 . Tiểu sửLink to headingDạo gần đây tôi cảm thấy khá bế tắc trong học tập cũng như trong cuộc sống. Sau buổi phỏng vấn (thực ra đúng hơn là nói chuyện và tâm sự, chứ nếu hỏi về chuyên môn thì kiến thức của mình gần như bằng 0) với các anh ở một công ty mà tôi xin phép được giấu tên (công ty này là một công ty đứng đằng sau các công nghệ mà các bank (ngân hàng) ở Việt Nam cũng như một số bank giáp Việt Nam đang sử dụng dịch vụ) để bảo đảm danh tính thậm chí là công việc của chính bản thân mình, thì tôi vừa mới có một con đường để đi tiếp (thật ra cũng chẳng mới mẻ gì), đó là vẫn tiếp tục học và trau dồi thật nhiều kiến thức và kĩ năng chuyên môn về an toàn thông tin cũng như trau dồi kĩ năng ngoại ngữ cũng như kĩ năng mềm, nâng cao thể chất của bản thân.</description>
+      <description>1 . Tiểu sử Link to heading Dạo gần đây tôi cảm thấy khá bế tắc trong học tập cũng như trong cuộc sống. Sau buổi phỏng vấn (thực ra đúng hơn là nói chuyện và tâm sự, chứ nếu hỏi về chuyên môn thì kiến thức của mình gần như bằng 0) với các anh ở một công ty mà tôi xin phép được giấu tên (công ty này là một công ty đứng đằng sau các công nghệ mà các bank (ngân hàng) ở Việt Nam cũng như một số bank giáp Việt Nam đang sử dụng dịch vụ) để bảo đảm danh tính thậm chí là công việc của chính bản thân mình, thì tôi vừa mới có một con đường để đi tiếp (thật ra cũng chẳng mới mẻ gì), đó là vẫn tiếp tục học và trau dồi thật nhiều kiến thức và kĩ năng chuyên môn về an toàn thông tin cũng như trau dồi kĩ năng ngoại ngữ cũng như kĩ năng mềm, nâng cao thể chất của bản thân.</description>
     </item>
     
     <item>
@@ -22,8 +52,8 @@
       <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/professortamhuyet/</guid>
-      <description>Mở đầuLink to headingKhái quátLink to headingNhư các bạn đã biết (hoặc không), HUST là một ngôi trường có nhiều thầy cô giỏi, nhưng phải thú thật và thừa nhận với các bạn rằng tôi chưa thấy cô nào lại có thể làm việc hết công suất của mình một cách kinh khủng như vậy.
-Diễn biếnLink to headingKhi phải thuyết trình miniproject OOPs vào ngày 24/7/2023, những người có thứ tự tên đứng ở danh sách cuối như tôi luôn cảm thấy rất căng thẳng và hồi hộp.</description>
+      <description>Mở đầu Link to heading Khái quát Link to heading Như các bạn đã biết (hoặc không), HUST là một ngôi trường có nhiều thầy cô giỏi, nhưng phải thú thật và thừa nhận với các bạn rằng tôi chưa thấy cô nào lại có thể làm việc hết công suất của mình một cách kinh khủng như vậy.
+Diễn biến Link to heading Khi phải thuyết trình miniproject OOPs vào ngày 24/7/2023, những người có thứ tự tên đứng ở danh sách cuối như tôi luôn cảm thấy rất căng thẳng và hồi hộp.</description>
     </item>
     
     <item>
@@ -32,7 +62,7 @@ Diễn biếnLink to headingKhi phải thuyết trình miniproject OOPs và
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/footballanalysis/</guid>
-      <description>Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá?Link to headingBóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+      <description>Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá? Link to heading Bóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
 Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu.</description>
     </item>
     
@@ -42,7 +72,8 @@ Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ li�
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/introtolatex/</guid>
-      <description>1. LaTeX là gì?Link to headingLaTeX là ngôn ngữ định dạng (document markup language) cho phép người dùng có thể soạn thảo tài liệu chất lượng cao cùng cấu trúc văn bản thống nhất và đồng bộ. LaTeX thường được sử dụng bởi sinh viên, giảng viên lẫn các nhà nghiên cứu về khoa học &amp;amp; kỹ thuật, cũng như một số lĩnh vực khác.</description>
+      <description>1. LaTeX là gì? Link to heading LaTeX là ngôn ngữ định dạng (document markup language) cho phép người dùng có thể soạn thảo tài liệu chất lượng cao cùng cấu trúc văn bản thống nhất và đồng bộ. LaTeX thường được sử dụng bởi sinh viên, giảng viên lẫn các nhà nghiên cứu về khoa học &amp;amp; kỹ thuật, cũng như một số lĩnh vực khác.
+Tiền thân của LaTeX là TeX - ngôn ngữ định dạng do Donald Knuth phát minh nhưng rất khó sử dụng.</description>
     </item>
     
     <item>
@@ -51,7 +82,7 @@ Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ li�
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/weka/</guid>
-      <description>Xây dựng mô hình Classification - Machine Learning cơ bản với WekaLink to headingĐừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.
+      <description>Xây dựng mô hình Classification - Machine Learning cơ bản với Weka Link to heading Đừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.
 Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ khai thác dữ liệu.</description>
     </item>
     
@@ -61,7 +92,7 @@ Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ k
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/fundamentalmath1/</guid>
-      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 1)Link to headingĐể bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
+      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 1) Link to heading Để bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
 Sự vững chắc về nền tảng toán học hình thành đằng sau các thuật toán sẽ tạo cho bạn một lợi thế không hề nhỏ so khi nghiên cứu và làm việc ở lĩnh vực Data Science.</description>
     </item>
     
@@ -71,7 +102,7 @@ Sự vững chắc về nền tảng toán học hình thành đằng sau các t
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/fundamentalmath2/</guid>
-      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 2)Link to heading3) Đại số tuyến tínhLink to headingBạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</description>
+      <description>Kiến thức toán cho lĩnh vực Data Science (Phần 2) Link to heading 3) Đại số tuyến tính Link to heading Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</description>
     </item>
     
     <item>
@@ -130,9 +161,24 @@ Sự vững chắc về nền tảng toán học hình thành đằng sau các t
       <pubDate>Sun, 09 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://7und3dpy.github.io/website/vi/posts/htmlandcss/</guid>
-      <description>ShortcodesLink to headingNội dung sau:
+      <description>Shortcodes Link to heading Nội dung sau:
 {{&amp;lt; tabgroup &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabgroup &amp;gt;}} Sẽ tạo ra:
-.tabs input#tab-0-0:checked ~ .tab-content-0-0 {display: block;}HelloHello World!.tabs input#tab-0-1:checked ~ .tab-content-0-1 {display: block;}GoodbyeGoodbye Everybody!căn lề phảiLink to headingBạn cũng có thể căn chỉnh các tab sang bên phải:</description>
+Hello Hello World! Goodbye Goodbye Everybody! căn lề phải Link to heading Bạn cũng có thể căn chỉnh các tab sang bên phải:
+{{&amp;lt; tabgroup align=&amp;#34;right&amp;#34; &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Hello&amp;#34; &amp;gt;}} Hello World! {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab name=&amp;#34;Goodbye&amp;#34; &amp;gt;}} Goodbye Everybody!</description>
+    </item>
+    
+    <item>
+      <title>Đếm số cặp</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/demsocap/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/demsocap/</guid>
+      <description>Cho một số dãy nguyên dương a gồm N phần tử. Hãy đếm số cặp (i,j) thỏa mãn:
+\(1 \leq i \leq j \leq N\) \(a_i^2 + a_j = X\) Input format
+Dòng đầu tiên gồm 2 số nguyên dương N, X Dòng thứ hai gồm N số nguyên dương \( a_1, a_2, a_3, &amp;hellip;, a_N\) Constraints
+\(2 \leq N \leq 500\)
+\(1 \leq X \leq 10^{18}\)
+\(1 \leq a_i \leq 10^6\)</description>
     </item>
     
     <item>
@@ -142,15 +188,6 @@ Sự vững chắc về nền tảng toán học hình thành đằng sau các t
       
       <guid>https://7und3dpy.github.io/website/vi/posts/emojisupport/</guid>
       <description>&lt;p&gt;Biểu tượng cảm xúc có thể được kích hoạt trong dự án Hugo theo nhiều cách.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Văn bản Mẫu</title>
-      <link>https://7und3dpy.github.io/website/vi/posts/placeholdertext/</link>
-      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://7und3dpy.github.io/website/vi/posts/placeholdertext/</guid>
-      <description>&lt;p&gt;Trọng tâm càng gần bầu ngực từ đỉnh bầu ngực.&lt;/p&gt;</description>
     </item>
     
   </channel>

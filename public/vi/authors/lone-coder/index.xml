@@ -5,7 +5,7 @@
     <link>https://7und3dpy.github.io/website/vi/authors/lone-coder/</link>
     <description>Recent content in Lone Coder on Trần Minh Tuấn</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>vi</language>
     <lastBuildDate>Sat, 08 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/authors/lone-coder/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mermaid JS support</title>
@@ -14,7 +14,7 @@
       
       <guid>https://7und3dpy.github.io/website/vi/posts/mermaidsupport/</guid>
       <description>Se quiser usar o Mermaid-JS em sua página. Use o shortcode mermaid em seus conteúdos Markdown.
-flowchart LRA -- BB -- CC -- DD -- BsequenceDiagramparticipant Aliceparticipant BobAlice-Bob: Hi BobBob-Alice: Hi AliceTôi đặt thêm ví dụ trên trang của Mermaid-JS.</description>
+flowchart LRA --&gt; BB --&gt; CC --&gt; DD --&gt; BsequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;Bob: Hi BobBob-&gt;&gt;Alice: Hi AliceTôi đặt thêm ví dụ trên trang của Mermaid-JS.</description>
     </item>
     
   </channel>
