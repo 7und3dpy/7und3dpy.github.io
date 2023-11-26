@@ -17,6 +17,27 @@
     </item>
     
     <item>
+      <title>Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/bypassisp/</link>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/bypassisp/</guid>
+      <description>Các phương thức được sử dụng để kiểm duyệt mạng Link to heading Tại Việt Nam, nhà mạng sử dụng 2 phương thức kiểm duyệt mạng chính đó là:
+Nhiễm độc DNS (DNS Spoofing/DNS Poisoning): Đây là phương pháp phổ biến nhất để kiểm duyệt mạng. Phương pháp này không chỉ phổ biến trong kiểm duyệt mạng trên phạm vi quốc gia mà nó còn phổ biến trong các hộ gia đình/công ty cũng thường xuyên sử dụng phương pháp này để ngăn chặn người dùng cơ bản truy cập các trang web quản trị viên không mong muốn.</description>
+    </item>
+    
+    <item>
+      <title>Cơ sở mật mã học</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/cryptoi/</link>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/cryptoi/</guid>
+      <description>Mật mã khối DES Link to heading 1. Một số hệ mật mã cổ điển Link to heading 1.1 Mã dịch shift cipher (mã cộng additive cipher) Link to heading Không gian khóa : [1&amp;hellip;25]
+Mẫ hóa với khóa K cho trước:
+Mỗi ký tự của bản rõ P được mã hóa thành ký tự thứ k sau nó (dịch đi K bước về phía bên phải) Cách định nghĩa khác: \(Y = X \oplus K \Rightarrow\) mã cộng Giải mã với khóa K cho trước</description>
+    </item>
+    
+    <item>
       <title>Giải ngố Pointer (Phần 1)</title>
       <link>https://7und3dpy.github.io/website/vi/posts/pointerp1/</link>
       <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>

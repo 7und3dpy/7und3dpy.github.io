@@ -12,9 +12,9 @@
 
 
 
-<meta name="author" content="7und3dpy">
+<meta name="author" content="Turio">
 <meta name="description" content="Sample article demonstrating basic LaTeX syntax.">
-<meta name="keywords" content="blog,researcher, developer,personal">
+<meta name="keywords" content="blog, researcher, developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Introduction to LATEX"/>
@@ -137,7 +137,7 @@
                 
               
               <li class="navigation-item">
-                <a href="/website/vi/posts/introtolatex/">VI</a>
+                <a href="/website/vi/posts/introtolatex/">🇻🇳</a>
               </li>
             
           
@@ -165,7 +165,7 @@
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-07-24T00:00:00Z">
-                July 24, 242412
+                July 24, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -378,19 +378,19 @@ Let&rsquo;s explore the following steps together.</p>
   </a>
 </h3>
 <p>First, you will choose the appropriate document type. For example, here, you choose the document type suitable for writing a scientific research paper on A4-sized paper.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[a4paper]{article}
-</span></span></code></pre></div><p>List of packages used when editing. In the code block below, there are many <strong>%</strong> signs - When you list them at the beginning of a line, that line becomes a comment. With comments, they will only appear in the editing window and will not be included in the final PDF file.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% These packages help us type in Vietnamese on LaTeX.
-</span></span><span class="line"><span class="cl">\usepackage[utf8]{inputenc}
-</span></span><span class="line"><span class="cl">% These packages help us insert images on LaTeX
-</span></span><span class="line"><span class="cl">\usepackage{graphicx}
-</span></span><span class="line"><span class="cl">% This is the path to image folder where I created 
-</span></span><span class="line"><span class="cl">\graphicspath{ {./images/} }
-</span></span></code></pre></div><p>Next, we will list the title of the article, author&rsquo;s name, and the current date here. You can proceed to change the values below.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\title{A Sample Document}
-</span></span><span class="line"><span class="cl">\author{Turio}
-</span></span><span class="line"><span class="cl">\date{\today}
-</span></span></code></pre></div><h3 id="42-building-the-main-content">
+<pre tabindex="0"><code>\documentclass[a4paper]{article}
+</code></pre><p>List of packages used when editing. In the code block below, there are many <strong>%</strong> signs - When you list them at the beginning of a line, that line becomes a comment. With comments, they will only appear in the editing window and will not be included in the final PDF file.</p>
+<pre tabindex="0"><code>% These packages help us type in Vietnamese on LaTeX.
+\usepackage[utf8]{inputenc}
+% These packages help us insert images on LaTeX
+\usepackage{graphicx}
+% This is the path to image folder where I created 
+\graphicspath{ {./images/} }
+</code></pre><p>Next, we will list the title of the article, author&rsquo;s name, and the current date here. You can proceed to change the values below.</p>
+<pre tabindex="0"><code>\title{A Sample Document}
+\author{Turio}
+\date{\today}
+</code></pre><h3 id="42-building-the-main-content">
   4.2. Building the main content
   <a class="heading-link" href="#42-building-the-main-content">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -398,19 +398,19 @@ Let&rsquo;s explore the following steps together.</p>
   </a>
 </h3>
 <p>So we have completed the introduction section. We will now move on to the crucial part of LaTeX file creation. First, always remember the following syntax:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% This line of code acts as a gateway to start building your document.
-</span></span><span class="line"><span class="cl">\begin{document}
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">% After listing the introductory information, you&#39;ll declare it here. 
-</span></span><span class="line"><span class="cl">\maketitle
-</span></span><span class="line"><span class="cl">% \his command makes it easy to switch to a new page. - It&#39;s listed here because a standard report often dedicates a full page to the cover page.
-</span></span><span class="line"><span class="cl">\newpage
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">% ... You can refer to other lines of code on the provided Overleaf link for additional details.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">% This line of code is used to end the document; if it&#39;s missing, the document will result in an error.
-</span></span><span class="line"><span class="cl">\end{document}
-</span></span></code></pre></div><h3 id="43-now-lets-build-chapters-and-an-automatic-table-of-contents">
+<pre tabindex="0"><code>% This line of code acts as a gateway to start building your document.
+\begin{document}
+
+% After listing the introductory information, you&#39;ll declare it here. 
+\maketitle
+% \his command makes it easy to switch to a new page. - It&#39;s listed here because a standard report often dedicates a full page to the cover page.
+\newpage
+
+% ... You can refer to other lines of code on the provided Overleaf link for additional details.
+
+% This line of code is used to end the document; if it&#39;s missing, the document will result in an error.
+\end{document}
+</code></pre><h3 id="43-now-lets-build-chapters-and-an-automatic-table-of-contents">
   4.3. Now, let&rsquo;s build chapters and an automatic table of contents.
   <a class="heading-link" href="#43-now-lets-build-chapters-and-an-automatic-table-of-contents">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -418,13 +418,13 @@ Let&rsquo;s explore the following steps together.</p>
   </a>
 </h3>
 <p>To create a table of contents, use the following syntax:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\tableofcontents
-</span></span><span class="line"><span class="cl">\newpage
-</span></span></code></pre></div><p>To declare chapters, use \section, \subsection, and the special thing about LaTeX is that they will automatically update the table of contents.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\section{Chapter 1}
-</span></span><span class="line"><span class="cl">\subsection{Subchapter of chapter 1}
-</span></span><span class="line"><span class="cl">% Subchapters of Chapter 1 can be declared the same way.
-</span></span></code></pre></div><p>With chapters added, the table of contents will be automatically updated like this:
+<pre tabindex="0"><code>\tableofcontents
+\newpage
+</code></pre><p>To declare chapters, use \section, \subsection, and the special thing about LaTeX is that they will automatically update the table of contents.</p>
+<pre tabindex="0"><code>\section{Chapter 1}
+\subsection{Subchapter of chapter 1}
+% Subchapters of Chapter 1 can be declared the same way.
+</code></pre><p>With chapters added, the table of contents will be automatically updated like this:
 <img src="https://i.imgur.com/q2yW1dP.png?1" alt=""></p>
 <h3 id="44-adding-images-on-overleaf">
   4.4. Adding images on Overleaf
@@ -439,12 +439,12 @@ Let&rsquo;s explore the following steps together.</p>
 <img src="https://i.imgur.com/R3e14Tm.png?1" alt=""></li>
 <li>Use the following code to add the image to LaTeX:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% This is the simplest approach to adding images to LaTeX.
-</span></span><span class="line"><span class="cl">% For more detailed adjustments, consult LaTeX documentation.
-</span></span><span class="line"><span class="cl">\begin{figure}[ht]
-</span></span><span class="line"><span class="cl">\includegraphics[width=\textwidth]{name_of_the_file}
-</span></span><span class="line"><span class="cl">\end{figure}
-</span></span></code></pre></div><h3 id="45-insert-table-on-overleaf">
+<pre tabindex="0"><code>% This is the simplest approach to adding images to LaTeX.
+% For more detailed adjustments, consult LaTeX documentation.
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{name_of_the_file}
+\end{figure}
+</code></pre><h3 id="45-insert-table-on-overleaf">
   4.5. Insert table on Overleaf
   <a class="heading-link" href="#45-insert-table-on-overleaf">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
@@ -460,13 +460,13 @@ Let&rsquo;s explore the following steps together.</p>
   </a>
 </h3>
 <p>We will build the bibliography and citation in Overleaf can be accomplished with the following code:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\begin{thebibliography}{2}
-</span></span><span class="line"><span class="cl">\bibitem{doc1}
-</span></span><span class="line"><span class="cl">Author name, \emph{Tài liệu 1}. Publication.
-</span></span><span class="line"><span class="cl">\bibitem{doc2}
-</span></span><span class="line"><span class="cl">Author name, \emph{Tài liệu 2}. Publication.
-</span></span><span class="line"><span class="cl">\end{thebibliography}
-</span></span></code></pre></div><p>With a bibliography in place, you can use the <strong>\cite{The document name is listed in \bibitem}</strong> command to cite sources in your document.</p>
+<pre tabindex="0"><code>\begin{thebibliography}{2}
+\bibitem{doc1}
+Author name, \emph{Tài liệu 1}. Publication.
+\bibitem{doc2}
+Author name, \emph{Tài liệu 2}. Publication.
+\end{thebibliography}
+</code></pre><p>With a bibliography in place, you can use the <strong>\cite{The document name is listed in \bibitem}</strong> command to cite sources in your document.</p>
 <h2 id="5-conclusion">
   5. Conclusion
   <a class="heading-link" href="#5-conclusion">
@@ -535,13 +535,8 @@ Let&rsquo;s explore the following steps together.</p>
   <section class="container">
     ©
     
-      2019 -
-    
     2023
-     7und3dpy 
-    ·
-    
-      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+     Turio 
     ·
     
     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.

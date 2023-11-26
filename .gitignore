@@ -1,3 +1,2 @@
-7und3dpy.github.io/
-*.md
-*.jpg
+*
+!.gitignore

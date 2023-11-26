@@ -12,10 +12,10 @@
 
 
 
-<meta name="author" content="7und3dpy">
+<meta name="author" content="Turio">
 <meta name="description" content="One of those things beginners in C find difficult is the concept of pointers. The purpose of this tutorial is to provide an introduction to pointers and their use to these beginners.
 I have found that often the main reason beginners have a problem with pointers is that they have a weak or minimal feeling for variables, (as they are used in C). Thus we start with a discussion of C variables in general.">
-<meta name="keywords" content="blog,researcher, developer,personal">
+<meta name="keywords" content="blog, researcher, developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CHAPTER 1: What is a pointer?"/>
@@ -140,7 +140,7 @@ I have found that often the main reason beginners have a problem with pointers i
                 
               
               <li class="navigation-item">
-                <a href="/website/vi/posts/pointerp1/">VI</a>
+                <a href="/website/vi/posts/pointerp1/">🇻🇳</a>
               </li>
             
           
@@ -168,7 +168,7 @@ I have found that often the main reason beginners have a problem with pointers i
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-11-11T00:00:00Z">
-                November 11, 111112
+                November 11, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -215,8 +215,8 @@ I have found that often the main reason beginners have a problem with pointers i
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">k</span><span class="p">;</span> 
 </span></span></code></pre></div><p>On seeing the &ldquo;int&rdquo; part of this statement the compiler sets aside 4 bytes of memory (on a PC) to hold the value of the integer. It also sets up a symbol table. In that table it adds the symbol <strong>k</strong> and the relative address in memory where those 4 bytes were set aside.</p>
 <p>Thus, later if we write:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">        k = 2; 
-</span></span></code></pre></div><p>we expect that, at run time when this statement is executed, the value 2 will be placed in that memory location reserved for the storage of the value of <strong>k</strong>. In C we refer to a variable such as the integer <strong>k</strong> as an &ldquo;object&rdquo;.</p>
+<pre tabindex="0"><code>        k = 2; 
+</code></pre><p>we expect that, at run time when this statement is executed, the value 2 will be placed in that memory location reserved for the storage of the value of <strong>k</strong>. In C we refer to a variable such as the integer <strong>k</strong> as an &ldquo;object&rdquo;.</p>
 <p>In a sense there are two &ldquo;values&rdquo; associated with the object <strong>k</strong>. One is the value of the integer stored there (2 in the above example) and the other the &ldquo;value&rdquo; of the memory location, i.e., the address of <strong>k</strong>. Some texts refer to these two values with the nomenclature <em><strong>rvalue</strong></em> (right value, pronounced &ldquo;are value&rdquo;) and <em><strong>lvalue</strong></em> (left value, pronounced &ldquo;el value&rdquo;) respectively.</p>
 <p>In some languages, the lvalue is the value permitted on the left side of the assignment operator &lsquo;=&rsquo; (i.e. the address where the result of evaluation of the right side ends up). The rvalue is that which is on the right side of the assignment statement, the <strong>2</strong> above. Rvalues cannot be used on the left side of the assignment statement. Thus: <strong>2 = k</strong>; is illegal.</p>
 <p>Actually, the above definition of &ldquo;lvalue&rdquo; is somewhat modified for C. According to K&amp;R II (page 197): [1]</p>
@@ -380,13 +380,8 @@ ISBN 0-13-110362-8</p>
   <section class="container">
     ©
     
-      2019 -
-    
     2023
-     7und3dpy 
-    ·
-    
-      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+     Turio 
     ·
     
     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.

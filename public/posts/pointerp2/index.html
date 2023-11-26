@@ -12,11 +12,11 @@
 
 
 
-<meta name="author" content="7und3dpy">
+<meta name="author" content="Turio">
 <meta name="description" content="Okay, let&rsquo;s move on. Let us consider why we need to identify the type of variable that a pointer points to, as in:
 int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&rdquo; something, if we write:
 *ptr = 2; the compiler will know how many bytes to copy into that memory location pointed to by ptr. If ptr was declared as pointing to an integer, 4 bytes would be copied.">
-<meta name="keywords" content="blog,researcher, developer,personal">
+<meta name="keywords" content="blog, researcher, developer,personal">
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CHAPTER 2: Pointer types and Arrays"/>
@@ -143,7 +143,7 @@ int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&
                 
               
               <li class="navigation-item">
-                <a href="/website/vi/posts/pointerp2/">VI</a>
+                <a href="/website/vi/posts/pointerp2/">🇻🇳</a>
               </li>
             
           
@@ -171,7 +171,7 @@ int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
               <time datetime="2023-11-11T00:00:00Z">
-                November 11, 111112
+                November 11, 2023
               </time>
             </span>
             <span class="reading-time">
@@ -264,8 +264,8 @@ int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&
 <p>Modify the example program above by changing</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 </span></span></code></pre></div><p>to</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">        ptr = my_array;
-</span></span></code></pre></div><p>and run it again to verify the results are identical.</p>
+<pre tabindex="0"><code>        ptr = my_array;
+</code></pre><p>and run it again to verify the results are identical.</p>
 <p>Now, let&rsquo;s delve a little further into the difference between the names <strong>ptr</strong> and <strong>my_array</strong> as used above. Some writers will refer to an array&rsquo;s name as a <em><strong>constant</strong></em> pointer. What do we mean by that? Well, to understand the term &ldquo;constant&rdquo; in this sense, let&rsquo;s go back to our definition of the term &ldquo;variable&rdquo;. When we declare a variable we set aside a spot in memory to hold the value of the appropriate type. Once that is done the name of the variable can be interpreted in one of two ways. When used on the left side of the assignment operator, the compiler interprets it as the memory location to which to move that value resulting from evaluation of the right side of the assignment operator. But, when used on the right side of the assignment operator, the name of a variable is interpreted to mean the contents stored at that memory address set aside to hold the value of that variable.</p>
 <p>With that in mind, let&rsquo;s now consider the simplest of constants, as in:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
@@ -359,13 +359,8 @@ int *ptr; One reason for doing this is so that later, once ptr &ldquo;points to&
   <section class="container">
     ©
     
-      2019 -
-    
     2023
-     7und3dpy 
-    ·
-    
-      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+     Turio 
     ·
     
     Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.

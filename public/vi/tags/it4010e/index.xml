@@ -16,5 +16,16 @@
       <description>Mục tiêu và nguyên tắc chung Link to heading Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?</description>
     </item>
     
+    <item>
+      <title>Cơ sở mật mã học</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/cryptoi/</link>
+      <pubDate>Sat, 18 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/cryptoi/</guid>
+      <description>Mật mã khối DES Link to heading 1. Một số hệ mật mã cổ điển Link to heading 1.1 Mã dịch shift cipher (mã cộng additive cipher) Link to heading Không gian khóa : [1&amp;hellip;25]
+Mẫ hóa với khóa K cho trước:
+Mỗi ký tự của bản rõ P được mã hóa thành ký tự thứ k sau nó (dịch đi K bước về phía bên phải) Cách định nghĩa khác: \(Y = X \oplus K \Rightarrow\) mã cộng Giải mã với khóa K cho trước</description>
+    </item>
+    
   </channel>
 </rss>
