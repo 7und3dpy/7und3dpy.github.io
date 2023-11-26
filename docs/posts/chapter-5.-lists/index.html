@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Chapter 5. Lists · Turio
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Turio">
+<meta name="description" content="Question 1: Link to heading Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &lsquo;NONE&rsquo; if such an element does not exist.
+Input:
+One line contains a sequence of integers separated by spaces.
+Output:
+Print out the answer in one line.
+Hints:
+To read a line and convert it into a list of numbers, you can use the one of following commands:">
+<meta name="keywords" content="blog, researcher, developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chapter 5. Lists"/>
+<meta name="twitter:description" content="Question 1: Link to heading Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &lsquo;NONE&rsquo; if such an element does not exist.
+Input:
+One line contains a sequence of integers separated by spaces.
+Output:
+Print out the answer in one line.
+Hints:
+To read a line and convert it into a list of numbers, you can use the one of following commands:"/>
+
+<meta property="og:title" content="Chapter 5. Lists" />
+<meta property="og:description" content="Question 1: Link to heading Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &lsquo;NONE&rsquo; if such an element does not exist.
+Input:
+One line contains a sequence of integers separated by spaces.
+Output:
+Print out the answer in one line.
+Hints:
+To read a line and convert it into a list of numbers, you can use the one of following commands:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/posts/chapter-5.-lists/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-11T00:00:00+00:00" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+<meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-4.-string/" /><meta property="og:see_also" content="https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/posts/chapter-5.-lists/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/website/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website">
+      Turio
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/vi/">🇻🇳</a>
+              </li>
+            
+          
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/posts/chapter-5.-lists/">
+              Chapter 5. Lists
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-11T00:00:00Z">
+                July 11, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/authors/7und3dpy/">7und3dpy</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/categories/code/">code</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/tags/python/">python</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="question-1">
+  Question 1:
+  <a class="heading-link" href="#question-1">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &lsquo;NONE&rsquo; if such an element does not exist.</p>
+<p><strong>Input:</strong></p>
+<p>One line contains a sequence of integers separated by spaces.</p>
+<p><strong>Output:</strong></p>
+<p>Print out the answer in one line.</p>
+<p><strong>Hints:</strong></p>
+<p>To read a line and convert it into a list of numbers, you can use the one of following commands:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1 5 2 4 3</td>
+<td style="text-align:left">5 4</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+</span></span><span class="line"><span class="cl"><span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">index</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">res</span> <span class="o">==</span> <span class="p">[]:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NONE&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">res</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>1 5 2 4 3
+5 4
+</code></pre>
+<h2 id="question-2">
+  Question 2:
+  <a class="heading-link" href="#question-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Write a program to find the element closest in magnitude to a given number in an array.</p>
+<p><strong>Input:</strong></p>
+<p>The first line contains one natural number N not exceeding 1000 - the size of the array. The second line contains N numbers - the elements of the array (integers not exceeding 1000 in absolute value). The third line contains one integer x not exceeding 1000 in absolute value.</p>
+<p><strong>Output:</strong></p>
+<p>Print the value of the element closest to x. If there are several such numbers, print any of them.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">1 20 3 40 5 70 90 5</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">num</span><span class="o">-</span><span class="n">x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">num</span><span class="o">-</span><span class="n">x</span><span class="p">))</span> <span class="o">==</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">res</span><span class="p">)[</span><span class="mi">0</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        
+</span></span></code></pre></div><pre><code>8
+1 20 3 40 5 70 90 5
+6
+5
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">	<span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">num</span><span class="p">),</span><span class="n">num</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">res</span><span class="p">,</span><span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">tup</span><span class="p">:</span> <span class="n">tup</span><span class="p">[</span><span class="mi">0</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</span></span></code></pre></div><h2 id="question-3">
+  Question 3:
+  <a class="heading-link" href="#question-3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Write a function <strong><em>remove_duplicates(lst)</em></strong> that receives a given list as input and returns another list that contains those elements that appear in the input list only once. These elements should be displayed in the order in which they appear in the input list.</p>
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Test</th>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">print(remove_duplicates([4, 3, 5, 2, 5, 1, 3, 5]))</td>
+<td style="text-align:left">[4, 2, 1]</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">remove_duplicates</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">index</span><span class="p">]))</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">res</span>
+</span></span><span class="line"><span class="cl">    
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">remove_duplicates</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span>
+</span></span></code></pre></div><pre><code>[4, 2, 1]
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">remove_duplicates</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">remove_duplicates</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">remove_duplicates</span><span class="p">([</span><span class="mi">500</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">]))</span>
+</span></span></code></pre></div><pre><code>[1]
+[]
+[500, 5, 1000]
+</code></pre>
+<h2 id="question-4">
+  Question 4:
+  <a class="heading-link" href="#question-4">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>N pins were placed in one row, numbered from left to right with numbers from 1 to N. Then K balls were thrown along this row, while the i-th ball knocked down all pins with numbers from lᵢ to rᵢ inclusive. Your task is to determine which pins are left.</p>
+<p><strong>Input:</strong></p>
+<p>The program receives as input the number of pins N and the number of throws K. Then there are K pairs of numbers lᵢ, rᵢ, with 1 ≤ lᵢ ≤ rᵢ ≤ N ≤ 100.</p>
+<p><strong>Output:</strong></p>
+<p>The program should output a sequence of N characters, where the j-th character is “I” if the j-th point is still standing, or “.” if the j-th point has been knocked down.</p>
+<p><strong>Hints:</strong></p>
+<p>To read a pair of numbers in a line, you can use the following command:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">10 3</td>
+<td style="text-align:left">I&hellip;..I&hellip;</td>
+</tr>
+<tr>
+<td style="text-align:left">8 10</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">2 5</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">3 6</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">N</span><span class="p">,</span> <span class="n">K</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;I&#34;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>    
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">K</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">begin</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">begin</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">arr</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;.&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+</span></span></code></pre></div><pre><code>10 3
+8 10
+2 5
+3 6
+I.....I...
+</code></pre>
+<h2 id="question-5">
+  Question 5:
+  <a class="heading-link" href="#question-5">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>It is known that 8 queens can be placed on an 8 × 8 board so that they do not beat each other. You are given the arrangement of 8 queens on the board, determine if there is a pair of them that can beat each other.</p>
+<p><strong>Input:</strong></p>
+<p>The first line contains the number of test cases T (1 ≤ T ≤ 10).</p>
+<p>The next lines describe the input for each test case.</p>
+<p>Each test case corresponds to a block of 8 lines that contain 8 pairs of numbers, each number from 1 to 8 is the coordinates of eight queens.</p>
+<p><strong>Output:</strong></p>
+<p>For each test case, if queens do not beat each other, print &lsquo;NO&rsquo;, otherwise print &lsquo;YES&rsquo;.</p>
+<p><strong>Hints:</strong></p>
+<p>To read a pair of numbers in a line, you can use the following command:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>For example:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Input</th>
+<th style="text-align:left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">NO</td>
+</tr>
+<tr>
+<td style="text-align:left">1 7</td>
+<td style="text-align:left">YES</td>
+</tr>
+<tr>
+<td style="text-align:left">2 4</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">3 2</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">4 8</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">5 6</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">6 1</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">7 3</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">8 5</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">1 8</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">2 7</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">3 6</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">4 5</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">5 4</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">6 3</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">7 2</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left">8 1</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check_beated</span><span class="p">(</span><span class="n">arr_queens</span><span class="p">,</span><span class="n">queen</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">x</span> <span class="o">=</span> <span class="n">queen</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">y</span> <span class="o">=</span> <span class="n">queen</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">arr_queens</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">obj</span> <span class="o">==</span> <span class="n">queen</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span> <span class="ow">or</span> <span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">y</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">([])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="k">case</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;NO&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">queen</span> <span class="ow">in</span> <span class="k">case</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">check_beated</span><span class="p">(</span><span class="k">case</span><span class="p">,</span><span class="n">queen</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;YES&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</span></span></code></pre></div>
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-python">
+        See also in Python
+        <a class="heading-link" href="#see-also-in-python">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flow-part-1/">Chapter 2. Control Flow (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flowpart-2/">Chapter 2. Control Flow (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+    
+    
+    
+      <h3 id="see-also-in-it1110e">
+        See also in IT1110E
+        <a class="heading-link" href="#see-also-in-it1110e">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flow-part-1/">Chapter 2. Control Flow (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-2.-control-flowpart-2/">Chapter 2. Control Flow (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-1/">Chapter 3. Function (Part 1)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-3.-function-part-2/">Chapter 3. Function (Part 2)</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/website/posts/chapter-4.-string/">Chapter 4. String</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Turio 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

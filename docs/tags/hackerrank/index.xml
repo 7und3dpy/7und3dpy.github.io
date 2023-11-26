@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hackerrank on Turio</title>
+    <link>https://7und3dpy.github.io/website/tags/hackerrank/</link>
+    <description>Recent content in Hackerrank on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/hackerrank/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1D Arrays in C</title>
+      <link>https://7und3dpy.github.io/website/posts/1darraysinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/1darraysinc/</guid>
+      <description>An array is a container object that holds a fixed number of values of a single type. To create an array in C, we can do int arr[n];. Here, arr, is a variable array which holds up to 10 integers. The above array is a static array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime.</description>
+    </item>
+    
+    <item>
+      <title>For Loop in C</title>
+      <link>https://7und3dpy.github.io/website/posts/forloopinc/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/forloopinc/</guid>
+      <description>Objective
+In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
+The syntax for the for loop is:
+for ( &amp;lt;expression_1&amp;gt; ; &amp;lt;expression_2&amp;gt; ; &amp;lt;expression_3&amp;gt; ) &amp;lt;statement&amp;gt; expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.</description>
+    </item>
+    
+    <item>
+      <title>Printing Pattern Using Loops</title>
+      <link>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/printingpatternusingloop/</guid>
+      <description>Print a pattern of numbers from 1 to n as shown below. Each of the numbers is separated by a single space.
+4 4 4 4 4 4 4 4 3 3 3 3 3 4 4 3 2 2 2 3 4 4 3 2 1 2 3 4 4 3 2 2 2 3 4 4 3 3 3 3 3 4 4 4 4 4 4 4 4 Input Format The input will contain a single integer n.</description>
+    </item>
+    
+  </channel>
+</rss>

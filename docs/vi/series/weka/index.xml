@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weka on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/series/weka/</link>
+    <description>Recent content in Weka on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/series/weka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu về Weka</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/weka/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/weka/</guid>
+      <description>Xây dựng mô hình Classification - Machine Learning cơ bản với Weka Link to heading Đừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.
+Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ khai thác dữ liệu.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Các khái niệm chung về an toàn thông tin · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Mục tiêu và nguyên tắc chung Link to heading Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?">
+<meta name="keywords" content="Blog, Nghiên cứu, Phát triển, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Các khái niệm chung về an toàn thông tin"/>
+<meta name="twitter:description" content="Mục tiêu và nguyên tắc chung Link to heading Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?"/>
+
+<meta property="og:title" content="Các khái niệm chung về an toàn thông tin" />
+<meta property="og:description" content="Mục tiêu và nguyên tắc chung Link to heading Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/gioithieuattt/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-18T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/gioithieuattt/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/gioithieuattt/">
+              Các khái niệm chung về an toàn thông tin
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-18T00:00:00Z">
+                tháng 11 18, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              10-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/m%E1%BA%ADt-m%C3%A3/">mật mã</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/it4010e/">IT4010E</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="mục-tiêu-và-nguyên-tắc-chung">
+  Mục tiêu và nguyên tắc chung
+  <a class="heading-link" href="#m%e1%bb%a5c-ti%c3%aau-v%c3%a0-nguy%c3%aan-t%e1%ba%afc-chung">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Đảm bảo tính mật (Confidentiality)
+<ul>
+<li>Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền</li>
+</ul>
+</li>
+<li>Đảm bảo tính nguyên vẹn (Integrity)
+<ul>
+<li>Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền
+<ul>
+<li>Tính nguyên vẹn của dữ liệu (Data integrity)</li>
+<li>Tính nguyên vẹn của chủ thể (Origin integrity)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tính khả dụng (Availability)
+<ul>
+<li>Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm  quyền</li>
+</ul>
+</li>
+</ul>
+<h1 id="thế-nào-là-crypto-">
+  Thế nào là Crypto ?
+  <a class="heading-link" href="#th%e1%ba%bf-n%c3%a0o-l%c3%a0-crypto-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Xây dựng và phân tích các giao thực mật mã để đạt được các mục tiêu về an toàn thông tin</li>
+<li>Một giao thức (hoặc một cơ chế) là một bộ các thủ tục cho biết các bên tham gia cần phải làm những gì</li>
+<li>Các nhà mật mã học phân tích các giao thức dưới các mô hình tấn công
+<ul>
+<li>Giả sử khả năng và các hành động có thể của kẻ tấn công
+<ul>
+<li>Chúng ta cần đứng trên vai trò của kẻ tấn công để suy nghĩ</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="các-thuật-ngữ">
+  Các thuật ngữ
+  <a class="heading-link" href="#c%c3%a1c-thu%e1%ba%adt-ng%e1%bb%af">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Ngành Mật mã (cryptology) thường được quan niệm như sự kết hợp của hai lĩnh vực con:
+<ul>
+<li>Phá giải mã (cryptanalysis): nghiên cứu các kỹ thuật toán học phục vụ phân tích phá mật mã và/hoặc tạo ra các đoạn mã giản nhằm đánh lừa bên nhận tin.</li>
+<li>Sinh, chế mã mật (cryptography): nghiên cứu các kỹ thuật toán học nhằm
+cung cấp các công cụ hay dịch vụ đảm bảo an toàn thông tin.</li>
+</ul>
+</li>
+</ul>
+<p>Hai lĩnh vực con này tồn tại như hai mặt đối lập, “đấu tranh để cùng phát triển” của một thể thống nhất là ngành khoa học mật mã (cryptology). Tuy nhiên, do lĩnh vực thứ hai (cryptanalysis) ít được phổ biến quảng đại nên dần dần, cách hiểu chung hiện
+nay là đánh đồng hai thuật ngữ cryptography và cryptology. Theo thói quen chung này, hai thuật ngữ này có thể dùng thay thế nhau. Thậm chí cryptography là thuật ngữ ưa dùng, phổ biến trong mọi sách vở phổ biến khoa học, còn cryptology thì xuất hiện
+trong một phạm vi hẹp của các nhà nghiên cứu học thuật thuần túy.</p>
+<ul>
+<li>Plaintexts: bản rõ</li>
+<li>Ciphertexts: bản mã</li>
+<li>Keys: khoá</li>
+<li>Encryption: mã hoá</li>
+<li>Decryption: giải mã</li>
+</ul>
+<p><img src="images/giaimavn.png" alt=""></p>
+<h1 id="hệ-thống-mã-hóa">
+  Hệ thống mã hóa
+  <a class="heading-link" href="#h%e1%bb%87-th%e1%bb%91ng-m%c3%a3-h%c3%b3a">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>\(P\) là tập hữu hạn các bản rõ (PlainText), nó được gọi là không gian bản rõ chứa bản tin gốc ban đầu.</li>
+<li>\(C\) là tập hợp hữu hạn bản mã (Crypto), nó còn được gọi là không gian các bản mã. Một phần tử của \(C\) có thể nhận được bằng cách áp dụng phép mã hóa \(E_K\) lên một phần tử P, với \(k \in K\).</li>
+<li>\(K\) là tập hữu hạn các khoá hay còn gọi là không gian khoá. Đối với mỗi phần tử k của K được gọi là một khoá (Key). Số lượng của không gian khoá phải đủ lớn để “kẻ địch” không có đủ thời gian thử mọi khoá có thể (phương pháp vét cạn).</li>
+</ul>
+<p>Là bộ năm $\mathbb{P}, \mathbb{C}, \mathbb{K}, \mathbb{E}, \mathbb{D}$ thỏa mãn các điều kiện sau:</p>
+<ul>
+<li>
+<p>Tập nguồn $ \mathbb{P} $ là tập hữu hạn các mẩu tin nguồn cần mã hóa có thể có</p>
+</li>
+<li>
+<p>Tập đích $ \mathbb{C} $ là tập hữu hạn các mẩu tin có thể có sau khi mã hóa</p>
+</li>
+<li>
+<p>Tập khóa $ \mathbb{K} $ là tập hữu hạn các khóa có thể được sử dụng</p>
+</li>
+<li>
+<p>Tập $ \mathbb{E} $ và $ \mathbb{D} $ là tập luật mã hóa và giải mã. $ \forall k \in \mathbb{K}: \exists e_k \in \mathbb{E}, \exists d_k \in \mathbb{D}$ sao cho:</p>
+<ul>
+<li>Luật mã hóa: $e_k: \mathbb{P} \rightarrow \mathbb{C}$</li>
+<li>Luật giải mã: $d_k: \mathbb{C} \rightarrow \mathbb{P}$</li>
+</ul>
+<p>2 luật này thỏa mãn $d_k(e_k(x)) = x, \forall x \in \mathbb{P}$</p>
+</li>
+</ul>
+<p><img src="images/giaima.png" alt=""></p>
+<ul>
+<li><strong>Bảo đảm mẩu tin $x$ được mã hóa bằng luật $e_k$ có thể được giải mã bằng luật $d_k$</strong></li>
+</ul>
+<h1 id="mật-mã-khoá-bí-mật-secret-key-cryptography">
+  Mật mã khoá bí mật: Secret-key cryptography
+  <a class="heading-link" href="#m%e1%ba%adt-m%c3%a3-kho%c3%a1-b%c3%ad-m%e1%ba%adt-secret-key-cryptography">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Còn có tên là: mật mã khoá đối xứng &ndash; symmetric cryptography</li>
+<li>Quá trình mã hoá và giải mã dùng cùng một khoá (Z=Z’) $\Rightarrow$ mật mã khoá đối xứng</li>
+<li>Khoá cần phải giữ bí mật $\Rightarrow$ mật mã khoá bí mật</li>
+<li>Vấn đề phân phối khoá: làm sao để chia sẻ khoá giữa A và B</li>
+</ul>
+<h1 id="mật-mã-khoá-công-khai-public-key-cryptography">
+  Mật mã khoá công khai: Public-key cryptography
+  <a class="heading-link" href="#m%e1%ba%adt-m%c3%a3-kho%c3%a1-c%c3%b4ng-khai-public-key-cryptography">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Còn gọi là: mật mã khoá phi đối xứng &ndash; asymmetric cryptography</li>
+<li>Khoá dùng để mã hoá và giải mã là khác nhau
+<ul>
+<li>Không thể suy ra khoá giải mã từ khoá dùng để mã hoá và ngược lại</li>
+</ul>
+</li>
+<li>Tốn chi phí hơn khoá đối xứng</li>
+</ul>
+<h2 id="so-sánh-hệ-mã-đối-xứng-và-bất-đối-xứng">
+  So sánh hệ mã đối xứng và bất đối xứng
+  <a class="heading-link" href="#so-s%c3%a1nh-h%e1%bb%87-m%c3%a3-%c4%91%e1%bb%91i-x%e1%bb%a9ng-v%c3%a0-b%e1%ba%a5t-%c4%91%e1%bb%91i-x%e1%bb%a9ng">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<table>
+<thead>
+<tr>
+<th>Nội dung</th>
+<th>Mã hóa đối xứng</th>
+<th>Mã hóa bất đối xứng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tốc độ</td>
+<td>Nhanh</td>
+<td>Chậm</td>
+</tr>
+<tr>
+<td>Chiều dài khóa</td>
+<td>Ngắn</td>
+<td>Dài</td>
+</tr>
+<tr>
+<td>Trao đổi mã khóa</td>
+<td>Khó</td>
+<td>Dễ</td>
+</tr>
+<tr>
+<td>Tên gọi khóa</td>
+<td>Secret key</td>
+<td>Public-private key</td>
+</tr>
+</tbody>
+</table>
+<h2 id="làm-sao-để-ta-có-thể-đánh-giá-được-tính-an-toàn-hay-tính-bảo-mật-của-mỗi-một-hệ-mã-đặt-ra">
+  Làm sao để ta có thể đánh giá được tính an toàn, hay tính bảo mật của mỗi một hệ mã đặt ra?
+  <a class="heading-link" href="#l%c3%a0m-sao-%c4%91%e1%bb%83-ta-c%c3%b3-th%e1%bb%83-%c4%91%c3%a1nh-gi%c3%a1-%c4%91%c6%b0%e1%bb%a3c-t%c3%adnh-an-to%c3%a0n-hay-t%c3%adnh-b%e1%ba%a3o-m%e1%ba%adt-c%e1%bb%a7a-m%e1%bb%97i-m%e1%bb%99t-h%e1%bb%87-m%c3%a3-%c4%91%e1%ba%b7t-ra">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Một hệ mã mật là không an toàn (insecure)
+<ul>
+<li>Bằng việc chỉ ra cách phá nó trong một mô hình tấn công (các mục tiêu về ATBM (security) không được đảm bảo đúng)</li>
+</ul>
+</li>
+<li>Để có thể khẳng định tính an toàn cao
+<ul>
+<li>Đưa ra một chứng minh hình thức (formal proof)
+<ul>
+<li>Chứng minh bằng công cụ toán học là tính ATBM của hệ mã đang xét là tương đương với một hệ mã kinh điển, mà tính an toàn của nó đã khẳng định rộng rãi từ lâu.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="phá-mã">
+  Phá mã
+  <a class="heading-link" href="#ph%c3%a1-m%c3%a3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Có rất nhiều kiểu tấn công, phụ thuộc vào:
+<ul>
+<li>Kiểu thông tin mà kẻ tấn công có thể có</li>
+<li>Tương tác với máy mã hoá</li>
+<li>Năng lực tính toán của kẻ tấn công</li>
+</ul>
+</li>
+<li>Tấn công chỉ dựa vào bản mã (Ciphertext-only attack):
+<ul>
+<li>Kẻ tấn công chỉ biết bản mã</li>
+<li>Mục tiêu: tìm được bản rõ và khoá</li>
+<li>Chú ý: một hệ thống bị tấn công bởi kiểu tấn công này thì hoàn toàn không an toàn</li>
+</ul>
+</li>
+<li>Tấn công dựa vào bản rõ (Known-plaintext attack):
+<ul>
+<li>Kẻ tấn công biết một vài bản mã và các bản rõ tương ứng</li>
+<li>Mục tiêu: tìm ra khoá đã được dùng để mã hoá</li>
+<li>Hoặc tìm ra cách để giải mã các gói tin dùng cùng khoá với
+các gói tin đã bắt được</li>
+</ul>
+</li>
+<li>Tấn công bản rõ có chọn lựa (Chosen-plaintext attack)
+<ul>
+<li>Kẻ tấn công có thể chọn một số các bản rõ và nhận được các bản mã tương ứng</li>
+<li>Mục tiêu: suy đoán khoá</li>
+<li>Tấn công bản mã có chọn lựa (Chosen-ciphertext attack)</li>
+<li>Tương tự như trên nhưng kẻ tân công có thể chọn một vài bản mã và nhận được các bản rõ tương ứng.</li>
+<li>Sự lựa chọn của bản mã có thể thay đổi tuỳ vào bản rõ nhận được trước đó.</li>
+</ul>
+</li>
+</ul>
+<h1 id="mô-hình-đánh-giá-mức-độ-bảo-mật">
+  Mô hình đánh giá mức độ bảo mật
+  <a class="heading-link" href="#m%c3%b4-h%c3%acnh-%c4%91%c3%a1nh-gi%c3%a1-m%e1%bb%a9c-%c4%91%e1%bb%99-b%e1%ba%a3o-m%e1%ba%adt">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Bảo mật vô điều kiện (unconditional security): Đây là mô hình đánh giá ATBM mức cao nhất, trong đó “vô điều kiện” được hiểu theo ý nghĩa của lý thuyết thông tin (information theory), trong đó các ý niệm về “lượng tin” được hình thức hóa thông qua các phép toán xác suất. Trong mô hình này, kẻ địch được coi là không bị hạn chế về năng lực tính toán, tức là có thể thực hiện bất kỳ khối lượng tính toán cực lớn nào đặt ra trong khoảng thời gian ngắn bất kỳ. Mặc dù có năng lực tính toán siêu nhiên như vậy, mô hình này chỉ giả thiết kẻ tấn công là người ngoài hoàn toàn (tức là ứng với mô hình tấn công chỉ–biết–bản–mã). Một hệ mật mã đạt được mức an toàn vô điều kiện,
+tức là có thể đứng vững trước sức mạnh của một kẻ địch bên ngoài (chỉ biết bản mã) có khả năng không hạn chế tính toán, được gọi là đạt đến bí mật tuyệt đối (perfect secretcy).</li>
+<li>Bảo mật chứng minh được (provable security): Đây cũng là một mô hình đánh giá mức rất cao, lý tưởng trong hầu hết các trường hợp. Một hệ mật mã đạt được mức đánh giá này đối với một mô hình tấn công cụ thể nào đó, nếu ta có thể chứng minh bằng toán học rằng tính an toàn của hệ mật là được quy về tính NP–khó của một bài toán nào đó đã được biết từ lâu (ví dụ bài toán phân tích ra thừa số nguyên tố, bài toán cái túi, bài toán tính logarit rời rạc&hellip;). Nói cách khác, ta phải chứng minh được là kẻ thù muốn phá được hệ mã thì phải thực hiện một khối lượng tính toán tương đương hoặc hơn với việc giải quyết một bài toán NP–khó đã biết.</li>
+<li>Bảo mật tính toán được, hay bảo mật thực tiễn (computational security hay practical security): Đây là một trong những mức đánh giá thường được áp dụng nhất trong thực tế (khi những mức bảo mật cao hơn được cho là không thể đạt tới). Khi đánh giá ở mức này với một hệ mã cụ thể, người ta lượng hóa khối lượng tính toán đặt ra để có thể phá hệ mã này, sử dụng kiểu tấn công mạnh nhất đã biết (thường kèm theo đó là mô hình tấn công phổ biến mạnh nhất). Từ việc đánh giá được khối lượng tính toán này cùng thời gian thực hiện (với năng lực kẻ địch mạnh nhất có thể trên thực tế), và so sánh với thời gian đòi hỏi đảm bảo tính mật trên thực tế, ta có thể đánh giá hệ mã có đạt an toàn thực tiễn cao hay không. Đôi khi, cơ sở đánh giá cũng dựa vào một bài toán khó nào đó mặc dù không đưa ra được một chứng minh tương đương thực sự.</li>
+</ul>
+<div class="notice note">
+  <div class="notice-title">
+    <i class="fa fa-sticky-note" aria-hidden="true"></i>Note
+  </div>
+  <div class="notice-content">Ví dụ: Giả thiết một hệ mã X được sử dụng mã mật các loại văn bản hợp đồng có giá trị sử dụng trong 2 năm. Nếu như kẻ địch có năng lực tính toán mạnh nhất có thể cũng phải mất thời gian đến 20 năm để phá được (chẳng hạn sử dụng toàn bộ lực lượng tính toán của các công ty IT lớn như Microsoft hay Google), hệ mã X này có thể được đánh giá là đảm bảo mức an toàn thực tiễn.</div>
+</div>
+
+<ul>
+<li>Bảo mật tự tác (ad hoc security): Một số hệ mật mã riêng được một số công ty hoặc cá nhân tự chế để phục vụ mục đích đặc biệt dùng nội bộ. Tác giả loại hệ mật mã có thể sử dụng những lập luận đánh giá hợp lý nhất định dựa trên việc ước đoán khối lượng tính toán của kẻ địch khi sử dụng những tấn công mạnh nhất đã biết và lập luận về tính bất khả thi thực tiễn để thực hiện. Mặc dù vậy hệ mật mã này vẫn có thể bị phá bởi những tấn công có thể tồn tại mà chưa được biết tới đến thời điểm đó; vì vậy, thực tế bảo mật ở mức này hàm nghĩa không có một chứng minh đảm bảo thực sự, nên không thể coi là tin cậy với đại chúng.</li>
+</ul>
+<h1 id="các-nguồn-tham-khảo">
+  Các nguồn tham khảo
+  <a class="heading-link" href="#c%c3%a1c-ngu%e1%bb%93n-tham-kh%e1%ba%a3o">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>Slide: Thầy Nguyễn Khanh Văn</li>
+<li><a href="https://nam.name.vn/bai-1-gioi-thieu-ve-an-toan-va-bao-mat-thong-tin.html"  class="external-link" target="_blank" rel="noopener">https://nam.name.vn/bai-1-gioi-thieu-ve-an-toan-va-bao-mat-thong-tin.html</a></li>
+</ul>
+<div class="notice note">
+  <div class="notice-title">
+    <i class="fa fa-sticky-note" aria-hidden="true"></i>Note
+  </div>
+  <div class="notice-content"><h2 id="tính-chất-của-mathbbz_m">
+  Tính chất của $\mathbb{Z}_m$
+  <a class="heading-link" href="#t%c3%adnh-ch%e1%ba%a5t-c%e1%bb%a7a-mathbbz_m">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="phép-cộng-trong-mathbbz_m">
+  Phép cộng trong $\mathbb{Z}_m$
+  <a class="heading-link" href="#ph%c3%a9p-c%e1%bb%99ng-trong-mathbbz_m">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>$\forall a, b \in \mathbb{Z}_m: a + b \in \mathbb{Z}_m$</li>
+<li>Giao hoán: $\forall a, b \in \mathbb{Z}_m: a + b = b + a$</li>
+<li>Kết hợp: $\forall a, b, c \in \mathbb{Z}_m: (a + b) + c = a + (b + c)$</li>
+<li>Phần tử trung hòa là $0$, $\forall a \in \mathbb{Z}_m: a + 0 = 0 + a = a$</li>
+<li>Phần tử đối: $\forall a, b \in \mathbb{Z}_m$ đều có phần tử đối là $(m - a) \in \mathbb{Z}_m$</li>
+</ul>
+<h3 id="phép-nhân-trong-mathbbz_m">
+  Phép nhân trong $\mathbb{Z}_m$
+  <a class="heading-link" href="#ph%c3%a9p-nh%c3%a2n-trong-mathbbz_m">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>$\forall a, b \in \mathbb{Z}_m: a \times b \in \mathbb{Z}_m$</li>
+<li>Giao hoán: $\forall a, b \in \mathbb{Z}_m: a \times b = b \times a$</li>
+<li>Kết hợp: $\forall a, b, c \in \mathbb{Z}_m: (a \times b) \times c = a \times (b \times c)$</li>
+<li>Phần tử đơn vị là $1$, $\forall a \in \mathbb{Z}_m: a \times 1 = 1 \times a = a$</li>
+<li>Phân phối phép $\times$ với phép $+$: $\forall a, b, c \in \mathbb{Z}_m, (a + b) \times c = a\times c + b\times c$</li>
+</ul></div>
+</div>
+
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Giới thiệu về LATEX · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Bài viết mẫu hiển thị cú pháp Latex cơ bản.">
+<meta name="keywords" content="Blog, Nghiên cứu, Phát triển, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Giới thiệu về LATEX"/>
+<meta name="twitter:description" content="Bài viết mẫu hiển thị cú pháp Latex cơ bản."/>
+
+<meta property="og:title" content="Giới thiệu về LATEX" />
+<meta property="og:description" content="Bài viết mẫu hiển thị cú pháp Latex cơ bản." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/introtolatex/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/introtolatex/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/introtolatex/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/introtolatex/">
+              Giới thiệu về LATEX
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                tháng 7 24, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              13-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/study/">study</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/latex/">latex</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="1-latex-là-gì">
+  1. LaTeX là gì?
+  <a class="heading-link" href="#1-latex-l%c3%a0-g%c3%ac">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p><img src="https://i.stack.imgur.com/t5VF4.png" alt=""></p>
+<p>LaTeX là ngôn ngữ định dạng (document markup language) cho phép người dùng có thể soạn thảo tài liệu chất lượng cao cùng cấu trúc văn bản thống nhất và đồng bộ. LaTeX thường được sử dụng bởi sinh viên, giảng viên lẫn các nhà nghiên cứu về khoa học &amp; kỹ thuật, cũng như một số lĩnh vực khác.</p>
+<p>Tiền thân của LaTeX là TeX - ngôn ngữ định dạng do Donald Knuth phát minh nhưng rất khó sử dụng. Sau đó, LaTeX được phát minh bởi Leslie Lamport dựa trên TeX với nhiều cải tiến và trở nên phổ biến cho đến hiện nay.</p>
+<p>Điểm đặc trưng của LaTeX nằm ở việc khuyến khích người dùng tập trung vào xây dựng nội dung và máy tính sẽ đảm nhiệm việc định dạng[1].</p>
+<h1 id="2-tìm-hiểu-về-latex">
+  2. Tìm hiểu về LaTeX
+  <a class="heading-link" href="#2-t%c3%acm-hi%e1%bb%83u-v%e1%bb%81-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="21-lợi-ích-từ-latex">
+  2.1. Lợi ích từ LaTeX
+  <a class="heading-link" href="#21-l%e1%bb%a3i-%c3%adch-t%e1%bb%ab-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>LaTeX có tính thống nhất: khoảng cách dòng, kích cỡ chữ, màu sắc, cách trình bày,&hellip; giúp bạn linh hoạt khi chuyển đổi đến văn bản khác.</li>
+<li>Tự động hoá nhiều thao tác: đánh số chương, xây dựng tiêu đề, tạo bảng, hình ảnh, tham chiếu,&hellip;</li>
+<li>Trích dẫn tài liệu tham khảo một cách tự động và nhất quán với hình thức trình bày gọn gàng.</li>
+<li>LaTex giúp bạn dễ dàng trình bày các công thức toán học ví dụ:</li>
+</ul>
+
+
+<ul>
+<li>LaTeX dễ làm việc với dự án lớn: Việc định dạng cả trăm, cả ngàn trang trong một file <strong>.tex</strong> với dung lượng không hề cao sẽ giúp bạn quản lý văn bản dễ dàng.</li>
+<li>LaTeX hiện có phần lớn packages giúp người dùng thực hiện nhiều công đoạn khác như thêm chú thích, vẽ sơ đồ, tạo bảng,&hellip;</li>
+<li>LaTeX còn có những packages chuyên dụng phục vụ mục đích viết bài báo khoa học, trình chiếu lẫn thực hiện bảng tính.</li>
+</ul>
+<p><img src="https://i.stack.imgur.com/ecqMl.jpg" alt=""></p>
+<p><em><strong>Ảnh 01:</strong></em> <em>Một trong những lợi ích LaTeX mang lại trong việc định dạng văn bản dễ dàng</em></p>
+<h2 id="22-một-số-nhược-điểm-của-latex">
+  2.2. Một số nhược điểm của LaTeX
+  <a class="heading-link" href="#22-m%e1%bb%99t-s%e1%bb%91-nh%c6%b0%e1%bb%a3c-%c4%91i%e1%bb%83m-c%e1%bb%a7a-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Cần thời gian để xây dựng cấu trúc chung cho tài liệu. Chẳng hạn như xây dựng format cho các bài báo khoa học.</li>
+<li>Soạn thảo trên LaTeX sẽ có chút tương đồng với việc lập trình - điều đó khiến bạn dễ tốn thời gian nếu gặp những lỗi nhỏ nhặt.</li>
+<li>Cần thời gian để học và sử dụng thành thạo LaTeX.</li>
+</ul>
+<h2 id="23-một-số-editor-có-thể-tham-khảo-ở-latex">
+  2.3. Một số Editor có thể tham khảo ở LaTeX
+  <a class="heading-link" href="#23-m%e1%bb%99t-s%e1%bb%91-editor-c%c3%b3-th%e1%bb%83-tham-kh%e1%ba%a3o-%e1%bb%9f-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>MiKTeX (Bundle) (Windows)</li>
+<li><strong>Overleaf (Collaborative Online Editor)</strong></li>
+<li>Mactex (Bundle) (Mac)</li>
+<li>Texlive (Bundle) (Linux)</li>
+<li>Lyx (Bundle &amp; Editor) (Windows, Mac, Linux)</li>
+<li>Texmaker (Windows, Mac, Linux)</li>
+</ul>
+<p>Ở bài viết này, chúng ta sẽ tiến hành tìm hiểu chi tiết cách sử dụng LaTeX qua Editor Overleaf. Để bắt đầu, bạn có thể truy cập Overleaf ngay tại <a href="https://www.overleaf.com/"  class="external-link" target="_blank" rel="noopener">đây</a>.</p>
+<p><img src="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL" alt="">
+<em><strong>Ảnh 02:</strong></em> <em>Môi trường soạn thảo LaTeX trên Overleaf</em></p>
+<h1 id="3-tìm-hiểu-về-overleaf">
+  3. Tìm hiểu về Overleaf
+  <a class="heading-link" href="#3-t%c3%acm-hi%e1%bb%83u-v%e1%bb%81-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="31-điểm-nổi-bật-của-overleaf">
+  3.1. Điểm nổi bật của Overleaf
+  <a class="heading-link" href="#31-%c4%91i%e1%bb%83m-n%e1%bb%95i-b%e1%ba%adt-c%e1%bb%a7a-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png" alt=""></p>
+<p>Overleaf là công cụ soạn thảo LaTeX miễn phí mang tính chất cộng tác trên nền web. Overleaf có nhiều tính năng khác biệt vốn nổi bật và thực sự hữu ích cho bất kỳ ai cần viết nhiều lẫn thực hiện cùng nhiều đối tượng.</p>
+<p>Trong bài viết này, <strong>nếu sử bạn không hề thông thạo LaTeX</strong> hãy tham khảo một số cú pháp cơ bản về LaTeX tại <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29"  class="external-link" target="_blank" rel="noopener">đây</a>. Sau đó, Mình sẽ cung cấp đến bạn một chuẩn cơ bản khi thực hiện soạn thảo văn bản với LaTeX. Đừng ngần ngại copy các đoạn LaTeX code và chỉnh sửa lại để làm quen dần các bạn nhé!</p>
+<h2 id="32-tạo-project-latex-trên-overleaf">
+  3.2. Tạo project LaTeX trên Overleaf
+  <a class="heading-link" href="#32-t%e1%ba%a1o-project-latex-tr%c3%aan-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>Và hơn hết, Mình vẫn khuyến khích bạn học cách sử dụng LaTeX</strong>. LaTeX hoàn toàn không khó học và có nguồn thông tin, hướng dẫn gần như vô tận trên Internet về cách sử dụng LaTeX. Bạn sẽ không cần biết sâu về LaTeX (tuy nhiên một số lệnh và cách sử dụng vẫn sẽ cần thiết), và bạn sẽ có một hệ thống tuyệt vời để tự động hoá việc tổ chức bài viết của mình.</p>
+<p>Hãy tìm hiểu cùng Mình qua các bước sau.</p>
+<h2 id="bước-1---đăng-ký-tài-khoản-trên-overleaf">
+  Bước 1 - Đăng ký tài khoản trên Overleaf
+  <a class="heading-link" href="#b%c6%b0%e1%bb%9bc-1---%c4%91%c4%83ng-k%c3%bd-t%c3%a0i-kho%e1%ba%a3n-tr%c3%aan-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Để sử dụng Overleaf, bạn sẽ cần tạo tài khoản. Bạn có thể truy cập và đăng ký tại <a href="https://www.overleaf.com/register?source=post_page-----6599268c095f----------------------"  class="external-link" target="_blank" rel="noopener">đây</a>.</p>
+<h2 id="bước-2---tạo-project-mới-sau-khi-đăng-ký-tài-khoản-trên-overleaf">
+  Bước 2 - Tạo project mới sau khi đăng ký tài khoản trên Overleaf
+  <a class="heading-link" href="#b%c6%b0%e1%bb%9bc-2---t%e1%ba%a1o-project-m%e1%bb%9bi-sau-khi-%c4%91%c4%83ng-k%c3%bd-t%c3%a0i-kho%e1%ba%a3n-tr%c3%aan-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW" alt=""></p>
+<ol>
+<li>Khi bạn đăng nhập, bạn sẽ thấy một hộp có tên là <strong>New Project</strong>. Nhấp vào hộp thoại này để bắt đầu tạo dự án. Một dự án trong Overleaf là một thư mục chứa một số tệp khác nhau.</li>
+<li>Nếu bạn nhận được một URL trong email của bạn từ một người có tài liệu và bạn được yêu cầu nhấp vào URL để đến tài liệu, thì bạn đã có một tài liệu để làm việc, vì vậy chỉ cần đăng nhập sẽ dẫn bạn đến tài liệu đó.</li>
+<li>Khi bạn nhấp vào <strong>New Project</strong>, bạn sẽ thấy một số mẫu tiêu chuẩn mà Overleaf đã thực hiện cho bạn như <strong>Sample Project</strong>. Tuy nhiên, chúng ta nên bắt đầu với <strong>Blank Project</strong> để tìm hiểu tổng quan hơn về các thao tác LaTeX trên Overleaf.</li>
+</ol>
+<p><img src="https://i.imgur.com/8Nccg2x.png?1" alt="">
+<em><strong>Ảnh 03</strong></em>: <em>Môi trường soạn thảo cơ bản trên Overleaf</em></p>
+<p>Hãy tiến hành nhìn từ trái sang phải:</p>
+<ol>
+<li>Ở góc trên cùng bạn sẽ thấy dòng chữ <strong>Menu</strong> - tại đây chứa các chức năng như Download project, copy project, đếm số lượng chữ/ tiêu đề, liên kết với Git/Dropbox hay một số thao tác Setting chuyên sâu.
+<img src="https://i.imgur.com/81fvwmk.png?1" alt=""></li>
+<li>Cũng ở bên trái, bạn sẽ thấy một bảng điều khiển trông giống như một trình quản lý tệp tin ở bên trái. Theo mặc định, ta sẽ lựa chọn compile file <strong>main.tex</strong>. Bạn có thể upload thêm các tài liệu văn bản hoặc hình ảnh. Bên cạnh nó, gần một nửa màn hình là một bảng hiển thị tài liệu LaTeX với 2 tuỳ chọn là <strong>Source</strong> hoặc <strong>Rich Text</strong>.</li>
+<li>Nửa bên phải của màn hình sẽ hiển thị kết quả xuất khi xuất ra định dạng PDF. Tài liệu chủ yếu sẽ được compile và hiển thị tự động. Bạn có thể lựa chọn <strong>Recompile</strong> để có thể tự cập nhật nếu cần kiểm tra khi thực hiện tài liệu. Ở <strong>Recompile</strong>, bạn cũng có thể lựa chọn giữa việc bật/ tắt chế độ compile tự động, tốc độ compile nhanh (sẽ lưu dạng bản nháp)/ bình thường hay kiểm tra cú pháp trước khi compile.
+<img src="https://i.imgur.com/igRmUCh.png?1" alt=""></li>
+<li>Button tiếp theo bạn cần quan tâm chính là nút <strong>Download PDF</strong> - icon trắng thứ 2 nhìn từ <strong>Recompile</strong>. Button này sẽ giúp bạn lưu tài liệu về dạng Pdf nhanh chóng.</li>
+<li>Ở góc trên cùng bên phải, bạn sẽ thấy button <strong>Share</strong> - bạn có thể lựa chọn <strong>Turn on link sharing</strong> để bất kỳ ai có link sẽ truy cập tham khảo và chỉnh sửa tài liệu. Còn nếu đây là tài liệu riêng tư, bạn có thể lựa chọn mời thủ công từng người dùng cộng tác qua email.</li>
+<li>Bên cạnh button <strong>Share</strong> bạn sẽ thấy button <strong>Submit</strong> - button này sẽ giúp bạn submit trực tiếp tài liệu thực hiện đến các hội nghị, tạp chí khoa học uy tín. Đây cũng là một trong những tính năng độc đáo từ <strong>Overleaf</strong>.</li>
+<li>Với button <strong>History</strong> bên cạnh button <strong>Share</strong>, đây là chức năng giúp bạn xem lại Lịch sử thực hiện chỉnh sửa tài liệu soạn thảo - phù hợp với nhu cầu back-up tài liệu.
+<img src="https://i.imgur.com/gkxJClb.png?1" alt=""></li>
+<li>Ở button cuối cùng <strong>Chat</strong> - đây là nơi để bạn liên lạc cùng những thành viên cộng tác. Điều đó sẽ giúp bạn tập trung ở Overleaf thay vì phải lựa chọn công cụ thứ 3 nếu phát sinh nhu cầu trao đổi nhóm.</li>
+</ol>
+<h3 id="321-về-file-manager-panel-trong-overleaf">
+  3.2.1. Về File Manager Panel trong Overleaf
+  <a class="heading-link" href="#321-v%e1%bb%81-file-manager-panel-trong-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Overleaf</strong> cung cấp cho bạn một trình quản lý tệp tin giúp bạn có thể lưu trữ các tệp mà bạn sẽ sử dụng trong quá trình soạn thảo của mình. Đây có thể là tài liệu văn bản hoặc hình ảnh (nhớ chỉ tải lên tài liệu PDF, hình ảnh hoặc văn bản). Bạn cũng có thể tạo các thư mục mới nơi bạn có thể lưu trữ các tệp của mình.</p>
+<p><strong>Lưu ý</strong>: Nếu project của bạn bạn có nhiều hình ảnh, bạn có thể tạo các thư mục riêng để giữ hình ảnh của mình.</p>
+<p>Và trong hướng dẫn này, ta sẽ làm việc với file <strong>main.tex</strong> được tạo sẵn.</p>
+<h3 id="322-tìm-hiểu-về-centre-panel">
+  3.2.2. Tìm hiểu về Centre Panel
+  <a class="heading-link" href="#322-t%c3%acm-hi%e1%bb%83u-v%e1%bb%81-centre-panel">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Hãy hình dung đây là khu vực thực hiện công việc soạn thảo chính. Centre Panel sẽ cung cấp cho bạn tất cả các công cụ và một số ràng buộc phục vụ mục đích soạn thảo.</p>
+<p>Các mục menu ở đây không bao gồm các nút để chèn hình ảnh, bảng và trích dẫn. Qua đó, bạn phải sử dụng mã LaTeX. Và để hình dung rõ hơn, ta hãy tiến hành thiết kế Workflow cho file <strong>main.tex</strong>.</p>
+<h3 id="323-một-số-lưu-ý-khi-thực-hiện-soạn-thảo-ở-latex">
+  3.2.3. Một số lưu ý khi thực hiện soạn thảo ở LaTeX
+  <a class="heading-link" href="#323-m%e1%bb%99t-s%e1%bb%91-l%c6%b0u-%c3%bd-khi-th%e1%bb%b1c-hi%e1%bb%87n-so%e1%ba%a1n-th%e1%ba%a3o-%e1%bb%9f-latex">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Nhìn chung, các tài liệu học thuật như tài liệu nghiên cứu, bài báo khoa học,&hellip; luôn có một số cấu trúc phổ biến bao gồm:</p>
+<ul>
+<li>
+<p><strong>Metadata</strong>: Nơi bạn cung cấp tiêu đề, thông tin tác giả, thời gian và một số thông tin cơ bản khác. Trong LaTeX, bạn có thể hình dung đây là <strong>Lời mở đầu</strong>. Trong Overleaf, chúng ta đặt phần mở đầu ở đầu file <strong>main.tex</strong>. Ta sẽ khám phá chi tiết hơn khi chọn tính năng <strong>Source</strong> để hiển thị tài liệu.</p>
+</li>
+<li>
+<p><strong>Table and figures</strong>: Phần lớn nhiều tài liệu học thuật sẽ chứa thông tin dưới dạng bảng và hình. Nếu bạn có nhiều bảng và số liệu, bạn nên đặt các số liệu và bảng trong các tệp riêng biệt có với các tên đơn cử <strong>fig.tex</strong> và <strong>frames.tex</strong>. Bằng cách đó, bạn có thể tham khảo chúng từ trong tài liệu hoặc bạn có thể sao chép và dán mã của bảng và số liệu từ các tài liệu đó vào phần cụ thể của tài liệu mà bạn đang viết.</p>
+</li>
+<li>
+<p><strong>Citiation</strong>: Dân gian có câu &ldquo;Nói có sách, mách có chứng&rdquo;. Việc sử dụng tài liệu tham khảo và trích dẫn chúng sẽ thể hiện sự tôn trọng của ta đến tác giả đã viết lẫn sử dụng tinh tế những tri thức được công nhận nhằm chứng minh cho luận điểm của mình.</p>
+</li>
+</ul>
+<h2 id="4-xây-dựng-văn-bản-đầu-tiên-trên-overleaf">
+  4. Xây dựng văn bản đầu tiên trên Overleaf
+  <a class="heading-link" href="#4-x%c3%a2y-d%e1%bb%b1ng-v%c4%83n-b%e1%ba%a3n-%c4%91%e1%ba%a7u-ti%c3%aan-tr%c3%aan-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Bạn có thể vào Overleaf project của Mình, copy đoạn code này và paste vào link Overleaf của bạn nhé: <a href="https://www.overleaf.com/read/yhkrqpqdhcbj"  class="external-link" target="_blank" rel="noopener">https://www.overleaf.com/read/yhkrqpqdhcbj</a></p>
+<p><strong>Note quan trọng</strong>: Hãy lựa chọn compiler là XeLaTeX nếu muốn thử nghiệm các đoạn code trên nhé.</p>
+<p><img src="https://i.imgur.com/HbvTcYq.png?1" alt=""></p>
+<h3 id="41-về-phần-khai-báo-giới-thiệu---gồm-tiêu-đề-bài-viết-lẫn-các-packages-latex-cần-thiết">
+  4.1. Về phần khai báo giới thiệu - gồm tiêu đề bài viết lẫn các packages LaTeX cần thiết
+  <a class="heading-link" href="#41-v%e1%bb%81-ph%e1%ba%a7n-khai-b%c3%a1o-gi%e1%bb%9bi-thi%e1%bb%87u---g%e1%bb%93m-ti%c3%aau-%c4%91%e1%bb%81-b%c3%a0i-vi%e1%ba%bft-l%e1%ba%abn-c%c3%a1c-packages-latex-c%e1%ba%a7n-thi%e1%ba%bft">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Đầu tiên, ta sẽ lựa chọn loại document phù hợp. Ví dụ ở đây Ad lựa chọn loại document phù hợp để viết bài báo khoa học với cỡ giấy A4.</p>
+<pre tabindex="0"><code>\documentclass[a4paper]{article}
+</code></pre><p>Liệt kê các packages sử dụng khi soạn thảo. Ở code block sau Ad có nhiều dấu <strong>%</strong> - mỗi khi ta liệt kê chúng ở đầu dòng nào thì dòng đó sẽ trở thành ghi chú. Với các ghi chú, chúng sẽ chỉ hiển thị ở cửa sổ soạn thảo và không xuất hiện ở file Pdf được xuất sau cùng.</p>
+<pre tabindex="0"><code>% Packages này giúp chúng ta gõ tiếng Việt trên LaTeX
+\usepackage[utf8]{inputenc}
+% Packages này giúp chúng ta chèn hình ảnh vào LaTeX
+\usepackage{graphicx}
+% Đây là đường dẫn đến folder hình ảnh Ad đã tạo
+\graphicspath{ {./images/} }
+</code></pre><p>Tiếp theo, ta sẽ liệt kê tiêu đề bài viết, tên tác giả và ngày thực hiện tại đây. Bạn có thể tiến hành thay đổi các giá trị bên dưới.</p>
+<pre tabindex="0"><code>\title{A Sample Document}
+\author{Mình}
+\date{\today}
+</code></pre><h3 id="42-xây-dựng-nội-dung-trọng-tâm">
+  4.2. Xây dựng nội dung trọng tâm
+  <a class="heading-link" href="#42-x%c3%a2y-d%e1%bb%b1ng-n%e1%bb%99i-dung-tr%e1%bb%8dng-t%c3%a2m">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Qua đó, chúng ta đã kết thúc phần khai báo giới thiệu. Ta sẽ đến với phần quan trọng trong quá trình soạn thảo file LaTeX. Đầu tiên, bạn hãy luôn nhớ cú pháp sau:</p>
+<pre tabindex="0"><code>% Dòng code này như một cánh cửa để ta tiến hành bắt đầu xây dựng tài liệu
+\begin{document}
+
+% Qua các thông tin giới thiệu được liệt kê, ta sẽ khai báo chúng tại đây
+\maketitle
+% \newpage là lệnh dễ dàng giúp bạn chuyển sang trang mới - Ad liệt kê ở đây vì thông thường một báo cáo chuẩn sẽ luôn dành hẳn một trang để làm trang bìa. 
+\newpage
+
+% ... Các dòng code khác bạn có thể tham khảo thêm ở link Overleaf Ad đã để sẵn nhé.
+
+% Dòng code này dùng để kết thúc tài liệu, nếu thiếu dòng code này tài liệu sẽ báo lỗi
+\end{document}
+</code></pre><h3 id="43-xây-dựng-chương-và-mục-lục-tự-động">
+  4.3. Xây dựng chương và mục lục tự động
+  <a class="heading-link" href="#43-x%c3%a2y-d%e1%bb%b1ng-ch%c6%b0%c6%a1ng-v%c3%a0-m%e1%bb%a5c-l%e1%bb%a5c-t%e1%bb%b1-%c4%91%e1%bb%99ng">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Ta sẽ tiến hành tạo mục lục theo cú pháp sau:</p>
+<pre tabindex="0"><code>\tableofcontents
+\newpage
+</code></pre><p>Để khai báo các Chương, ta khai báo với dạng \section, \subsection và một điểm đặc biệt ở LaTeX là chúng sẽ tự động cập nhật vào mục lục.</p>
+<pre tabindex="0"><code>\section{Chương 1}
+\subsection{Chương con của chương 1}
+% nếu muốn tiếp tục khai báo chương con, ta lại tiếp tục \subsubsection , \subsubsubsection , ...
+</code></pre><p>Với các chương được thêm vào, mục lục sẽ được cập nhật tự động như thế này:
+<img src="https://i.imgur.com/q2yW1dP.png?1" alt=""></p>
+<h3 id="44-thêm-hình-ảnh-trong-overleaf">
+  4.4. Thêm hình ảnh trong Overleaf
+  <a class="heading-link" href="#44-th%c3%aam-h%c3%acnh-%e1%ba%a3nh-trong-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Để thêm hình ảnh, bạn hãy thực hiện theo các bước:</p>
+<ul>
+<li>Add hình ảnh lên project Overleaf, bạn có thể tạo thêm thư mục để dễ quản lý. Chẳng hạn như ảnh bên dưới, Ad tạo folder <strong>images</strong> để chứa tất cả hình ảnh.
+<img src="https://i.imgur.com/R3e14Tm.png?1" alt=""></li>
+<li>Sử dụng đoạn code sau để add ảnh vào LaTeX nhé!</li>
+</ul>
+<pre tabindex="0"><code>% Đây là cách tiếp cận đơn giản nhất trong việc add ảnh vào LaTeX
+% Để chỉnh sửa chi tiết hơn, bạn hãy đọc thêm tài liệu LaTeX
+\begin{figure}[ht]
+\includegraphics[width=\textwidth]{name_of_the_file}
+\end{figure}
+</code></pre><h3 id="45-thêm-table-trong-overleaf">
+  4.5. Thêm table trong Overleaf
+  <a class="heading-link" href="#45-th%c3%aam-table-trong-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Xây dựng table mẫu, bạn có thể vào link: <a href="http://www.tablesgenerator.com/"  class="external-link" target="_blank" rel="noopener">http://www.tablesgenerator.com/</a> để tạo table và copy đoạn code LaTeX ở website vào file.</p>
+<h3 id="46-xây-dựng-danh-mục-tài-liệu-tham-khảo-và-trích-dẫn-trong-overleaf">
+  4.6. Xây dựng danh mục tài liệu tham khảo và trích dẫn trong Overleaf
+  <a class="heading-link" href="#46-x%c3%a2y-d%e1%bb%b1ng-danh-m%e1%bb%a5c-t%c3%a0i-li%e1%bb%87u-tham-kh%e1%ba%a3o-v%c3%a0-tr%c3%adch-d%e1%ba%abn-trong-overleaf">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Ta sẽ xây dựng danh mục tài liệu tham khảo đơn giản qua các dòng code sau:</p>
+<pre tabindex="0"><code>\begin{thebibliography}{2}
+\bibitem{doc1}
+Tên tác giả, \emph{Tài liệu 1}. Nơi xuất bản.
+\bibitem{doc2}
+Tên tác giả, \emph{Tài liệu 2}. Nơi xuất bản.
+\end{thebibliography}
+</code></pre><p>Qua các danh mục tài liệu tham khảo, ta có thể tiến hành trích dẫn qua lệnh <strong>\cite{tên tài liệu được liệt kê ở \bibitem}</strong></p>
+<h2 id="5-tổng-kết">
+  5. Tổng kết
+  <a class="heading-link" href="#5-t%e1%bb%95ng-k%e1%ba%bft">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Mỗi công cụ soạn thảo luôn có những ưu và nhược điểm nhất định. Tuy nhiên, nếu bạn định hướng theo lĩnh vực nghiên cứu hay dự kiến thực hiện các bài báo khoa học trong tương lai thì LaTeX sẽ là lựa chọn phù hợp dành cho bạn.</p>
+<p>Cùng với đó, Overleaf cũng sẽ là một trợ thủ đắc lực với một trình soạn thảo online và giúp bạn kết nối soạn thảo cùng những thành viên trong dự án.</p>
+<p><strong>Team</strong></p>
+<h2 id="nguồn-tham-khảo">
+  <strong>Nguồn tham khảo</strong>:
+  <a class="heading-link" href="#ngu%e1%bb%93n-tham-kh%e1%ba%a3o">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>[1] <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29"  class="external-link" target="_blank" rel="noopener">Khoá học LateX online</a> được biên soạn bởi <a href="https://www.overleaf.com/ourteam"  class="external-link" target="_blank" rel="noopener">Tiến sĩ Dr John Lees-Miller</a> và trình bày ban đầu tại Đại học Bristol.</p>
+<p>[2] <a href="https://medium.com/thoughts-philosophy-writing/how-to-use-overleaf-to-write-your-papers-part-i-basic-minimalist-setup-6599268c095f"  class="external-link" target="_blank" rel="noopener">How to use Overleaf to Write your papers</a> - Arindam Basu.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

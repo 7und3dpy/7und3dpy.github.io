@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic concept DSAI on Turio</title>
+    <link>https://7und3dpy.github.io/website/series/basic-concept-dsai/</link>
+    <description>Recent content in Basic concept DSAI on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/series/basic-concept-dsai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Mathematics for Data Science (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamentalmath1/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamentalmath1/</guid>
+      <description>To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamentalmath2/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamentalmath2/</guid>
+      <description>Basic Mathematics for Data Science (Part 2) Link to heading 3) Linear Algebra Link to heading Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
+    </item>
+    
+  </channel>
+</rss>

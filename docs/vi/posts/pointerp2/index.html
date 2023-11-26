@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Giải ngố Pointer (Phần 2) · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Mục đích của việc xác định loại biến mà một con trỏ trỏ tới là gì?
+int *ptr; Một trong những lý do đó là, khi ptr &ldquo;trỏ&rdquo; tới một số nguyên, nếu chúng ta viết:
+*ptr = 2; trình biên dịch biết cần sao chép bao nhiêu byte vào vị trí bộ nhớ được trỏ bởi con trỏ ptr. Nếu ptr được khai báo để trỏ tới một số nguyên, 4 byte sẽ được sao chép.">
+<meta name="keywords" content="Blog, Nghiên cứu, Phát triển, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Giải ngố Pointer (Phần 2)"/>
+<meta name="twitter:description" content="Mục đích của việc xác định loại biến mà một con trỏ trỏ tới là gì?
+int *ptr; Một trong những lý do đó là, khi ptr &ldquo;trỏ&rdquo; tới một số nguyên, nếu chúng ta viết:
+*ptr = 2; trình biên dịch biết cần sao chép bao nhiêu byte vào vị trí bộ nhớ được trỏ bởi con trỏ ptr. Nếu ptr được khai báo để trỏ tới một số nguyên, 4 byte sẽ được sao chép."/>
+
+<meta property="og:title" content="Giải ngố Pointer (Phần 2)" />
+<meta property="og:description" content="Mục đích của việc xác định loại biến mà một con trỏ trỏ tới là gì?
+int *ptr; Một trong những lý do đó là, khi ptr &ldquo;trỏ&rdquo; tới một số nguyên, nếu chúng ta viết:
+*ptr = 2; trình biên dịch biết cần sao chép bao nhiêu byte vào vị trí bộ nhớ được trỏ bởi con trỏ ptr. Nếu ptr được khai báo để trỏ tới một số nguyên, 4 byte sẽ được sao chép." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/pointerp2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-11T00:00:00+00:00" />
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/pointerp2/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/pointerp2/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/pointerp2/">
+              Giải ngố Pointer (Phần 2)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-11T00:00:00Z">
+                tháng 11 11, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              9-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/pointer/">Pointer</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Mục đích của việc xác định <em><strong>loại</strong></em> biến mà một con trỏ trỏ tới là gì?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">         <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>Một trong những lý do đó là, khi ptr &ldquo;trỏ&rdquo; tới một số nguyên, nếu chúng ta viết:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span></code></pre></div><p>trình biên dịch biết cần sao chép bao nhiêu byte vào vị trí bộ nhớ được trỏ bởi con trỏ <strong>ptr</strong>. Nếu <strong>ptr</strong> được khai báo để trỏ tới một số nguyên, 4 byte sẽ được sao chép. Tương tự cho các kiểu số thực như floats và doubles, số byte tương ứng sẽ được sao chép. Tuy nhiên, việc xác định loại mà con trỏ trỏ tới còn cho phép trình biên dịch hiểu mã một cách thú vị hơn. Ví dụ, giả sử chúng ta có một khối trong bộ nhớ gồm mười số nguyên liên tiếp nhau. Tức là, 40 byte bộ nhớ được dành để chứa 10 số nguyên.</p>
+<p>Bây giờ, giả sử con trỏ nguyên <strong>ptr</strong> của chúng ta trỏ tới số nguyên đầu tiên này. Ngoài ra, giả sử số nguyên đó nằm ở vị trí bộ nhớ 100 (decimal). Điều gì xảy ra khi chúng ta viết:</p>
+<pre><code>    ptr + 1;
+</code></pre>
+<p>Bởi vì trình biên dịch &ldquo;biết&rdquo; rằng đây là một con trỏ (tức giá trị của nó là một địa chỉ) và rằng nó trỏ tới một số nguyên (địa chỉ hiện tại của nó, 100, là địa chỉ của một số nguyên), nó sẽ thêm 4 vào <strong>ptr</strong> thay vì 1, để con trỏ &ldquo;trỏ tới&rdquo; <strong>số nguyên</strong> <strong>kế tiếp</strong>, tại vị trí bộ nhớ 104. Tương tự, nếu <strong>ptr</strong> được khai báo là một con trỏ tới kiểu short, nó sẽ thêm 2 vào thay vì 1. Cùng như vậy, với các kiểu dữ liệu khác như floats, doubles, hoặc cả kiểu dữ liệu được người dùng xác định như cấu trúc, cách thức này vẫn áp dụng. Điều này rõ ràng không phải là loại &ldquo;cộng&rdquo; mà chúng ta thường nghĩ đến. Trong ngôn ngữ C, nó được gọi là &ldquo;cộng pointer&rdquo; (pointer arithmetic), một thuật ngữ chúng ta sẽ quay lại sau này.</p>
+<p>Tương tự, vì <strong>++ptr</strong> và <strong>ptr++</strong> đều tương đương với <strong>ptr + 1</strong> (tuy nhiên điểm trong chương trình mà <strong>ptr</strong> được tăng có thể khác nhau), việc tăng một con trỏ bằng toán tử ++, cả tiền tố và hậu tố, sẽ tăng địa chỉ mà nó lưu trữ một lượng bằng sizeof(type), trong đó &ldquo;type&rdquo; là loại đối tượng được trỏ tới (tức 4 byte cho một số nguyên).</p>
+<p>Vì một khối gồm 10 số nguyên nằm liên tiếp nhau trong bộ nhớ, theo định nghĩa, là một mảng các số nguyên, điều này mang lại mối quan hệ thú vị giữa mảng và con trỏ.</p>
+<p>Xét ví dụ sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">my_array</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span> 
+</span></span></code></pre></div><p>Ở đây, chúng ta có một mảng chứa 6 số nguyên. Chúng ta truy cập từng số nguyên trong mảng này thông qua chỉ mục của mảng <strong>my_array</strong>, i.e. sử dụng <strong>my_array[0]</strong> đến <strong>my_array[5]</strong>. Nhưng, chúng ta cũng có thể truy cập vào chúng bằng con trỏ như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>       <span class="cm">/* point our pointer at the first
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                     integer in our array */</span> 
+</span></span></code></pre></div><p>Sau đó, chúng ta có thể in ra mảng của chúng ta bằng cách sử dụng notation của mảng hoặc bằng cách gián tiếp thông qua con trỏ. Đoạn code sau minh họa điều này:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="o">-----------</span>  <span class="n">Program</span> <span class="mf">2.1</span>  <span class="o">-----------------------------------</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cm">/* Program 2.1 from PTRTUT10.HTM   6/13/97 */</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">my_array</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>     <span class="cm">/* point our pointer to the first
+</span></span></span><span class="line"><span class="cl"><span class="cm">                                          element of the array */</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;</span><span class="se">\n\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;my_array[%d] = %d   &#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">my_array</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>   <span class="cm">/*&lt;-- A */</span>
+</span></span><span class="line"><span class="cl">          <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">ptr</span> <span class="o">+</span> <span class="n">i</span><span class="p">));</span>        <span class="cm">/*&lt;-- B */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><p>Hãy biên dịch và chạy chương trình trên và lưu ý kỹ dòng A và B và rằng chương trình in ra các giá trị giống nhau trong cả hai trường hợp. Cũng lưu ý cách chúng ta giải tham chiếu con trỏ trong dòng B, tức là chúng ta đã thêm i vào nó trước khi giải tham chiếu con trỏ mới. Thay đổi dòng B thành:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="n">ptr</span><span class="o">++</span><span class="p">);</span>
+</span></span></code></pre></div><p>và chạy lại&hellip; sau đó thay đổi thành:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;ptr + %d = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="o">++</span><span class="n">ptr</span><span class="p">));</span>
+</span></span></code></pre></div><p>và chạy một lần nữa. Mỗi lần hãy cố gắng dự đoán kết quả và xem kỹ kết quả thực tế.</p>
+<p>Trong ngôn ngữ C, tiêu chuẩn quy định rằng bất kỳ nơi nào chúng ta có thể sử dụng <strong>&amp;var_name[0]</strong> thì chúng ta có thể thay thế bằng <strong>var_name</strong>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span></code></pre></div><p>chúng ta có thể viết:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>để đạt được cùng một kết quả.</p>
+<p>Điều này khiến nhiều tài liệu khẳng định rằng tên của một mảng là một con trỏ. Tôi thích nghĩ về nó như &ldquo;tên của mảng là địa chỉ của phần tử đầu tiên trong mảng&rdquo;. Nhiều người mới học (bao gồm cả tôi khi mới học) có xu hướng bị nhầm lẫn khi nghĩ về nó là một con trỏ. Ví dụ, trong khi chúng ta có thể viết</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>thì chúng ta không thể viết</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">my_array</span> <span class="o">=</span> <span class="n">ptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>Lý do là trong khi <strong>ptr</strong> là một biến, <strong>my_array</strong> là một hằng số. Nghĩa là, sau khi vị trí mà phần tử đầu tiên của <strong>my_array</strong> sẽ được lưu trữ không thể thay đổi sau khi <strong>my_array[]</strong> đã được khai báo.</p>
+<p>Trước đây khi thảo luận về thuật ngữ &ldquo;lvalue&rdquo;, tôi đã trích dẫn K&amp;R-2 nơi nó nói:</p>
+<blockquote>
+<p>&ldquo;An <em><strong>object</strong></em> is a named region of storage; an <em><strong>lvalue</strong></em> is an expression referring to an object.&rdquo;</p>
+</blockquote>
+<p>Điều này đặt ra một vấn đề thú vị. Vì <strong>my_array</strong> là một vùng lưu trữ có tên, tại sao <strong>my_array</strong> trong câu lệnh gán trên không phải là một lvalue? Để giải quyết vấn đề này, một số người gọi <strong>my_array</strong> là một &ldquo;lvalue không thể sửa đổi&rdquo;.</p>
+<p>Thay đổi chương trình ví dụ trên bằng cách thay</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">my_array</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span></code></pre></div><p>bằng</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>và chạy lại để xác nhận kết quả giống nhau.</p>
+<p>Bây giờ, hãy đi sâu hơn một chút vào sự khác biệt giữa tên <strong>ptr</strong> và <strong>my_array</strong> Một số tác giả sẽ gọi tên một mảng là một con trỏ <em><strong>hằng số</strong></em>. Ý nghĩa của <em><strong>hằng số</strong></em> ở đây là gì? Như chúng ta đã thấy, khi chúng ta khai báo một biến, chúng ta dành một chỗ trong bộ nhớ để chứa giá trị của kiểu tương ứng. Sau khi điều này được thực hiện, tên biến có thể được hiểu theo một trong hai cách. Khi được sử dụng ở phía trái của toán tử gán, trình biên dịch hiểu nó là vị trí bộ nhớ để di chuyển giá trị từ phía bên phải của toán tử gán. Nhưng khi được sử dụng ở phía bên phải của toán tử gán, tên biến được hiểu là nội dung được lưu trữ tại địa chỉ bộ nhớ đó dành để chứa giá trị của biến.</p>
+<p>Với điều đó trong đầu, giờ chúng ta hãy xem xét các hằng số đơn giản nhất, như:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</span></span></code></pre></div><p>Ở đây, trong khi <strong>i</strong> là một biến và nó chiếm một chỗ trong phần dữ liệu của bộ nhớ, <strong>2</strong> là một hằng số và, như vậy, thay vì dành một chỗ trong đoạn dữ liệu, nó được nhúng trực tiếp vào đoạn mã lệnh của bộ nhớ. Tức là, trong khi việc viết điều gì đó như <strong>k = i;</strong> nói với trình biên dịch tạo ra mã sẽ xem địa chỉ bộ nhớ của <strong>&amp;i</strong> để xác định giá trị để di chuyển sang <strong>k</strong>, việc tạo ra mã bằng <strong>i = 2;</strong> chỉ đơn giản đưa ra số <strong>2</strong> in the code and there is no referencing of the data segment. trong mã và không có việc trích dẫn đến phân đoạn dữ liệu. Tức là cả <strong>k</strong> and <strong>i</strong> đều là các đối tượng, nhưng <strong>2</strong> không phải là một đối tượng.</p>
+<p>Tương tự, trong ví dụ trên, vì <strong>my_array</strong> là một hằng số, sau khi trình biên dịch xác định địa chỉ cho mảng này để lưu trữ, nó &ldquo;biết&rdquo; địa chỉ của <strong>my_array[0]</strong> và khi nhìn thấy:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">        <span class="n">ptr</span> <span class="o">=</span> <span class="n">my_array</span><span class="p">;</span>
+</span></span></code></pre></div><p>nó chỉ sử dụng địa chỉ này như là một hằng số trong phân đoạn mã và không có việc trích dẫn đến phân đoạn dữ liệu ngoài việc này.</p>
+<p>Điều này có thể là một nơi tốt để giải thích thêm về việc sử dụng biểu thức <strong>(void *)</strong> trong Chương trình 1.1 của Chương 1. Như chúng ta đã thấy, chúng ta có thể có các con trỏ của các kiểu khác nhau. Cho đến nay, chúng ta đã thảo luận về con trỏ tới số nguyên và con trỏ tới ký tự. Trong các chương tiếp theo, chúng ta sẽ tìm hiểu về con trỏ tới cấu trúc và thậm chí con trỏ tới con trỏ.</p>
+<p>Chúng ta cũng đã biết rằng trên các hệ thống khác nhau, kích thước của một con trỏ có thể thay đổi. Hơn nữa, kích thước của một con trỏ cũng có thể thay đổi tuỳ thuộc vào kiểu dữ liệu của đối tượng mà nó trỏ tới. Do đó, tương tự như số nguyên mà bạn có thể gặp vấn đề khi cố gắng gán một số nguyên dài cho biến của loại số nguyên ngắn, bạn cũng có thể gặp vấn đề khi cố gắng gán các giá trị của các con trỏ khác nhau cho các biến con trỏ khác nhau.</p>
+<p>Để giảm thiểu vấn đề này, ngôn ngữ C cung cấp một con trỏ của kiểu void. Chúng ta có thể khai báo một con trỏ như sau:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl">    <span class="kt">void</span> <span class="o">*</span><span class="n">vptr</span><span class="p">;</span>
+</span></span></code></pre></div><p>Một con trỏ void có thể coi là một con trỏ &ldquo;chung chung&rdquo;. Ví dụ, trong khi C không cho phép so sánh một con trỏ kiểu số nguyên với một con trỏ kiểu ký tự, ví dụ, bạn có thể so sánh cả hai với một con trỏ void. Tất nhiên, giống như các biến khác, các phép ép kiểu có thể được sử dụng để chuyển từ một kiểu con trỏ sang kiểu khác trong các trường hợp phù hợp. Trong Chương trình 1.1 của Chương 1, tôi ép kiểu các con trỏ số nguyên thành con trỏ void để làm cho chúng tương thích với trình chỉ thị chuyển đổi %p. Trong các chương sau, các ép kiểu khác sẽ được thực hiện với lý do được định nghĩa trong đó.</p>
+<p>Vâng, đó là nhiều khái niệm kỹ thuật phải tiếp thu và tôi không mong chúng ta có thể hiểu tất cả ngay lần đọc đầu. Đến lúc này và thực hiện thực nghiệm, bạn sẽ muốn trở lại và đọc lại hai chương đầu tiên. Nhưng bây giờ, hãy tiếp tục vào mối quan hệ giữa con trỏ, mảng các ký tự và chuỗi.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

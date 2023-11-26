@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>study on Turio</title>
+    <link>https://7und3dpy.github.io/website/categories/study/</link>
+    <description>Recent content in study on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/categories/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Mathematics for Data Science (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamentalmath1/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamentalmath1/</guid>
+      <description>To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.</description>
+    </item>
+    
+    <item>
+      <title>Basic Mathematics for Data Science (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/fundamentalmath2/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/fundamentalmath2/</guid>
+      <description>Basic Mathematics for Data Science (Part 2) Link to heading 3) Linear Algebra Link to heading Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to LATEX</title>
+      <link>https://7und3dpy.github.io/website/posts/introtolatex/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/introtolatex/</guid>
+      <description>1. What is LATEX? Link to heading LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
+LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Weka</title>
+      <link>https://7und3dpy.github.io/website/posts/weka/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/weka/</guid>
+      <description>Building a Basic Classification Machine Learning Model with Weka Link to heading Don&amp;rsquo;t think that Machine Learning is only for experts. If you&amp;rsquo;re a learner or a non-expert looking to dive into Machine Learning, Weka is a great choice.
+Weka is a collection of machine learning algorithms for data mining tasks. It includes tools for data preparation, classification, regression, clustering, association rules, and visualization.
+Weka is open-source software distributed under the GNU General Public License.</description>
+    </item>
+    
+  </channel>
+</rss>

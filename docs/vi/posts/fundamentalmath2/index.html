@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>
+  Kiến thức toán cơ bản cho Data Science (phần 2) · Trần Minh Tuấn
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Trần Minh Tuấn">
+<meta name="description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán.">
+<meta name="keywords" content="Blog, Nghiên cứu, Phát triển, Sở thích cá nhân">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kiến thức toán cơ bản cho Data Science (phần 2)"/>
+<meta name="twitter:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán."/>
+
+<meta property="og:title" content="Kiến thức toán cơ bản cho Data Science (phần 2)" />
+<meta property="og:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/website/vi/posts/fundamentalmath2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" />
+
+
+
+
+
+
+<link rel="canonical" href="https://7und3dpy.github.io/website/vi/posts/fundamentalmath2/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/website/css/coder.min.135e22c97ff685fe983fc60048e309ced8f00d8d38f536aa67dba8a13a03dfa4.css" integrity="sha256-E14iyX/2hf6YP8YASOMJztjwDY049TaqZ9uooToD36Q=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/website/vi">
+      Trần Minh Tuấn
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/about/">Về tôi</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/projects/">Các dự án</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/website/vi/contact/">Liên lạc</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/website/posts/fundamentalmath2/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://7und3dpy.github.io/website/vi/posts/fundamentalmath2/">
+              Kiến thức toán cơ bản cho Data Science (phần 2)
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-07-24T00:00:00Z">
+                tháng 7 24, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa fa-user" aria-hidden="true"></i>
+    <a href="/website/vi/authors/tr%E1%BA%A7n-minh-tu%E1%BA%A5n/">Trần Minh Tuấn</a></div>
+
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/website/vi/categories/study/">study</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/website/vi/tags/math/">math</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/data-science/">data science</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/website/vi/tags/probability-and-statistic/">probability and statistic</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="kiến-thức-toán-cho-lĩnh-vực-data-science-phần-2">
+  Kiến thức toán cho lĩnh vực Data Science (Phần 2)
+  <a class="heading-link" href="#ki%e1%ba%bfn-th%e1%bb%a9c-to%c3%a1n-cho-l%c4%a9nh-v%e1%bb%b1c-data-science-ph%e1%ba%a7n-2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="3-đại-số-tuyến-tính">
+  3) Đại số tuyến tính
+  <a class="heading-link" href="#3-%c4%91%e1%ba%a1i-s%e1%bb%91-tuy%e1%ba%bfn-t%c3%adnh">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="http://kisonecat.com/teaching/2014/math2568/logo.png" alt=""></p>
+<p>Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là <strong>Recommend System</strong> với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</p>
+<p>Tại đây, kiến thức Đại số tuyến tính sẽ được áp dụng giúp chúng ta hiểu chuyên sâu hơn cách thuật toán học máy hoạt động trên luồng dữ liệu. Từ đó các Data Scientist sẽ dễ dàng phân tích, xử lý insight trong dữ liệu một cách chi tiết nhất.</p>
+<p>Hãy cùng mình tìm hiểu những kiến thức cơ bản về Đại số tuyến tính cần có nào:</p>
+<ul>
+<li>Các tính chất cơ bản của ma trận và vector: phép nhân vô hướng, biến đổi tuyến tính, chuyển vị, liên hợp, &hellip;</li>
+<li>Quy tắc nhân ma trận và các thuật toán khác nhau, nghịch đảo ma trận</li>
+<li>Các Ma trận đặc biệt: ma trận vuông, ý tưởng về ma trận thưa thớt và dày đặc, vector đơn vị, ma trận đối xứng, ma trận đơn vị,&hellip;</li>
+<li>Mô hình phân tích ma trận thành nhân tử (Matrix Factorization) / phân tích LU, loại bỏ Gaussian / Gauss-Jordan, giải hệ phương trình tuyến tính Ax = b</li>
+<li>Cơ sở không gian vector, tính trực giao, bình phương tuyến tính nhỏ nhất</li>
+<li>Vector riêng &amp; giá trị riêng trong ma trận, chéo hoá ma trận, phương pháp Singular Value Decomposition (SVD)</li>
+</ul>
+<h4 id="kiến-thức-này-được-ứng-dụng-ra-sao">
+  Kiến thức này được ứng dụng ra sao?
+  <a class="heading-link" href="#ki%e1%ba%bfn-th%e1%bb%a9c-n%c3%a0y-%c4%91%c6%b0%e1%bb%a3c-%e1%bb%a9ng-d%e1%bb%a5ng-ra-sao">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Tất cả các thuật toán neural network đều sử dụng các kỹ thuật đại số tuyến tính để biểu diễn và xử lý các cấu trúc mạng lẫn huấn luyện dữ liệu. Kiến thức Đại số tuyến tính còn ứng dụng trong xử lý ảnh hay các thao tác, biểu diễn dữ liệu thực tế.</p>
+<h4 id="tôi-có-thể-học-chúng-từ-đâu">
+  Tôi có thể học chúng từ đâu?
+  <a class="heading-link" href="#t%c3%b4i-c%c3%b3-th%e1%bb%83-h%e1%bb%8dc-ch%c3%bang-t%e1%bb%ab-%c4%91%c3%a2u">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Linear algebra: foundations to frontiers - edX: <br>
+<a href="https://courses.edx.org/courses/course-v1:UTAustinX&#43;UT.5.05x&#43;2T2017/course/"  class="external-link" target="_blank" rel="noopener">https://courses.edx.org/courses/course-v1:UTAustinX+UT.5.05x+2T2017/course/</a></li>
+<li>Mathematics for Machine Learning: Linear Algebra - Coursera: <br>
+<a href="https://www.coursera.org/learn/linear-algebra-machine-learning"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/learn/linear-algebra-machine-learning</a></li>
+<li>Python cho Đại số Tuyến tính - Machine learning Cơ bản: <br>
+<a href="https://fundaml.com/course/5990a766cdc6e32b3b4d0666/intro"  class="external-link" target="_blank" rel="noopener">https://fundaml.com/course/5990a766cdc6e32b3b4d0666/intro</a></li>
+<li>Kiến thức về Đại số Tuyến tính cũng được đề cập kết hợp quiz + assignment để kiếm tra kiến thức tại Week một khoá Machine Learning - Coursera: <br>
+<a href="https://www.coursera.org/learn/machine-learning"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/learn/machine-learning</a></li>
+</ul>
+<h2 id="4-giải-tích-calculus">
+  4) Giải tích (Calculus)
+  <a class="heading-link" href="#4-gi%e1%ba%a3i-t%c3%adch-calculus">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg" alt=""></p>
+<p>Giải tích chắc hẳn là một trong những môn học đại cương khá &ldquo;ám ảnh&rdquo; đối với sinh viên khối Khoa học - Kỹ thuật lẫn Kinh tế. Nhưng bất luận thực trạng sinh viên sợ hãi môn học ra sao thì Giải tích vẫn xuất hiện tất yếu trong Machine Learning lẫn Data Science.</p>
+<p>Giải tích hình thành nên các giải pháp phân tích tưởng chừng cơ bản như Hồi quy tuyến tính (Linear Regression). Mà hơn hết, khi xây dựng một mô hình thuật toán máy học để phân tích và dự đoán giả thuyết dữ liệu thì Giải tích sẽ đóng vai trò quan trọng trong quy trình tìm độ lỗi cực tiểu cho mô hình và tối ưu hoá độ chính xác của mô hình.</p>
+<p>Đây là một môn học khó nhưng sẽ cực kỳ giá trị nếu bạn được trang bị kiến thức Giải tích trên con đường trở thành Data Scientist. Hãy cùng Ad tìm hiểu những kiến thức cơ bản cần nắm nào:</p>
+<ul>
+<li>Kiến thức về Hàm số một biến, giới hạn, liên tục, khác biệt</li>
+<li>Các định lý về giá trị trung bình (Mean value theorems), các dạng không xác định, quy tắc L&rsquo;Hospital</li>
+<li>Tính cực đại và cực tiểu của hàm số</li>
+<li>Quy tắc nhân (Product rule), Quy tắc dây chuyền (Chain rule)</li>
+<li>Chuỗi Taylor, khái niệm tổng hợp / tích hợp chuỗi vô hạn</li>
+<li>Các định lý giá trị cơ bản và trung bình của phép tính tích phân, đánh giá tích phân xác định và không xác định</li>
+<li>Hàm Gamma và hàm Beta</li>
+<li>Kiến thức về Hàm số nhiều biến, giới hạn, liên tục, đạo hàm riêng</li>
+<li>Khái niệm cơ bản của phương trình vi phân</li>
+</ul>
+<h4 id="tôi-sẽ-sử-dụng-kiến-thức-này-ở-đâu">
+  Tôi sẽ sử dụng kiến thức này ở đâu?
+  <a class="heading-link" href="#t%c3%b4i-s%e1%ba%bd-s%e1%bb%ad-d%e1%bb%a5ng-ki%e1%ba%bfn-th%e1%bb%a9c-n%c3%a0y-%e1%bb%9f-%c4%91%c3%a2u">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Bạn đã bao giờ từ hỏi thuật toán Logistic Regression thực hiện như thế nào? Phải chăng là chúng sử dụng phương pháp mang tên &ldquo;Gradient Descent&rdquo; để tìm hiểu hàm mất mát tối thiểu. Để hiểu cách thức hoạt động của nó, bạn cần nắm các khái niệm về độ dốc, đạo hàm, giới hạn hàm số lẫn quy tắc chuỗi.</p>
+<p>Tham khảo thuật toán Logistic Regression: <br>
+<a href="https://machinelearningcoban.com/2017/01/27/logisticregression/"  class="external-link" target="_blank" rel="noopener">https://machinelearningcoban.com/2017/01/27/logisticregression/</a></p>
+<h4 id="tôi-có-thể-bổ-sung-kiến-thức-giải-tích-ở-đâu-">
+  Tôi có thể bổ sung kiến thức Giải tích ở đâu ?
+  <a class="heading-link" href="#t%c3%b4i-c%c3%b3-th%e1%bb%83-b%e1%bb%95-sung-ki%e1%ba%bfn-th%e1%bb%a9c-gi%e1%ba%a3i-t%c3%adch-%e1%bb%9f-%c4%91%c3%a2u-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Pre-university calculus - edX: <a href="https://www.edx.org/course/pre-university-calculus"  class="external-link" target="_blank" rel="noopener">https://www.edx.org/course/pre-university-calculus</a></li>
+<li>Calculus I - Khan Academy: <a href="https://www.khanacademy.org/math/calculus-1"  class="external-link" target="_blank" rel="noopener">https://www.khanacademy.org/math/calculus-1</a></li>
+<li>Mathematics for machine learning: Multivariable calculus - Coursera: <br>
+<a href="https://www.coursera.org/learn/multivariate-calculus-machine-learning"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/learn/multivariate-calculus-machine-learning</a></li>
+</ul>
+<h2 id="5-toán-rời-rạc-discrete-math">
+  5) Toán rời rạc (Discrete Math)
+  <a class="heading-link" href="#5-to%c3%a1n-r%e1%bb%9di-r%e1%ba%a1c-discrete-math">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><img src="http://www.discrete-math-hub.com/just_a_graph.small.png" alt=""></p>
+<p>Data Science hiện nay được thực hiện với sự trợ giúp của các hệ thống tính toán và Toán rời rạc là trung tâm của các hệ thống ấy.</p>
+<p>Toán rời rạc sẽ bao gồm các khái niệm quan trọng đối với việc sử dụng hàng ngày các thuật toán và cấu trúc dữ liệu trong những project phân tích:</p>
+<ul>
+<li>Tìm hiểu về phép đếm, tổ hợp,&hellip;</li>
+<li>Nắm những kỹ thuật chứng minh cơ bản</li>
+<li>Khái niệm cơ bản của logic quy nạp, suy diễn và mệnh đề</li>
+<li>Hiểu được Cấu trúc dữ liệu cơ bản: ngăn xếp, hàng đợi, đồ thị, mảng, bảng băm, cây</li>
+<li>Những niệm cơ bản của Đồ thị và ứng dụng</li>
+<li>Hệ thức truy hồi</li>
+</ul>
+<h4 id="tôi-có-thể-bổ-sung-kiến-thức-này-ở-đâu-">
+  Tôi có thể bổ sung kiến thức này ở đâu ?
+  <a class="heading-link" href="#t%c3%b4i-c%c3%b3-th%e1%bb%83-b%e1%bb%95-sung-ki%e1%ba%bfn-th%e1%bb%a9c-n%c3%a0y-%e1%bb%9f-%c4%91%c3%a2u-">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Ví dụ khi phân tích về bài toán hành vi người dùng mạng xã hội, dữ liệu có thể được mô phỏng như các thuộc tính của biểu đồ và ta cần nghiên cứu thuật toán nhanh nhất để tìm kiếm lẫn duyệt qua từng điểm đồ thị. Và việc học cấu trúc rời rạc sẽ giúp bạn tìm hiểu độ phức tạp của thuật toán ở những không gian và thời gian khác nhau. Từ đó sẽ giúp bạn chọn lựa thuật toán phù hợp để giải quyết vấn đề của mình.</p>
+<h4 id="tôi-có-thể-học-toán-rời-rạc-ở-đâu">
+  Tôi có thể học Toán rời rạc ở đâu?
+  <a class="heading-link" href="#t%c3%b4i-c%c3%b3-th%e1%bb%83-h%e1%bb%8dc-to%c3%a1n-r%e1%bb%9di-r%e1%ba%a1c-%e1%bb%9f-%c4%91%c3%a2u">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li>Introduction to Discrete Mathematics for Computer Science Specialization - Coursera: <a href="https://www.coursera.org/specializations/discrete-mathematics"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/specializations/discrete-mathematics</a></li>
+<li>Master discrete mathematics: sets, math logic, and more - Coursera: <br>
+<a href="https://www.udemy.com/master-discrete-mathematics/"  class="external-link" target="_blank" rel="noopener">https://www.udemy.com/master-discrete-mathematics/</a></li>
+<li>Introduction to Mathematical Thinking - Coursera: <br>
+<a href="https://www.coursera.org/learn/mathematical-thinking"  class="external-link" target="_blank" rel="noopener">https://www.coursera.org/learn/mathematical-thinking</a></li>
+</ul>
+<h1 id="tổng-kết">
+  Tổng kết
+  <a class="heading-link" href="#t%e1%bb%95ng-k%e1%ba%bft">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Để trở thành một DS quả là một quá trình dài để học tập, rèn luyện tri thức lẫn mindset dúng không nào. Qua đó, ta có thể thấy từ bài toán đến ứng dụng thực tiễn luôn là một thử thách lớn và lại càng gắn liền với trách nhiệm nếu bạn phụ trách cho Doanh nghiệp. Bởi nguy hiểm vẫn là việc &ldquo;Sai một ly đi một dặm&rdquo; dẫn đến một rủi ro không hề nhỏ.</p>
+<p>Hãy không ngừng đặt ra những câu hỏi và cố gắng vận dụng tri thức tìm ra lời giải phù hợp lẫn tối ưu nhất. Trong giai đoạn Hội nhập của Việt Nam hiện nay, cơ hội vẫn luôn trong tầm tay bạn khi và chỉ khi bản thân luôn nỗ lực hết mình.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3 id="see-also-in-kiến-thức-cơ-bản-dsai">
+        See also in Kiến thức cơ bản DSAI
+        <a class="heading-link" href="#see-also-in-ki%e1%ba%bfn-th%e1%bb%a9c-c%c6%a1-b%e1%ba%a3n-dsai">
+          <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+          <span class="sr-only">Link to heading</span>
+        </a>
+      </h3>
+      <nav>
+        <ul>
+        
+        
+          
+            <li>
+              <a href="/website/vi/posts/fundamentalmath1/">Kiến thức toán cơ bản cho Data Science (phần 1)</a>
+            </li>
+          
+        
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Trần Minh Tuấn 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/website/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

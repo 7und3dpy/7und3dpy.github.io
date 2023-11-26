@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emoji on Trần Minh Tuấn</title>
+    <link>https://7und3dpy.github.io/website/vi/tags/emoji/</link>
+    <description>Recent content in emoji on Trần Minh Tuấn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/vi/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hỗ trợ biểu tượng cảm xúc</title>
+      <link>https://7und3dpy.github.io/website/vi/posts/emojisupport/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/vi/posts/emojisupport/</guid>
+      <description>&lt;p&gt;Biểu tượng cảm xúc có thể được kích hoạt trong dự án Hugo theo nhiều cách.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

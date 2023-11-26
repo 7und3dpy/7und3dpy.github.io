@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Turio</title>
+    <link>https://7und3dpy.github.io/website/tags/python/</link>
+    <description>Recent content in python on Turio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/website/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chapter 2. Control Flow (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-2.-control-flow-part-1/</guid>
+      <description>Chapter 2 : Control flow(Part 1) Link to heading Question 1: Link to heading Write a program to count the number of even values from a to b, inclusively.
+Input:
+The first line contains an integer a.
+The second line contains an integer b.
+Guarantee that a &amp;lt; b.
+Output:
+Write out the number of even values from a to b.
+For example:
+Input Output 2 4 9 a,b,cnt = int(input()), int(input()),0 for num in range(a,b+1): if num % 2 == 0:cnt+=1 print(cnt) 2 9 4 Question 2: Link to heading Write a Python program to find the largest of three numbers.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2. Control Flow (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-2.-control-flowpart-2/</guid>
+      <description>Question 1: Link to heading Write a program that takes a positive integer n as input and returns the sum of all that number&amp;rsquo;s digits.
+Input:
+A single line contains a positive integer n
+Output:
+Print out the sum of all digits of n
+For example:
+Input Result 54129 21 num = int(input()) sum = 0 for num_ in str(num): sum += int(num_) print(sum) 54129 21 Question 2: Link to heading Write a program to display the pattern like a diamond.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 3. Function (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-1/</guid>
+      <description>Question 1: Link to heading Write a function friendly(a, b) that takes two positive integers as input and returns &amp;lsquo;YES&amp;rsquo; if a and b are friendly numbers. Otherwise, the function returns &amp;lsquo;NO&amp;rsquo;.
+Note that a and b are called friendly numbers if a equals the sum of all b&amp;rsquo;s true divisors and vice versus.
+For example, 220 and 284 are friendly numbers. 1+2+4+5+10+11+20+22+44+55+110=284
+1+2+4+71+142=220
+For example:
+Test Result print(friendly(4,5)) NO print(friendly(220,284)) YES print(friendly(40,50)) NO def friendly(a,b): sum_a,sum_b = [],[] for i in range(1,a//2+1): if a % i == 0: sum_a.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 3. Function (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-3.-function-part-2/</guid>
+      <description>Question 1: Link to heading Write a recursive function square_sum(n) to calculate the sum of first n positive square numbers: $1^2 + 2^2 +&amp;hellip; + n^2$
+Loops and iterations are NOT allowed!
+For example:
+Test Result print(square_sum(3)) 14 print(square_sum(5)) 55 def square_sum(n): if n == 1: return 1 else: return n**2 + square_sum(n-1) Question 2: Link to heading Write a recursive function display_pascal_triangle(n) to display a Pascal triangle with n rows, where n is a given positive integer.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 4. String</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-4.-string/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-4.-string/</guid>
+      <description>Question 1: Link to heading Write a function to_uppercase(str) to convert a given string to all uppercase if it contains at least 2 uppercase characters in the first 4 characters.
+For example:
+Test Result print(to_uppercase(&amp;lsquo;aBZ2 da@s hi&amp;rsquo;)) ABZ2 DA@S HI print(to_uppercase(&amp;lsquo;aBz da@s hi&amp;rsquo;)) aBz da@s hi def to_uppercase(str): num_upper = 0 for letter in str[0:4]: if letter.upper() == letter: num_upper +=1 if letter.upper() == &amp;#39; &amp;#39;: num_upper -=1 if num_upper &amp;gt;=2: return str.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Dictionaries</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-dictionaries/</guid>
+      <description>Question 1: Link to heading In US, the president is not elected by direct vote, but by a two-level vote. First, elections are held in each state and the winner of the elections in that state is determined. Then state elections are held: in these elections, each state has a certain number of votes - the number of electors from that state. In practice, all state electors vote according to the results of intra-state voting, that is, states with a different number of votes vote in the final stage of elections.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Lists</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-lists/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-lists/</guid>
+      <description>Question 1: Link to heading Given a sequence of integers, print out all the elements that are strictly larger than the previous one. The program should print &amp;lsquo;NONE&amp;rsquo; if such an element does not exist.
+Input:
+One line contains a sequence of integers separated by spaces.
+Output:
+Print out the answer in one line.
+Hints:
+To read a line and convert it into a list of numbers, you can use the one of following commands:</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5. Tuples</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-5.-tuples/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-5.-tuples/</guid>
+      <description>Question 1: Link to heading Write a function sort_tuple(tup) to sort a given tuple in decreasing order with respect to its float element.
+For example:
+def sort_tuple(tup): return sorted(tup,key = lambda x:x[1],reverse = True ) Question 2: Link to heading Write a function sum_and_count(inp) that receives a given tuple of tuples as input and returns a list of the sums of elements in each tuple and a list of the numbers of elements in each tuple, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6-7. Modules and Files</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-6-7.-modules-and-files/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-6-7.-modules-and-files/</guid>
+      <description>Question 1: Link to heading Write a function add_days(cur_date, n) that takes a cur_date as input and returns a date after n days.
+To this end, you need to use the module datetime described here: https://www.programiz.com/python-programming/datetime
+For example:
+import datetime def add_days(cur_date,n): time_change = datetime.timedelta(days = n) return cur_date + time_change cur_date = datetime.date(2016,2,10) print(add_days(cur_date, 30)) Question 2: Link to heading You are given a module list_utilities. Your task is to use that module to flatten a nested list (list of lists of integers) and find the largest element.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 8. OOP (Part 1)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-1/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-1/</guid>
+      <description>Question 1: Link to heading Which of the following statements can be used to check, whether an object “obj” is an instance of class A or not? Select one:
+a.
+isinstance(A, obj)
+b.
+isinstance(obj, A)
+c.
+A.isinstance(obj)
+d.
+obj.isinstance(A)
+Clear my choice
+Answer: B
+Question 2: Link to heading Which of the following keywords mark the beginning of the class definition?
+Select one:
+a.
+return
+b.
+All of the others</description>
+    </item>
+    
+    <item>
+      <title>Chapter 8. OOP (Part 2)</title>
+      <link>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-2/</link>
+      <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://7und3dpy.github.io/website/posts/chapter-8.-oop-part-2/</guid>
+      <description>Question 1: Link to heading You are given a file called Address.py that defines the following class:
+Your task is to make a subclass of the class Address called CampusAddress that has a new attribute, office_number, that can vary. This subclass will always have the street attribute set to &amp;ldquo;Dai Co Viet&amp;rdquo; and the num attribute set to &amp;ldquo;01&amp;rdquo;.
+For example:
+from Address import * class CampusAddress(Address): def __init__(self,office_number): Address.</description>
+    </item>
+    
+  </channel>
+</rss>
