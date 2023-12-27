@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>data science - Tag - Turio</title>
+        <link>https://turio.redev/tags/data-science/</link>
+        <description>data science - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/tags/data-science/" rel="self" type="application/rss+xml" /><item>
+    <title>Basic Mathematics for Data Science (Part 1)</title>
+    <link>https://turio.redev/fundamentalmath1/</link>
+    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/fundamentalmath1/</guid>
+    <description><![CDATA[To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
+A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.]]></description>
+</item>
+<item>
+    <title>Basic Mathematics for Data Science (Part 2)</title>
+    <link>https://turio.redev/fundamentalmath2/</link>
+    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/fundamentalmath2/</guid>
+    <description><![CDATA[Basic Mathematics for Data Science (Part 2) 3) Linear Algebra Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
+Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams. This knowledge is essential for data scientists to analyze and process data in great detail.]]></description>
+</item>
+</channel>
+</rss>

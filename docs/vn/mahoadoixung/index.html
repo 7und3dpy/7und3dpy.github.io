@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - Turio</title><meta name="Description" content="Nice website"><meta property="og:title" content="" />
+<meta property="og:description" content="Hệ thống mã hóa đối xứng Còn gọi là mã hóa quy ước (conventional cryptosystem) Quy trình mã hóa và giải mã đều sử dụng chung một khóa Bảo mật thông tin phụ thuộc vào bảo mật khóa Các phương pháp truyền thống Phép thay thế (subtitution) Phép thay đổi vị trị (transposition) Đơn ký tự (mono-alphabetic) Đa ký tự (poly - alphabetic) (xem lại CSC15005)
+Shift Cipher, mã hóa Caesar Dịch chuyển xoay vòng từng ký tự đi $k$ vị trí." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://turio.redev/vn/mahoadoixung/" /><meta property="og:image" content="https://turio.redev/logo.png"/><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="Turio" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://turio.redev/logo.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Hệ thống mã hóa đối xứng Còn gọi là mã hóa quy ước (conventional cryptosystem) Quy trình mã hóa và giải mã đều sử dụng chung một khóa Bảo mật thông tin phụ thuộc vào bảo mật khóa Các phương pháp truyền thống Phép thay thế (subtitution) Phép thay đổi vị trị (transposition) Đơn ký tự (mono-alphabetic) Đa ký tự (poly - alphabetic) (xem lại CSC15005)
+Shift Cipher, mã hóa Caesar Dịch chuyển xoay vòng từng ký tự đi $k$ vị trí."/>
+<meta name="application-name" content="Turio">
+<meta name="apple-mobile-web-app-title" content="Turio"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://turio.redev/vn/mahoadoixung/" /><link rel="next" href="https://turio.redev/vn/1darraysinc/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "vn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/turio.redev\/vn\/mahoadoixung\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/turio.redev\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","wordcount":  774 ,
+        "url": "https:\/\/turio.redev\/vn\/mahoadoixung\/","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/turio.redev\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/vn/posts/"> Bài đăng </a><a class="menu-item" href="/vn/tags/"> Hashtag </a><a class="menu-item" href="/vn/categories/documentation/"> Tài liệu </a><a class="menu-item" href="/vn/about/"> Về tôi </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/vn/mahoadoixung/" selected>VietNam</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/vn/posts/" title="">Bài đăng</a><a class="menu-item" href="/vn/tags/" title="">Hashtag</a><a class="menu-item" href="/vn/categories/documentation/" title="">Tài liệu</a><a class="menu-item" href="/vn/about/" title="">Về tôi</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/vn/mahoadoixung/" selected>VietNam</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/vn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;774 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;<span id="/vn/mahoadoixung/" class="leancloud_visitors" data-flag-title="">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#các-phương-pháp-truyền-thống">Các phương pháp truyền thống</a></li>
+    <li><a href="#shift-cipher-mã-hóa-caesar">Shift Cipher, mã hóa Caesar</a></li>
+    <li><a href="#subtitution-cipher">Subtitution Cipher</a></li>
+    <li><a href="#phương-pháp-affine">Phương pháp Affine</a></li>
+    <li><a href="#xeuclidean">XEuclidean</a></li>
+    <li><a href="#phương-pháp-vigenere">Phương pháp Vigenere</a></li>
+    <li><a href="#hill-cipher">Hill Cipher</a></li>
+    <li><a href="#mã-hóa-bằng-hoán-vị">Mã hóa bằng hoán vị</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="hệ-thống-mã-hóa-đối-xứng">Hệ thống mã hóa đối xứng</h1>
+<ul>
+<li>Còn gọi là mã hóa quy ước (conventional cryptosystem)</li>
+<li>Quy trình mã hóa và giải mã đều sử dụng chung một khóa</li>
+<li>Bảo mật thông tin phụ thuộc vào bảo mật khóa</li>
+</ul>
+<h2 id="các-phương-pháp-truyền-thống">Các phương pháp truyền thống</h2>
+<ul>
+<li>Phép thay thế (subtitution)</li>
+<li>Phép thay đổi vị trị (transposition)
+<ul>
+<li>Đơn ký tự (mono-alphabetic)</li>
+<li>Đa ký tự (poly - alphabetic)</li>
+</ul>
+</li>
+</ul>
+<p>(xem lại CSC15005)</p>
+<h2 id="shift-cipher-mã-hóa-caesar">Shift Cipher, mã hóa Caesar</h2>
+<p>Dịch chuyển xoay vòng từng ký tự đi $k$ vị trí. $k = 3$ là mã hóa Caesar.</p>
+<p>Cho $\mathcal{P} = \mathcal{C} = \mathcal{K} = \mathbb{Z}_n$. Với mỗi khóa $k \in \mathcal{K}$, định nghĩa</p>
+<ul>
+<li>$e_k(x) = x + k \pmod n$ và $d_k(y) = y - k \pmod n; x, y \in \mathbb{Z}_n$</li>
+<li>$\mathcal{E} = {e_k, k \in \mathcal{K}}$ và $\mathcal{D} = {d_k, k \in \mathcal{K}}$</li>
+</ul>
+<p>Tính chất:</p>
+<ul>
+<li>Phương pháp đơn giản</li>
+<li>Thao tác xử lý mã hóa &amp; giải mã thực hiện nhanh</li>
+<li>Không gian khóa ${0, 1, 2, .., n - 1} = \mathbb{Z}_n$</li>
+<li>Dễ bị phá vỡ bằng brute-force.</li>
+</ul>
+<h2 id="subtitution-cipher">Subtitution Cipher</h2>
+<p>Hoán vị các phần tử trong bảng chữ cái. Tổng quát hơn: hoán vị (permute) các phần tử trong tập nguồn $\mathcal{P}$.</p>
+<p>Cho $\mathcal{P} = \mathcal{C} = \mathbb{Z}_n, \mathcal{K}$ là tập hợp các hoán vị của $n$ phần tử $0, 1, .., n - 1$. Vậy, mỗi khóa $\pi \in \mathcal{K}$ là một hoán vị của $n$ phần tử $0, 1, .., n - 1$.</p>
+<p>Với mỗi khóa $\pi \in \mathcal{K}$, định nghĩa:</p>
+<ul>
+<li>$e_{\pi}(x) = \pi(x)$ và $d_{\pi}(y) = \pi^{-1}(y); x, y \in \mathbb{Z}_n$</li>
+<li>$\mathcal{E} = {e_{\pi}, \pi \in \mathcal{K}}$ và $\mathcal{D} = {d_{\pi}, \pi \in \mathcal{K}}$</li>
+</ul>
+<p>Tính chất:</p>
+<ul>
+<li>Đơn giản, thực hiện nhanh!</li>
+<li>Không gian khóa gồm $n!$ phần tử</li>
+<li>Brute-force với $k \in \mathcal{K}$ là không khả thi.</li>
+<li>Tấn công bằng cách khác: frequency analysis</li>
+</ul>
+<p>(Ngoài lề): veni vidi vici - I came, I saw, I conquered</p>
+<h2 id="phương-pháp-affine">Phương pháp Affine</h2>
+<p>Cho $\mathcal{P} = \mathcal{C} = \mathbb{Z}_n, \mathcal{K} = {(a, b) \in \mathbb{Z}_n \times \mathbb{Z}_n: (a, n) = 1}$. Với mỗi khóa $k = (a, b) \in \mathcal{K}$, định nghĩa:</p>
+<ul>
+<li>$e_k(x) = (ax + b) \pmod n$ và $d_k(y) = a^{-1}(y - b) \pmod n; x, y \in \mathbb{Z}_n$[^1]</li>
+<li>$\mathcal{E} = {e_k, k \in \mathcal{K}}$ và $\mathcal{D} = {d_k, k \in \mathcal{K}}$</li>
+</ul>
+<p>Giải mã chính xác thì $e_k$ phải là song ánh, khi đó $(a, n) = 1$.</p>
+<p>Gọi $\phi(n)$ (hàm phi Euler) là số lượng phần tử thuộc $\mathbb{Z}_n$ và nguyên tố cùng nhau với $n$.</p>
+<p>Nếu $n = \prod_{i = 1}^{m} p_i^{e_i}$ với $p_i$ nguyên tố khác nhau đôi một, $e_i \in \mathbb{Z}^{+}, i \in [1, m]$ thì $\phi(n) = \prod_{i = 1}^{m}p_i^{e_i} - p_i^{e_i - 1}$ (number theory - xem lại).</p>
+<p>Ta có</p>
+<ul>
+<li>$n$ khả năng chọn $b$</li>
+<li>$\phi(n)$ khả năng chọn $a$</li>
+<li>Vậy tổng cộng có $\phi(n) \times n$ giá trị $k = (a, b)$</li>
+</ul>
+<h2 id="xeuclidean">XEuclidean</h2>
+<p>Cho $a, b \in \mathbb{Z}$, xây dựng dãy sau:</p>
+<ul>
+<li>$r_0 = a$</li>
+<li>$r_1 = b$</li>
+<li>$s_0 = 1$</li>
+<li>$s_1 = 0$</li>
+<li>$t_0 = 0$</li>
+<li>$t_1 = 1$</li>
+</ul>
+<p>Thực hiện:</p>
+<ul>
+<li>$r_2 = r_0 - q_0r_1$</li>
+<li>$s_2 = s_0 - q_0s_1$</li>
+<li>$t_2 = t_0 - q_0t_1$</li>
+</ul>
+<p>Lặp đến khi $r_{k + 1} = 0$, khi đó $r_k = (a, b) = as_k + bt_k$</p>
+<h2 id="phương-pháp-vigenere">Phương pháp Vigenere</h2>
+<p>Chọn $m \in \mathbb{Z}$. Định nghĩa $\mathcal{P} = \mathcal{C} = \mathcal{K} = (\mathbb{Z}_n)^m$</p>
+<ul>
+<li>$\mathcal{K} = {(k_1, k_2, .., k_m)} \in (\mathbb{Z}_n)^m$</li>
+<li>$\forall k = (k_1, k_2, .., k_m) \in \mathcal{K}, \forall x, y \in (\mathbb{Z}_n)^m$, định nghĩa
+<ul>
+<li>$e_k(x_1, x_2, .., x_m) = ((x_1 + k_1) \pmod n, (x_2 + k_2) \pmod n, .., (x_m + k_m) \pmod n)$</li>
+<li>$d_k(y_1, y_2, .., y_m) = ((y_1 - k_1) \pmod n, (x_2 - k_2) \pmod n, .., (y_m - k_m) \pmod n)$</li>
+</ul>
+</li>
+</ul>
+<p>Mã hóa bằng thay thế: mỗi khóa $k$ được chọn, mỗi $x \in \mathcal{P}$ được ánh xạ duy nhất một $y \in \mathcal{C}$</p>
+<p>Mã hóa Vigenere sử dụng khóa có độ dài $m$.</p>
+<ul>
+<li>Tên đặt theo Blaise de Vigenere</li>
+<li>Có thể xem như $m$ phép mã hóa bằng dịch chuyển luân phiên theo chu kỳ</li>
+<li>Không gian khóa $\mathcal{K}$ có số phần tử $n^m$</li>
+<li>VD: $m = 26, n = 5$ thì không gian khóa $\approx 1.1\times 10^7$</li>
+</ul>
+<h2 id="hill-cipher">Hill Cipher</h2>
+<p>(Xem lại CSC15005)</p>
+<h2 id="mã-hóa-bằng-hoán-vị">Mã hóa bằng hoán vị</h2>
+<p>Trường hợp đặc biệt của mã hóa Hill.</p>
+<p>Chọn số nguyên dương $m$. Định nghĩa</p>
+<ul>
+<li>$\mathcal{P} = \mathcal{C} = \mathbb{Z}_n^m$</li>
+<li>$\mathcal{K}$ là tập hoán vị của $m$ phần tử ${1, 2, .., m}$. Với mỗi $\pi \in \mathcal{K}$, định nghĩa
+<ul>
+<li>$e_{\pi}(x_1, x_2, .., x_m) = (x_{\pi(1)}, x_{\pi(2)}, .., x_{\pi(m)})$</li>
+<li>$d_{\pi}(y_1, y_2, .., y_m) = (y_{\pi^{-1}(1)}, y_{\pi^{-1}(2)}, .., y_{\pi^{-1}(m)})$, với $\pi^{-1}$ là hoán vị ngược của $\pi$</li>
+</ul>
+</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 0001-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/vn/mahoadoixung/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://turio.redev/vn/mahoadoixung/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://turio.redev/vn/mahoadoixung/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://turio.redev/vn/mahoadoixung/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://turio.redev/vn/mahoadoixung/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://turio.redev/vn/mahoadoixung/" data-title="" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/vn/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/vn/1darraysinc/" class="next" rel="next" title=""><i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/vn/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

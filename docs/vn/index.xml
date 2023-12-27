@@ -1,0 +1,94 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Turio</title>
+        <link>https://turio.redev/vn/</link>
+        <description>Nice website</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://turio.redev/vn/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Discrete Math</title>
+    <link>https://turio.redev/vn/trr/</link>
+    <pubDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/trr/</guid>
+    <description><![CDATA[Bài toán chia kẹo Euler, $n$ biến, tổng $m$ \[x_1 + x_2 + &hellip; + x_n = m\]
+Trường hợp nghiệm không âm \[S = C_{m+n-1}^{n-1}\]
+Trường hợp nghiệm dương \[S = C_{m-1}^{n-1}\]
+Bài toán chọn phần tử Có bao nhiêu cách lây ra $k$ phần tử trong $n$ phần tử được xếp trên đường thẳng sao cho không có 2 phần tử kề nhau cùng được lấy ra ? \[S(n, k) = C_{n-k+1}^{k}\]]]></description>
+</item>
+<item>
+    <title>Bảo vệ chính bản thân bạn</title>
+    <link>https://turio.redev/vn/baovechinhbanthan/</link>
+    <pubDate>Wed, 06 Dec 2023 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/baovechinhbanthan/</guid>
+    <description><![CDATA[<p>Hướng dẫn thực hành căn bản về bảo mật thông tin cá nhân/danh tính trên không gian mạng khỏi Trinh sát phòng, chống tội phạm sử dụng công nghệ cao.</p>]]></description>
+</item>
+<item>
+    <title>Các khái niệm chung về an toàn thông tin</title>
+    <link>https://turio.redev/vn/gioithieuattt/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/gioithieuattt/</guid>
+    <description><![CDATA[Mục tiêu và nguyên tắc chung Đảm bảo tính mật (Confidentiality) Đảm bảo tài sản không bị truy cập trái phép bởi những người không có thẩm quyền Đảm bảo tính nguyên vẹn (Integrity) Đảm bảo tài sản không thể bị sửa đổi, làm giả bởi những người không có thẩm quyền Tính nguyên vẹn của dữ liệu (Data integrity) Tính nguyên vẹn của chủ thể (Origin integrity) Tính khả dụng (Availability) Đảm bảo tài sản là sẵn sàng để đáp ứng cho người có thẩm quyền Thế nào là Crypto ?]]></description>
+</item>
+<item>
+    <title>Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam</title>
+    <link>https://turio.redev/vn/bypassisp/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/bypassisp/</guid>
+    <description><![CDATA[<p>This article shows the solution of bypass the firewall Internet in VN.</p>]]></description>
+</item>
+<item>
+    <title>Cơ sở mật mã học</title>
+    <link>https://turio.redev/vn/cryptoi/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/cryptoi/</guid>
+    <description><![CDATA[<p>This article shows the concept of Cryptography and Security.</p>]]></description>
+</item>
+<item>
+    <title>Giải ngố Pointer (Phần 1)</title>
+    <link>https://turio.redev/vn/pointerp1/</link>
+    <pubDate>Sat, 11 Nov 2023 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/pointerp1/</guid>
+    <description><![CDATA[<p>This article shows the concept of Pointer and how it works P1.</p>]]></description>
+</item>
+<item>
+    <title>Giải ngố Pointer (Phần 2)</title>
+    <link>https://turio.redev/vn/pointerp2/</link>
+    <pubDate>Sat, 11 Nov 2023 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/pointerp2/</guid>
+    <description><![CDATA[<p>This article shows the concept of Pointer and how it works P2.</p>]]></description>
+</item>
+<item>
+    <title>Chênh vênh giữa tuổi 20 (phần 1)</title>
+    <link>https://turio.redev/vn/20milestone/</link>
+    <pubDate>Sun, 05 Nov 2023 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/20milestone/</guid>
+    <description><![CDATA[<p>This article shows the my feeling after bad mood.</p>]]></description>
+</item>
+<item>
+    <title>Một ngày Chủ Nhật ác mộng nhất trong cuộc đời tôi</title>
+    <link>https://turio.redev/vn/professortamhuyet/</link>
+    <pubDate>Fri, 04 Aug 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/professortamhuyet/</guid>
+    <description><![CDATA[Mở đầu Khái quát Như các bạn đã biết (hoặc không), HUST là một ngôi trường có nhiều thầy cô giỏi, nhưng phải thú thật và thừa nhận với các bạn rằng tôi chưa thấy cô nào lại có thể làm việc hết công suất của mình một cách kinh khủng như vậy.
+Diễn biến Khi phải thuyết trình miniproject OOPs vào ngày 24/7/2023, những người có thứ tự tên đứng ở danh sách cuối như tôi luôn cảm thấy rất căng thẳng và hồi hộp.]]></description>
+</item>
+<item>
+    <title>Data Science trong bóng đá và thành công đến từ Liverpool F.C</title>
+    <link>https://turio.redev/vn/footballanalysis/</link>
+    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/footballanalysis/</guid>
+    <description><![CDATA[Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá? Bóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu. Sẽ không dễ dàng gì để ta có thể ghi lại từng sự kiện diễn ra trong trận đấu.]]></description>
+</item>
+</channel>
+</rss>
