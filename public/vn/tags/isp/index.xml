@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>ISP - Tag - Turio</title>
+        <link>https://turio.redev/vn/tags/isp/</link>
+        <description>ISP - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://turio.redev/vn/tags/isp/" rel="self" type="application/rss+xml" /><item>
+    <title>Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam</title>
+    <link>https://turio.redev/vn/bypassisp/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/bypassisp/</guid>
+    <description><![CDATA[<p>This article shows the solution of bypass the firewall Internet in VN.</p>]]></description>
+</item>
+</channel>
+</rss>

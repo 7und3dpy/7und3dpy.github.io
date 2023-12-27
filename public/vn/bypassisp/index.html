@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam - Turio</title><meta name="Description" content="This article shows the solution of bypass the firewall Internet in VN."><meta property="og:title" content="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam" />
+<meta property="og:description" content="This article shows the solution of bypass the firewall Internet in VN." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://turio.redev/vn/bypassisp/" /><meta property="og:image" content="https://turio.redev/vn/bypassisp/how-firewalls-work.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-18T15:58:26+08:00" />
+<meta property="article:modified_time" content="2023-11-18T15:58:26+08:00" /><meta property="og:site_name" content="Turio" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://turio.redev/vn/bypassisp/how-firewalls-work.png"/>
+<meta name="twitter:title" content="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam"/>
+<meta name="twitter:description" content="This article shows the solution of bypass the firewall Internet in VN."/>
+<meta name="application-name" content="Turio">
+<meta name="apple-mobile-web-app-title" content="Turio"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://turio.redev/vn/bypassisp/" /><link rel="prev" href="https://turio.redev/vn/cryptoi/" /><link rel="next" href="https://turio.redev/vn/gioithieuattt/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam",
+        "inLanguage": "vn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/turio.redev\/vn\/bypassisp\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/turio.redev\/vn\/bypassisp\/how-firewalls-work.png",
+                            "width":  438 ,
+                            "height":  239 
+                        }],"genre": "posts","keywords": "DNS, ISP, DPI","wordcount":  1754 ,
+        "url": "https:\/\/turio.redev\/vn\/bypassisp\/","datePublished": "2023-11-18T15:58:26+08:00","dateModified": "2023-11-18T15:58:26+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/turio.redev\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "This article shows the solution of bypass the firewall Internet in VN."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/vn/posts/"> Bài đăng </a><a class="menu-item" href="/vn/tags/"> Hashtag </a><a class="menu-item" href="/vn/categories/documentation/"> Tài liệu </a><a class="menu-item" href="/vn/about/"> Về tôi </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/vn/bypassisp/" selected>VietNam</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/vn/posts/" title="">Bài đăng</a><a class="menu-item" href="/vn/tags/" title="">Hashtag</a><a class="menu-item" href="/vn/categories/documentation/" title="">Tài liệu</a><a class="menu-item" href="/vn/about/" title="">Về tôi</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/vn/bypassisp/" selected>VietNam</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://turio.redev" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/vn/categories/internet/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Internet</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-18">2023-11-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1754 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;<span id="/vn/bypassisp/" class="leancloud_visitors" data-flag-title="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/vn/bypassisp/how-firewalls-work.png"
+        data-srcset="/vn/bypassisp/how-firewalls-work.png, /vn/bypassisp/how-firewalls-work.png 1.5x, /vn/bypassisp/how-firewalls-work.png 2x"
+        data-sizes="auto"
+        alt="/vn/bypassisp/how-firewalls-work.png"
+        title="This article shows the solution of bypass the firewall Internet in VN." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#các-phương-thức-được-sử-dụng-để-kiểm-duyệt-mạng">Các phương thức được sử dụng để kiểm duyệt mạng</a></li>
+    <li><a href="#cách-để-vượt-qua-kiểm-duyệt-mạng-ở-việt-nam">Cách để vượt qua kiểm duyệt mạng ở Việt Nam</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#dns-qua-https">DNS qua HTTPS</a></li>
+    <li><a href="#dns-qua-tls">DNS qua TLS</a></li>
+    <li><a href="#dpi-spoofing">DPI Spoofing</a></li>
+    <li><a href="#vpn">VPN</a>
+      <ul>
+        <li><a href="#vpn-được-quản-lý">VPN được quản lý</a></li>
+        <li><a href="#vpn-miễn-phí">VPN miễn phí</a></li>
+        <li><a href="#vpn-không-được-quản-lý">VPN không được quản lý</a>
+          <ul>
+            <li><a href="#buyvmhttpsmyfrantechcaaffphpaff5042"><a href="https://my.frantech.ca/aff.php?aff=5042">BuyVM</a></a></li>
+            <li><a href="#script-cài-đặt-máy-chủ-vpn-riêng-tư-nhanh">Script cài đặt máy chủ VPN riêng tư nhanh</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#tham-khảo-bài-viết-khác-về-cách-bảo-mật-thông-tin-trên-mạng">Tham khảo bài viết khác về cách bảo mật thông tin trên mạng</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>This article shows the solution of bypass the firewall Internet in VN.</p>
+<h2 id="các-phương-thức-được-sử-dụng-để-kiểm-duyệt-mạng">Các phương thức được sử dụng để kiểm duyệt mạng</h2>
+<p>Tại Việt Nam, nhà mạng sử dụng 2 phương thức kiểm duyệt mạng chính đó là:</p>
+<ol>
+<li>Nhiễm độc DNS (DNS Spoofing/DNS Poisoning): Đây là phương pháp phổ biến nhất để kiểm duyệt mạng. Phương pháp này không chỉ phổ biến trong kiểm duyệt mạng trên phạm vi quốc gia mà nó còn phổ biến trong các hộ gia đình/công ty cũng thường xuyên sử dụng phương pháp này để ngăn chặn người dùng cơ bản truy cập các trang web quản trị viên không mong muốn. Nhưng phương pháp này không hiệu quả nếu người dùng đã biết trước địa chỉ IP của trang web mà họ truy cập, qua đó người dùng có thể truy cập trực tiếp vào trang web mà không cần hỏi DNS về IP của máy chủ đằng sau tên miền.</li>
+<li>Kiểm tra gói sâu (DPI/Deep Packet Inspection): Đây là phương pháp phổ biến để kiểm duyệt mạng trên phạm vi quốc gia nhưng không phổ biến trong hộ gia đình. Phương pháp này sử dụng các công nghệ kiểm duyệt để kiểm tra sâu rộng các gói mạng được truyền qua phương thức TCP/HTTP qua đó có thể ngăn chặn triệt để việc truy cập các trang web không mong muốn. Phương pháp này vô cùng hiệu quả, bởi vì kể cả khi người dùng biết địa chỉ tên miền/Địa chỉ IP của trang web họ cần truy cập thì kết nối vẫn sẽ không được thực hiện.</li>
+</ol>
+<p><strong>Giải thích đơn giản:</strong></p>
+<ol>
+<li>Ví dụ bạn là shipper đang muốn đến nhà chú Việt để giao hàng. Do không biết nhà, bạn hỏi đường bác Nam bán trà đá đầu ngõ nhà bạn Việt. Nhưng do bạn hỏi đường quá to, thằng Kiểm Duyệt ngồi uống trà đá ở đó nghe thấy. Do có tư thù với chú Việt, thằng Kiểm Duyệt chặn họng bác Nam, nói với bạn rằng nhà chú Việt không phải ở trong ngõ này đâu, mà là ở ngõ trên kia kìa. Thế là bạn cảm ơn Kiểm Duyệt rối rít và đưa kiện hàng đến nơi thằng Kiểm Duyệt chỉ mà không biết rằng đó chính là nhà của nó chứ không phải của chú Việt. Trong câu chuyện này, shipper là trình duyệt của bạn, món hàng là truy vấn của bạn, nhà chú Việt là máy chủ của trang web mà bạn muốn truy cập, ngõ nhà chú Việt là Internet, bác Nam là máy chủ DNS không kiểm duyệt, còn thằng Kiểm Duyệt thì y như cái tên, máy chủ DNS đã bị kiểm duyệt và đưa truy vấn của bạn đi sai đường, còn nhà thằng Kiểm Duyệt là máy chủ giả mạo trang web mà bạn muốn truy cập. Theo đó, nếu bạn đã biết nhà chú Việt và không cần hỏi đường thì bạn vẫn có thể giao món hàng thành công.</li>
+<li>Lần này, bạn vẫn là anh shipper kém may mắn đó. Thằng Kiểm Duyệt giờ đang giữ chức công an phường và vẫn ngồi quán trà đá của bác Nam ở đầu ngõ nhà chú Việt. Rút kinh nghiệm lần trước, bạn đã bảo chú Việt gửi hẳn địa chỉ trên Google Map cho chắc. Nhưng vừa định vô ngõ nhà chú Việt, thằng Kiểm Duyệt chặn bạn lại với lý do đang thực hiện chuyên án buôn bán cần sa ở trong ngõ này và cần kiểm tra mọi món đồ trong giỏ hàng của bạn. Thằng Kiểm Duyệt lục lọi trong giỏ hàng của bạn và phát hiện món đồ có ghi người nhận là chú Việt, thế là nó tịch thu, thậm chí đập nát món đồ đó và đuổi bạn về. Trong câu chuyện này, Kiểm Duyệt đóng vai khác là hệ thống Kiểm tra gói sâu. Nếu chú Việt đặt hàng bằng tên vợ của chú Việt là cô Huyền thì thằng Kiểm Duyệt sẽ không phát hiện ra và cho bạn vào trong ngõ, mặc dù nhà cô Huyền và chú Việt là một. Trong câu chuyện này, cô Huyền là tên miền mới/máy chủ mới của trang web, cung cấp cùng một nội dung của trang web cũ nhưng do thằng Kiểm Duyệt chưa cập nhật thông tin là chú Việt đã lấy vợ nên không biết để kiểm duyệt.</li>
+</ol>
+<h2 id="cách-để-vượt-qua-kiểm-duyệt-mạng-ở-việt-nam">Cách để vượt qua kiểm duyệt mạng ở Việt Nam</h2>
+<p>Qua hai câu chuyện ngắn ở trên, ta có thể thấy chỉ cần biết địa chỉ chính xác và thay đổi tiêu đề của gói hàng thì gói hàng sẽ có thể đến tay chú Việt một các an toàn mà không bị thằng Kiểm Duyệt chặn. Vậy có những cách nào để vượt qua kiểm duyệt mạng ở Việt Nam?</p>
+<ol>
+<li>DNS qua HTTPS/TLS: Truy vấn đến máy chủ DNS thông qua phương thức bảo mật HTTPS/TLS cách duy nhất để có thể tránh nhiễm độc DNS (ngoài cách tự xây dựng DNS riêng). Hai DNS mình khuyên các bạn dùng là CloudFlare DNS và AdGuard DNS.</li>
+<li>Sử dụng phần mềm để đánh lừa hệ thống DPI. Các bạn có thể làm xáo trộn tiêu đề của các gói tin truyền qua Layer 4. Vì DPI đa số chỉ quét 3 lớp trong mô hình OSI, nơi định tuyến các gói mạng nên ta có thể làm cho các gói mạng trông &ldquo;khác đi&rdquo; một tí và qua mặt hệ thống này. Có rất nhiều phần mềm mã nguồn mở cung cấp khả năng đánh lừa hệ thống DPI, chi tiết mình sẽ cũng cấp trong mục sau.</li>
+<li>Sử dụng một đường hầm kết nối, phổ biến nhất là VPN. VPN là mạng riêng ảo, khi bạn kết nối đến một trang web thì nhà mạng sẽ chỉ thấy bạn đang kết nối đến máy chủ VPN. Phương thức hoạt động của VPN là sẽ tạo ra một đường hầm giữa bạn và trang web bạn muốn truy cập để tránh mọi sự kiểm soát của nhà mạng với bạn. Tuy rằng VPN dễ bị đánh chặn, ví dụ như Trung Quốc thường chặn VPN trước các sự kiện chính trị lớn,  nhưng do cái quan trọng thực sự của VPN là máy chủ chứ không phải IP nên bỏ qua việc chặn VPN là cực kì dễ dàng. Tuy nhiên, mình khuyên bạn nên tự tạo máy chủ VPN của riêng mình mà không sử dụng bên thứ ba, vì VPN thường để lại các tệp nhật kí nhằm cho việc định tuyến đường hầm trở nên khả thi nên khi bị các cơ quan chức năng tịch thu máy chủ thì thông tin truy cập của bạn vẫn có thể lộ lọt ra ngoài.</li>
+</ol>
+<h1 id="tài-nguyên">Tài nguyên</h1>
+<h2 id="dns-qua-https">DNS qua HTTPS</h2>
+<ol>
+<li>CloudFlare:</li>
+</ol>
+<ul>
+<li>Không có bộ lọc: <a href="https://cloudflare-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://cloudflare-dns.com/dns-query</a></li>
+<li>Lọc các trang web mã độc/lừa đảo: <a href="https://security.cloudflare-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://security.cloudflare-dns.com/dns-query</a></li>
+<li>Lọc các trang web mã độc/lừa đảo/khiêu dâm: <a href="https://family.cloudflare-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://family.cloudflare-dns.com/dns-query</a></li>
+</ul>
+<ol start="2">
+<li>AdGuard:</li>
+</ol>
+<ul>
+<li>Không có bộ lọc: <a href="https://unfiltered.adguard-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://unfiltered.adguard-dns.com/dns-query</a></li>
+<li>Lọc quảng cáo, trình theo dõi: <a href="https://dns.adguard-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://dns.adguard-dns.com/dns-query</a></li>
+<li>Lọc quảng cáo, tình theo dõi, trang web khiêu dâm, kết quả tìm kiếm khiêu dâm: <a href="https://family.adguard-dns.com/dns-query" target="_blank" rel="noopener noreffer ">https://family.adguard-dns.com/dns-query</a></li>
+</ul>
+<h2 id="dns-qua-tls">DNS qua TLS</h2>
+<ol>
+<li>CloudFlare:</li>
+</ol>
+<ul>
+<li>Không có bộ lọc: cloudflare-dns.com</li>
+<li>Lọc các trang web mã độc/lừa đảo: security.cloudflare-dns.com</li>
+<li>Lọc các trang web mã độc/lừa đảo/khiêu dâm: family.cloudflare-dns.com</li>
+</ul>
+<ol start="2">
+<li>AdGuard:</li>
+</ol>
+<ul>
+<li>Không có bộ lọc: unfiltered.adguard-dns.com</li>
+<li>Lọc quảng cáo, trình theo dõi: dns.adguard-dns.com</li>
+<li>Lọc quảng cáo, tình theo dõi, trang web khiêu dâm, kết quả tìm kiếm khiêu dâm: family.adguard-dns.com</li>
+</ul>
+<h2 id="dpi-spoofing">DPI Spoofing</h2>
+<ul>
+<li>Windows: <a href="https://github.com/ValdikSS/GoodbyeDPI" target="_blank" rel="noopener noreffer ">GoodbyeDPI by ValdikSS</a></li>
+<li>Linux/MacOS: <a href="https://github.com/xvzc/SpoofDPI" target="_blank" rel="noopener noreffer ">SpoofDPI by xvzc</a></li>
+<li>Android: <a href="https://github.com/krlvm/PowerTunnel-Android" target="_blank" rel="noopener noreffer ">PowerTunnel by krlvm</a></li>
+<li>Windows/Linux/MacOS: <a href="https://github.com/krlvm/PowerTunnel" target="_blank" rel="noopener noreffer ">PowerTunnel by krlvm</a></li>
+</ul>
+<h2 id="vpn">VPN</h2>
+<h3 id="vpn-được-quản-lý">VPN được quản lý</h3>
+<p>VPN được quản lý là các máy chủ VPN được cấu hình sẵn để truy cập.</p>
+<ol>
+<li>VPN dễ sử dụng: <a href="https://go.nordvpn.net/aff_c?offer_id=658&amp;aff_id=56406" target="_blank" rel="noopener noreffer ">NordVPN (aff)</a>.
+NordVPN là một VPN dễ sử dụng, đăng nhập và sử dụng qua tài khoản NordVPN nên dễ dàng quản lý. NordVPN có các IP với độ tin cậy cao nhằm tránh bị liệt vào Blacklist. NordVPN cũng có các máy chủ VPN để có thể xem các nội dung bị cấm theo địa lý trên Netflix, Spotify, Hulu, v.v</li>
+<li>VPN không có tài khoản:</li>
+</ol>
+<ul>
+<li><a href="https://mullvad.net/" target="_blank" rel="noopener noreffer ">Mullvad VPN</a>: Mullvad VPN là một VPN được quản lý, không có tài khoản, không có nhật kí, không có lời hứa sặc mùi quảng cáo. Mullvad VPN đơn giản là VPN và quyền riêng tư.</li>
+<li><a href="https://www.ivpn.net/" target="_blank" rel="noopener noreffer ">IVPN</a>: IVPN cũng giống như Mullvad, là một VPN được quản lý không có tài khoản, không có nhật ký.</li>
+</ul>
+<h3 id="vpn-miễn-phí">VPN miễn phí</h3>
+<p><strong>LƯU Ý QUAN TRỌNG</strong>: KHÔNG BAO GIỜ TIN TƯỞNG BẤT CỨ DỊCH VỤ VPN MIỄN PHÍ NÀO NGOÀI 2 DỊCH VỤ ĐƯỢC LIỆT KÊ Ở DƯỚI ĐÂY. VIỆC SỬ DỤNG VPN MIỄN PHÍ ĐEM LẠI RỦI RO CỰC KÌ CAO. NHÀ CUNG CẤP VPN MIỄN PHÍ CÓ THỂ BÁN THÔNG TIN CỦA BẠN, NGUY HIỂM HƠN CHÚNG CÓ THỂ LÀ HONEYPOT, BIẾN THIẾT BỊ CỦA BẠN THÀNH CÔNG CỤ KHAI THÁC, TẤN CÔNG!
+Hai VPN miễn phí duy nhất được mình khuyến nghị là:</p>
+<ul>
+<li><a href="https://1.1.1.1/" target="_blank" rel="noopener noreffer ">CloudFlare Warp</a>: Một VPN miễn phí của CloudFlare, không thực sự bảo vệ bạn hoàn toàn nhưng có thể giúp bạn truy cập các trang web bị nhà mạng cấm một cách dễ dàng.</li>
+<li><a href="https://protonvpn.com/" target="_blank" rel="noopener noreffer ">Proton VPN</a>: Một VPN MIỄN PHÍ DUY NHẤT TRÊN THẾ GIỚI CỦA CÔNG TY LỚN thực sự bảo mật. VPN không có nhật kí, trụ sở công ty được đặt ở quốc gia đặt quyền riêng tư trên hàng đầu. Có các máy chủ đặt ở căn cứ quân sự cũ được Proton mua lại (chỉ máy chủ Secure Core ở gói trả phí).</li>
+</ul>
+<h3 id="vpn-không-được-quản-lý">VPN không được quản lý</h3>
+<p>VPN không được quản lý, hay còn gọi là tự quản lý là máy chủ VPN do chính bạn tạo ra. Đặc điểm của loại VPN này là bạn an toàn tuyệt đối, vì máy chủ VPN thuộc sở hữu của bạn. Nhà cung cấp máy chủ được tin cậy là:</p>
+<h4 id="buyvmhttpsmyfrantechcaaffphpaff5042"><a href="https://my.frantech.ca/aff.php?aff=5042" target="_blank" rel="noopener noreffer ">BuyVM</a></h4>
+<p>Đây là nhà cung cấp duy nhất mình tin cậy. BuyVM cung cấp máy chủ ở các vị trí chống kiểm soát luật mạnh mẽ. BuyVM chấp nhận các phương thức thanh toán bằng tiền ảo nên có thể xóa dấu vết dễ dàng hơn. Ngoài ra, giá server ở đây <strong>CỰC KÌ RẺ</strong>, phù hợp để làm máy chủ VPN mà không phải chi quá nhiều tiền.</p>
+<h4 id="script-cài-đặt-máy-chủ-vpn-riêng-tư-nhanh">Script cài đặt máy chủ VPN riêng tư nhanh</h4>
+<p><a href="https://github.com/angristan/openvpn-install" target="_blank" rel="noopener noreffer ">OpenVPN Install</a>
+<a href="https://openvpn.net/vpn-client/" target="_blank" rel="noopener noreffer ">OpenVPN Connect</a></p>
+<h2 id="tham-khảo-bài-viết-khác-về-cách-bảo-mật-thông-tin-trên-mạng">Tham khảo bài viết khác về cách bảo mật thông tin trên mạng</h2>
+<p><a href="https://github.com/ndbiaw/opsec-guide" target="_blank" rel="noopener noreffer ">OPSEC Guilde by NDBIAW</a></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-11-18</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/vn/bypassisp/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://turio.redev/vn/bypassisp/" data-title="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam" data-hashtags="DNS,ISP,DPI"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://turio.redev/vn/bypassisp/" data-hashtag="DNS"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://turio.redev/vn/bypassisp/" data-title="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://turio.redev/vn/bypassisp/" data-title="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://turio.redev/vn/bypassisp/" data-title="Cách vượt qua tường lửa kiểm duyệt Internet ở Việt Nam" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/vn/tags/dns/">DNS</a>,&nbsp;<a href="/vn/tags/isp/">ISP</a>,&nbsp;<a href="/vn/tags/dpi/">DPI</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/vn/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/vn/cryptoi/" class="prev" rel="prev" title="Cơ sở mật mã học"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Cơ sở mật mã học</a>
+            <a href="/vn/gioithieuattt/" class="next" rel="next" title="Các khái niệm chung về an toàn thông tin">Các khái niệm chung về an toàn thông tin<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/vn/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

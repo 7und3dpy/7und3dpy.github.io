@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>discrete math - Tag - Turio</title>
+        <link>https://turio.redev/vn/tags/discrete-math/</link>
+        <description>discrete math - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/vn/tags/discrete-math/" rel="self" type="application/rss+xml" /><item>
+    <title>Discrete Math</title>
+    <link>https://turio.redev/vn/trr/</link>
+    <pubDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/trr/</guid>
+    <description><![CDATA[Bài toán chia kẹo Euler, $n$ biến, tổng $m$ \[x_1 + x_2 + &hellip; + x_n = m\]
+Trường hợp nghiệm không âm \[S = C_{m+n-1}^{n-1}\]
+Trường hợp nghiệm dương \[S = C_{m-1}^{n-1}\]
+Bài toán chọn phần tử Có bao nhiêu cách lây ra $k$ phần tử trong $n$ phần tử được xếp trên đường thẳng sao cho không có 2 phần tử kề nhau cùng được lấy ra ? \[S(n, k) = C_{n-k+1}^{k}\]]]></description>
+</item>
+</channel>
+</rss>

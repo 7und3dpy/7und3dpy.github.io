@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>analysis - Tag - Turio</title>
+        <link>https://turio.redev/vn/tags/analysis/</link>
+        <description>analysis - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/vn/tags/analysis/" rel="self" type="application/rss+xml" /><item>
+    <title>Data Science trong bóng đá và thành công đến từ Liverpool F.C</title>
+    <link>https://turio.redev/vn/footballanalysis/</link>
+    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/footballanalysis/</guid>
+    <description><![CDATA[Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá? Bóng đá ngày càng được phân tích và dự đoán thông qua các con số biết nói. Và nếu là một Fan thể thao thực thụ, bạn sẽ nhận thấy những con số này chẳng hề mới lạ một chút nào đâu nhé!
+Và hiển nhiên vấn đề lớn đối với bóng đá chính là dữ liệu. Sẽ không dễ dàng gì để ta có thể ghi lại từng sự kiện diễn ra trong trận đấu.]]></description>
+</item>
+</channel>
+</rss>

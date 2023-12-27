@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="vn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Kiến thức toán cơ bản cho Data Science (phần 2) - Turio</title><meta name="Description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán."><meta property="og:title" content="Kiến thức toán cơ bản cho Data Science (phần 2)" />
+<meta property="og:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://turio.redev/vn/fundamentalmath2/" /><meta property="og:image" content="https://turio.redev/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Turio" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://turio.redev/logo.png"/>
+
+<meta name="twitter:title" content="Kiến thức toán cơ bản cho Data Science (phần 2)"/>
+<meta name="twitter:description" content="Bài viết mẫu hiển thị các kiến thức cơ bản về toán."/>
+<meta name="application-name" content="Turio">
+<meta name="apple-mobile-web-app-title" content="Turio"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://turio.redev/vn/fundamentalmath2/" /><link rel="prev" href="https://turio.redev/vn/markdownsyntax/" /><link rel="next" href="https://turio.redev/vn/fundamentalmath1/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Kiến thức toán cơ bản cho Data Science (phần 2)",
+        "inLanguage": "vn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/turio.redev\/vn\/fundamentalmath2\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/turio.redev\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","keywords": "math, data science, probability and statistic","wordcount":  1220 ,
+        "url": "https:\/\/turio.redev\/vn\/fundamentalmath2\/","datePublished": "2023-07-24T00:00:00+00:00","dateModified": "2023-07-24T00:00:00+00:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/turio.redev\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "Bài viết mẫu hiển thị các kiến thức cơ bản về toán."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/vn/posts/"> Bài đăng </a><a class="menu-item" href="/vn/tags/"> Hashtag </a><a class="menu-item" href="/vn/categories/documentation/"> Tài liệu </a><a class="menu-item" href="/vn/about/"> Về tôi </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/fundamentalmath2/">English</option><option value="/vn/fundamentalmath2/" selected>VietNam</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/vn/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/vn/posts/" title="">Bài đăng</a><a class="menu-item" href="/vn/tags/" title="">Hashtag</a><a class="menu-item" href="/vn/categories/documentation/" title="">Tài liệu</a><a class="menu-item" href="/vn/about/" title="">Về tôi</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/fundamentalmath2/">English</option><option value="/vn/fundamentalmath2/" selected>VietNam</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Kiến thức toán cơ bản cho Data Science (phần 2)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/vn/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/vn/categories/study/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>study</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-24">2023-07-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1220 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;<span id="/vn/fundamentalmath2/" class="leancloud_visitors" data-flag-title="Kiến thức toán cơ bản cho Data Science (phần 2)">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#3-đại-số-tuyến-tính">3) Đại số tuyến tính</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#kiến-thức-này-được-ứng-dụng-ra-sao">Kiến thức này được ứng dụng ra sao?</a></li>
+            <li><a href="#tôi-có-thể-học-chúng-từ-đâu">Tôi có thể học chúng từ đâu?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#4-giải-tích-calculus">4) Giải tích (Calculus)</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#tôi-sẽ-sử-dụng-kiến-thức-này-ở-đâu">Tôi sẽ sử dụng kiến thức này ở đâu?</a></li>
+            <li><a href="#tôi-có-thể-bổ-sung-kiến-thức-giải-tích-ở-đâu-">Tôi có thể bổ sung kiến thức Giải tích ở đâu ?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#5-toán-rời-rạc-discrete-math">5) Toán rời rạc (Discrete Math)</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#tôi-có-thể-bổ-sung-kiến-thức-này-ở-đâu-">Tôi có thể bổ sung kiến thức này ở đâu ?</a></li>
+            <li><a href="#tôi-có-thể-học-toán-rời-rạc-ở-đâu">Tôi có thể học Toán rời rạc ở đâu?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="kiến-thức-toán-cho-lĩnh-vực-data-science-phần-2">Kiến thức toán cho lĩnh vực Data Science (Phần 2)</h1>
+<h2 id="3-đại-số-tuyến-tính">3) Đại số tuyến tính</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="http://kisonecat.com/teaching/2014/math2568/logo.png"
+        data-srcset="http://kisonecat.com/teaching/2014/math2568/logo.png, http://kisonecat.com/teaching/2014/math2568/logo.png 1.5x, http://kisonecat.com/teaching/2014/math2568/logo.png 2x"
+        data-sizes="auto"
+        alt="http://kisonecat.com/teaching/2014/math2568/logo.png"
+        title="http://kisonecat.com/teaching/2014/math2568/logo.png" /></p>
+<p>Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là <strong>Recommend System</strong> với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.</p>
+<p>Tại đây, kiến thức Đại số tuyến tính sẽ được áp dụng giúp chúng ta hiểu chuyên sâu hơn cách thuật toán học máy hoạt động trên luồng dữ liệu. Từ đó các Data Scientist sẽ dễ dàng phân tích, xử lý insight trong dữ liệu một cách chi tiết nhất.</p>
+<p>Hãy cùng mình tìm hiểu những kiến thức cơ bản về Đại số tuyến tính cần có nào:</p>
+<ul>
+<li>Các tính chất cơ bản của ma trận và vector: phép nhân vô hướng, biến đổi tuyến tính, chuyển vị, liên hợp, &hellip;</li>
+<li>Quy tắc nhân ma trận và các thuật toán khác nhau, nghịch đảo ma trận</li>
+<li>Các Ma trận đặc biệt: ma trận vuông, ý tưởng về ma trận thưa thớt và dày đặc, vector đơn vị, ma trận đối xứng, ma trận đơn vị,&hellip;</li>
+<li>Mô hình phân tích ma trận thành nhân tử (Matrix Factorization) / phân tích LU, loại bỏ Gaussian / Gauss-Jordan, giải hệ phương trình tuyến tính Ax = b</li>
+<li>Cơ sở không gian vector, tính trực giao, bình phương tuyến tính nhỏ nhất</li>
+<li>Vector riêng &amp; giá trị riêng trong ma trận, chéo hoá ma trận, phương pháp Singular Value Decomposition (SVD)</li>
+</ul>
+<h4 id="kiến-thức-này-được-ứng-dụng-ra-sao">Kiến thức này được ứng dụng ra sao?</h4>
+<p>Tất cả các thuật toán neural network đều sử dụng các kỹ thuật đại số tuyến tính để biểu diễn và xử lý các cấu trúc mạng lẫn huấn luyện dữ liệu. Kiến thức Đại số tuyến tính còn ứng dụng trong xử lý ảnh hay các thao tác, biểu diễn dữ liệu thực tế.</p>
+<h4 id="tôi-có-thể-học-chúng-từ-đâu">Tôi có thể học chúng từ đâu?</h4>
+<ul>
+<li>Linear algebra: foundations to frontiers - edX: <br>
+<a href="https://courses.edx.org/courses/course-v1:UTAustinX&#43;UT.5.05x&#43;2T2017/course/" target="_blank" rel="noopener noreffer ">https://courses.edx.org/courses/course-v1:UTAustinX+UT.5.05x+2T2017/course/</a></li>
+<li>Mathematics for Machine Learning: Linear Algebra - Coursera: <br>
+<a href="https://www.coursera.org/learn/linear-algebra-machine-learning" target="_blank" rel="noopener noreffer ">https://www.coursera.org/learn/linear-algebra-machine-learning</a></li>
+<li>Python cho Đại số Tuyến tính - Machine learning Cơ bản: <br>
+<a href="https://fundaml.com/course/5990a766cdc6e32b3b4d0666/intro" target="_blank" rel="noopener noreffer ">https://fundaml.com/course/5990a766cdc6e32b3b4d0666/intro</a></li>
+<li>Kiến thức về Đại số Tuyến tính cũng được đề cập kết hợp quiz + assignment để kiếm tra kiến thức tại Week một khoá Machine Learning - Coursera: <br>
+<a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="noopener noreffer ">https://www.coursera.org/learn/machine-learning</a></li>
+</ul>
+<h2 id="4-giải-tích-calculus">4) Giải tích (Calculus)</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg"
+        data-srcset="https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg, https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg 1.5x, https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg 2x"
+        data-sizes="auto"
+        alt="https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg"
+        title="https://i.udemycdn.com/course/750x422/34273_f5de_8.jpg" /></p>
+<p>Giải tích chắc hẳn là một trong những môn học đại cương khá &ldquo;ám ảnh&rdquo; đối với sinh viên khối Khoa học - Kỹ thuật lẫn Kinh tế. Nhưng bất luận thực trạng sinh viên sợ hãi môn học ra sao thì Giải tích vẫn xuất hiện tất yếu trong Machine Learning lẫn Data Science.</p>
+<p>Giải tích hình thành nên các giải pháp phân tích tưởng chừng cơ bản như Hồi quy tuyến tính (Linear Regression). Mà hơn hết, khi xây dựng một mô hình thuật toán máy học để phân tích và dự đoán giả thuyết dữ liệu thì Giải tích sẽ đóng vai trò quan trọng trong quy trình tìm độ lỗi cực tiểu cho mô hình và tối ưu hoá độ chính xác của mô hình.</p>
+<p>Đây là một môn học khó nhưng sẽ cực kỳ giá trị nếu bạn được trang bị kiến thức Giải tích trên con đường trở thành Data Scientist. Hãy cùng Ad tìm hiểu những kiến thức cơ bản cần nắm nào:</p>
+<ul>
+<li>Kiến thức về Hàm số một biến, giới hạn, liên tục, khác biệt</li>
+<li>Các định lý về giá trị trung bình (Mean value theorems), các dạng không xác định, quy tắc L&rsquo;Hospital</li>
+<li>Tính cực đại và cực tiểu của hàm số</li>
+<li>Quy tắc nhân (Product rule), Quy tắc dây chuyền (Chain rule)</li>
+<li>Chuỗi Taylor, khái niệm tổng hợp / tích hợp chuỗi vô hạn</li>
+<li>Các định lý giá trị cơ bản và trung bình của phép tính tích phân, đánh giá tích phân xác định và không xác định</li>
+<li>Hàm Gamma và hàm Beta</li>
+<li>Kiến thức về Hàm số nhiều biến, giới hạn, liên tục, đạo hàm riêng</li>
+<li>Khái niệm cơ bản của phương trình vi phân</li>
+</ul>
+<h4 id="tôi-sẽ-sử-dụng-kiến-thức-này-ở-đâu">Tôi sẽ sử dụng kiến thức này ở đâu?</h4>
+<p>Bạn đã bao giờ từ hỏi thuật toán Logistic Regression thực hiện như thế nào? Phải chăng là chúng sử dụng phương pháp mang tên &ldquo;Gradient Descent&rdquo; để tìm hiểu hàm mất mát tối thiểu. Để hiểu cách thức hoạt động của nó, bạn cần nắm các khái niệm về độ dốc, đạo hàm, giới hạn hàm số lẫn quy tắc chuỗi.</p>
+<p>Tham khảo thuật toán Logistic Regression: <br>
+<a href="https://machinelearningcoban.com/2017/01/27/logisticregression/" target="_blank" rel="noopener noreffer ">https://machinelearningcoban.com/2017/01/27/logisticregression/</a></p>
+<h4 id="tôi-có-thể-bổ-sung-kiến-thức-giải-tích-ở-đâu-">Tôi có thể bổ sung kiến thức Giải tích ở đâu ?</h4>
+<ul>
+<li>Pre-university calculus - edX: <a href="https://www.edx.org/course/pre-university-calculus" target="_blank" rel="noopener noreffer ">https://www.edx.org/course/pre-university-calculus</a></li>
+<li>Calculus I - Khan Academy: <a href="https://www.khanacademy.org/math/calculus-1" target="_blank" rel="noopener noreffer ">https://www.khanacademy.org/math/calculus-1</a></li>
+<li>Mathematics for machine learning: Multivariable calculus - Coursera: <br>
+<a href="https://www.coursera.org/learn/multivariate-calculus-machine-learning" target="_blank" rel="noopener noreffer ">https://www.coursera.org/learn/multivariate-calculus-machine-learning</a></li>
+</ul>
+<h2 id="5-toán-rời-rạc-discrete-math">5) Toán rời rạc (Discrete Math)</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="http://www.discrete-math-hub.com/just_a_graph.small.png"
+        data-srcset="http://www.discrete-math-hub.com/just_a_graph.small.png, http://www.discrete-math-hub.com/just_a_graph.small.png 1.5x, http://www.discrete-math-hub.com/just_a_graph.small.png 2x"
+        data-sizes="auto"
+        alt="http://www.discrete-math-hub.com/just_a_graph.small.png"
+        title="http://www.discrete-math-hub.com/just_a_graph.small.png" /></p>
+<p>Data Science hiện nay được thực hiện với sự trợ giúp của các hệ thống tính toán và Toán rời rạc là trung tâm của các hệ thống ấy.</p>
+<p>Toán rời rạc sẽ bao gồm các khái niệm quan trọng đối với việc sử dụng hàng ngày các thuật toán và cấu trúc dữ liệu trong những project phân tích:</p>
+<ul>
+<li>Tìm hiểu về phép đếm, tổ hợp,&hellip;</li>
+<li>Nắm những kỹ thuật chứng minh cơ bản</li>
+<li>Khái niệm cơ bản của logic quy nạp, suy diễn và mệnh đề</li>
+<li>Hiểu được Cấu trúc dữ liệu cơ bản: ngăn xếp, hàng đợi, đồ thị, mảng, bảng băm, cây</li>
+<li>Những niệm cơ bản của Đồ thị và ứng dụng</li>
+<li>Hệ thức truy hồi</li>
+</ul>
+<h4 id="tôi-có-thể-bổ-sung-kiến-thức-này-ở-đâu-">Tôi có thể bổ sung kiến thức này ở đâu ?</h4>
+<p>Ví dụ khi phân tích về bài toán hành vi người dùng mạng xã hội, dữ liệu có thể được mô phỏng như các thuộc tính của biểu đồ và ta cần nghiên cứu thuật toán nhanh nhất để tìm kiếm lẫn duyệt qua từng điểm đồ thị. Và việc học cấu trúc rời rạc sẽ giúp bạn tìm hiểu độ phức tạp của thuật toán ở những không gian và thời gian khác nhau. Từ đó sẽ giúp bạn chọn lựa thuật toán phù hợp để giải quyết vấn đề của mình.</p>
+<h4 id="tôi-có-thể-học-toán-rời-rạc-ở-đâu">Tôi có thể học Toán rời rạc ở đâu?</h4>
+<ul>
+<li>Introduction to Discrete Mathematics for Computer Science Specialization - Coursera: <a href="https://www.coursera.org/specializations/discrete-mathematics" target="_blank" rel="noopener noreffer ">https://www.coursera.org/specializations/discrete-mathematics</a></li>
+<li>Master discrete mathematics: sets, math logic, and more - Coursera: <br>
+<a href="https://www.udemy.com/master-discrete-mathematics/" target="_blank" rel="noopener noreffer ">https://www.udemy.com/master-discrete-mathematics/</a></li>
+<li>Introduction to Mathematical Thinking - Coursera: <br>
+<a href="https://www.coursera.org/learn/mathematical-thinking" target="_blank" rel="noopener noreffer ">https://www.coursera.org/learn/mathematical-thinking</a></li>
+</ul>
+<h1 id="tổng-kết">Tổng kết</h1>
+<p>Để trở thành một DS quả là một quá trình dài để học tập, rèn luyện tri thức lẫn mindset dúng không nào. Qua đó, ta có thể thấy từ bài toán đến ứng dụng thực tiễn luôn là một thử thách lớn và lại càng gắn liền với trách nhiệm nếu bạn phụ trách cho Doanh nghiệp. Bởi nguy hiểm vẫn là việc &ldquo;Sai một ly đi một dặm&rdquo; dẫn đến một rủi ro không hề nhỏ.</p>
+<p>Hãy không ngừng đặt ra những câu hỏi và cố gắng vận dụng tri thức tìm ra lời giải phù hợp lẫn tối ưu nhất. Trong giai đoạn Hội nhập của Việt Nam hiện nay, cơ hội vẫn luôn trong tầm tay bạn khi và chỉ khi bản thân luôn nỗ lực hết mình.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-07-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/vn/fundamentalmath2/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://turio.redev/vn/fundamentalmath2/" data-title="Kiến thức toán cơ bản cho Data Science (phần 2)" data-hashtags="math,data science,probability and statistic"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://turio.redev/vn/fundamentalmath2/" data-hashtag="math"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://turio.redev/vn/fundamentalmath2/" data-title="Kiến thức toán cơ bản cho Data Science (phần 2)"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://turio.redev/vn/fundamentalmath2/" data-title="Kiến thức toán cơ bản cho Data Science (phần 2)"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://turio.redev/vn/fundamentalmath2/" data-title="Kiến thức toán cơ bản cho Data Science (phần 2)" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/vn/tags/math/">math</a>,&nbsp;<a href="/vn/tags/data-science/">data science</a>,&nbsp;<a href="/vn/tags/probability-and-statistic/">probability and statistic</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/vn/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/vn/markdownsyntax/" class="prev" rel="prev" title="Hướng dẫn cú pháp Markdown"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Hướng dẫn cú pháp Markdown</a>
+            <a href="/vn/fundamentalmath1/" class="next" rel="next" title="Kiến thức toán cơ bản cho Data Science (phần 1)">Kiến thức toán cơ bản cho Data Science (phần 1)<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/vn/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>latex - Tag - Turio</title>
+        <link>https://turio.redev/vn/tags/latex/</link>
+        <description>latex - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/vn/tags/latex/" rel="self" type="application/rss+xml" /><item>
+    <title>Giới thiệu về LATEX</title>
+    <link>https://turio.redev/vn/introtolatex/</link>
+    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://turio.redev/vn/introtolatex/</guid>
+    <description><![CDATA[1. LaTeX là gì? LaTeX là ngôn ngữ định dạng (document markup language) cho phép người dùng có thể soạn thảo tài liệu chất lượng cao cùng cấu trúc văn bản thống nhất và đồng bộ. LaTeX thường được sử dụng bởi sinh viên, giảng viên lẫn các nhà nghiên cứu về khoa học &amp; kỹ thuật, cũng như một số lĩnh vực khác.
+Tiền thân của LaTeX là TeX - ngôn ngữ định dạng do Donald Knuth phát minh nhưng rất khó sử dụng.]]></description>
+</item>
+</channel>
+</rss>
