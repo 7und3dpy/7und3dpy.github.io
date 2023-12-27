@@ -2,333 +2,333 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://turio.redev/projecteuler1/</loc><lastmod>2023-12-10T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://turio.redev/projecteuler3/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://turio.redev/categories/c/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/projecteuler1/</loc><lastmod>2023-12-10T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://7und3dpy.github.io/projecteuler3/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/c/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/c/"
+                        href="https://7und3dpy.github.io/vn/categories/c/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/c/"
+                    href="https://7und3dpy.github.io/categories/c/"
                     /></url><url>
-            <loc>https://turio.redev/categories/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/"
+                        href="https://7und3dpy.github.io/vn/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/"
+                    href="https://7und3dpy.github.io/categories/"
                     /></url><url>
-            <loc>https://turio.redev/tags/hackerrank/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/hackerrank/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/hackerrank/"
+                        href="https://7und3dpy.github.io/vn/tags/hackerrank/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/hackerrank/"
+                    href="https://7und3dpy.github.io/tags/hackerrank/"
                     /></url><url>
-            <loc>https://turio.redev/posts/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/posts/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/posts/"
+                        href="https://7und3dpy.github.io/vn/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/posts/"
+                    href="https://7und3dpy.github.io/posts/"
                     /></url><url>
-            <loc>https://turio.redev/projecteuler2/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://turio.redev/tags/projecteuler/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://turio.redev/categories/python/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://turio.redev/tags/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/projecteuler2/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/projecteuler/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/python/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/"
+                        href="https://7und3dpy.github.io/vn/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/"
+                    href="https://7und3dpy.github.io/tags/"
                     /></url><url>
-            <loc>https://turio.redev/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/"
+                        href="https://7und3dpy.github.io/vn/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/"
+                    href="https://7und3dpy.github.io/"
                     /></url><url>
-            <loc>https://turio.redev/tags/c/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/c/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/c/"
+                        href="https://7und3dpy.github.io/vn/tags/c/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/c/"
+                    href="https://7und3dpy.github.io/tags/c/"
                     /></url><url>
-            <loc>https://turio.redev/pointerp1/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/pointerp1/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/pointerp1/"
+                        href="https://7und3dpy.github.io/vn/pointerp1/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/pointerp1/"
+                    href="https://7und3dpy.github.io/pointerp1/"
                     /></url><url>
-            <loc>https://turio.redev/pointerp2/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/pointerp2/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/pointerp2/"
+                        href="https://7und3dpy.github.io/vn/pointerp2/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/pointerp2/"
+                    href="https://7und3dpy.github.io/pointerp2/"
                     /></url><url>
-            <loc>https://turio.redev/pointerp3/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/categories/code/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/pointerp3/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/code/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/code/"
+                        href="https://7und3dpy.github.io/vn/categories/code/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/code/"
+                    href="https://7und3dpy.github.io/categories/code/"
                     /></url><url>
-            <loc>https://turio.redev/tags/pointer/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/pointer/</loc><lastmod>2023-11-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/pointer/"
+                        href="https://7und3dpy.github.io/vn/tags/pointer/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/pointer/"
+                    href="https://7und3dpy.github.io/tags/pointer/"
                     /></url><url>
-            <loc>https://turio.redev/1darraysinc/</loc><lastmod>2023-11-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/1darraysinc/</loc><lastmod>2023-11-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/1darraysinc/"
+                        href="https://7und3dpy.github.io/vn/1darraysinc/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/1darraysinc/"
+                    href="https://7und3dpy.github.io/1darraysinc/"
                     /></url><url>
-            <loc>https://turio.redev/professortamhuyet/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/professortamhuyet/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/professortamhuyet/"
+                        href="https://7und3dpy.github.io/vn/professortamhuyet/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/professortamhuyet/"
+                    href="https://7und3dpy.github.io/professortamhuyet/"
                     /></url><url>
-            <loc>https://turio.redev/tags/confess/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/confess/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/confess/"
+                        href="https://7und3dpy.github.io/vn/tags/confess/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/confess/"
+                    href="https://7und3dpy.github.io/tags/confess/"
                     /></url><url>
-            <loc>https://turio.redev/categories/confess/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/confess/</loc><lastmod>2023-08-04T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/confess/"
+                        href="https://7und3dpy.github.io/vn/categories/confess/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/confess/"
+                    href="https://7und3dpy.github.io/categories/confess/"
                     /></url><url>
-            <loc>https://turio.redev/tags/analysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/analysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/analysis/"
+                        href="https://7und3dpy.github.io/vn/tags/analysis/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/analysis/"
+                    href="https://7und3dpy.github.io/tags/analysis/"
                     /></url><url>
-            <loc>https://turio.redev/footballanalysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/footballanalysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/footballanalysis/"
+                        href="https://7und3dpy.github.io/vn/footballanalysis/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/footballanalysis/"
+                    href="https://7und3dpy.github.io/footballanalysis/"
                     /></url><url>
-            <loc>https://turio.redev/tags/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/football/"
+                        href="https://7und3dpy.github.io/vn/tags/football/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/football/"
+                    href="https://7und3dpy.github.io/tags/football/"
                     /></url><url>
-            <loc>https://turio.redev/categories/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/fundamentalmath1/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/fundamentalmath1/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/fundamentalmath1/"
+                        href="https://7und3dpy.github.io/vn/fundamentalmath1/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/fundamentalmath1/"
+                    href="https://7und3dpy.github.io/fundamentalmath1/"
                     /></url><url>
-            <loc>https://turio.redev/fundamentalmath2/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/fundamentalmath2/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/fundamentalmath2/"
+                        href="https://7und3dpy.github.io/vn/fundamentalmath2/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/fundamentalmath2/"
+                    href="https://7und3dpy.github.io/fundamentalmath2/"
                     /></url><url>
-            <loc>https://turio.redev/tags/data-science/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/data-science/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/data-science/"
+                        href="https://7und3dpy.github.io/vn/tags/data-science/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/data-science/"
+                    href="https://7und3dpy.github.io/tags/data-science/"
                     /></url><url>
-            <loc>https://turio.redev/introtolatex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/introtolatex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/introtolatex/"
+                        href="https://7und3dpy.github.io/vn/introtolatex/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/introtolatex/"
+                    href="https://7und3dpy.github.io/introtolatex/"
                     /></url><url>
-            <loc>https://turio.redev/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/weka/"
+                        href="https://7und3dpy.github.io/vn/weka/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/weka/"
+                    href="https://7und3dpy.github.io/weka/"
                     /></url><url>
-            <loc>https://turio.redev/tags/latex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/latex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/latex/"
+                        href="https://7und3dpy.github.io/vn/tags/latex/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/latex/"
+                    href="https://7und3dpy.github.io/tags/latex/"
                     /></url><url>
-            <loc>https://turio.redev/tags/math/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/math/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/math/"
+                        href="https://7und3dpy.github.io/vn/tags/math/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/math/"
+                    href="https://7und3dpy.github.io/tags/math/"
                     /></url><url>
-            <loc>https://turio.redev/tags/probability-and-statistic/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/probability-and-statistic/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/probability-and-statistic/"
+                        href="https://7und3dpy.github.io/vn/tags/probability-and-statistic/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/probability-and-statistic/"
+                    href="https://7und3dpy.github.io/tags/probability-and-statistic/"
                     /></url><url>
-            <loc>https://turio.redev/categories/study/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/study/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/study/"
+                        href="https://7und3dpy.github.io/vn/categories/study/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/study/"
+                    href="https://7und3dpy.github.io/categories/study/"
                     /></url><url>
-            <loc>https://turio.redev/tags/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/weka/"
+                        href="https://7und3dpy.github.io/vn/tags/weka/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/weka/"
+                    href="https://7und3dpy.github.io/tags/weka/"
                     /></url><url>
-            <loc>https://turio.redev/tags/css/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/css/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/css/"
+                        href="https://7und3dpy.github.io/vn/tags/css/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/css/"
+                    href="https://7und3dpy.github.io/tags/css/"
                     /></url><url>
-            <loc>https://turio.redev/tags/html/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/html/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/html/"
+                        href="https://7und3dpy.github.io/vn/tags/html/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/html/"
+                    href="https://7und3dpy.github.io/tags/html/"
                     /></url><url>
-            <loc>https://turio.redev/tags/hugo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/hugo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/hugo/"
+                        href="https://7und3dpy.github.io/vn/tags/hugo/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/hugo/"
+                    href="https://7und3dpy.github.io/tags/hugo/"
                     /></url><url>
-            <loc>https://turio.redev/tags/markdown/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/markdown/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/tags/markdown/"
+                        href="https://7und3dpy.github.io/vn/tags/markdown/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/tags/markdown/"
+                    href="https://7und3dpy.github.io/tags/markdown/"
                     /></url><url>
-            <loc>https://turio.redev/markdownsyntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/markdownsyntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/markdownsyntax/"
+                        href="https://7und3dpy.github.io/vn/markdownsyntax/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/markdownsyntax/"
+                    href="https://7und3dpy.github.io/markdownsyntax/"
                     /></url><url>
-            <loc>https://turio.redev/categories/syntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/categories/theme-demo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/printingpatternusingloop/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/tags/conditionals-and-loops/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/tags/easy/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/forloopinc/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/about/</loc><lastmod>2019-02-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/20milestone/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/syntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/theme-demo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/printingpatternusingloop/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/conditionals-and-loops/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/easy/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/forloopinc/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/about/</loc><lastmod>2019-02-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/20milestone/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/20milestone/"
+                        href="https://7und3dpy.github.io/vn/20milestone/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/20milestone/"
+                    href="https://7und3dpy.github.io/20milestone/"
                     /></url><url>
-            <loc>https://turio.redev/reversearrayc/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://turio.redev/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/reversearrayc/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/documentation/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://turio.redev/vn/categories/documentation/"
+                        href="https://7und3dpy.github.io/vn/categories/documentation/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://turio.redev/categories/documentation/"
+                    href="https://7und3dpy.github.io/categories/documentation/"
                     /></url></urlset>

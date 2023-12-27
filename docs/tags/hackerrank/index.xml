@@ -1,46 +1,46 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Hackerrank - Tag - Turio</title>
-        <link>https://turio.redev/tags/hackerrank/</link>
+        <link>https://7und3dpy.github.io/tags/hackerrank/</link>
         <description>Hackerrank - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Dec 2023 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://turio.redev/tags/hackerrank/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Dec 2023 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/tags/hackerrank/" rel="self" type="application/rss+xml" /><item>
     <title>Project Euler 1: Multiples of 3 and 5</title>
-    <link>https://turio.redev/projecteuler1/</link>
+    <link>https://7und3dpy.github.io/projecteuler1/</link>
     <pubDate>Sun, 10 Dec 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/projecteuler1/</guid>
+    <guid>https://7und3dpy.github.io/projecteuler1/</guid>
     <description><![CDATA[<p>This problem is a programming version of <a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener noreffer ">Problem 1</a> from <a href="https://projecteuler.net/" target="_blank" rel="noopener noreffer ">projecteuler.net</a></p>]]></description>
 </item>
 <item>
     <title>Project Euler 3: Largest prime factor</title>
-    <link>https://turio.redev/projecteuler3/</link>
+    <link>https://7und3dpy.github.io/projecteuler3/</link>
     <pubDate>Mon, 11 Dec 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/projecteuler3/</guid>
+    <guid>https://7und3dpy.github.io/projecteuler3/</guid>
     <description><![CDATA[<p>The prime factor of $13195$ are $5, 7, 13$ and $29$</p>]]></description>
 </item>
 <item>
     <title>Project Euler 2: Even Fibonacci numbers</title>
-    <link>https://turio.redev/projecteuler2/</link>
+    <link>https://7und3dpy.github.io/projecteuler2/</link>
     <pubDate>Mon, 11 Dec 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/projecteuler2/</guid>
+    <guid>https://7und3dpy.github.io/projecteuler2/</guid>
     <description><![CDATA[<p>This article shows the solution of Hackerrank challenges.</p>]]></description>
 </item>
 <item>
     <title>1D Arrays in C</title>
-    <link>https://turio.redev/1darraysinc/</link>
+    <link>https://7und3dpy.github.io/1darraysinc/</link>
     <pubDate>Tue, 07 Nov 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/1darraysinc/</guid>
+    <guid>https://7und3dpy.github.io/1darraysinc/</guid>
     <description><![CDATA[<p>This article shows the concept of Pointer and how it works P1.</p>]]></description>
 </item>
 <item>
     <title>For Loop in C</title>
-    <link>https://turio.redev/forloopinc/</link>
+    <link>https://7und3dpy.github.io/forloopinc/</link>
     <pubDate>Fri, 07 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/forloopinc/</guid>
+    <guid>https://7und3dpy.github.io/forloopinc/</guid>
     <description><![CDATA[Objective
 In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
 The syntax for the for loop is:

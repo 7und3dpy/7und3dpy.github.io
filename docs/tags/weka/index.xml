@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>weka - Tag - Turio</title>
-        <link>https://turio.redev/tags/weka/</link>
+        <link>https://7und3dpy.github.io/tags/weka/</link>
         <description>weka - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/tags/weka/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/tags/weka/" rel="self" type="application/rss+xml" /><item>
     <title>Introduction to Weka</title>
-    <link>https://turio.redev/weka/</link>
+    <link>https://7und3dpy.github.io/weka/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/weka/</guid>
+    <guid>https://7und3dpy.github.io/weka/</guid>
     <description><![CDATA[Building a Basic Classification Machine Learning Model with Weka Don&rsquo;t think that Machine Learning is only for experts. If you&rsquo;re a learner or a non-expert looking to dive into Machine Learning, Weka is a great choice.
 Weka is a collection of machine learning algorithms for data mining tasks. It includes tools for data preparation, classification, regression, clustering, association rules, and visualization.
 Weka is open-source software distributed under the GNU General Public License.]]></description>

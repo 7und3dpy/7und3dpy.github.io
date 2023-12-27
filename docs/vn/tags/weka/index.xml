@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>weka - Tag - Turio</title>
-        <link>https://turio.redev/vn/tags/weka/</link>
+        <link>https://7und3dpy.github.io/vn/tags/weka/</link>
         <description>weka - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/vn/tags/weka/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/tags/weka/" rel="self" type="application/rss+xml" /><item>
     <title>Giới thiệu về Weka</title>
-    <link>https://turio.redev/vn/weka/</link>
+    <link>https://7und3dpy.github.io/vn/weka/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/vn/weka/</guid>
+    <guid>https://7und3dpy.github.io/vn/weka/</guid>
     <description><![CDATA[Xây dựng mô hình Classification - Machine Learning cơ bản với Weka Đừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.
 Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ khai thác dữ liệu. Nó chứa các công cụ để chuẩn bị dữ liệu, phân loại, hồi quy, phân cụm, khai thác quy tắc kết hợp và trực quan hóa.]]></description>
 </item>

@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>hugo - Tag - Turio</title>
-        <link>https://turio.redev/vn/tags/hugo/</link>
+        <link>https://7und3dpy.github.io/vn/tags/hugo/</link>
         <description>hugo - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/vn/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/tags/hugo/" rel="self" type="application/rss+xml" /><item>
     <title>Hướng dẫn cú pháp Markdown</title>
-    <link>https://turio.redev/vn/markdownsyntax/</link>
+    <link>https://7und3dpy.github.io/vn/markdownsyntax/</link>
     <pubDate>Thu, 13 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/vn/markdownsyntax/</guid>
+    <guid>https://7und3dpy.github.io/vn/markdownsyntax/</guid>
     <description><![CDATA[<p>Bài viết này là một ví dụ cơ bản để hiển thị cú pháp Markdown được sử dụng trong các tệp nội dung của Hugo. Nó cũng cho thấy cách mỗi phần tử HTML cơ bản được tạo kiểu bằng CSS với chủ đề Hugo.</p>]]></description>
 </item>
 </channel>

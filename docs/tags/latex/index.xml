@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>latex - Tag - Turio</title>
-        <link>https://turio.redev/tags/latex/</link>
+        <link>https://7und3dpy.github.io/tags/latex/</link>
         <description>latex - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/tags/latex/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/tags/latex/" rel="self" type="application/rss+xml" /><item>
     <title>Introduction to LATEX</title>
-    <link>https://turio.redev/introtolatex/</link>
+    <link>https://7und3dpy.github.io/introtolatex/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/introtolatex/</guid>
+    <guid>https://7und3dpy.github.io/introtolatex/</guid>
     <description><![CDATA[1. What is LATEX? LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
 LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.]]></description>
 </item>

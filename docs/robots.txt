@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://turio.redev/sitemap.xml
+Sitemap: https://7und3dpy.github.io/sitemap.xml

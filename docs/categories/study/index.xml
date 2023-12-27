@@ -1,41 +1,41 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>study - Category - Turio</title>
-        <link>https://turio.redev/categories/study/</link>
+        <link>https://7und3dpy.github.io/categories/study/</link>
         <description>study - Category - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://turio.redev/categories/study/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/categories/study/" rel="self" type="application/rss+xml" /><item>
     <title>Basic Mathematics for Data Science (Part 1)</title>
-    <link>https://turio.redev/fundamentalmath1/</link>
+    <link>https://7und3dpy.github.io/fundamentalmath1/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/fundamentalmath1/</guid>
+    <guid>https://7und3dpy.github.io/fundamentalmath1/</guid>
     <description><![CDATA[To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
 A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.]]></description>
 </item>
 <item>
     <title>Basic Mathematics for Data Science (Part 2)</title>
-    <link>https://turio.redev/fundamentalmath2/</link>
+    <link>https://7und3dpy.github.io/fundamentalmath2/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/fundamentalmath2/</guid>
+    <guid>https://7und3dpy.github.io/fundamentalmath2/</guid>
     <description><![CDATA[Basic Mathematics for Data Science (Part 2) 3) Linear Algebra Have you ever wondered how Facebook suggests friends or how Netflix always recommends movies tailored to your taste? These are examples of recommendation systems that use various algorithms to analyze user data and preferences in order to provide personalized suggestions.
 Here, we will apply linear algebra to dive deeper into understanding how machine learning algorithms work with data streams. This knowledge is essential for data scientists to analyze and process data in great detail.]]></description>
 </item>
 <item>
     <title>Introduction to LATEX</title>
-    <link>https://turio.redev/introtolatex/</link>
+    <link>https://7und3dpy.github.io/introtolatex/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/introtolatex/</guid>
+    <guid>https://7und3dpy.github.io/introtolatex/</guid>
     <description><![CDATA[1. What is LATEX? LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.
 LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.]]></description>
 </item>
 <item>
     <title>Introduction to Weka</title>
-    <link>https://turio.redev/weka/</link>
+    <link>https://7und3dpy.github.io/weka/</link>
     <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
     <author>Author</author>
-    <guid>https://turio.redev/weka/</guid>
+    <guid>https://7und3dpy.github.io/weka/</guid>
     <description><![CDATA[Building a Basic Classification Machine Learning Model with Weka Don&rsquo;t think that Machine Learning is only for experts. If you&rsquo;re a learner or a non-expert looking to dive into Machine Learning, Weka is a great choice.
 Weka is a collection of machine learning algorithms for data mining tasks. It includes tools for data preparation, classification, regression, clustering, association rules, and visualization.
 Weka is open-source software distributed under the GNU General Public License.]]></description>
