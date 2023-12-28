@@ -1,4 +1,9 @@
-# 
+# Mã hóa đối xứng
+
+
+This article shows the concept of symmetric cryptography.
+
+<!--more-->
 
 # Hệ thống mã hóa đối xứng
 

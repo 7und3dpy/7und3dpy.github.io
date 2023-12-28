@@ -3,22 +3,21 @@
         <title>math - Tag - Turio</title>
         <link>https://7und3dpy.github.io/vn/tags/math/</link>
         <description>math - Tag - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/tags/math/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/tags/math/" rel="self" type="application/rss+xml" /><item>
     <title>Kiến thức toán cơ bản cho Data Science (phần 1)</title>
     <link>https://7und3dpy.github.io/vn/fundamentalmath1/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/fundamentalmath1/</guid>
-    <description><![CDATA[Kiến thức toán cho lĩnh vực Data Science (Phần 1) Để bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
-Sự vững chắc về nền tảng toán học hình thành đằng sau các thuật toán sẽ tạo cho bạn một lợi thế không hề nhỏ so khi nghiên cứu và làm việc ở lĩnh vực Data Science.]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị các kiến thức cơ bản về toán.</p>]]></description>
 </item>
 <item>
     <title>Kiến thức toán cơ bản cho Data Science (phần 2)</title>
     <link>https://7und3dpy.github.io/vn/fundamentalmath2/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/fundamentalmath2/</guid>
-    <description><![CDATA[Kiến thức toán cho lĩnh vực Data Science (Phần 2) 3) Đại số tuyến tính Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị các kiến thức cơ bản về toán.</p>]]></description>
 </item>
 </channel>
 </rss>

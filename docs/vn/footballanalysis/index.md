@@ -1,6 +1,9 @@
 # Data Science trong bóng đá và thành công đến từ Liverpool F.C
 
 
+An analysis of the Football World
+
+<!--more-->
 
 
 # Liệu Data Science có thể ứng dụng trong Phân tích Bóng đá? 

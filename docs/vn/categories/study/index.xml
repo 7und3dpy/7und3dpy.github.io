@@ -3,51 +3,37 @@
         <title>study - Category - Turio</title>
         <link>https://7und3dpy.github.io/vn/categories/study/</link>
         <description>study - Category - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/categories/study/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/categories/study/" rel="self" type="application/rss+xml" /><item>
     <title>Discrete Math</title>
     <link>https://7und3dpy.github.io/vn/trr/</link>
-    <pubDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Sun, 10 Dec 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/trr/</guid>
-    <description><![CDATA[Bài toán chia kẹo Euler, $n$ biến, tổng $m$ \[x_1 + x_2 + &hellip; + x_n = m\]
-Trường hợp nghiệm không âm \[S = C_{m+n-1}^{n-1}\]
-Trường hợp nghiệm dương \[S = C_{m-1}^{n-1}\]
-Bài toán chọn phần tử Có bao nhiêu cách lây ra $k$ phần tử trong $n$ phần tử được xếp trên đường thẳng sao cho không có 2 phần tử kề nhau cùng được lấy ra ? \[S(n, k) = C_{n-k+1}^{k}\]]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị các kiến thức cơ bản về toán.</p>]]></description>
 </item>
 <item>
     <title>Giới thiệu về LATEX</title>
     <link>https://7und3dpy.github.io/vn/introtolatex/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/introtolatex/</guid>
-    <description><![CDATA[1. LaTeX là gì? LaTeX là ngôn ngữ định dạng (document markup language) cho phép người dùng có thể soạn thảo tài liệu chất lượng cao cùng cấu trúc văn bản thống nhất và đồng bộ. LaTeX thường được sử dụng bởi sinh viên, giảng viên lẫn các nhà nghiên cứu về khoa học &amp; kỹ thuật, cũng như một số lĩnh vực khác.
-Tiền thân của LaTeX là TeX - ngôn ngữ định dạng do Donald Knuth phát minh nhưng rất khó sử dụng.]]></description>
-</item>
-<item>
-    <title>Giới thiệu về Weka</title>
-    <link>https://7und3dpy.github.io/vn/weka/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://7und3dpy.github.io/vn/weka/</guid>
-    <description><![CDATA[Xây dựng mô hình Classification - Machine Learning cơ bản với Weka Đừng nghĩ Machine Learning chỉ dành cho những chuyên gia. Bởi nếu là một người học/ người dùng không chuyên với mong muốn tiếp cận Machine Learning thì Weka sẽ là một sự lựa chọn không tồi tý nào.
-Weka là một tập hợp các thuật toán học máy cho các nhiệm vụ khai thác dữ liệu. Nó chứa các công cụ để chuẩn bị dữ liệu, phân loại, hồi quy, phân cụm, khai thác quy tắc kết hợp và trực quan hóa.]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị cú pháp Latex cơ bản.</p>]]></description>
 </item>
 <item>
     <title>Kiến thức toán cơ bản cho Data Science (phần 1)</title>
     <link>https://7und3dpy.github.io/vn/fundamentalmath1/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/fundamentalmath1/</guid>
-    <description><![CDATA[Kiến thức toán cho lĩnh vực Data Science (Phần 1) Để bắt đầu học Machine Learning hay Data Science, người học sẽ bị choáng ngợp bởi khối lượng kiến thức đồ sộ liên quan đến lĩnh vực Toán học. Đây cũng là điều hiển nhiên bởi Toán học luôn là nền tảng cho bất kỳ ngành Khoa học đương đại nào.
-Sự vững chắc về nền tảng toán học hình thành đằng sau các thuật toán sẽ tạo cho bạn một lợi thế không hề nhỏ so khi nghiên cứu và làm việc ở lĩnh vực Data Science.]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị các kiến thức cơ bản về toán.</p>]]></description>
 </item>
 <item>
     <title>Kiến thức toán cơ bản cho Data Science (phần 2)</title>
     <link>https://7und3dpy.github.io/vn/fundamentalmath2/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/fundamentalmath2/</guid>
-    <description><![CDATA[Kiến thức toán cho lĩnh vực Data Science (Phần 2) 3) Đại số tuyến tính Bạn có bao giờ thắc mắc khi lướt Facebook và nhận được gợi ý kết bạn hay việc Netflix luôn gợi ý các phim phù hợp với sở thích bản thân mình. Đó được gọi là Recommend System với các thuật toán được triển khai trong quá trình thu thập, phân tích dữ liệu về thông tin, xu hướng người dùng để đưa ra các gợi ý phù hợp cho người dùng trên hệ thống.]]></description>
+    <description><![CDATA[<p>Bài viết mẫu hiển thị các kiến thức cơ bản về toán.</p>]]></description>
 </item>
 </channel>
 </rss>

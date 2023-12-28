@@ -1,6 +1,8 @@
 # Giới thiệu về Weka
 
+Sample article demonstrating basic Markdown syntax and HTML element formatting.
 
+<!--More-->
 # Xây dựng mô hình Classification - Machine Learning cơ bản với Weka
 
 ![](https://datamahadev.com/wp-content/uploads/2020/09/Classification-in-Machine-Learning-datamahadev.com_.jpeg)

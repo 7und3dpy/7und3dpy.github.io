@@ -33,18 +33,15 @@
     <pubDate>Tue, 07 Nov 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/1darraysinc/</guid>
-    <description><![CDATA[<p>This article shows the concept of Pointer and how it works P1.</p>]]></description>
+    <description><![CDATA[<p>This article shows the concept of Pointer and how it works.</p>]]></description>
 </item>
 <item>
     <title>For Loop in C</title>
     <link>https://7und3dpy.github.io/forloopinc/</link>
-    <pubDate>Fri, 07 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Fri, 07 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/forloopinc/</guid>
-    <description><![CDATA[Objective
-In this challenge, you will learn the usage of the for loop, which is a programming language statement which allows code to be executed until a terminal condition is met. They can even repeat forever if the terminal condition is never met.
-The syntax for the for loop is:
-1 2 for ( &lt;expression_1&gt; ; &lt;expression_2&gt; ; &lt;expression_3&gt; ) &lt;statement&gt; expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.]]></description>
+    <description><![CDATA[<p>A challenges Hackerrank and its solution.</p>]]></description>
 </item>
 </channel>
 </rss>

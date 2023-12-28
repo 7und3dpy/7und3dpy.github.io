@@ -1,5 +1,8 @@
 # Introduction to LATEX
 
+Sample article demonstrating basic LaTeX syntax.
+<!--more-->
+
 
 
 # 1. What is LATEX?

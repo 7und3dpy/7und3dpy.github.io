@@ -1,6 +1,6 @@
 # 1D Arrays in C
 
-This article shows the concept of Pointer and how it works P1.
+This article shows the concept of Pointer and how it works.
 
 <!--more-->
 

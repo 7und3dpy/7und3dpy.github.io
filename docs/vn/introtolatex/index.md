@@ -1,5 +1,8 @@
 # Giới thiệu về LATEX
 
+Bài viết mẫu hiển thị cú pháp Latex cơ bản.
+<!--more-->
+
 
 
 # 1. LaTeX là gì?

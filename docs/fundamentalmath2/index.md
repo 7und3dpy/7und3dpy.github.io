@@ -1,5 +1,10 @@
 # Basic Mathematics for Data Science (Part 2)
 
+Sample article displaying basic mathematics concepts.
+
+<!--more-->
+
+
 
 # Basic Mathematics for Data Science (Part 2)
 

@@ -1,5 +1,8 @@
 # Introduction to Weka
 
+Sample article demonstrating basic Markdown syntax and HTML element formatting.
+
+<!--More-->
 
 # Building a Basic Classification Machine Learning Model with Weka
 

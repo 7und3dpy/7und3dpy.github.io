@@ -3,10 +3,10 @@
         <title>Categories - Category - Turio</title>
         <link>https://7und3dpy.github.io/vn/categories/</link>
         <description>Categories - Category - Turio</description>
-        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 10 Dec 2023 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/categories/" rel="self" type="application/rss+xml" /><item>
     <title>study</title>
     <link>https://7und3dpy.github.io/vn/categories/study/</link>
-    <pubDate>Sun, 10 Dec 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Sun, 10 Dec 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/categories/study/</guid>
     <description><![CDATA[]]></description>
@@ -46,7 +46,7 @@
 <item>
     <title>confess</title>
     <link>https://7und3dpy.github.io/vn/categories/confess/</link>
-    <pubDate>Fri, 04 Aug 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Fri, 04 Aug 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/categories/confess/</guid>
     <description><![CDATA[]]></description>
@@ -54,25 +54,17 @@
 <item>
     <title>Bóng đá</title>
     <link>https://7und3dpy.github.io/vn/categories/b%C3%B3ng-%C4%91%C3%A1/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/categories/b%C3%B3ng-%C4%91%C3%A1/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
-    <title>Bản trình diễn chủ đề</title>
-    <link>https://7und3dpy.github.io/vn/categories/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</link>
-    <pubDate>Thu, 13 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <title>Machine Learning</title>
+    <link>https://7und3dpy.github.io/vn/categories/machine-learning/</link>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>https://7und3dpy.github.io/vn/categories/b%E1%BA%A3n-tr%C3%ACnh-di%E1%BB%85n-ch%E1%BB%A7-%C4%91%E1%BB%81/</guid>
-    <description><![CDATA[]]></description>
-</item>
-<item>
-    <title>Cú pháp</title>
-    <link>https://7und3dpy.github.io/vn/categories/c%C3%BA-ph%C3%A1p/</link>
-    <pubDate>Thu, 13 Jul 2023 00:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://7und3dpy.github.io/vn/categories/c%C3%BA-ph%C3%A1p/</guid>
+    <guid>https://7und3dpy.github.io/vn/categories/machine-learning/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
@@ -81,6 +73,14 @@
     <pubDate>Fri, 07 Jul 2023 15:58:26 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/vn/categories/c/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Tài liệu</title>
+    <link>https://7und3dpy.github.io/vn/categories/documentation/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/vn/categories/documentation/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

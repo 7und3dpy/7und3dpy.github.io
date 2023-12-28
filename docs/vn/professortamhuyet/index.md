@@ -1,6 +1,10 @@
 # Một ngày Chủ Nhật ác mộng nhất trong cuộc đời tôi
 
 
+This article shows my feelings when studying at HUST.
+
+<!--more-->
+
 # Mở đầu
 
 ## Khái quát

@@ -143,14 +143,33 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/categories/confess/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/analysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/analysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/fundamentalmath1/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/analysis/"
+                        href="https://7und3dpy.github.io/vn/fundamentalmath1/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="https://7und3dpy.github.io/tags/analysis/"
+                    href="https://7und3dpy.github.io/fundamentalmath1/"
+                    /></url><url>
+            <loc>https://7und3dpy.github.io/fundamentalmath2/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="vn"
+                        href="https://7und3dpy.github.io/vn/fundamentalmath2/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://7und3dpy.github.io/fundamentalmath2/"
+                    /></url><url>
+            <loc>https://7und3dpy.github.io/tags/data-science/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="vn"
+                        href="https://7und3dpy.github.io/vn/tags/data-science/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://7und3dpy.github.io/tags/data-science/"
                     /></url><url>
             <loc>https://7und3dpy.github.io/footballanalysis/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
@@ -161,44 +180,9 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/footballanalysis/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/football/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/football/"
-                    /></url><url>
+            <loc>https://7und3dpy.github.io/tags/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://7und3dpy.github.io/categories/football/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://7und3dpy.github.io/fundamentalmath1/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/fundamentalmath1/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/fundamentalmath1/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/fundamentalmath2/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/fundamentalmath2/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/fundamentalmath2/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/tags/data-science/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/data-science/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/data-science/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/introtolatex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/introtolatex/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/introtolatex/"
@@ -207,7 +191,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/introtolatex/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/weka/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/weka/"
@@ -216,7 +200,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/weka/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/latex/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/latex/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/latex/"
@@ -225,7 +209,25 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/latex/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/math/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/machine-learning/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="vn"
+                        href="https://7und3dpy.github.io/vn/tags/machine-learning/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://7und3dpy.github.io/tags/machine-learning/"
+                    /></url><url>
+            <loc>https://7und3dpy.github.io/categories/machine-learning/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="vn"
+                        href="https://7und3dpy.github.io/vn/categories/machine-learning/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://7und3dpy.github.io/categories/machine-learning/"
+                    /></url><url>
+            <loc>https://7und3dpy.github.io/tags/math/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/math/"
@@ -234,7 +236,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/math/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/probability-and-statistic/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/probability-and-statistic/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/probability-and-statistic/"
@@ -243,7 +245,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/probability-and-statistic/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/categories/study/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/study/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/categories/study/"
@@ -252,7 +254,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/categories/study/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/weka/</loc><lastmod>2023-07-24T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/weka/</loc><lastmod>2023-07-24T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/weka/"
@@ -261,57 +263,10 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/weka/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/css/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/css/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/css/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/tags/html/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/html/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/html/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/tags/hugo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/hugo/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/hugo/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/tags/markdown/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/tags/markdown/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/tags/markdown/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/markdownsyntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="vn"
-                        href="https://7und3dpy.github.io/vn/markdownsyntax/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://7und3dpy.github.io/markdownsyntax/"
-                    /></url><url>
-            <loc>https://7und3dpy.github.io/categories/syntax/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://7und3dpy.github.io/categories/theme-demo/</loc><lastmod>2023-07-13T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/conditionals-and-loops/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/easy/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://7und3dpy.github.io/forloopinc/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://7und3dpy.github.io/printingpatternusingloop/</loc><lastmod>2023-07-07T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://7und3dpy.github.io/tags/conditionals-and-loops/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://7und3dpy.github.io/tags/easy/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://7und3dpy.github.io/forloopinc/</loc><lastmod>2023-07-07T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://7und3dpy.github.io/about/</loc><lastmod>2019-02-28T00:00:00&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://7und3dpy.github.io/20milestone/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"

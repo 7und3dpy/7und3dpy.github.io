@@ -1,6 +1,11 @@
 # Discrete Math
 
 
+Bài viết mẫu hiển thị các kiến thức cơ bản về toán.
+
+<!--more-->
+
+
 # Bài toán chia kẹo Euler, $n$ biến, tổng $m$
 
 \\[x_1 + x_2 + ... + x_n = m\\]

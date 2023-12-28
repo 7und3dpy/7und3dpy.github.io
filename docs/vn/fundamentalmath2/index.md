@@ -1,5 +1,7 @@
 # Kiến thức toán cơ bản cho Data Science (phần 2)
 
+Bài viết mẫu hiển thị các kiến thức cơ bản về toán.
+<!--more-->
 
 # Kiến thức toán cho lĩnh vực Data Science (Phần 2)
 

@@ -7,12 +7,11 @@
         <title>1D Arrays in C - Turio</title><meta name="Description" content="This article shows the concept of Pointer and Array how it works."><meta property="og:title" content="1D Arrays in C" />
 <meta property="og:description" content="This article shows the concept of Pointer and Array how it works." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://7und3dpy.github.io/1darraysinc/" /><meta property="og:image" content="https://7und3dpy.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://7und3dpy.github.io/1darraysinc/" /><meta property="og:image" content="https://7und3dpy.github.io/1darraysinc/1D-Array-C.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-07T21:57:40+08:00" />
 <meta property="article:modified_time" content="2023-11-07T21:57:40+08:00" /><meta property="og:site_name" content="Turio" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://7und3dpy.github.io/logo.png"/>
-
+<meta name="twitter:image" content="https://7und3dpy.github.io/1darraysinc/1D-Array-C.png"/>
 <meta name="twitter:title" content="1D Arrays in C"/>
 <meta name="twitter:description" content="This article shows the concept of Pointer and Array how it works."/>
 <meta name="application-name" content="Turio">
@@ -31,17 +30,17 @@
             "@id": "https:\/\/7und3dpy.github.io\/1darraysinc\/"
         },"image": [{
                             "@type": "ImageObject",
-                            "url": "https:\/\/7und3dpy.github.io\/images\/Apple-Devices-Preview.png",
-                            "width":  3200 ,
-                            "height":  2048 
-                        }],"genre": "posts","keywords": "Hackerrank","wordcount":  320 ,
+                            "url": "https:\/\/7und3dpy.github.io\/1darraysinc\/1D-Array-C.png",
+                            "width":  1920 ,
+                            "height":  1080 
+                        }],"genre": "posts","keywords": "Hackerrank","wordcount":  319 ,
         "url": "https:\/\/7und3dpy.github.io\/1darraysinc\/","datePublished": "2023-11-07T21:57:40+08:00","dateModified": "2023-11-07T21:57:40+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": {
                     "@type": "ImageObject",
                     "url": "https:\/\/7und3dpy.github.io\/images\/avatar.png",
-                    "width":  528 ,
-                    "height":  560 
+                    "width":  592 ,
+                    "height":  592 
                 }},"author": {
                 "@type": "Person",
                 "name": "Author"
@@ -119,17 +118,24 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">1D Arrays in C</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://turio.redev" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/categories/code/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>code</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-07">2023-11-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;320 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-11-07">2023-11-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;319 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;<span id="/1darraysinc/" class="leancloud_visitors" data-flag-title="1D Arrays in C">
                         <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  data-kept="">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/1darraysinc/1D-Array-C.png"
+        data-srcset="/1darraysinc/1D-Array-C.png, /1darraysinc/1D-Array-C.png 1.5x, /1darraysinc/1D-Array-C.png 2x"
+        data-sizes="auto"
+        alt="/1darraysinc/1D-Array-C.png"
+        title="This article shows the concept of Pointer and Array how it works." /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
-            </div><div class="content" id="content"><p>This article shows the concept of Pointer and how it works P1.</p>
+            </div><div class="content" id="content"><p>This article shows the concept of Pointer and how it works.</p>
 <p>An array is a container object that holds a fixed number of values of a single type. To create an array in C, we can do int <code>arr[n]</code>;. Here, arr, is a variable array which holds up to <strong>10</strong> integers. The above array is a static array that has memory allocated at compile time. A dynamic array can be created in C, using the malloc function and the memory is allocated on the heap at runtime. To create an integer array, <strong><em>arr</em></strong> of size <strong><em>n</em></strong> , <code>int *arr = (int*)malloc(n * sizeof(int))</code>, where <strong><em>arr</em></strong> points to the base address of the array.Sample Output 1in. Iterate the array calculating the sum of all elements. Print the sum and free the memory where the array is stored.</p>
 <p>While it is true that you can sum the elements as they are read, without first storing them to an array, but you will not get the experience working with an array. Efficiency will be required later.</p>
 <p><strong>Input Format</strong></p>

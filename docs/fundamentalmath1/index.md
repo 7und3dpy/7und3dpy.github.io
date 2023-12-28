@@ -1,5 +1,9 @@
 # Basic Mathematics for Data Science (Part 1)
 
+Sample article displaying basic mathematics concepts.
+
+<!--more-->
+
 
 
 To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.

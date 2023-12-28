@@ -59,7 +59,7 @@
     <pubDate>Tue, 07 Nov 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/1darraysinc/</guid>
-    <description><![CDATA[<p>This article shows the concept of Pointer and how it works P1.</p>]]></description>
+    <description><![CDATA[<p>This article shows the concept of Pointer and how it works.</p>]]></description>
 </item>
 <item>
     <title>A Nightmare Sunday in My Life</title>
@@ -70,21 +70,20 @@
     <description><![CDATA[<p>This article shows my feelings when studying at HUST.</p>]]></description>
 </item>
 <item>
-    <title>Data Science in Football and Success from Liverpool F.C</title>
-    <link>https://7und3dpy.github.io/footballanalysis/</link>
-    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>https://7und3dpy.github.io/footballanalysis/</guid>
-    <description><![CDATA[<p>An analysis of the Football World</p>]]></description>
-</item>
-<item>
     <title>Basic Mathematics for Data Science (Part 1)</title>
     <link>https://7und3dpy.github.io/fundamentalmath1/</link>
-    <pubDate>Mon, 24 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>https://7und3dpy.github.io/fundamentalmath1/</guid>
-    <description><![CDATA[To start learning Machine Learning or Data Science, learners will be overwhelmed by the vast amount of knowledge related to Mathematics. This is quite natural because Mathematics is the foundation for any modern Science field.
-A solid foundation in mathematics behind the algorithms will give you a significant advantage when conducting research and working in the field of Data Science. Moreover, businesses are willing to spend a lot of money on technology inside machines rather than operators who have no deep knowledge of them.]]></description>
+    <description><![CDATA[<p>Sample article displaying basic mathematics concepts.</p>]]></description>
+</item>
+<item>
+    <title>Basic Mathematics for Data Science (Part 2)</title>
+    <link>https://7und3dpy.github.io/fundamentalmath2/</link>
+    <pubDate>Mon, 24 Jul 2023 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/fundamentalmath2/</guid>
+    <description><![CDATA[<p>Sample article displaying basic mathematics concepts.</p>]]></description>
 </item>
 </channel>
 </rss>

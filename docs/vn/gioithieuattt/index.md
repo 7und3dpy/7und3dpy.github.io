@@ -1,6 +1,8 @@
 # Các khái niệm chung về an toàn thông tin
 
+Bài viết  hiển thị các kiến thức cơ bản về ATTT.
 
+<!--more-->
 # Mục tiêu và nguyên tắc chung
 
 - Đảm bảo tính mật (Confidentiality)
