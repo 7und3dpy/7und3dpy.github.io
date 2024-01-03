@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Introduction to LATEX - Turio</title><meta name="Description" content="Sample article demonstrating basic LaTeX syntax."><meta property="og:title" content="Introduction to LATEX" />
+<meta property="og:description" content="Sample article demonstrating basic LaTeX syntax." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://7und3dpy.github.io/introtolatex/" /><meta property="og:image" content="https://7und3dpy.github.io/introtolatex/intro.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-24T21:57:40+08:00" />
+<meta property="article:modified_time" content="2023-07-24T21:57:40+08:00" /><meta property="og:site_name" content="Turio" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://7und3dpy.github.io/introtolatex/intro.png"/>
+<meta name="twitter:title" content="Introduction to LATEX"/>
+<meta name="twitter:description" content="Sample article demonstrating basic LaTeX syntax."/>
+<meta name="application-name" content="Turio">
+<meta name="apple-mobile-web-app-title" content="Turio"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://7und3dpy.github.io/introtolatex/" /><link rel="prev" href="https://7und3dpy.github.io/weka/" /><link rel="next" href="https://7und3dpy.github.io/footballanalysis/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Introduction to LATEX",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/7und3dpy.github.io\/introtolatex\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/7und3dpy.github.io\/introtolatex\/intro.png",
+                            "width":  364 ,
+                            "height":  138 
+                        }],"genre": "posts","keywords": "latex","wordcount":  2003 ,
+        "url": "https:\/\/7und3dpy.github.io\/introtolatex\/","datePublished": "2023-07-24T21:57:40+08:00","dateModified": "2023-07-24T21:57:40+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/7und3dpy.github.io\/images\/avatar.png",
+                    "width":  592 ,
+                    "height":  592 
+                }},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": "Sample article demonstrating basic LaTeX syntax."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/categories/documentation/"> Docs </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/7und3dpy" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a><a href="javascript:void(0);" class="menu-item language" title="Select Language">
+                    <i class="fa fa-globe" aria-hidden="true"></i>                      
+                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/introtolatex/" selected>English</option><option value="/vn/introtolatex/">VietNam</option></select>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Turio"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i></span>Turio</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/categories/documentation/" title="">Docs</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/7und3dpy" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">
+                    <i class="fa fa-globe fa-fw" aria-hidden="true"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/introtolatex/" selected>English</option><option value="/vn/introtolatex/">VietNam</option></select>
+                </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content always-active" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Introduction to LATEX</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://7und3dpy.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span>&nbsp;<span class="post-category">included in <a href="/categories/study/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>study</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-24">2023-07-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2003 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;10 minutes&nbsp;<span id="/introtolatex/" class="leancloud_visitors" data-flag-title="Introduction to LATEX">
+                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/introtolatex/intro.png"
+        data-srcset="/introtolatex/intro.png, /introtolatex/intro.png 1.5x, /introtolatex/intro.png 2x"
+        data-sizes="auto"
+        alt="/introtolatex/intro.png"
+        title="Sample article demonstrating basic LaTeX syntax." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#21-benefits-of-latex">2.1. Benefits of LaTeX</a></li>
+    <li><a href="#22-disadvantages-of-latex">2.2. Disadvantages of LaTeX.</a></li>
+    <li><a href="#23-some-latex-editors-to-consider">2.3. Some LaTeX Editors to Consider.</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#31-key-features-of-overleaf">3.1. Key Features of Overleaf.</a></li>
+    <li><a href="#32-creating-a-latex-project-on-overleaf">3.2. Creating a LaTeX Project on Overleaf.</a></li>
+    <li><a href="#step-1---register-an-account-on-overleaf">Step 1 - Register an Account on Overleaf</a></li>
+    <li><a href="#bước-2---create-a-new-project-after-registering-on-overleaf">Bước 2 - Create a New Project After Registering on Overleaf</a>
+      <ul>
+        <li><a href="#321-about-the-file-manager-panel-in-overleaf">3.2.1. About the File Manager Panel in Overleaf.</a></li>
+        <li><a href="#322-understanding-the-centre-panel">3.2.2. Understanding the Centre Panel</a></li>
+        <li><a href="#323-some-notes-when-writing-in-latex">3.2.3. Some Notes When Writing in LaTeX</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-building-the-first-document-on-overleaf">4. Building the First Document on Overleaf</a>
+      <ul>
+        <li><a href="#41-regarding-the-introduction-section-which-includes-the-title-of-the-article-and-the-necessary-latex-packages">4.1. Regarding the introduction section, which includes the title of the article and the necessary LaTeX packages</a></li>
+        <li><a href="#42-building-the-main-content">4.2. Building the main content</a></li>
+        <li><a href="#43-now-lets-build-chapters-and-an-automatic-table-of-contents">4.3. Now, let&rsquo;s build chapters and an automatic table of contents.</a></li>
+        <li><a href="#44-adding-images-on-overleaf">4.4. Adding images on Overleaf</a></li>
+        <li><a href="#45-insert-table-on-overleaf">4.5. Insert table on Overleaf</a></li>
+        <li><a href="#46-creating-a-bibliography-and-citations-in-overleaf">4.6. Creating a bibliography and citations in Overleaf</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-conclusion">5. Conclusion</a></li>
+    <li><a href="#references"><strong>References</strong>:</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Sample article demonstrating basic LaTeX syntax.</p>
+<h1 id="1-what-is-latex">1. What is LATEX?</h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.stack.imgur.com/t5VF4.png"
+        data-srcset="https://i.stack.imgur.com/t5VF4.png, https://i.stack.imgur.com/t5VF4.png 1.5x, https://i.stack.imgur.com/t5VF4.png 2x"
+        data-sizes="auto"
+        alt="https://i.stack.imgur.com/t5VF4.png"
+        title="https://i.stack.imgur.com/t5VF4.png" /></p>
+<p>LaTeX is a document markup language that allows users to create high-quality documents with consistent and structured text. It is commonly used by students, educators, and researchers in scientific and technical fields, as well as various other domains.</p>
+<p>LaTeX has its precursor in TeX, a formatting language created by Donald Knuth, which was quite challenging to use. Subsequently, Leslie Lamport developed LaTeX based on TeX, introducing numerous improvements and making it popular to this day.</p>
+<p>The hallmark of LaTeX is its focus on encouraging users to concentrate on content creation while leaving the formatting to the computer[1].</p>
+<h1 id="2-exploring-latex">2. Exploring LaTeX</h1>
+<h2 id="21-benefits-of-latex">2.1. Benefits of LaTeX</h2>
+<ul>
+<li>LaTeX offers consistency: line spacing, font size, colors, formatting, and more, allowing you flexibility when switching to different documents.</li>
+<li>It automates many tasks: chapter numbering, header creation, table and image generation, references, and more.</li>
+<li>Automatic and consistent citation of reference documents with a neat presentation format.</li>
+<li>LaTeX enables easy rendering of mathematical equations, for example:
+$$E = \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$$</li>
+<li>LaTeX is efficient for working on large projects, allowing you to format hundreds or thousands of pages within a single low-sized .tex file for easy document management.</li>
+<li>LaTeX now has a vast library of packages that aid users in various tasks such as adding footnotes, creating diagrams, generating tables, and more.</li>
+<li>LaTeX also has specialized packages for scientific paper writing, presentations, and spreadsheet functionality.</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.stack.imgur.com/ecqMl.jpg"
+        data-srcset="https://i.stack.imgur.com/ecqMl.jpg, https://i.stack.imgur.com/ecqMl.jpg 1.5x, https://i.stack.imgur.com/ecqMl.jpg 2x"
+        data-sizes="auto"
+        alt="https://i.stack.imgur.com/ecqMl.jpg"
+        title="https://i.stack.imgur.com/ecqMl.jpg" /></p>
+<p><em><strong>Image 01:</strong></em> <em>One of the benefits LaTeX provides is ease of text formatting.</em></p>
+<h2 id="22-disadvantages-of-latex">2.2. Disadvantages of LaTeX.</h2>
+<ul>
+<li>It takes time to build a consistent structure for documents, such as formatting for scientific papers.</li>
+<li>Writing in LaTeX can be somewhat akin to programming, making it time-consuming when dealing with minor errors.</li>
+<li>Learning and becoming proficient in LaTeX requires a significant time investment.</li>
+</ul>
+<h2 id="23-some-latex-editors-to-consider">2.3. Some LaTeX Editors to Consider.</h2>
+<ul>
+<li>MiKTeX (Bundle) (Windows)</li>
+<li><strong>Overleaf (Collaborative Online Editor)</strong></li>
+<li>Mactex (Bundle) (Mac)</li>
+<li>Texlive (Bundle) (Linux)</li>
+<li>Lyx (Bundle &amp; Editor) (Windows, Mac, Linux)</li>
+<li>Texmaker (Windows, Mac, Linux)</li>
+</ul>
+<p>In this article, we will delve into the detailed usage of LaTeX through the Overleaf editor. To get started, you can access Overleaf right <a href="https://www.overleaf.com/" target="_blank" rel="noopener noreffer ">here</a>.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL"
+        data-srcset="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL, https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL 1.5x, https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL 2x"
+        data-sizes="auto"
+        alt="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL"
+        title="https://www.filepicker.io/api/file/ykJ4U4oRxXjmiuTyJ0QL" />
+<em><strong>Image 02:</strong></em> <em>The LaTeX Editing Environment on Overleaf.</em></p>
+<h1 id="3-learn-about-overleaf">3. Learn about Overleaf.</h1>
+<h2 id="31-key-features-of-overleaf">3.1. Key Features of Overleaf.</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png"
+        data-srcset="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png, https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png 1.5x, https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png 2x"
+        data-sizes="auto"
+        alt="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png"
+        title="https://images.ctfassets.net/nrgyaltdicpt/5doLOtX69is0i6WIiY4um/6cc9be15c75155e7b93cd4823b742e44/overleaf_wide_colour_green_bg.png" /></p>
+<p>Overleaf is a free, web-based collaborative LaTeX editor. Overleaf has several distinctive and truly useful features for anyone needing to write and collaborate with various stakeholders.</p>
+<p>In this blog, <strong>If you are not already familiar with LaTeX</strong> please refer to some basic LaTeX syntax at <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29" target="_blank" rel="noopener noreffer ">here</a>. After that, I will provide you with a basic standard for text composition with LaTeX. Don&rsquo;t hesitate to copy the LaTeX code snippets and make gradual adjustments to familiarize yourself!</p>
+<h2 id="32-creating-a-latex-project-on-overleaf">3.2. Creating a LaTeX Project on Overleaf.</h2>
+<p><strong>Above all, I still encourage you to learn how to use LaTeX</strong>. LaTeX is not at all difficult to learn, and there is virtually endless information and guidance available on the internet about using LaTeX. You don&rsquo;t need to be an expert in LaTeX (although some commands and usage will be necessary), and you will have an excellent system to automate the organization of your writing.
+Let&rsquo;s explore the following steps together.</p>
+<h2 id="step-1---register-an-account-on-overleaf">Step 1 - Register an Account on Overleaf</h2>
+<p>To use Overleaf, you&rsquo;ll need to create an account. You can access and register <a href="https://www.overleaf.com/register?source=post_page-----6599268c095f----------------------" target="_blank" rel="noopener noreffer ">here</a>.</p>
+<h2 id="bước-2---create-a-new-project-after-registering-on-overleaf">Bước 2 - Create a New Project After Registering on Overleaf</h2>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW"
+        data-srcset="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW, https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW 1.5x, https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW 2x"
+        data-sizes="auto"
+        alt="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW"
+        title="https://www.filepicker.io/api/file/tJTSxbxOTdywD4SYmbrW" /></p>
+<ol>
+<li>When you log in, you will see a box labeled <strong>New Project</strong>. Click on this box to start creating a project. A project in Overleaf is a folder containing various files.</li>
+<li>If you&rsquo;ve received a URL in your email from someone with a document, and you&rsquo;re asked to click on the URL to access the document, you already have a document to work on. So, just logging in will take you to that document.</li>
+<li>When you click on <strong>New Project</strong>, you will see a number of standard templates that Overleaf has prepared for you, such as the <strong>Sample Project</strong>. However, we should begin with a <strong>Blank Project</strong> to get a better understanding of LaTeX operations on Overleaf.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/8Nccg2x.png?1"
+        data-srcset="https://i.imgur.com/8Nccg2x.png?1, https://i.imgur.com/8Nccg2x.png?1 1.5x, https://i.imgur.com/8Nccg2x.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/8Nccg2x.png?1"
+        title="https://i.imgur.com/8Nccg2x.png?1" />
+<em><strong>Ảnh 03</strong></em>: <em>Basic Text Editing Environment on Overleaf.</em></p>
+<p>Let&rsquo;s go through it from left to right:</p>
+<ol>
+<li>At the top, you&rsquo;ll see the <strong>Menu</strong> - this contains functions like Download project, copy project, word count, headings, Git/Dropbox integration, and advanced settings.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/81fvwmk.png?1"
+        data-srcset="https://i.imgur.com/81fvwmk.png?1, https://i.imgur.com/81fvwmk.png?1 1.5x, https://i.imgur.com/81fvwmk.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/81fvwmk.png?1"
+        title="https://i.imgur.com/81fvwmk.png?1" /></li>
+<li>Also on the left, you&rsquo;ll find a sidebar that resembles a file manager. By default, you select and compile the <strong>main.tex</strong> file. You can upload additional text documents or images. Next to it, occupying about half of the screen is the LaTeX document display with two options: <strong>Source</strong> or <strong>Rich Text</strong>.</li>
+<li>The right half of the screen displays the output when you export to PDF format. The document will be compiled and displayed automatically. You can choose <strong>Recompile</strong> to manually update if needed. Under <strong>Recompile</strong>, you can also choose between turning on/off automatic compilation, fast compile (draft mode with quick saving), normal compile, or syntax check before compilation.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/igRmUCh.png?1"
+        data-srcset="https://i.imgur.com/igRmUCh.png?1, https://i.imgur.com/igRmUCh.png?1 1.5x, https://i.imgur.com/igRmUCh.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/igRmUCh.png?1"
+        title="https://i.imgur.com/igRmUCh.png?1" /></li>
+<li>The next button to focus on is the <strong>Download PDF</strong> button - the second white icon from  <strong>Recompile</strong>. This button quickly saves the document as a PDF.</li>
+<li>At the top-right corner, you&rsquo;ll find the <strong>Share</strong> button - you can select <strong>Turn on link sharing</strong> to allow anyone with the link to access and edit the document. If it&rsquo;s a private document, you can invite collaborators manually via email.</li>
+<li>Next to the <strong>Share</strong> button, you&rsquo;ll find the <strong>Submit</strong> button - this allows you to submit your document directly to reputable scientific conferences and journals. It&rsquo;s one of the unique features of <strong>Overleaf</strong>.</li>
+<li>With the <strong>History</strong>  button next to the <strong>Share</strong> button, you can view the editing history of the document - suitable for backup needs.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/gkxJClb.png?1"
+        data-srcset="https://i.imgur.com/gkxJClb.png?1, https://i.imgur.com/gkxJClb.png?1 1.5x, https://i.imgur.com/gkxJClb.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/gkxJClb.png?1"
+        title="https://i.imgur.com/gkxJClb.png?1" /></li>
+<li>The last button, <strong>Chat</strong> - this is where you can communicate with collaborators. This keeps you focused on Overleaf instead of having to choose a third-party tool for group communication.</li>
+</ol>
+<h3 id="321-about-the-file-manager-panel-in-overleaf">3.2.1. About the File Manager Panel in Overleaf.</h3>
+<p><strong>Overleaf</strong> provides you with a file manager to store the files you will use in your writing process. These files can be text documents or images (remember to upload PDF documents, images, or text). You can also create new folders where you can store your files.</p>
+<p><strong>Note</strong>: If your project contains many images, you can create separate folders to keep your images organized.</p>
+<p>In this guide, we will work with the <strong>main.tex</strong> file that has been pre-created.</p>
+<h3 id="322-understanding-the-centre-panel">3.2.2. Understanding the Centre Panel</h3>
+<p>Think of this area as the primary editing workspace. The Centre Panel will provide you with all the tools and some constraints for editing.</p>
+<p>The menu items here do not include buttons to insert images, tables, or citations. Instead, you must use LaTeX code. To have a clearer picture, let&rsquo;s design a workflow for the <strong>main.tex</strong> file.</p>
+<h3 id="323-some-notes-when-writing-in-latex">3.2.3. Some Notes When Writing in LaTeX</h3>
+<p>In general, academic documents such as research papers, scholarly articles, etc., often have common structures, including:</p>
+<ul>
+<li>
+<p><strong>Metadata</strong>: This is where you provide the title, author information, date, and other basic details. In LaTeX, you can think of this as the <strong>Front Matter</strong>. In Overleaf, we place the front matter at the beginning of the <strong>main.tex</strong> file. We&rsquo;ll explore this in more detail when we switch to the <strong>Source</strong> view to see the document.</p>
+</li>
+<li>
+<p><strong>Table and figures</strong>: Most academic documents will contain information in the form of tables and figures. If you have many tables and figures, it&rsquo;s a good practice to place them in separate files with names like <strong>fig.tex</strong> and <strong>frames.tex</strong>. This way, you can reference them from within the document, or you can copy and paste the code for tables and figures from those files into the specific part of the document you&rsquo;re writing.</p>
+</li>
+<li>
+<p><strong>Citiation</strong>: As the saying goes, &ldquo;Quoting a book is like carrying a testimony.&rdquo; Using references and citing them demonstrates respect for the authors who have written and cleverly used recognized knowledge to support your argument.</p>
+</li>
+</ul>
+<h2 id="4-building-the-first-document-on-overleaf">4. Building the First Document on Overleaf</h2>
+<p>You can access My Overleaf project, copy this piece of code, and paste it into your Overleaf link: <a href="https://www.overleaf.com/read/yhkrqpqdhcbj" target="_blank" rel="noopener noreffer ">https://www.overleaf.com/read/yhkrqpqdhcbj</a></p>
+<p><strong>Important Note</strong>: Choose the XeLaTeX compiler if you want to test the code snippets.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/HbvTcYq.png?1"
+        data-srcset="https://i.imgur.com/HbvTcYq.png?1, https://i.imgur.com/HbvTcYq.png?1 1.5x, https://i.imgur.com/HbvTcYq.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/HbvTcYq.png?1"
+        title="https://i.imgur.com/HbvTcYq.png?1" /></p>
+<h3 id="41-regarding-the-introduction-section-which-includes-the-title-of-the-article-and-the-necessary-latex-packages">4.1. Regarding the introduction section, which includes the title of the article and the necessary LaTeX packages</h3>
+<p>First, you will choose the appropriate document type. For example, here, you choose the document type suitable for writing a scientific research paper on A4-sized paper.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\documentclass[a4paper]{article}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>List of packages used when editing. In the code block below, there are many <strong>%</strong> signs - When you list them at the beginning of a line, that line becomes a comment. With comments, they will only appear in the editing window and will not be included in the final PDF file.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% These packages help us type in Vietnamese on LaTeX.
+</span></span><span class="line"><span class="cl">\usepackage[utf8]{inputenc}
+</span></span><span class="line"><span class="cl">% These packages help us insert images on LaTeX
+</span></span><span class="line"><span class="cl">\usepackage{graphicx}
+</span></span><span class="line"><span class="cl">% This is the path to image folder where I created 
+</span></span><span class="line"><span class="cl">\graphicspath{ {./images/} }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Next, we will list the title of the article, author&rsquo;s name, and the current date here. You can proceed to change the values below.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\title{A Sample Document}
+</span></span><span class="line"><span class="cl">\author{Turio}
+</span></span><span class="line"><span class="cl">\date{\today}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="42-building-the-main-content">4.2. Building the main content</h3>
+<p>So we have completed the introduction section. We will now move on to the crucial part of LaTeX file creation. First, always remember the following syntax:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% This line of code acts as a gateway to start building your document.
+</span></span><span class="line"><span class="cl">\begin{document}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">% After listing the introductory information, you&#39;ll declare it here. 
+</span></span><span class="line"><span class="cl">\maketitle
+</span></span><span class="line"><span class="cl">% \his command makes it easy to switch to a new page. - It&#39;s listed here because a standard report often dedicates a full page to the cover page.
+</span></span><span class="line"><span class="cl">\newpage
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">% ... You can refer to other lines of code on the provided Overleaf link for additional details.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">% This line of code is used to end the document; if it&#39;s missing, the document will result in an error.
+</span></span><span class="line"><span class="cl">\end{document}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="43-now-lets-build-chapters-and-an-automatic-table-of-contents">4.3. Now, let&rsquo;s build chapters and an automatic table of contents.</h3>
+<p>To create a table of contents, use the following syntax:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\tableofcontents
+</span></span><span class="line"><span class="cl">\newpage
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>To declare chapters, use \section, \subsection, and the special thing about LaTeX is that they will automatically update the table of contents.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\section{Chapter 1}
+</span></span><span class="line"><span class="cl">\subsection{Subchapter of chapter 1}
+</span></span><span class="line"><span class="cl">% Subchapters of Chapter 1 can be declared the same way.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>With chapters added, the table of contents will be automatically updated like this:
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/q2yW1dP.png?1"
+        data-srcset="https://i.imgur.com/q2yW1dP.png?1, https://i.imgur.com/q2yW1dP.png?1 1.5x, https://i.imgur.com/q2yW1dP.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/q2yW1dP.png?1"
+        title="https://i.imgur.com/q2yW1dP.png?1" /></p>
+<h3 id="44-adding-images-on-overleaf">4.4. Adding images on Overleaf</h3>
+<p>To add images, follow these steps:</p>
+<ul>
+<li>Add the image to your Overleaf project. You can create a folder for better organization, as demonstrated below, where I created a folder called <strong>images</strong> to store all the images.
+<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://i.imgur.com/R3e14Tm.png?1"
+        data-srcset="https://i.imgur.com/R3e14Tm.png?1, https://i.imgur.com/R3e14Tm.png?1 1.5x, https://i.imgur.com/R3e14Tm.png?1 2x"
+        data-sizes="auto"
+        alt="https://i.imgur.com/R3e14Tm.png?1"
+        title="https://i.imgur.com/R3e14Tm.png?1" /></li>
+<li>Use the following code to add the image to LaTeX:</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">% This is the simplest approach to adding images to LaTeX.
+</span></span><span class="line"><span class="cl">% For more detailed adjustments, consult LaTeX documentation.
+</span></span><span class="line"><span class="cl">\begin{figure}[ht]
+</span></span><span class="line"><span class="cl">\includegraphics[width=\textwidth]{name_of_the_file}
+</span></span><span class="line"><span class="cl">\end{figure}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="45-insert-table-on-overleaf">4.5. Insert table on Overleaf</h3>
+<p>Building a sample table can be done using the code below. <a href="http://www.tablesgenerator.com/" target="_blank" rel="noopener noreffer ">http://www.tablesgenerator.com/</a> to create a table and then copy the LaTeX code from the website into your document.</p>
+<h3 id="46-creating-a-bibliography-and-citations-in-overleaf">4.6. Creating a bibliography and citations in Overleaf</h3>
+<p>We will build the bibliography and citation in Overleaf can be accomplished with the following code:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\begin{thebibliography}{2}
+</span></span><span class="line"><span class="cl">\bibitem{doc1}
+</span></span><span class="line"><span class="cl">Author name, \emph{Tài liệu 1}. Publication.
+</span></span><span class="line"><span class="cl">\bibitem{doc2}
+</span></span><span class="line"><span class="cl">Author name, \emph{Tài liệu 2}. Publication.
+</span></span><span class="line"><span class="cl">\end{thebibliography}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>With a bibliography in place, you can use the <strong>\cite{The document name is listed in \bibitem}</strong> command to cite sources in your document.</p>
+<h2 id="5-conclusion">5. Conclusion</h2>
+<p>Every text editor has its own pros and cons. However, if you are heading into research or planning to write academic papers in the future, LaTeX is a suitable choice. Alongside LaTeX, Overleaf is a powerful companion with its online collaborative editing features, helping you connect and work with other project members.</p>
+<p><strong>Team</strong></p>
+<h2 id="references"><strong>References</strong>:</h2>
+<p>[1] <a href="https://www.overleaf.com/learn/latex/Free_online_introduction_to_LaTeX_%28part_1%29" target="_blank" rel="noopener noreffer ">LateX online course</a> compiled by <a href="https://www.overleaf.com/ourteam" target="_blank" rel="noopener noreffer "> Dr John Lees-Miller</a> and present in Bristol University.
+<br>
+[2] <a href="https://medium.com/thoughts-philosophy-writing/how-to-use-overleaf-to-write-your-papers-part-i-basic-minimalist-setup-6599268c095f" target="_blank" rel="noopener noreffer ">How to use Overleaf to Write your papers</a> - Arindam Basu.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-07-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/introtolatex/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://7und3dpy.github.io/introtolatex/" data-title="Introduction to LATEX" data-via="xxxx" data-hashtags="latex"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://7und3dpy.github.io/introtolatex/" data-hashtag="latex"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://7und3dpy.github.io/introtolatex/" data-title="Introduction to LATEX"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://7und3dpy.github.io/introtolatex/" data-title="Introduction to LATEX"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://7und3dpy.github.io/introtolatex/" data-title="Introduction to LATEX"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/latex/">latex</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/weka/" class="prev" rel="prev" title="Introduction to Weka"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Introduction to Weka</a>
+            <a href="/footballanalysis/" class="next" rel="next" title="Data Science in Football and Success from Liverpool F.C">Data Science in Football and Success from Liverpool F.C<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.115.3">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.5.0/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.13.1/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"","algoliaIndex":"","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

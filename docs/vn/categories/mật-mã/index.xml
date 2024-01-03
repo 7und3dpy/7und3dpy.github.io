@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>mật mã - Category - Turio</title>
+        <link>https://7und3dpy.github.io/vn/categories/m%E1%BA%ADt-m%C3%A3/</link>
+        <description>mật mã - Category - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/categories/m%E1%BA%ADt-m%C3%A3/" rel="self" type="application/rss+xml" /><item>
+    <title>Các khái niệm chung về an toàn thông tin</title>
+    <link>https://7und3dpy.github.io/vn/gioithieuattt/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/vn/gioithieuattt/</guid>
+    <description><![CDATA[<p>Bài viết  hiển thị các kiến thức cơ bản về ATTT.</p>]]></description>
+</item>
+<item>
+    <title>Cơ sở mật mã học</title>
+    <link>https://7und3dpy.github.io/vn/cryptoi/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/vn/cryptoi/</guid>
+    <description><![CDATA[<p>This article shows the concept of Cryptography and Security.</p>]]></description>
+</item>
+<item>
+    <title>Mã hóa đối xứng</title>
+    <link>https://7und3dpy.github.io/vn/mahoadoixung/</link>
+    <pubDate>Sat, 18 Nov 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/vn/mahoadoixung/</guid>
+    <description><![CDATA[<p>This article shows the concept of symmetric cryptography.</p>]]></description>
+</item>
+</channel>
+</rss>

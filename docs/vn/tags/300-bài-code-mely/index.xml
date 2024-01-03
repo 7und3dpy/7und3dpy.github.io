@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>300 bài code Mely - Tag - Turio</title>
+        <link>https://7und3dpy.github.io/vn/tags/300-b%C3%A0i-code-mely/</link>
+        <description>300 bài code Mely - Tag - Turio</description>
+        <generator>Hugo -- gohugo.io</generator><language>vn</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 07 Jul 2023 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://7und3dpy.github.io/vn/tags/300-b%C3%A0i-code-mely/" rel="self" type="application/rss+xml" /><item>
+    <title>Đếm số cặp</title>
+    <link>https://7und3dpy.github.io/vn/demsocap/</link>
+    <pubDate>Fri, 07 Jul 2023 15:58:26 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://7und3dpy.github.io/vn/demsocap/</guid>
+    <description><![CDATA[Cho một số dãy nguyên dương a gồm N phần tử. Hãy đếm số cặp (i,j) thỏa mãn:
+\(1 \leq i \leq j \leq N\) \(a_i^2 + a_j = X\) Input format
+Dòng đầu tiên gồm 2 số nguyên dương N, X Dòng thứ hai gồm N số nguyên dương \( a_1, a_2, a_3, &hellip;, a_N\) Constraints
+\(2 \leq N \leq 500\)
+\(1 \leq X \leq 10^{18}\)
+\(1 \leq a_i \leq 10^6\)]]></description>
+</item>
+</channel>
+</rss>
