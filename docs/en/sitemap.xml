@@ -2,9 +2,9 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://7und3dpy.github.io/projecteuler1/</loc><lastmod>2023-12-10T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://7und3dpy.github.io/projecteuler3/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://7und3dpy.github.io/categories/c/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/projecteuler1/</loc><lastmod>2023-12-10T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://7und3dpy.github.io/projecteuler3/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/c/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/categories/c/"
@@ -13,7 +13,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/categories/c/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/categories/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/categories/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/categories/"
@@ -22,7 +22,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/categories/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/tags/hackerrank/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/tags/hackerrank/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/hackerrank/"
@@ -31,7 +31,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/hackerrank/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/posts/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/posts/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/posts/"
@@ -40,10 +40,10 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/posts/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/projecteuler2/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://7und3dpy.github.io/tags/projecteuler/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://7und3dpy.github.io/categories/python/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
-            <loc>https://7und3dpy.github.io/tags/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/projecteuler2/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/projecteuler/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://7und3dpy.github.io/categories/python/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+            <loc>https://7und3dpy.github.io/tags/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/tags/"
@@ -52,7 +52,7 @@
                     hreflang="en"
                     href="https://7und3dpy.github.io/tags/"
                     /></url><url>
-            <loc>https://7und3dpy.github.io/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link
+            <loc>https://7und3dpy.github.io/</loc><lastmod>2023-12-11T21:57:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><xhtml:link
                         rel="alternate"
                         hreflang="vn"
                         href="https://7und3dpy.github.io/vn/"
